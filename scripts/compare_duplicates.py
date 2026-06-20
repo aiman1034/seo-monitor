@@ -12,8 +12,13 @@ It reports per-page similarity and an overall average, and flags
 ``DUPLICATE_CONTENT`` (critical) when the overall similarity exceeds the
 configured threshold — the second hypothesis for the ranking volatility.
 
-A page that fails to fetch on either side is recorded with ``error`` and skipped
-from the average, never raised.
+**Only page pairs where BOTH sides returned HTTP 200 are compared.** A 403/error
+page still has body text, so comparing on text-presence alone would "compare"
+two block pages and report a meaningless similarity. When either side is non-200
+or errored, the page is recorded with its statuses but its similarity fields are
+null, it is excluded from the overall average and from any DUPLICATE_CONTENT /
+DUPLICATE_PAGE finding, and a ``DUPLICATE_CHECK_SKIPPED`` (info) finding is
+emitted explaining why. A page that fails to fetch is recorded, never raised.
 
 Run directly to print JSON:
 
@@ -182,7 +187,18 @@ def run(config: Dict[str, Any], logger=None) -> Dict[str, Any]:
                 "combined": None,
             }
 
-            if text_a is not None and text_b is not None:
+            # Only compare when BOTH sides returned HTTP 200. A 403/error page
+            # still has body text, so comparing on text-presence alone would
+            # "compare" two block pages and report a meaningless similarity.
+            both_ok = (
+                status_a == 200
+                and status_b == 200
+                and err_a is None
+                and err_b is None
+                and text_a is not None
+                and text_b is not None
+            )
+            if both_ok:
                 seq = round(sequence_similarity(text_a, text_b), 4)
                 jac = round(jaccard_similarity(text_a, text_b), 4)
                 combined = round((seq + jac) / 2, 4)
@@ -196,7 +212,37 @@ def run(config: Dict[str, Any], logger=None) -> Dict[str, Any]:
                     combined,
                 )
             else:
-                log.info("  %-8s skipped (a_err=%s b_err=%s)", path, err_a, err_b)
+                # Cannot compare — record why so the report explains the missing
+                # similarity number instead of silently showing a bogus one.
+                desc_a = err_a if err_a is not None else status_a
+                desc_b = err_b if err_b is not None else status_b
+                log.info(
+                    "  %-8s skipped (%s=%s, %s=%s — not both 200)",
+                    path,
+                    domain_a,
+                    desc_a,
+                    domain_b,
+                    desc_b,
+                )
+                findings.append(
+                    {
+                        "type": "DUPLICATE_CHECK_SKIPPED",
+                        "severity": "info",
+                        "site": f"{domain_a} / {domain_b}",
+                        "path": path,
+                        "message": (
+                            f"Skipped {path}: {domain_a}={desc_a}, "
+                            f"{domain_b}={desc_b} — cannot compare non-200 pages."
+                        ),
+                        "details": {
+                            "status_a": status_a,
+                            "status_b": status_b,
+                            "error_a": err_a,
+                            "error_b": err_b,
+                        },
+                        "timestamp": now,
+                    }
+                )
 
             pages.append(page)
 
