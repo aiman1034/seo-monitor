@@ -51,7 +51,9 @@ config.yaml ──► run_all.py ──► monitor_response ─┐
   `findings` (new 403s, status-code changes, latency spikes, content-hash
   changes on key pages, `RUNNER_IP_BLOCKED`, the GSC deltas, plus the flags
   above).
-- **report** — writes a timestamped JSON + a human-readable markdown report and
+- **report** — writes a timestamped JSON + a human-readable markdown report
+  (each finding annotated with a recommended **fix**), maintains the
+  `runs-index.json` time-series + the GitHub Pages `index.html` dashboard, and
   updates the status block + badges in this README.
 
 ## The `data` branch design
@@ -135,6 +137,23 @@ critical `GOOGLE_FETCH_FAIL` / `DEINDEXED` alerts.
 Tune the window/thresholds under `gsc:` in [`config.yaml`](config.yaml)
 (`lookback_days`, `position_drop_threshold`, `impressions_drop_pct`). Note GSC
 Search Analytics data lags ~2–3 days.
+
+## Dashboard (GitHub Pages)
+
+Every run publishes a visual dashboard to the **`data`** branch: an `index.html`
+(plain HTML + vanilla JS + Chart.js, no build step) backed by `runs-index.json`
+(a compact time-series, capped to the last 240 runs). It shows per-site status
+badges, **average position over time** (y-axis inverted, so up = better rank —
+this is the chart that visualises the bouncing), impressions over time, an
+availability timeline (one coloured cell per run), the current Search Console
+stats, and the current findings table — now including a **recommended fix** for
+every finding (from the SEO issue playbook).
+
+**Enable it once:** repo **Settings → Pages → Source → Deploy from a branch →
+Branch: `data`, Folder: `/ (root)` → Save**. The dashboard is then live at
+`https://<user>.github.io/seo-monitor/` and auto-updates on every scheduled run
+(no extra automation needed — the workflow already commits to `data`). New
+finding types appear in the table automatically as later playbook checks land.
 
 ## Automation & alerting
 

@@ -46,6 +46,10 @@ README_PATH = os.path.join(REPO_ROOT, "README.md")
 _STATUS_BEGIN = "<!-- STATUS:BEGIN -->"
 _STATUS_END = "<!-- STATUS:END -->"
 
+# Static dashboard template (shipped on main, published to the data branch each run).
+DASHBOARD_TEMPLATE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "dashboard_template.html")
+RUNS_INDEX_CAP = 240  # keep the time-series file bounded
+
 
 def summarize(run_data: Dict[str, Any], config: Dict[str, Any]) -> Dict[str, Any]:
     """Build a per-site summary from the run's monitor checks.
@@ -92,6 +96,7 @@ def summarize(run_data: Dict[str, Any], config: Dict[str, Any]) -> Dict[str, Any
                 "clicks": totals.get("clicks"),
                 "impressions": totals.get("impressions"),
                 "position": totals.get("position"),
+                "ctr": totals.get("ctr"),
             }
         sites[domain] = entry
 
@@ -341,6 +346,9 @@ def write_report(
                 "summary": summary,
                 "json_file": os.path.basename(json_path),
                 "md_file": os.path.basename(md_path),
+                # Full findings (each with its 'fix') so the dashboard can render
+                # the findings table from this single file.
+                "findings": run_data.get("findings", []),
                 "critical_findings": [
                     f for f in run_data.get("findings", []) if f["severity"] == "critical"
                 ],
@@ -355,11 +363,104 @@ def write_report(
     with open(status_path, "w", encoding="utf-8", newline="\n") as fh:
         fh.write("# Live status\n\n" + _status_block(summary) + "\n")
 
+    # Time-series index + the GitHub Pages dashboard (served from the data branch).
+    _update_runs_index(run_data, summary, data_dir, logger=log)
+    _write_dashboard(data_dir, logger=log)
+
     update_readme(summary, dry_run=False, logger=log)
     log.info("Wrote %s and %s", os.path.basename(json_path), os.path.basename(md_path))
 
     result.update(json_path=json_path, md_path=md_path, latest_path=latest_path)
     return result
+
+
+def _update_runs_index(
+    run_data: Dict[str, Any], summary: Dict[str, Any], data_dir: str, logger=None
+) -> str:
+    """Append a compact record for this run to ``runs-index.json`` (capped).
+
+    The dashboard charts read this file. Each record is small (per-site verdict,
+    worst status and GSC clicks/impressions/position) so the time-series stays
+    cheap even over hundreds of runs.
+
+    Args:
+        run_data: The assembled run dict.
+        summary: The summary from :func:`summarize`.
+        data_dir: The data directory.
+        logger: Optional logger.
+
+    Returns:
+        The path to ``runs-index.json``.
+    """
+    log = logger or setup_logging()
+    path = os.path.join(data_dir, "runs-index.json")
+    try:
+        with open(path, "r", encoding="utf-8") as fh:
+            index = json.load(fh)
+        if not isinstance(index, list):
+            index = []
+    except (FileNotFoundError, json.JSONDecodeError):
+        index = []
+
+    gsc = run_data.get("gsc", {}) or {}
+    gsc_sites = gsc.get("sites", {}) if gsc.get("enabled") else {}
+    sites_rec: Dict[str, Any] = {}
+    for domain, s in summary.get("sites", {}).items():
+        totals = (gsc_sites.get(domain, {}).get("search_analytics") or {}).get("totals") or {}
+        sites_rec[domain] = {
+            "verdict": s.get("verdict"),
+            "worst_status": s.get("worst_status"),
+            "gsc_position": totals.get("position"),
+            "gsc_impressions": totals.get("impressions"),
+            "gsc_clicks": totals.get("clicks"),
+        }
+
+    index.append(
+        {
+            "timestamp_utc": run_data.get("timestamp_utc"),
+            "run_id": run_data.get("run_id"),
+            "sites": sites_rec,
+            "findings_counts": summary.get("findings_counts", {}),
+        }
+    )
+    index = index[-RUNS_INDEX_CAP:]  # newest last, bounded
+
+    with open(path, "w", encoding="utf-8", newline="\n") as fh:
+        json.dump(index, fh, indent=2)
+    log.info("Updated runs-index.json (%d runs)", len(index))
+    return path
+
+
+def _write_dashboard(data_dir: str, logger=None) -> Optional[str]:
+    """Ensure ``index.html`` in the data dir matches the dashboard template.
+
+    Writes (or refreshes) the static dashboard so GitHub Pages serves the latest
+    version from the data branch. Only rewrites when the content changed.
+
+    Args:
+        data_dir: The data directory.
+        logger: Optional logger.
+
+    Returns:
+        The destination path, or None if the template is missing.
+    """
+    log = logger or setup_logging()
+    if not os.path.exists(DASHBOARD_TEMPLATE):
+        log.warning("dashboard template not found at %s; skipping", DASHBOARD_TEMPLATE)
+        return None
+    with open(DASHBOARD_TEMPLATE, "r", encoding="utf-8") as fh:
+        template = fh.read()
+
+    dest = os.path.join(data_dir, "index.html")
+    existing = None
+    if os.path.exists(dest):
+        with open(dest, "r", encoding="utf-8") as fh:
+            existing = fh.read()
+    if existing != template:
+        with open(dest, "w", encoding="utf-8", newline="\n") as fh:
+            fh.write(template)
+        log.info("Wrote dashboard index.html")
+    return dest
 
 
 def main() -> None:
