@@ -24,13 +24,13 @@
     },
     "findings_counts": {
       "critical": 0,
-      "warning": 0,
+      "warning": 1,
       "info": 12
     },
-    "run_id": "20260620T203154Z",
-    "timestamp_utc": "2026-06-20T20:31:54+00:00"
+    "run_id": "20260620T203458Z",
+    "timestamp_utc": "2026-06-20T20:34:58+00:00"
   },
-  "json_file": "run-20260620T203154Z.json",
-  "md_file": "report-20260620T203154Z.md",
+  "json_file": "run-20260620T203458Z.json",
+  "md_file": "report-20260620T203458Z.md",
   "critical_findings": []
 }
