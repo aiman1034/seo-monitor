@@ -165,6 +165,11 @@ def _search_analytics(
     daily = _rows_to_dicts(query(["date"]), "date")
     queries = _rows_to_dicts(query(["query"], 100), "query")
     pages = _rows_to_dicts(query(["page"], 100), "page")
+    # Per-country breakdown — keep the top ~10 by clicks. Reveals where each
+    # domain actually ranks (position can differ a lot by market).
+    by_country = _rows_to_dicts(query(["country"], 100), "country")
+    by_country.sort(key=lambda r: r.get("clicks", 0), reverse=True)
+    by_country = by_country[:10]
 
     return {
         "window": {"start": base["startDate"], "end": base["endDate"], "days": lookback_days},
@@ -172,6 +177,7 @@ def _search_analytics(
         "daily": daily,
         "queries": queries,
         "pages": pages,
+        "by_country": by_country,
     }
 
 
