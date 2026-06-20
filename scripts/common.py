@@ -106,20 +106,65 @@ def build_url(domain: str, path: str, scheme: str = "https") -> str:
     return f"{scheme}://{domain}{path}"
 
 
-def iter_site_paths(config: Dict[str, Any]) -> List[Dict[str, str]]:
-    """Flatten the config sites into a list of {domain, path, url} dicts.
+def path_str(entry: Any) -> str:
+    """Return the path string from a config path entry.
+
+    A path entry may be a plain string (``"/"``) or a dict
+    (``{"path": "/", "dynamic": true}``). This normalises both to the string.
+    """
+    if isinstance(entry, dict):
+        return entry.get("path", "/")
+    return entry
+
+
+def path_is_dynamic(entry: Any) -> bool:
+    """Whether a config path entry is marked ``dynamic: true``.
+
+    Dynamic pages (e.g. live sports homepages) change body content on nearly
+    every request, so they are exempt from CONTENT_CHANGE detection. Plain-string
+    entries default to non-dynamic.
+    """
+    return bool(entry.get("dynamic", False)) if isinstance(entry, dict) else False
+
+
+def site_paths(site: Dict[str, Any]) -> List[Any]:
+    """Return the raw path entries for a site (defaulting to ['/'])."""
+    return site.get("paths", ["/"])
+
+
+def iter_site_paths(config: Dict[str, Any]) -> List[Dict[str, Any]]:
+    """Flatten the config sites into a list of {domain, path, url, dynamic} dicts.
 
     Args:
         config: The loaded configuration.
 
     Returns:
-        One entry per (site, path) pair.
+        One entry per (site, path) pair, including the ``dynamic`` flag.
     """
-    out: List[Dict[str, str]] = []
+    out: List[Dict[str, Any]] = []
     for site in config.get("sites", []):
         domain = site["domain"]
-        for path in site.get("paths", ["/"]):
-            out.append({"domain": domain, "path": path, "url": build_url(domain, path)})
+        for entry in site_paths(site):
+            path = path_str(entry)
+            out.append(
+                {
+                    "domain": domain,
+                    "path": path,
+                    "url": build_url(domain, path),
+                    "dynamic": path_is_dynamic(entry),
+                }
+            )
+    return out
+
+
+def dynamic_path_set(config: Dict[str, Any]) -> set:
+    """Return the set of (domain, path) pairs flagged dynamic in config."""
+    out = set()
+    for site in config.get("sites", []):
+        domain = site["domain"]
+        for entry in site_paths(site):
+            if path_is_dynamic(entry):
+                out.add((domain, path_str(entry)))
     return out
 
 

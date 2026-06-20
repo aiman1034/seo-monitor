@@ -26,10 +26,22 @@ import os
 from typing import Any, Dict, List, Optional
 
 try:
-    from .common import DATA_DIR, load_config, setup_logging, utc_now_iso
+    from .common import (
+        DATA_DIR,
+        dynamic_path_set,
+        load_config,
+        setup_logging,
+        utc_now_iso,
+    )
     from .fixes import attach_fixes
 except ImportError:  # allow running as a plain script
-    from common import DATA_DIR, load_config, setup_logging, utc_now_iso  # type: ignore
+    from common import (  # type: ignore
+        DATA_DIR,
+        dynamic_path_set,
+        load_config,
+        setup_logging,
+        utc_now_iso,
+    )
     from fixes import attach_fixes  # type: ignore
 
 
@@ -217,30 +229,14 @@ def analyze(
                 }
             )
 
-        # 5. Content-hash change on a key page (only meaningful when both 200).
-        cur_hash, prev_hash = cur.get("body_sha256"), prev.get("body_sha256")
-        if (
-            cur_hash
-            and prev_hash
-            and cur_hash != prev_hash
-            and status == 200
-            and prev_status == 200
-        ):
-            findings.append(
-                {
-                    "type": "CONTENT_CHANGE",
-                    "severity": "info",
-                    "site": site,
-                    "path": path,
-                    "message": f"Page body changed (SHA-256 differs) for {ua} on {label}.",
-                    "details": {
-                        "user_agent": ua,
-                        "previous_sha256": prev_hash,
-                        "current_sha256": cur_hash,
-                    },
-                    "timestamp": now,
-                }
-            )
+    # 5. CONTENT_CHANGE — collapsed to at most one finding per page per run.
+    #    Dynamic pages (live homepages) are exempt; other pages compare the
+    #    NORMALIZED hash (scripts/tokens/timestamps stripped) so only a real
+    #    template/content edit fires.
+    if has_previous:
+        findings.extend(
+            _content_change_findings(cur_checks, prev_idx, config, now)
+        )
 
     # 6. GSC delta findings (need previous-run context, which lives here):
     #    DEINDEXED, POSITION_DROP, IMPRESSIONS_DROP.
@@ -268,6 +264,71 @@ def analyze(
         counts["info"],
         "yes" if has_previous else "none (first run)",
     )
+    return findings
+
+
+def _content_change_findings(
+    cur_checks: List[Dict[str, Any]],
+    prev_idx: Dict[tuple, Dict[str, Any]],
+    config: Dict[str, Any],
+    now: str,
+) -> List[Dict[str, Any]]:
+    """Emit at most one CONTENT_CHANGE (info) per page per run.
+
+    Dynamic pages (config ``dynamic: true``) are skipped entirely. Other pages
+    compare the *normalized* hash (scripts/tokens/timestamps stripped) across both
+    runs; if it differs for one or more user-agents, a single finding is emitted
+    naming the affected UAs.
+
+    Args:
+        cur_checks: Current run's monitor check records.
+        prev_idx: Previous run's checks indexed by (site, path, user-agent).
+        config: The loaded configuration.
+        now: Timestamp for findings.
+
+    Returns:
+        A list of CONTENT_CHANGE finding dicts (one per changed page).
+    """
+    dynamic = dynamic_path_set(config)
+    ua_labels = list(config.get("user_agents", {}).keys())
+    cur_idx = {(c["site"], c["path"], c["user_agent_label"]): c for c in cur_checks}
+    site_paths = sorted({(c["site"], c["path"]) for c in cur_checks})
+
+    findings: List[Dict[str, Any]] = []
+    for site, path in site_paths:
+        if (site, path) in dynamic:
+            continue  # dynamic page — body churn is expected, never a finding
+
+        changed_uas: List[str] = []
+        for ua in ua_labels:
+            cur = cur_idx.get((site, path, ua))
+            prev = prev_idx.get((site, path, ua))
+            if not cur or not prev:
+                continue
+            if cur.get("status_code") != 200 or prev.get("status_code") != 200:
+                continue
+            cur_h = cur.get("normalized_sha256")
+            prev_h = prev.get("normalized_sha256")
+            # Only compare when both runs have a normalized hash (skips the
+            # one-off transition from older runs that predate this field).
+            if cur_h and prev_h and cur_h != prev_h:
+                changed_uas.append(ua)
+
+        if changed_uas:
+            findings.append(
+                {
+                    "type": "CONTENT_CHANGE",
+                    "severity": "info",
+                    "site": site,
+                    "path": path,
+                    "message": (
+                        f"Normalized page content changed on {path} "
+                        f"(seen by: {', '.join(changed_uas)})."
+                    ),
+                    "details": {"changed_user_agents": changed_uas},
+                    "timestamp": now,
+                }
+            )
     return findings
 
 

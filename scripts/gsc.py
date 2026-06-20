@@ -38,9 +38,9 @@ from datetime import date, timedelta
 from typing import Any, Dict, List, Optional, Tuple
 
 try:
-    from .common import build_url, load_config, setup_logging, utc_now_iso
+    from .common import build_url, load_config, path_str, setup_logging, utc_now_iso
 except ImportError:  # allow running as a plain script
-    from common import build_url, load_config, setup_logging, utc_now_iso  # type: ignore
+    from common import build_url, load_config, path_str, setup_logging, utc_now_iso  # type: ignore
 
 # Read-only Search Console scope.
 SCOPES = ["https://www.googleapis.com/auth/webmasters.readonly"]
@@ -320,7 +320,7 @@ def run(config: Dict[str, Any], logger=None) -> Dict[str, Any]:
             site_res["error"] = f"search_analytics: {type(exc).__name__}: {exc}"
             log.warning("gsc: search_analytics failed for %s: %s", domain, exc)
 
-        urls = [build_url(domain, p) for p in site.get("paths", ["/"])]
+        urls = [build_url(domain, path_str(p)) for p in site.get("paths", ["/"])]
         try:
             inspections = _url_inspection(service, prop, urls, delay, log)
             site_res["url_inspection"] = inspections

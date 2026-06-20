@@ -37,9 +37,9 @@ import requests
 from bs4 import BeautifulSoup
 
 try:
-    from .common import build_url, load_config, setup_logging, utc_now_iso
+    from .common import build_url, load_config, path_str, setup_logging, utc_now_iso
 except ImportError:  # allow running as a plain script
-    from common import build_url, load_config, setup_logging, utc_now_iso  # type: ignore
+    from common import build_url, load_config, path_str, setup_logging, utc_now_iso  # type: ignore
 
 # Tags whose text is boilerplate/navigation rather than page content.
 _STRIP_TAGS = ["script", "style", "noscript", "nav", "header", "footer", "svg"]
@@ -128,7 +128,10 @@ def _fetch_text(
 
 def _common_paths(config: Dict[str, Any], domain_a: str, domain_b: str) -> List[str]:
     """Return paths present in both domains' config (preserving a's order)."""
-    sites = {s["domain"]: s.get("paths", ["/"]) for s in config.get("sites", [])}
+    sites = {
+        s["domain"]: [path_str(e) for e in s.get("paths", ["/"])]
+        for s in config.get("sites", [])
+    }
     paths_a = sites.get(domain_a, [])
     paths_b = set(sites.get(domain_b, []))
     return [p for p in paths_a if p in paths_b]

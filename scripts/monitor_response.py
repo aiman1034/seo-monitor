@@ -22,10 +22,48 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
 import time
 from typing import Any, Dict, List
 
 import requests
+
+# Volatile substrings that change between otherwise-identical responses (rotating
+# nonces, CSRF tokens, timestamps). Stripped before hashing non-dynamic pages so a
+# rotating token doesn't masquerade as a content change.
+_SCRIPT_RE = re.compile(r"<script\b[^>]*>.*?</script>", re.DOTALL | re.IGNORECASE)
+_STYLE_RE = re.compile(r"<style\b[^>]*>.*?</style>", re.DOTALL | re.IGNORECASE)
+_COMMENT_RE = re.compile(r"<!--.*?-->", re.DOTALL)
+_ISO_TS_RE = re.compile(
+    r"\d{4}-\d{2}-\d{2}[T ]\d{2}:\d{2}(:\d{2})?(\.\d+)?(Z|[+-]\d{2}:?\d{2})?"
+)
+_LONG_HEX_RE = re.compile(r"\b[0-9a-fA-F]{16,}\b")
+_LONG_TOKEN_RE = re.compile(r"\b[A-Za-z0-9_-]{32,}\b")  # csrf/nonce-like tokens
+_EPOCH_RE = re.compile(r"\b\d{10,13}\b")  # unix timestamps (s / ms)
+_WS_RE = re.compile(r"\s+")
+
+
+def normalize_html(body: bytes) -> str:
+    """Strip scripts/styles/comments and volatile tokens, return collapsed text.
+
+    Used to build a stable hash for non-dynamic pages: a rotating token or
+    timestamp won't change the result, but a real template/content edit will.
+
+    Args:
+        body: Raw response body bytes.
+
+    Returns:
+        Normalised text suitable for hashing.
+    """
+    text = body.decode("utf-8", errors="ignore")
+    text = _SCRIPT_RE.sub(" ", text)
+    text = _STYLE_RE.sub(" ", text)
+    text = _COMMENT_RE.sub(" ", text)
+    text = _ISO_TS_RE.sub(" ", text)
+    text = _LONG_HEX_RE.sub(" ", text)
+    text = _LONG_TOKEN_RE.sub(" ", text)
+    text = _EPOCH_RE.sub(" ", text)
+    return _WS_RE.sub(" ", text).strip()
 
 try:
     from .common import (
@@ -80,6 +118,7 @@ def fetch_once(
         "redirect_chain": [],
         "content_length": None,
         "body_sha256": None,
+        "normalized_sha256": None,
         "error": None,
     }
 
@@ -108,6 +147,11 @@ def fetch_once(
         ]
         result["content_length"] = len(body)
         result["body_sha256"] = hashlib.sha256(body).hexdigest()
+        # Stable hash that ignores scripts/tokens/timestamps — used for
+        # CONTENT_CHANGE on non-dynamic pages.
+        result["normalized_sha256"] = hashlib.sha256(
+            normalize_html(body).encode("utf-8")
+        ).hexdigest()
         resp.close()
     except requests.exceptions.RequestException as exc:
         end = time.perf_counter()
