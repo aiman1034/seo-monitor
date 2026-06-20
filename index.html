@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SEO Monitor — Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+  :root {
+    --bg: #0f1419; --card: #1a212b; --line: #2a3441; --fg: #e6edf3;
+    --muted: #8b949e; --green: #2ea043; --amber: #d29922; --red: #da3633;
+    --grey: #6e7681; --accent: #58a6ff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 20px 16px 60px; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  h2 { font-size: 16px; margin: 28px 0 12px; color: var(--fg); }
+  .muted { color: var(--muted); font-size: 13px; }
+  .badges { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+  .badge { padding: 4px 10px; border-radius: 999px; font-size: 13px; font-weight: 600; color: #fff; }
+  .badge.ok { background: var(--green); } .badge.issue { background: var(--red); }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 16px; margin-bottom: 16px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+  .stat { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px; }
+  .stat .dom { font-weight: 600; margin-bottom: 8px; color: var(--accent); word-break: break-all; }
+  .stat .row { display: flex; justify-content: space-between; font-size: 14px; padding: 2px 0; }
+  .stat .row span:last-child { font-variant-numeric: tabular-nums; }
+  canvas { max-height: 320px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; white-space: nowrap; }
+  .sev { font-weight: 700; text-transform: uppercase; font-size: 11px; letter-spacing: .04em; }
+  .sev.critical { color: var(--red); } .sev.warning { color: var(--amber); } .sev.info { color: var(--grey); }
+  .tl { display: flex; flex-direction: column; gap: 8px; }
+  .tl-row { display: flex; align-items: center; gap: 8px; }
+  .tl-row .dom { width: 160px; flex: none; font-size: 13px; color: var(--accent); word-break: break-all; }
+  .dots { display: flex; gap: 2px; flex-wrap: nowrap; overflow-x: auto; }
+  .dot { width: 9px; height: 16px; border-radius: 2px; flex: none; }
+  .dot.green { background: var(--green); } .dot.amber { background: var(--amber); }
+  .dot.red { background: var(--red); } .dot.grey { background: var(--grey); }
+  .note { color: var(--muted); font-style: italic; padding: 8px 0; }
+  code { background: #0d1117; padding: 1px 5px; border-radius: 4px; font-size: 12px; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>SEO Monitor</h1>
+  <div class="muted" id="updated">Loading…</div>
+  <div class="badges" id="badges"></div>
+
+  <h2>Average position over time <span class="muted">(y-axis inverted — higher = better rank)</span></h2>
+  <div class="card"><canvas id="posChart"></canvas><div class="note" id="posNote" hidden></div></div>
+
+  <h2>Impressions over time</h2>
+  <div class="card"><canvas id="imprChart"></canvas><div class="note" id="imprNote" hidden></div></div>
+
+  <h2>Availability timeline <span class="muted">(each cell = one run; green 200 · amber 403/blocked · red error/down)</span></h2>
+  <div class="card"><div class="tl" id="timeline"></div></div>
+
+  <h2>Current Search Console stats</h2>
+  <div class="grid" id="gscStats"></div>
+
+  <h2>Current findings</h2>
+  <div class="card" id="findingsCard">
+    <table id="findingsTable">
+      <thead><tr><th>Severity</th><th>Type</th><th>Site</th><th>Path</th><th>Message</th><th>Recommended fix</th></tr></thead>
+      <tbody></tbody>
+    </table>
+    <div class="note" id="findingsNote" hidden></div>
+  </div>
+
+  <div class="muted" style="margin-top:24px">
+    Data: <a href="./runs-index.json">runs-index.json</a> · <a href="./latest-summary.json">latest-summary.json</a> ·
+    auto-updated by the GitHub Actions workflow on the <code>data</code> branch.
+  </div>
+</div>
+
+<script>
+const PALETTE = ["#58a6ff", "#3fb950", "#d29922", "#bc8cff", "#ff7b72", "#39c5cf"];
+const shortTs = (s) => (s || "").replace("T", " ").replace(/(\+00:00|Z)$/, "").slice(5, 16);
+const round = (v, d = 0) => (v === null || v === undefined || isNaN(v)) ? null : Number(v.toFixed(d));
+const fmt = (v) => (v === null || v === undefined) ? "—" : v.toLocaleString();
+
+async function getJSON(path) {
+  try { const r = await fetch(path, { cache: "no-store" }); if (!r.ok) throw 0; return await r.json(); }
+  catch (e) { return null; }
+}
+
+function allDomains(runs, summary) {
+  const set = new Set();
+  (runs || []).forEach(r => Object.keys(r.sites || {}).forEach(d => set.add(d)));
+  Object.keys((summary && summary.sites) || {}).forEach(d => set.add(d));
+  return [...set];
+}
+
+function lineChart(canvasId, noteId, runs, domains, field, invert) {
+  const labels = runs.map(r => shortTs(r.timestamp_utc));
+  const datasets = domains.map((d, i) => ({
+    label: d,
+    data: runs.map(r => { const v = r.sites && r.sites[d] ? r.sites[d][field] : null; return (v === null || v === undefined) ? null : round(v, 1); }),
+    borderColor: PALETTE[i % PALETTE.length],
+    backgroundColor: PALETTE[i % PALETTE.length],
+    spanGaps: true, tension: 0.25, pointRadius: 2,
+  }));
+  const hasData = datasets.some(ds => ds.data.some(v => v !== null));
+  const note = document.getElementById(noteId);
+  if (!hasData) {
+    document.getElementById(canvasId).style.display = "none";
+    note.hidden = false; note.textContent = "No Search Console data yet — enable GSC credentials (see README) to populate this chart.";
+    return;
+  }
+  new Chart(document.getElementById(canvasId), {
+    type: "line",
+    data: { labels, datasets },
+    options: {
+      responsive: true, interaction: { mode: "index", intersect: false },
+      scales: {
+        x: { ticks: { color: "#8b949e", maxRotation: 0, autoSkip: true, maxTicksLimit: 12 }, grid: { color: "#2a3441" } },
+        y: { reverse: !!invert, ticks: { color: "#8b949e" }, grid: { color: "#2a3441" } },
+      },
+      plugins: { legend: { labels: { color: "#e6edf3" } } },
+    },
+  });
+}
+
+function dotClass(rec) {
+  if (!rec) return "grey";
+  const s = rec.worst_status;
+  if (s === 200) return "green";
+  if (s === 403) return "amber";
+  if (s === null || s === undefined) return rec.verdict === "OK" ? "green" : "red";
+  return "red";
+}
+
+function renderTimeline(runs, domains) {
+  const tl = document.getElementById("timeline");
+  tl.innerHTML = "";
+  domains.forEach(d => {
+    const row = document.createElement("div"); row.className = "tl-row";
+    const name = document.createElement("div"); name.className = "dom"; name.textContent = d;
+    const dots = document.createElement("div"); dots.className = "dots";
+    runs.forEach(r => {
+      const rec = r.sites && r.sites[d];
+      const dot = document.createElement("div");
+      dot.className = "dot " + dotClass(rec);
+      dot.title = shortTs(r.timestamp_utc) + " — " + (rec ? (rec.worst_status ?? rec.verdict ?? "?") : "no data");
+      dots.appendChild(dot);
+    });
+    row.appendChild(name); row.appendChild(dots); tl.appendChild(row);
+  });
+}
+
+function renderGsc(summary) {
+  const wrap = document.getElementById("gscStats");
+  wrap.innerHTML = "";
+  if (!summary || !summary.gsc_enabled) {
+    wrap.innerHTML = '<div class="note">Search Console not configured this run — add the <code>GSC_SERVICE_ACCOUNT_JSON</code> secret (see README) for Google\'s authoritative clicks, impressions and position.</div>';
+    return;
+  }
+  Object.entries(summary.sites || {}).forEach(([d, s]) => {
+    const g = s.gsc || {};
+    const card = document.createElement("div"); card.className = "stat";
+    card.innerHTML = `<div class="dom">${d}</div>
+      <div class="row"><span>Clicks</span><span>${fmt(g.clicks)}</span></div>
+      <div class="row"><span>Impressions</span><span>${fmt(g.impressions)}</span></div>
+      <div class="row"><span>Avg position</span><span>${g.position == null ? "—" : round(g.position, 1)}</span></div>
+      <div class="row"><span>CTR</span><span>${g.ctr == null ? "—" : round(g.ctr * 100, 1) + "%"}</span></div>`;
+    wrap.appendChild(card);
+  });
+}
+
+function renderFindings(latest) {
+  const tbody = document.querySelector("#findingsTable tbody");
+  const note = document.getElementById("findingsNote");
+  const findings = (latest && latest.findings) || [];
+  tbody.innerHTML = "";
+  if (!findings.length) {
+    document.getElementById("findingsTable").style.display = "none";
+    note.hidden = false; note.textContent = "No findings in the latest run.";
+    return;
+  }
+  // Generic: render whatever fields each finding has — future finding types appear automatically.
+  findings.forEach(f => {
+    const tr = document.createElement("tr");
+    tr.innerHTML = `<td><span class="sev ${f.severity || ""}">${f.severity || ""}</span></td>
+      <td><code>${f.type || ""}</code></td>
+      <td>${f.site || ""}</td>
+      <td>${f.path || ""}</td>
+      <td>${f.message || ""}</td>
+      <td>${f.fix || ""}</td>`;
+    tbody.appendChild(tr);
+  });
+}
+
+(async function () {
+  const [runs, latest] = await Promise.all([getJSON("./runs-index.json"), getJSON("./latest-summary.json")]);
+  const summary = latest && latest.summary;
+  const runsArr = runs || [];
+
+  // Header
+  const ts = (summary && summary.timestamp_utc) || (runsArr.length && runsArr[runsArr.length - 1].timestamp_utc) || "unknown";
+  document.getElementById("updated").textContent = "Last updated: " + ts + " · " + runsArr.length + " runs recorded";
+  const badges = document.getElementById("badges");
+  if (summary && summary.sites) {
+    Object.entries(summary.sites).forEach(([d, s]) => {
+      const b = document.createElement("span");
+      const ok = s.verdict === "OK";
+      b.className = "badge " + (ok ? "ok" : "issue");
+      b.textContent = d + " · " + (ok ? "OK" : "ISSUE") + (s.worst_status ? " (" + s.worst_status + ")" : "");
+      badges.appendChild(b);
+    });
+  } else if (!summary && !runsArr.length) {
+    badges.innerHTML = '<span class="note">No data found. Run the monitor (or wait for the scheduled workflow) to populate the dashboard.</span>';
+  }
+
+  const domains = allDomains(runsArr, summary);
+  if (window.Chart && runsArr.length) {
+    lineChart("posChart", "posNote", runsArr, domains, "gsc_position", true);
+    lineChart("imprChart", "imprNote", runsArr, domains, "gsc_impressions", false);
+  } else {
+    ["posNote", "imprNote"].forEach(id => { const n = document.getElementById(id); n.hidden = false; n.textContent = runsArr.length ? "Chart library failed to load." : "No runs recorded yet."; });
+    ["posChart", "imprChart"].forEach(id => document.getElementById(id).style.display = "none");
+  }
+  renderTimeline(runsArr, domains);
+  renderGsc(summary);
+  renderFindings(latest);
+})();
+</script>
+</body>
+</html>

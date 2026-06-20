@@ -13,7 +13,8 @@
         "gsc": {
           "clicks": 655010,
           "impressions": 1641547,
-          "position": 3.45
+          "position": 3.45,
+          "ctr": 0.399
         }
       },
       "totalsportek.bio": {
@@ -28,20 +29,232 @@
         "gsc": {
           "clicks": 316,
           "impressions": 7396,
-          "position": 9.5
+          "position": 9.5,
+          "ctr": 0.0427
         }
       }
     },
     "findings_counts": {
       "critical": 0,
-      "warning": 4,
-      "info": 12
+      "warning": 1,
+      "info": 14
     },
     "gsc_enabled": true,
-    "run_id": "20260620T220453Z",
-    "timestamp_utc": "2026-06-20T22:04:53+00:00"
+    "run_id": "20260620T221454Z",
+    "timestamp_utc": "2026-06-20T22:14:54+00:00"
   },
-  "json_file": "run-20260620T220453Z.json",
-  "md_file": "report-20260620T220453Z.md",
+  "json_file": "run-20260620T221454Z.json",
+  "md_file": "report-20260620T221454Z.md",
+  "findings": [
+    {
+      "type": "DUPLICATE_PAGE",
+      "severity": "warning",
+      "site": "totalsportek.tech / totalsportek.bio",
+      "path": "/dmca",
+      "message": "/dmca is 99% identical between totalsportek.tech and totalsportek.bio (threshold 90%) \u2014 likely duplicate content competing in search.",
+      "details": {
+        "combined": 0.9919,
+        "sequence_ratio": 0.9987,
+        "jaccard": 0.985,
+        "page_threshold": 0.9
+      },
+      "timestamp": "2026-06-20T22:14:15+00:00",
+      "fix": "Canonicalize the duplicate page to the preferred URL (rel=canonical) or 301-redirect it to the version you want to rank."
+    },
+    {
+      "type": "CONTENT_CHANGE",
+      "severity": "info",
+      "site": "totalsportek.tech",
+      "path": "/",
+      "message": "Page body changed (SHA-256 differs) for googlebot_desktop on / [googlebot_desktop].",
+      "details": {
+        "user_agent": "googlebot_desktop",
+        "previous_sha256": "c9a9628cb7ce9cbf753f0b18cabf68f09bf83acb1efacfe3e139d3e91e5133d6",
+        "current_sha256": "e509b281edd0d2bc8d3a15d585840d78e91c21ec61b9873d581d213e03d5e335"
+      },
+      "timestamp": "2026-06-20T22:14:54+00:00",
+      "fix": "Informational \u2014 the page body changed. Confirm the change was intended (content update vs. defacement, broken template, or a rotating token)."
+    },
+    {
+      "type": "CONTENT_CHANGE",
+      "severity": "info",
+      "site": "totalsportek.tech",
+      "path": "/",
+      "message": "Page body changed (SHA-256 differs) for googlebot_mobile on / [googlebot_mobile].",
+      "details": {
+        "user_agent": "googlebot_mobile",
+        "previous_sha256": "c9a9628cb7ce9cbf753f0b18cabf68f09bf83acb1efacfe3e139d3e91e5133d6",
+        "current_sha256": "e509b281edd0d2bc8d3a15d585840d78e91c21ec61b9873d581d213e03d5e335"
+      },
+      "timestamp": "2026-06-20T22:14:54+00:00",
+      "fix": "Informational \u2014 the page body changed. Confirm the change was intended (content update vs. defacement, broken template, or a rotating token)."
+    },
+    {
+      "type": "CONTENT_CHANGE",
+      "severity": "info",
+      "site": "totalsportek.tech",
+      "path": "/",
+      "message": "Page body changed (SHA-256 differs) for browser on / [browser].",
+      "details": {
+        "user_agent": "browser",
+        "previous_sha256": "c9a9628cb7ce9cbf753f0b18cabf68f09bf83acb1efacfe3e139d3e91e5133d6",
+        "current_sha256": "e509b281edd0d2bc8d3a15d585840d78e91c21ec61b9873d581d213e03d5e335"
+      },
+      "timestamp": "2026-06-20T22:14:54+00:00",
+      "fix": "Informational \u2014 the page body changed. Confirm the change was intended (content update vs. defacement, broken template, or a rotating token)."
+    },
+    {
+      "type": "CONTENT_CHANGE",
+      "severity": "info",
+      "site": "totalsportek.tech",
+      "path": "/dmca",
+      "message": "Page body changed (SHA-256 differs) for googlebot_desktop on /dmca [googlebot_desktop].",
+      "details": {
+        "user_agent": "googlebot_desktop",
+        "previous_sha256": "8bf7ec993e8e8a9a39da5f6f1157bc47d19153826d3126db28ac303e843991c3",
+        "current_sha256": "c3a304b9bf6e6b387d90416f33540584e76a86ad08924a731a63dc722dc87fa0"
+      },
+      "timestamp": "2026-06-20T22:14:54+00:00",
+      "fix": "Informational \u2014 the page body changed. Confirm the change was intended (content update vs. defacement, broken template, or a rotating token)."
+    },
+    {
+      "type": "CONTENT_CHANGE",
+      "severity": "info",
+      "site": "totalsportek.tech",
+      "path": "/dmca",
+      "message": "Page body changed (SHA-256 differs) for googlebot_mobile on /dmca [googlebot_mobile].",
+      "details": {
+        "user_agent": "googlebot_mobile",
+        "previous_sha256": "6e6f0a41a6e16137993224d4fc8139691b942aa777b5766296a61f4f3f950411",
+        "current_sha256": "69898684011fe3450ca243921ac0820e925f5c9a405e0f99a09978d5fe56c486"
+      },
+      "timestamp": "2026-06-20T22:14:54+00:00",
+      "fix": "Informational \u2014 the page body changed. Confirm the change was intended (content update vs. defacement, broken template, or a rotating token)."
+    },
+    {
+      "type": "CONTENT_CHANGE",
+      "severity": "info",
+      "site": "totalsportek.tech",
+      "path": "/dmca",
+      "message": "Page body changed (SHA-256 differs) for browser on /dmca [browser].",
+      "details": {
+        "user_agent": "browser",
+        "previous_sha256": "af94c85075a147b5dee546ea70940e67695a3236c2f3d9c2bc1dd0852c3c79ac",
+        "current_sha256": "10452be99e791299f8df58f37a60ae39ca6040e1290b053462d1cabc5c5fbf74"
+      },
+      "timestamp": "2026-06-20T22:14:54+00:00",
+      "fix": "Informational \u2014 the page body changed. Confirm the change was intended (content update vs. defacement, broken template, or a rotating token)."
+    },
+    {
+      "type": "CONTENT_CHANGE",
+      "severity": "info",
+      "site": "totalsportek.bio",
+      "path": "/",
+      "message": "Page body changed (SHA-256 differs) for googlebot_desktop on / [googlebot_desktop].",
+      "details": {
+        "user_agent": "googlebot_desktop",
+        "previous_sha256": "bf41f3f415bdc83884af1d15c2169cef69b9977c27ac0e3d5327633f2574ee26",
+        "current_sha256": "e72469c5e99047143c05f6a342ad8431e7cfba034dd211429fc600d4fa869fb5"
+      },
+      "timestamp": "2026-06-20T22:14:54+00:00",
+      "fix": "Informational \u2014 the page body changed. Confirm the change was intended (content update vs. defacement, broken template, or a rotating token)."
+    },
+    {
+      "type": "CONTENT_CHANGE",
+      "severity": "info",
+      "site": "totalsportek.bio",
+      "path": "/",
+      "message": "Page body changed (SHA-256 differs) for googlebot_mobile on / [googlebot_mobile].",
+      "details": {
+        "user_agent": "googlebot_mobile",
+        "previous_sha256": "bf41f3f415bdc83884af1d15c2169cef69b9977c27ac0e3d5327633f2574ee26",
+        "current_sha256": "e72469c5e99047143c05f6a342ad8431e7cfba034dd211429fc600d4fa869fb5"
+      },
+      "timestamp": "2026-06-20T22:14:54+00:00",
+      "fix": "Informational \u2014 the page body changed. Confirm the change was intended (content update vs. defacement, broken template, or a rotating token)."
+    },
+    {
+      "type": "CONTENT_CHANGE",
+      "severity": "info",
+      "site": "totalsportek.bio",
+      "path": "/",
+      "message": "Page body changed (SHA-256 differs) for browser on / [browser].",
+      "details": {
+        "user_agent": "browser",
+        "previous_sha256": "bf41f3f415bdc83884af1d15c2169cef69b9977c27ac0e3d5327633f2574ee26",
+        "current_sha256": "e72469c5e99047143c05f6a342ad8431e7cfba034dd211429fc600d4fa869fb5"
+      },
+      "timestamp": "2026-06-20T22:14:54+00:00",
+      "fix": "Informational \u2014 the page body changed. Confirm the change was intended (content update vs. defacement, broken template, or a rotating token)."
+    },
+    {
+      "type": "CONTENT_CHANGE",
+      "severity": "info",
+      "site": "totalsportek.bio",
+      "path": "/dmca",
+      "message": "Page body changed (SHA-256 differs) for googlebot_desktop on /dmca [googlebot_desktop].",
+      "details": {
+        "user_agent": "googlebot_desktop",
+        "previous_sha256": "25f47dff0e9b4e72b9ac83541e58c1426344fc41fb3f81f8ceffad101cc7739b",
+        "current_sha256": "16867187c8e17a0ee4f57cbb503dbdaf97f3df2ad86683a36a84a8cbe5c0cee1"
+      },
+      "timestamp": "2026-06-20T22:14:54+00:00",
+      "fix": "Informational \u2014 the page body changed. Confirm the change was intended (content update vs. defacement, broken template, or a rotating token)."
+    },
+    {
+      "type": "CONTENT_CHANGE",
+      "severity": "info",
+      "site": "totalsportek.bio",
+      "path": "/dmca",
+      "message": "Page body changed (SHA-256 differs) for googlebot_mobile on /dmca [googlebot_mobile].",
+      "details": {
+        "user_agent": "googlebot_mobile",
+        "previous_sha256": "4b616e23d831f88fcf42673755b624ab069b77b8a0169747ec6d54d08f1b3380",
+        "current_sha256": "ce314dad8bd6db088eb3c7211f1d2394c34ae6fd4674d87b02f552f644d28195"
+      },
+      "timestamp": "2026-06-20T22:14:54+00:00",
+      "fix": "Informational \u2014 the page body changed. Confirm the change was intended (content update vs. defacement, broken template, or a rotating token)."
+    },
+    {
+      "type": "CONTENT_CHANGE",
+      "severity": "info",
+      "site": "totalsportek.bio",
+      "path": "/dmca",
+      "message": "Page body changed (SHA-256 differs) for browser on /dmca [browser].",
+      "details": {
+        "user_agent": "browser",
+        "previous_sha256": "e750a4d1cc37d6ed3d194d99d32221ab8169d1aa18b2e930cf5306d469d5d639",
+        "current_sha256": "75bc8f0ca57c78b0d92903c832b1007034a0d148debc34395b3fd6fd4e5f5778"
+      },
+      "timestamp": "2026-06-20T22:14:54+00:00",
+      "fix": "Informational \u2014 the page body changed. Confirm the change was intended (content update vs. defacement, broken template, or a rotating token)."
+    },
+    {
+      "type": "NOINDEX_PAGE",
+      "severity": "info",
+      "site": "totalsportek.tech",
+      "path": "https://totalsportek.tech/dmca",
+      "message": "https://totalsportek.tech/dmca is intentionally excluded from Google's index (indexingState=BLOCKED_BY_META_TAG, coverageState=Excluded by \u2018noindex\u2019 tag). Expected.",
+      "details": {
+        "indexingState": "BLOCKED_BY_META_TAG",
+        "coverageState": "Excluded by \u2018noindex\u2019 tag"
+      },
+      "timestamp": "2026-06-20T22:14:54+00:00",
+      "fix": "Expected \u2014 the page is intentionally noindex (e.g. /dmca). No action needed unless this page should actually rank, in which case remove its noindex meta tag / X-Robots-Tag header."
+    },
+    {
+      "type": "NOINDEX_PAGE",
+      "severity": "info",
+      "site": "totalsportek.bio",
+      "path": "https://totalsportek.bio/dmca",
+      "message": "https://totalsportek.bio/dmca is intentionally excluded from Google's index (indexingState=BLOCKED_BY_META_TAG, coverageState=Excluded by \u2018noindex\u2019 tag). Expected.",
+      "details": {
+        "indexingState": "BLOCKED_BY_META_TAG",
+        "coverageState": "Excluded by \u2018noindex\u2019 tag"
+      },
+      "timestamp": "2026-06-20T22:14:54+00:00",
+      "fix": "Expected \u2014 the page is intentionally noindex (e.g. /dmca). No action needed unless this page should actually rank, in which case remove its noindex meta tag / X-Robots-Tag header."
+    }
+  ],
   "critical_findings": []
 }
