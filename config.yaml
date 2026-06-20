@@ -1,0 +1,70 @@
+# =============================================================================
+# SEO Monitor configuration
+# -----------------------------------------------------------------------------
+# Everything that varies between deployments lives here. To monitor a new site
+# (e.g. Footybite) just add an entry under `sites` and, if you want to compare
+# it against another domain for duplicate content, add a pair under
+# `duplicate_compare.pairs`. No code changes required.
+# =============================================================================
+
+# Sites to monitor. `paths` are appended to https://<domain> and each is checked
+# with every user-agent below.
+sites:
+  - domain: totalsportek.tech
+    paths:
+      - /
+      - /football
+      - /live
+  - domain: totalsportek.bio
+    paths:
+      - /
+      - /football
+      - /live
+
+# Keywords we ultimately want to rank for. Phase 1 only records these for
+# context (Search Console integration that uses them lands in Phase 2).
+keywords:
+  - totalsportek
+  - football streams
+  - live football
+
+# Schedule for the GitHub Actions run. Standard 5-field cron, UTC.
+schedule:
+  cron: "0 * * * *"   # hourly, on the hour
+
+# Alerting / detection thresholds.
+thresholds:
+  open_issue_on_403: true        # open a GitHub Issue when a 403 is seen
+  duplicate_similarity: 0.8      # flag DUPLICATE_CONTENT above this ratio (0-1)
+  ssl_expiry_warning_days: 14    # warn when a cert expires within N days
+  latency_spike_multiplier: 2.0  # flag when response time > N x previous run
+
+# HTTP request behaviour.
+request:
+  timeout_seconds: 20
+  delay_seconds: 1.5             # polite delay between requests
+  max_redirects: 10
+  verify_ssl: true
+
+# User-agents to test. The labels are referenced by the comparison logic, so
+# keep `googlebot_desktop`, `googlebot_mobile` and `browser` present.
+user_agents:
+  googlebot_desktop: "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+  googlebot_mobile: "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+  browser: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+
+# Which labelled user-agents count as "Googlebot" for CRAWLER_BLOCKED detection.
+crawler_user_agents:
+  - googlebot_desktop
+  - googlebot_mobile
+
+# The reference (real browser) user-agent label used as the "should work"
+# baseline in CRAWLER_BLOCKED detection.
+browser_user_agent: browser
+
+# Duplicate-content comparison pairs. Each pair is two domains whose matching
+# paths are compared. Paths compared are the intersection of the two sites'
+# `paths` lists.
+duplicate_compare:
+  pairs:
+    - [totalsportek.tech, totalsportek.bio]
