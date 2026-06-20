@@ -1,0 +1,451 @@
+{
+  "timestamp_utc": "2026-06-20T21:16:14+00:00",
+  "run_id": "20260620T211614Z",
+  "monitor": {
+    "timestamp_utc": "2026-06-20T21:16:08+00:00",
+    "checks": [
+      {
+        "url": "https://totalsportek.tech/",
+        "status_code": 200,
+        "response_time_ms": 69.1,
+        "ttfb_ms": 67.4,
+        "final_url": "https://totalsportek.tech/",
+        "redirect_chain": [],
+        "content_length": 578895,
+        "body_sha256": "5569637633cc9c269c6967d546704d871eae4b6971d8a3b8cbe91a46a25a4f87",
+        "error": null,
+        "site": "totalsportek.tech",
+        "path": "/",
+        "user_agent_label": "googlebot_desktop"
+      },
+      {
+        "url": "https://totalsportek.tech/",
+        "status_code": 200,
+        "response_time_ms": 48.2,
+        "ttfb_ms": 46.6,
+        "final_url": "https://totalsportek.tech/",
+        "redirect_chain": [],
+        "content_length": 578895,
+        "body_sha256": "5569637633cc9c269c6967d546704d871eae4b6971d8a3b8cbe91a46a25a4f87",
+        "error": null,
+        "site": "totalsportek.tech",
+        "path": "/",
+        "user_agent_label": "googlebot_mobile"
+      },
+      {
+        "url": "https://totalsportek.tech/",
+        "status_code": 200,
+        "response_time_ms": 138.0,
+        "ttfb_ms": 136.6,
+        "final_url": "https://totalsportek.tech/",
+        "redirect_chain": [],
+        "content_length": 578895,
+        "body_sha256": "157c5bbf3b6e00b1e79fdb2cfdab793f87e1b1d33f372f21da2a017d2f908b70",
+        "error": null,
+        "site": "totalsportek.tech",
+        "path": "/",
+        "user_agent_label": "browser"
+      },
+      {
+        "url": "https://totalsportek.tech/dmca",
+        "status_code": 200,
+        "response_time_ms": 327.2,
+        "ttfb_ms": 326.9,
+        "final_url": "https://totalsportek.tech/dmca",
+        "redirect_chain": [],
+        "content_length": 38978,
+        "body_sha256": "bc16a442c069ac9cb80fa01ac782f6dd368b84ab23a2c6dccb5b747da5c70259",
+        "error": null,
+        "site": "totalsportek.tech",
+        "path": "/dmca",
+        "user_agent_label": "googlebot_desktop"
+      },
+      {
+        "url": "https://totalsportek.tech/dmca",
+        "status_code": 200,
+        "response_time_ms": 291.1,
+        "ttfb_ms": 290.8,
+        "final_url": "https://totalsportek.tech/dmca",
+        "redirect_chain": [],
+        "content_length": 38978,
+        "body_sha256": "16baa361351b5a15f6a1176d429d38a83cae548a12947d9a192edbe355f46d49",
+        "error": null,
+        "site": "totalsportek.tech",
+        "path": "/dmca",
+        "user_agent_label": "googlebot_mobile"
+      },
+      {
+        "url": "https://totalsportek.tech/dmca",
+        "status_code": 200,
+        "response_time_ms": 332.5,
+        "ttfb_ms": 332.1,
+        "final_url": "https://totalsportek.tech/dmca",
+        "redirect_chain": [],
+        "content_length": 38978,
+        "body_sha256": "36f3b9427dc894b32fd6677ff5611b0a02412e0e33b3cd90331647bfdef6436a",
+        "error": null,
+        "site": "totalsportek.tech",
+        "path": "/dmca",
+        "user_agent_label": "browser"
+      },
+      {
+        "url": "https://totalsportek.bio/",
+        "status_code": 200,
+        "response_time_ms": 76.2,
+        "ttfb_ms": 74.7,
+        "final_url": "https://totalsportek.bio/",
+        "redirect_chain": [],
+        "content_length": 578753,
+        "body_sha256": "78c47308d0e62cac5121ae0a71af4cc1642cc294ea7547c407e3409908b25ee9",
+        "error": null,
+        "site": "totalsportek.bio",
+        "path": "/",
+        "user_agent_label": "googlebot_desktop"
+      },
+      {
+        "url": "https://totalsportek.bio/",
+        "status_code": 200,
+        "response_time_ms": 51.5,
+        "ttfb_ms": 50.0,
+        "final_url": "https://totalsportek.bio/",
+        "redirect_chain": [],
+        "content_length": 578753,
+        "body_sha256": "78c47308d0e62cac5121ae0a71af4cc1642cc294ea7547c407e3409908b25ee9",
+        "error": null,
+        "site": "totalsportek.bio",
+        "path": "/",
+        "user_agent_label": "googlebot_mobile"
+      },
+      {
+        "url": "https://totalsportek.bio/",
+        "status_code": 200,
+        "response_time_ms": 57.5,
+        "ttfb_ms": 56.1,
+        "final_url": "https://totalsportek.bio/",
+        "redirect_chain": [],
+        "content_length": 578753,
+        "body_sha256": "78c47308d0e62cac5121ae0a71af4cc1642cc294ea7547c407e3409908b25ee9",
+        "error": null,
+        "site": "totalsportek.bio",
+        "path": "/",
+        "user_agent_label": "browser"
+      },
+      {
+        "url": "https://totalsportek.bio/dmca",
+        "status_code": 200,
+        "response_time_ms": 296.2,
+        "ttfb_ms": 295.8,
+        "final_url": "https://totalsportek.bio/dmca",
+        "redirect_chain": [],
+        "content_length": 38864,
+        "body_sha256": "cd80261da61826fc1fd289626e2ca7278c87286a6ec605bafede6c7f53190473",
+        "error": null,
+        "site": "totalsportek.bio",
+        "path": "/dmca",
+        "user_agent_label": "googlebot_desktop"
+      },
+      {
+        "url": "https://totalsportek.bio/dmca",
+        "status_code": 200,
+        "response_time_ms": 119.2,
+        "ttfb_ms": 118.9,
+        "final_url": "https://totalsportek.bio/dmca",
+        "redirect_chain": [],
+        "content_length": 38864,
+        "body_sha256": "43399b5e61947e1684b78c41dd0f9037321ca94a5502e1ed62481a305fd66c86",
+        "error": null,
+        "site": "totalsportek.bio",
+        "path": "/dmca",
+        "user_agent_label": "googlebot_mobile"
+      },
+      {
+        "url": "https://totalsportek.bio/dmca",
+        "status_code": 200,
+        "response_time_ms": 310.9,
+        "ttfb_ms": 310.6,
+        "final_url": "https://totalsportek.bio/dmca",
+        "redirect_chain": [],
+        "content_length": 38864,
+        "body_sha256": "c4b9601e86d39decc71c7bd3bff45fdd4d2dfc9b2a32728503417527d8f6aa13",
+        "error": null,
+        "site": "totalsportek.bio",
+        "path": "/dmca",
+        "user_agent_label": "browser"
+      }
+    ],
+    "findings": []
+  },
+  "duplicates": {
+    "timestamp_utc": "2026-06-20T21:16:08+00:00",
+    "pairs": [
+      {
+        "domain_a": "totalsportek.tech",
+        "domain_b": "totalsportek.bio",
+        "pages": [
+          {
+            "path": "/",
+            "status_a": 200,
+            "status_b": 200,
+            "error_a": null,
+            "error_b": null,
+            "sequence_ratio": 0.1426,
+            "jaccard": 0.1909,
+            "combined": 0.1668
+          },
+          {
+            "path": "/dmca",
+            "status_a": 200,
+            "status_b": 200,
+            "error_a": null,
+            "error_b": null,
+            "sequence_ratio": 0.9987,
+            "jaccard": 0.985,
+            "combined": 0.9919
+          }
+        ],
+        "overall_similarity": 0.5794,
+        "pages_compared": 2
+      }
+    ],
+    "findings": [
+      {
+        "type": "DUPLICATE_PAGE",
+        "severity": "warning",
+        "site": "totalsportek.tech / totalsportek.bio",
+        "path": "/dmca",
+        "message": "/dmca is 99% identical between totalsportek.tech and totalsportek.bio (threshold 90%) \u2014 likely duplicate content competing in search.",
+        "details": {
+          "combined": 0.9919,
+          "sequence_ratio": 0.9987,
+          "jaccard": 0.985,
+          "page_threshold": 0.9
+        },
+        "timestamp": "2026-06-20T21:16:08+00:00"
+      }
+    ]
+  },
+  "gsc": {
+    "enabled": false,
+    "timestamp_utc": "2026-06-20T21:16:14+00:00",
+    "sites": {},
+    "findings": [],
+    "reason": "GSC credentials not configured (set GSC_SERVICE_ACCOUNT_JSON or GSC_SERVICE_ACCOUNT_FILE)"
+  },
+  "findings": [
+    {
+      "type": "DUPLICATE_PAGE",
+      "severity": "warning",
+      "site": "totalsportek.tech / totalsportek.bio",
+      "path": "/dmca",
+      "message": "/dmca is 99% identical between totalsportek.tech and totalsportek.bio (threshold 90%) \u2014 likely duplicate content competing in search.",
+      "details": {
+        "combined": 0.9919,
+        "sequence_ratio": 0.9987,
+        "jaccard": 0.985,
+        "page_threshold": 0.9
+      },
+      "timestamp": "2026-06-20T21:16:08+00:00"
+    },
+    {
+      "type": "LATENCY_SPIKE",
+      "severity": "warning",
+      "site": "totalsportek.tech",
+      "path": "/",
+      "message": "Latency 46ms -> 138ms (>2x) for browser on / [browser].",
+      "details": {
+        "user_agent": "browser",
+        "previous_ms": 46.1,
+        "current_ms": 138.0
+      },
+      "timestamp": "2026-06-20T21:16:14+00:00"
+    },
+    {
+      "type": "CONTENT_CHANGE",
+      "severity": "info",
+      "site": "totalsportek.tech",
+      "path": "/",
+      "message": "Page body changed (SHA-256 differs) for googlebot_desktop on / [googlebot_desktop].",
+      "details": {
+        "user_agent": "googlebot_desktop",
+        "previous_sha256": "17ba3a3c1ca20699a694a29eb86cbcd1b5dc0992f0c6e954a5d4be6ba195f4c6",
+        "current_sha256": "5569637633cc9c269c6967d546704d871eae4b6971d8a3b8cbe91a46a25a4f87"
+      },
+      "timestamp": "2026-06-20T21:16:14+00:00"
+    },
+    {
+      "type": "CONTENT_CHANGE",
+      "severity": "info",
+      "site": "totalsportek.tech",
+      "path": "/",
+      "message": "Page body changed (SHA-256 differs) for googlebot_mobile on / [googlebot_mobile].",
+      "details": {
+        "user_agent": "googlebot_mobile",
+        "previous_sha256": "17ba3a3c1ca20699a694a29eb86cbcd1b5dc0992f0c6e954a5d4be6ba195f4c6",
+        "current_sha256": "5569637633cc9c269c6967d546704d871eae4b6971d8a3b8cbe91a46a25a4f87"
+      },
+      "timestamp": "2026-06-20T21:16:14+00:00"
+    },
+    {
+      "type": "CONTENT_CHANGE",
+      "severity": "info",
+      "site": "totalsportek.tech",
+      "path": "/",
+      "message": "Page body changed (SHA-256 differs) for browser on / [browser].",
+      "details": {
+        "user_agent": "browser",
+        "previous_sha256": "17ba3a3c1ca20699a694a29eb86cbcd1b5dc0992f0c6e954a5d4be6ba195f4c6",
+        "current_sha256": "157c5bbf3b6e00b1e79fdb2cfdab793f87e1b1d33f372f21da2a017d2f908b70"
+      },
+      "timestamp": "2026-06-20T21:16:14+00:00"
+    },
+    {
+      "type": "CONTENT_CHANGE",
+      "severity": "info",
+      "site": "totalsportek.tech",
+      "path": "/dmca",
+      "message": "Page body changed (SHA-256 differs) for googlebot_desktop on /dmca [googlebot_desktop].",
+      "details": {
+        "user_agent": "googlebot_desktop",
+        "previous_sha256": "27a800e7ddd5da7db9215a35ed27e33a093c4aaf5b26452dd8c3925d06e089b6",
+        "current_sha256": "bc16a442c069ac9cb80fa01ac782f6dd368b84ab23a2c6dccb5b747da5c70259"
+      },
+      "timestamp": "2026-06-20T21:16:14+00:00"
+    },
+    {
+      "type": "CONTENT_CHANGE",
+      "severity": "info",
+      "site": "totalsportek.tech",
+      "path": "/dmca",
+      "message": "Page body changed (SHA-256 differs) for googlebot_mobile on /dmca [googlebot_mobile].",
+      "details": {
+        "user_agent": "googlebot_mobile",
+        "previous_sha256": "9d4f52c632190bf7a90043394f96c965358ea1c657a3ce37e3c9b4c4dfdd8093",
+        "current_sha256": "16baa361351b5a15f6a1176d429d38a83cae548a12947d9a192edbe355f46d49"
+      },
+      "timestamp": "2026-06-20T21:16:14+00:00"
+    },
+    {
+      "type": "CONTENT_CHANGE",
+      "severity": "info",
+      "site": "totalsportek.tech",
+      "path": "/dmca",
+      "message": "Page body changed (SHA-256 differs) for browser on /dmca [browser].",
+      "details": {
+        "user_agent": "browser",
+        "previous_sha256": "22a92802488246064981baf91258a11561dd1876b6176f917c02e87f22065554",
+        "current_sha256": "36f3b9427dc894b32fd6677ff5611b0a02412e0e33b3cd90331647bfdef6436a"
+      },
+      "timestamp": "2026-06-20T21:16:14+00:00"
+    },
+    {
+      "type": "CONTENT_CHANGE",
+      "severity": "info",
+      "site": "totalsportek.bio",
+      "path": "/",
+      "message": "Page body changed (SHA-256 differs) for googlebot_desktop on / [googlebot_desktop].",
+      "details": {
+        "user_agent": "googlebot_desktop",
+        "previous_sha256": "229f1ab4237439c66e6326afb2af6cb03e2860ee06783cccb67a3e5fd32f4b50",
+        "current_sha256": "78c47308d0e62cac5121ae0a71af4cc1642cc294ea7547c407e3409908b25ee9"
+      },
+      "timestamp": "2026-06-20T21:16:14+00:00"
+    },
+    {
+      "type": "CONTENT_CHANGE",
+      "severity": "info",
+      "site": "totalsportek.bio",
+      "path": "/",
+      "message": "Page body changed (SHA-256 differs) for googlebot_mobile on / [googlebot_mobile].",
+      "details": {
+        "user_agent": "googlebot_mobile",
+        "previous_sha256": "229f1ab4237439c66e6326afb2af6cb03e2860ee06783cccb67a3e5fd32f4b50",
+        "current_sha256": "78c47308d0e62cac5121ae0a71af4cc1642cc294ea7547c407e3409908b25ee9"
+      },
+      "timestamp": "2026-06-20T21:16:14+00:00"
+    },
+    {
+      "type": "CONTENT_CHANGE",
+      "severity": "info",
+      "site": "totalsportek.bio",
+      "path": "/",
+      "message": "Page body changed (SHA-256 differs) for browser on / [browser].",
+      "details": {
+        "user_agent": "browser",
+        "previous_sha256": "229f1ab4237439c66e6326afb2af6cb03e2860ee06783cccb67a3e5fd32f4b50",
+        "current_sha256": "78c47308d0e62cac5121ae0a71af4cc1642cc294ea7547c407e3409908b25ee9"
+      },
+      "timestamp": "2026-06-20T21:16:14+00:00"
+    },
+    {
+      "type": "CONTENT_CHANGE",
+      "severity": "info",
+      "site": "totalsportek.bio",
+      "path": "/dmca",
+      "message": "Page body changed (SHA-256 differs) for googlebot_desktop on /dmca [googlebot_desktop].",
+      "details": {
+        "user_agent": "googlebot_desktop",
+        "previous_sha256": "ecb709e295c8e245f2b45565e719024c9690ec450def43dfcc06639be6678b5b",
+        "current_sha256": "cd80261da61826fc1fd289626e2ca7278c87286a6ec605bafede6c7f53190473"
+      },
+      "timestamp": "2026-06-20T21:16:14+00:00"
+    },
+    {
+      "type": "CONTENT_CHANGE",
+      "severity": "info",
+      "site": "totalsportek.bio",
+      "path": "/dmca",
+      "message": "Page body changed (SHA-256 differs) for googlebot_mobile on /dmca [googlebot_mobile].",
+      "details": {
+        "user_agent": "googlebot_mobile",
+        "previous_sha256": "28463710ded7a3720c4f57464f3b08aaee3dbffc0a51520adb433964843120fb",
+        "current_sha256": "43399b5e61947e1684b78c41dd0f9037321ca94a5502e1ed62481a305fd66c86"
+      },
+      "timestamp": "2026-06-20T21:16:14+00:00"
+    },
+    {
+      "type": "CONTENT_CHANGE",
+      "severity": "info",
+      "site": "totalsportek.bio",
+      "path": "/dmca",
+      "message": "Page body changed (SHA-256 differs) for browser on /dmca [browser].",
+      "details": {
+        "user_agent": "browser",
+        "previous_sha256": "af3c4ebf6684e9a5e50ac2ebfed4cf74daabab59f86442e74af762f8758064fd",
+        "current_sha256": "c4b9601e86d39decc71c7bd3bff45fdd4d2dfc9b2a32728503417527d8f6aa13"
+      },
+      "timestamp": "2026-06-20T21:16:14+00:00"
+    }
+  ],
+  "summary": {
+    "sites": {
+      "totalsportek.tech": {
+        "homepage_status": {
+          "googlebot_desktop": 200,
+          "googlebot_mobile": 200,
+          "browser": 200
+        },
+        "worst_status": 200,
+        "any_error": false,
+        "verdict": "OK"
+      },
+      "totalsportek.bio": {
+        "homepage_status": {
+          "googlebot_desktop": 200,
+          "googlebot_mobile": 200,
+          "browser": 200
+        },
+        "worst_status": 200,
+        "any_error": false,
+        "verdict": "OK"
+      }
+    },
+    "findings_counts": {
+      "critical": 0,
+      "warning": 2,
+      "info": 12
+    },
+    "gsc_enabled": false,
+    "run_id": "20260620T211614Z",
+    "timestamp_utc": "2026-06-20T21:16:14+00:00"
+  }
+}
