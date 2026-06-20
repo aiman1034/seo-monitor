@@ -2,3 +2,7 @@ requests==2.32.3
 beautifulsoup4==4.12.3
 lxml==5.3.0
 PyYAML==6.0.2
+
+# Phase 2: Google Search Console API (authoritative crawl signal)
+google-api-python-client==2.197.0
+google-auth==2.55.0

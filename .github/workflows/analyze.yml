@@ -60,6 +60,9 @@ jobs:
       - name: Run SEO monitor
         env:
           SEO_MONITOR_DATA_DIR: ${{ github.workspace }}/data_branch
+          # Authoritative crawl signal. If the secret is unset this is an empty
+          # string and the GSC collector no-ops — the job still succeeds.
+          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
         run: python scripts/run_all.py
 
       - name: Commit results to data branch

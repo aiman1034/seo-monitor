@@ -26,7 +26,7 @@ once the scheduled workflow has run._
 ```
 config.yaml ──► run_all.py ──► monitor_response ─┐
                                 compare_duplicates ├─► analyze ──► report ──► data branch
-                                                  ─┘                          + README status
+                                gsc (Search Console)┘                         + README status
 ```
 
 - **monitor_response** — for each site × each user-agent (Googlebot desktop,
@@ -41,9 +41,16 @@ config.yaml ──► run_all.py ──► monitor_response ─┐
   `DUPLICATE_CONTENT` (critical) when the overall average exceeds the threshold,
   and `DUPLICATE_PAGE` (warning) when any single page is near-identical across
   the pair — catching one duplicated page the average would otherwise hide.
+- **gsc** — pulls Google's own data via the Search Console API (Search Analytics
+  clicks/impressions/position + URL Inspection). This is the **authoritative
+  crawl signal** (see below). Flags `GOOGLE_FETCH_FAIL` when Google itself can't
+  fetch a key URL; `DEINDEXED`, `POSITION_DROP` and `IMPRESSIONS_DROP` are
+  derived in `analyze` by diffing against the previous GSC snapshot. No-ops
+  cleanly when credentials aren't configured.
 - **analyze** — diffs the current run against the previous run and emits
   `findings` (new 403s, status-code changes, latency spikes, content-hash
-  changes on key pages, plus the flags above).
+  changes on key pages, `RUNNER_IP_BLOCKED`, the GSC deltas, plus the flags
+  above).
 - **report** — writes a timestamped JSON + a human-readable markdown report and
   updates the status block + badges in this README.
 
@@ -92,6 +99,42 @@ multiplier), request timing, and the user-agents to test. **To add a site (e.g.
 Footybite) just add an entry under `sites`** — no code changes needed. To
 compare two domains for duplicate content, add the pair under
 `duplicate_compare.pairs`.
+
+## Google Search Console — the authoritative crawl signal
+
+**Why GSC matters here.** A live test showed both sites return **HTTP 403 to
+every user-agent — including a normal browser — from a datacenter IP** (classic
+Cloudflare bot protection). GitHub Actions runners are also datacenter IPs, so a
+fetch-based check from the runner will see 403 even when the sites are perfectly
+fine for real users and for Google. A 403 from our runner therefore tells us
+about *our IP*, not about the site (the monitor records this as the
+`RUNNER_IP_BLOCKED` warning rather than a critical alert). The real question —
+"can Google crawl these sites?" — can only be answered by Google, which crawls
+from its own allowlisted IPs. The Search Console **URL Inspection API** reports
+exactly that: its `pageFetchState` is the authoritative answer, and drives the
+critical `GOOGLE_FETCH_FAIL` / `DEINDEXED` alerts.
+
+**Setup checklist (one-time):**
+
+1. In the [Google Cloud Console](https://console.cloud.google.com/), create a
+   project and **enable the "Google Search Console API"**.
+2. Create a **service account**, then create a **JSON key** for it and download
+   the key file.
+3. In [Search Console](https://search.google.com/search-console), open each
+   property and under **Settings → Users and permissions** add the service
+   account's email (`...@...iam.gserviceaccount.com`) as a user — **Restricted**
+   permission is enough. Do this on **both** `sc-domain:totalsportek.tech` and
+   `sc-domain:totalsportek.bio`.
+4. In the GitHub repo, add the **entire JSON key contents** as an Actions secret
+   named **`GSC_SERVICE_ACCOUNT_JSON`** (Settings → Secrets and variables →
+   Actions → New repository secret).
+5. For local use, instead set `GSC_SERVICE_ACCOUNT_FILE=/path/to/key.json` (or
+   export the same `GSC_SERVICE_ACCOUNT_JSON` string). With neither set, the GSC
+   collector simply no-ops and the rest of the pipeline runs normally.
+
+Tune the window/thresholds under `gsc:` in [`config.yaml`](config.yaml)
+(`lookback_days`, `position_drop_threshold`, `impressions_drop_pct`). Note GSC
+Search Analytics data lags ~2–3 days.
 
 ## Automation & alerting
 

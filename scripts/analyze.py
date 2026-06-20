@@ -91,6 +91,7 @@ def analyze(
     # 1. Carry forward findings already raised by the check modules.
     findings.extend(current.get("monitor", {}).get("findings", []))
     findings.extend(current.get("duplicates", {}).get("findings", []))
+    findings.extend(current.get("gsc", {}).get("findings", []))
 
     cur_checks = current.get("monitor", {}).get("checks", [])
     prev_idx = _index_checks(previous)
@@ -239,6 +240,17 @@ def analyze(
                 }
             )
 
+    # 6. GSC delta findings (need previous-run context, which lives here):
+    #    DEINDEXED, POSITION_DROP, IMPRESSIONS_DROP.
+    findings.extend(
+        _gsc_delta_findings(
+            current.get("gsc", {}),
+            (previous or {}).get("gsc", {}),
+            config,
+            now,
+        )
+    )
+
     order = {"critical": 0, "warning": 1, "info": 2}
     findings.sort(key=lambda f: order.get(f.get("severity"), 3))
 
@@ -254,6 +266,159 @@ def analyze(
     return findings
 
 
+def _gsc_delta_findings(
+    cur_gsc: Dict[str, Any],
+    prev_gsc: Dict[str, Any],
+    config: Dict[str, Any],
+    now: str,
+) -> List[Dict[str, Any]]:
+    """Compute GSC findings that need the previous run for comparison.
+
+    Produces:
+      * DEINDEXED (critical) — a key URL that was indexed last run is no longer
+        indexed; or, on first sight (no previous GSC snapshot), a key URL that is
+        currently not indexed.
+      * POSITION_DROP (warning) — overall site avg position, or a tracked
+        keyword's position, worsened by more than ``gsc.position_drop_threshold``.
+      * IMPRESSIONS_DROP (warning) — window impressions fell by more than
+        ``gsc.impressions_drop_pct`` percent.
+
+    Args:
+        cur_gsc: ``current["gsc"]``.
+        prev_gsc: ``previous["gsc"]`` (may be empty/None).
+        config: The loaded configuration.
+        now: Timestamp for the findings.
+
+    Returns:
+        A list of finding dicts (empty when GSC is disabled this run).
+    """
+    findings: List[Dict[str, Any]] = []
+    if not cur_gsc or not cur_gsc.get("enabled"):
+        return findings
+
+    gsc_cfg = config.get("gsc", {}) or {}
+    pos_threshold = float(gsc_cfg.get("position_drop_threshold", 5))
+    impr_drop_pct = float(gsc_cfg.get("impressions_drop_pct", 40))
+    keywords = [k.lower() for k in config.get("keywords", [])]
+
+    cur_sites = cur_gsc.get("sites", {})
+    prev_enabled = bool(prev_gsc) and prev_gsc.get("enabled")
+    prev_sites = prev_gsc.get("sites", {}) if prev_enabled else {}
+
+    for domain, cur_site in cur_sites.items():
+        prev_site = prev_sites.get(domain, {})
+
+        # --- DEINDEXED (per key URL) ---
+        prev_idx = {r.get("url"): r for r in prev_site.get("url_inspection", [])}
+        for rec in cur_site.get("url_inspection", []):
+            if rec.get("error") or rec.get("indexed") is None:
+                continue
+            if rec.get("indexed"):
+                continue  # currently indexed — fine
+            url = rec.get("url")
+            prev_rec = prev_idx.get(url)
+            was_indexed = bool(prev_rec) and prev_rec.get("indexed")
+            first_sight = not prev_enabled or prev_rec is None
+            if was_indexed or first_sight:
+                reason = "was indexed last run" if was_indexed else "not indexed (first GSC snapshot)"
+                findings.append(
+                    {
+                        "type": "DEINDEXED",
+                        "severity": "critical",
+                        "site": domain,
+                        "path": url,
+                        "message": (
+                            f"{url} is not indexed by Google ({reason}). "
+                            f"verdict={rec.get('verdict')}, "
+                            f"coverageState={rec.get('coverageState')}."
+                        ),
+                        "details": {
+                            "verdict": rec.get("verdict"),
+                            "coverageState": rec.get("coverageState"),
+                            "was_indexed": was_indexed,
+                        },
+                        "timestamp": now,
+                    }
+                )
+
+        # The remaining deltas need a previous GSC snapshot for this site.
+        if not prev_enabled or not prev_site:
+            continue
+
+        cur_sa = cur_site.get("search_analytics") or {}
+        prev_sa = prev_site.get("search_analytics") or {}
+        cur_tot = cur_sa.get("totals") or {}
+        prev_tot = prev_sa.get("totals") or {}
+
+        # --- POSITION_DROP (overall) ---
+        cur_pos, prev_pos = cur_tot.get("position"), prev_tot.get("position")
+        if isinstance(cur_pos, (int, float)) and isinstance(prev_pos, (int, float)):
+            if cur_pos - prev_pos > pos_threshold:  # higher position = worse
+                findings.append(
+                    {
+                        "type": "POSITION_DROP",
+                        "severity": "warning",
+                        "site": domain,
+                        "message": (
+                            f"Avg position worsened {prev_pos:.1f} -> {cur_pos:.1f} "
+                            f"(> {pos_threshold:g}) for {domain} over the GSC window."
+                        ),
+                        "details": {"previous": prev_pos, "current": cur_pos},
+                        "timestamp": now,
+                    }
+                )
+
+        # --- POSITION_DROP (per tracked keyword) ---
+        if keywords:
+            cur_q = {r.get("query", "").lower(): r for r in cur_sa.get("queries", [])}
+            prev_q = {r.get("query", "").lower(): r for r in prev_sa.get("queries", [])}
+            for kw in keywords:
+                cq, pq = cur_q.get(kw), prev_q.get(kw)
+                if not cq or not pq:
+                    continue
+                cp, pp = cq.get("position"), pq.get("position")
+                if isinstance(cp, (int, float)) and isinstance(pp, (int, float)):
+                    if cp - pp > pos_threshold:
+                        findings.append(
+                            {
+                                "type": "POSITION_DROP",
+                                "severity": "warning",
+                                "site": domain,
+                                "message": (
+                                    f"Keyword '{kw}' position worsened {pp:.1f} -> "
+                                    f"{cp:.1f} (> {pos_threshold:g}) for {domain}."
+                                ),
+                                "details": {"keyword": kw, "previous": pp, "current": cp},
+                                "timestamp": now,
+                            }
+                        )
+
+        # --- IMPRESSIONS_DROP (overall) ---
+        cur_impr, prev_impr = cur_tot.get("impressions"), prev_tot.get("impressions")
+        if isinstance(prev_impr, (int, float)) and prev_impr > 0 and isinstance(cur_impr, (int, float)):
+            drop_pct = (prev_impr - cur_impr) / prev_impr * 100
+            if drop_pct > impr_drop_pct:
+                findings.append(
+                    {
+                        "type": "IMPRESSIONS_DROP",
+                        "severity": "warning",
+                        "site": domain,
+                        "message": (
+                            f"Impressions fell {drop_pct:.0f}% ({prev_impr:.0f} -> "
+                            f"{cur_impr:.0f}, > {impr_drop_pct:g}%) for {domain}."
+                        ),
+                        "details": {
+                            "previous": prev_impr,
+                            "current": cur_impr,
+                            "drop_pct": round(drop_pct, 1),
+                        },
+                        "timestamp": now,
+                    }
+                )
+
+    return findings
+
+
 def main() -> None:
     """CLI entry point: requires a current run on stdin or runs checks fresh."""
     logger = setup_logging()
@@ -262,14 +427,16 @@ def main() -> None:
     # Build a fresh current run by importing the check modules, so analyze.py can
     # be exercised standalone against the live sites + latest saved run.
     try:
-        from . import compare_duplicates, monitor_response
+        from . import compare_duplicates, gsc, monitor_response
     except ImportError:
         import compare_duplicates  # type: ignore
+        import gsc  # type: ignore
         import monitor_response  # type: ignore
 
     current = {
         "monitor": monitor_response.run(config, logger),
         "duplicates": compare_duplicates.run(config, logger),
+        "gsc": gsc.run(config, logger),
     }
     previous = load_previous_run()
     findings = analyze(current, previous, config, logger)

@@ -14,10 +14,12 @@
 # domains. Add/replace paths freely — everything is config-driven.
 sites:
   - domain: totalsportek.tech
+    gsc_property: "sc-domain:totalsportek.tech"
     paths:
       - /
       - /dmca
   - domain: totalsportek.bio
+    gsc_property: "sc-domain:totalsportek.bio"
     paths:
       - /
       - /dmca
@@ -72,3 +74,14 @@ browser_user_agent: browser
 duplicate_compare:
   pairs:
     - [totalsportek.tech, totalsportek.bio]
+
+# Google Search Console (Phase 2) — the authoritative crawl/ranking signal,
+# since datacenter IPs (incl. Actions runners) get 403 from these sites. Each
+# site needs a `gsc_property` above. Credentials come from the env vars
+# GSC_SERVICE_ACCOUNT_JSON or GSC_SERVICE_ACCOUNT_FILE (see README); without them
+# the GSC collector simply no-ops.
+gsc:
+  enabled: true
+  lookback_days: 28              # Search Analytics window (data lags ~2-3 days)
+  position_drop_threshold: 5     # POSITION_DROP when avg position worsens by > this
+  impressions_drop_pct: 40       # IMPRESSIONS_DROP when window impressions fall > this %

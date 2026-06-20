@@ -23,11 +23,12 @@ import sys
 from typing import Any, Dict
 
 try:
-    from . import analyze, compare_duplicates, monitor_response, report
+    from . import analyze, compare_duplicates, gsc, monitor_response, report
     from .common import load_config, setup_logging, utc_now_compact, utc_now_iso
 except ImportError:  # allow running as a plain script
     import analyze  # type: ignore
     import compare_duplicates  # type: ignore
+    import gsc  # type: ignore
     import monitor_response  # type: ignore
     import report  # type: ignore
     from common import (  # type: ignore
@@ -67,11 +68,20 @@ def run(dry_run: bool, config_path: str | None = None) -> Dict[str, Any]:
         logger.exception("compare_duplicates failed: %s", exc)
         duplicates_result = {"timestamp_utc": utc_now_iso(), "pairs": [], "findings": []}
 
+    # Google Search Console — the authoritative crawl signal (no-ops without
+    # credentials). Wrapped so a GSC failure never aborts the run.
+    try:
+        gsc_result = gsc.run(config, logger)
+    except Exception as exc:  # pragma: no cover - defensive
+        logger.exception("gsc failed: %s", exc)
+        gsc_result = {"enabled": False, "timestamp_utc": utc_now_iso(), "sites": {}, "findings": []}
+
     current: Dict[str, Any] = {
         "timestamp_utc": utc_now_iso(),
         "run_id": utc_now_compact(),
         "monitor": monitor_result,
         "duplicates": duplicates_result,
+        "gsc": gsc_result,
     }
 
     # Step 3: analyse against the previous run.

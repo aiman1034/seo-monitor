@@ -61,6 +61,8 @@ def summarize(run_data: Dict[str, Any], config: Dict[str, Any]) -> Dict[str, Any
         A summary dict keyed by domain, plus ``findings_counts`` and ``run_id``.
     """
     checks: List[Dict[str, Any]] = run_data.get("monitor", {}).get("checks", [])
+    gsc = run_data.get("gsc", {}) or {}
+    gsc_sites = gsc.get("sites", {}) if gsc.get("enabled") else {}
     sites: Dict[str, Any] = {}
 
     for site_cfg in config.get("sites", []):
@@ -76,12 +78,22 @@ def summarize(run_data: Dict[str, Any], config: Dict[str, Any]) -> Dict[str, Any
         any_error = any(c.get("error") for c in site_checks)
         worst = max(codes) if codes else None
         ok = (not any_error) and bool(codes) and all(c == 200 for c in codes)
-        sites[domain] = {
+        entry = {
             "homepage_status": home,
             "worst_status": worst,
             "any_error": any_error,
             "verdict": "OK" if ok else "ISSUE",
         }
+        # Attach a compact GSC summary when available (authoritative signal).
+        gsite = gsc_sites.get(domain)
+        if gsite:
+            totals = (gsite.get("search_analytics") or {}).get("totals") or {}
+            entry["gsc"] = {
+                "clicks": totals.get("clicks"),
+                "impressions": totals.get("impressions"),
+                "position": totals.get("position"),
+            }
+        sites[domain] = entry
 
     findings = run_data.get("findings", [])
     counts = {
@@ -91,6 +103,7 @@ def summarize(run_data: Dict[str, Any], config: Dict[str, Any]) -> Dict[str, Any
     return {
         "sites": sites,
         "findings_counts": counts,
+        "gsc_enabled": bool(gsc.get("enabled")),
         "run_id": run_data.get("run_id"),
         "timestamp_utc": run_data.get("timestamp_utc"),
     }
@@ -125,12 +138,27 @@ def _status_block(summary: Dict[str, Any]) -> str:
     lines.append(f"_Last run: **{ts}** · critical: {counts.get('critical', 0)} · "
                  f"warning: {counts.get('warning', 0)} · info: {counts.get('info', 0)}_")
     lines.append("")
-    lines.append("| Site | Verdict | Homepage status (by user-agent) |")
-    lines.append("| --- | --- | --- |")
+    gsc_on = summary.get("gsc_enabled")
+    gsc_col = " GSC (clicks / impr / pos) |" if gsc_on else ""
+    gsc_sep = " --- |" if gsc_on else ""
+    lines.append(f"| Site | Verdict | Homepage status (by user-agent) |{gsc_col}")
+    lines.append(f"| --- | --- | --- |{gsc_sep}")
     for domain, s in summary.get("sites", {}).items():
         home = s.get("homepage_status", {})
         home_str = ", ".join(f"{ua}: {st}" for ua, st in home.items()) or "—"
-        lines.append(f"| `{domain}` | {s['verdict']} | {home_str} |")
+        gsc_cell = ""
+        if gsc_on:
+            g = s.get("gsc") or {}
+            gsc_cell = (
+                f" {g.get('clicks', '—')} / {g.get('impressions', '—')} / "
+                f"{g.get('position', '—')} |"
+            )
+        lines.append(f"| `{domain}` | {s['verdict']} | {home_str} |{gsc_cell}")
+    if not gsc_on:
+        lines.append("")
+        lines.append("_Search Console not configured — HTTP status above reflects "
+                     "this runner's IP, which these sites may 403. See README to "
+                     "enable GSC for Google's authoritative view._")
     lines.append("")
     lines.append(_STATUS_END)
     return "\n".join(lines)
@@ -231,6 +259,43 @@ def render_markdown(run_data: Dict[str, Any], summary: Dict[str, Any]) -> str:
             )
         lines.append("")
 
+    # Search Console (Phase 2) — Google's own, authoritative view.
+    lines.append("## Search Console (Google's view)")
+    lines.append("")
+    gsc = run_data.get("gsc", {}) or {}
+    if not gsc.get("enabled"):
+        reason = gsc.get("reason", "not configured")
+        lines.append(f"_GSC not enabled this run ({reason})._")
+        lines.append("")
+    else:
+        for domain, site in gsc.get("sites", {}).items():
+            sa = site.get("search_analytics") or {}
+            totals = sa.get("totals") or {}
+            window = sa.get("window") or {}
+            lines.append(
+                f"**{domain}** (`{site.get('property')}`) — window "
+                f"{window.get('start', '?')}→{window.get('end', '?')}: "
+                f"clicks {totals.get('clicks', '—')}, "
+                f"impressions {totals.get('impressions', '—')}, "
+                f"avg position {totals.get('position', '—')}"
+            )
+            if site.get("error"):
+                lines.append(f"  _error: {site['error']}_")
+            lines.append("")
+            lines.append("| Key URL | Verdict | pageFetchState | coverageState | lastCrawlTime |")
+            lines.append("| --- | --- | --- | --- | --- |")
+            for rec in site.get("url_inspection", []):
+                if rec.get("error"):
+                    lines.append(f"| {rec.get('url')} | error | {rec['error']} | | |")
+                    continue
+                lines.append(
+                    f"| {rec.get('url')} | {rec.get('verdict') or '—'} | "
+                    f"{rec.get('pageFetchState') or '—'} | "
+                    f"{rec.get('coverageState') or '—'} | "
+                    f"{rec.get('lastCrawlTime') or '—'} |"
+                )
+            lines.append("")
+
     return "\n".join(lines)
 
 
@@ -302,15 +367,17 @@ def main() -> None:
     logger = setup_logging()
     config = load_config()
     try:
-        from . import analyze, compare_duplicates, monitor_response
+        from . import analyze, compare_duplicates, gsc, monitor_response
     except ImportError:
         import analyze  # type: ignore
         import compare_duplicates  # type: ignore
+        import gsc  # type: ignore
         import monitor_response  # type: ignore
 
     current = {
         "monitor": monitor_response.run(config, logger),
         "duplicates": compare_duplicates.run(config, logger),
+        "gsc": gsc.run(config, logger),
     }
     previous = analyze.load_previous_run()
     current["findings"] = analyze.analyze(current, previous, config, logger)
