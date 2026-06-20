@@ -180,12 +180,12 @@
     },
     "findings_counts": {
       "critical": 0,
-      "warning": 5,
+      "warning": 1,
       "info": 2
     },
     "gsc_enabled": true,
-    "run_id": "20260620T225752Z",
-    "timestamp_utc": "2026-06-20T22:57:52+00:00"
+    "run_id": "20260620T232208Z",
+    "timestamp_utc": "2026-06-20T23:22:08+00:00"
   },
   "overall": {
     "sites": {
@@ -197,7 +197,7 @@
         "impressions_delta": 0,
         "findings": {
           "critical": 0,
-          "warning": 2,
+          "warning": 0,
           "info": 1
         }
       },
@@ -209,19 +209,19 @@
         "impressions_delta": 0,
         "findings": {
           "critical": 0,
-          "warning": 2,
+          "warning": 0,
           "info": 1
         }
       }
     },
     "headline": {
       "critical": 0,
-      "warning": 5,
+      "warning": 1,
       "info": 2
     }
   },
-  "json_file": "run-20260620T225752Z.json",
-  "md_file": "report-20260620T225752Z.md",
+  "json_file": "run-20260620T232208Z.json",
+  "md_file": "report-20260620T232208Z.md",
   "findings": [
     {
       "type": "DUPLICATE_PAGE",
@@ -235,64 +235,8 @@
         "jaccard": 0.985,
         "page_threshold": 0.9
       },
-      "timestamp": "2026-06-20T22:57:11+00:00",
+      "timestamp": "2026-06-20T23:21:29+00:00",
       "fix": "Canonicalize the duplicate page to the preferred URL (rel=canonical) or 301-redirect it to the version you want to rank."
-    },
-    {
-      "type": "LATENCY_SPIKE",
-      "severity": "warning",
-      "site": "totalsportek.tech",
-      "path": "/",
-      "message": "Latency 41ms -> 88ms (>2x) for googlebot_mobile on / [googlebot_mobile].",
-      "details": {
-        "user_agent": "googlebot_mobile",
-        "previous_ms": 41.4,
-        "current_ms": 87.6
-      },
-      "timestamp": "2026-06-20T22:57:52+00:00",
-      "fix": "Add server/CDN caching, move to faster hosting and remove redirect hops; check for a load spike or slow backend at that time."
-    },
-    {
-      "type": "LATENCY_SPIKE",
-      "severity": "warning",
-      "site": "totalsportek.tech",
-      "path": "/",
-      "message": "Latency 38ms -> 84ms (>2x) for browser on / [browser].",
-      "details": {
-        "user_agent": "browser",
-        "previous_ms": 37.8,
-        "current_ms": 83.5
-      },
-      "timestamp": "2026-06-20T22:57:52+00:00",
-      "fix": "Add server/CDN caching, move to faster hosting and remove redirect hops; check for a load spike or slow backend at that time."
-    },
-    {
-      "type": "LATENCY_SPIKE",
-      "severity": "warning",
-      "site": "totalsportek.bio",
-      "path": "/",
-      "message": "Latency 41ms -> 107ms (>2x) for googlebot_mobile on / [googlebot_mobile].",
-      "details": {
-        "user_agent": "googlebot_mobile",
-        "previous_ms": 41.2,
-        "current_ms": 106.7
-      },
-      "timestamp": "2026-06-20T22:57:52+00:00",
-      "fix": "Add server/CDN caching, move to faster hosting and remove redirect hops; check for a load spike or slow backend at that time."
-    },
-    {
-      "type": "LATENCY_SPIKE",
-      "severity": "warning",
-      "site": "totalsportek.bio",
-      "path": "/",
-      "message": "Latency 36ms -> 107ms (>2x) for browser on / [browser].",
-      "details": {
-        "user_agent": "browser",
-        "previous_ms": 35.7,
-        "current_ms": 106.8
-      },
-      "timestamp": "2026-06-20T22:57:52+00:00",
-      "fix": "Add server/CDN caching, move to faster hosting and remove redirect hops; check for a load spike or slow backend at that time."
     },
     {
       "type": "NOINDEX_PAGE",
@@ -304,7 +248,7 @@
         "indexingState": "BLOCKED_BY_META_TAG",
         "coverageState": "Excluded by \u2018noindex\u2019 tag"
       },
-      "timestamp": "2026-06-20T22:57:52+00:00",
+      "timestamp": "2026-06-20T23:22:08+00:00",
       "fix": "Expected \u2014 the page is intentionally noindex (e.g. /dmca). No action needed unless this page should actually rank, in which case remove its noindex meta tag / X-Robots-Tag header."
     },
     {
@@ -317,7 +261,7 @@
         "indexingState": "BLOCKED_BY_META_TAG",
         "coverageState": "Excluded by \u2018noindex\u2019 tag"
       },
-      "timestamp": "2026-06-20T22:57:52+00:00",
+      "timestamp": "2026-06-20T23:22:08+00:00",
       "fix": "Expected \u2014 the page is intentionally noindex (e.g. /dmca). No action needed unless this page should actually rank, in which case remove its noindex meta tag / X-Robots-Tag header."
     }
   ],

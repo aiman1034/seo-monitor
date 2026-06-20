@@ -57,6 +57,16 @@
   .country-block { margin-bottom: 20px; }
   .country-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: start; }
   @media (max-width: 720px) { .country-grid { grid-template-columns: 1fr; } }
+  .banner { background: #2d1112; color: #ff938d; border: 1px solid #5c2526; border-radius: 8px; padding: 8px 12px; margin: 8px 0; font-weight: 600; font-size: 13px; }
+  .counts { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; }
+  .count { font-size: 12px; padding: 2px 8px; border-radius: 999px; background: #0d1117; border: 1px solid var(--line); color: var(--muted); }
+  .count b { color: var(--fg); font-variant-numeric: tabular-nums; }
+  .count.block b { color: var(--amber); } .count.dead b { color: var(--red); } .count.reins b { color: var(--green); }
+  details.dom > summary { cursor: pointer; font-weight: 600; color: var(--accent); }
+  .hist { margin: 4px 0 0 12px; padding-left: 10px; border-left: 2px solid var(--line); }
+  .hist div { font-size: 12px; color: var(--muted); padding: 1px 0; }
+  .st-redir { color: var(--amber); } .st-live { color: var(--green); } .st-dead { color: var(--red); } .st-block { color: #f0c451; }
+  input[type=text] { background: #0d1117; border: 1px solid var(--line); color: var(--fg); border-radius: 6px; padding: 6px 10px; font-size: 14px; }
 </style>
 </head>
 <body>
@@ -85,6 +95,14 @@
 
   <h2>By country</h2>
   <div id="byCountry"></div>
+
+  <h2>Redirects &amp; reinstatements <span class="muted">(mirror domains — daily)</span></h2>
+  <div class="card"><canvas id="redirChart"></canvas><div class="note" id="redirChartNote" hidden></div></div>
+  <div id="redirects"></div>
+  <details class="card" id="addSite" style="display:none;">
+    <summary style="cursor:pointer; font-weight:600;">+ Add a website to track</summary>
+    <div id="addSiteBody" style="margin-top:10px; font-size:14px;"></div>
+  </details>
 
   <h2>Current findings</h2>
   <div class="card" id="findingsCard">
@@ -288,8 +306,112 @@ function renderFindings(latest) {
   });
 }
 
+function statusClass(s) {
+  if (!s) return "";
+  if (s === "BLOCKED" || s === "Blocked") return "st-block";
+  if (s.startsWith("Live") || s.startsWith("Reinstated")) return "st-live";
+  if (s.startsWith("Redirect")) return "st-redir";
+  return "st-dead";
+}
+
+async function renderRedirects(index) {
+  const wrap = document.getElementById("redirects");
+  const note = document.getElementById("redirChartNote");
+  if (!index || !index.domains || !Object.keys(index.domains).length) {
+    document.getElementById("redirChart").style.display = "none";
+    note.hidden = false; note.textContent = "No redirect data yet — the daily redirect-tracker workflow has not run.";
+    wrap.innerHTML = "";
+    setupAddSite(index);
+    return;
+  }
+  const domains = Object.keys(index.domains);
+
+  if (window.Chart) {
+    new Chart(document.getElementById("redirChart"), {
+      type: "bar",
+      data: {
+        labels: domains,
+        datasets: [
+          { label: "Redirected", data: domains.map(d => (index.domains[d].redirected || 0) + (index.domains[d].redirected_to_homepage || 0)), backgroundColor: "#d29922" },
+          { label: "Reinstated", data: domains.map(d => index.domains[d].reinstated || 0), backgroundColor: "#2ea043" },
+        ],
+      },
+      options: { responsive: true, maintainAspectRatio: false,
+        scales: { x: { stacked: false, ticks: { color: "#8b949e", maxRotation: 45, minRotation: 30 }, grid: { display: false } },
+                  y: { ticks: { color: "#8b949e" }, grid: { color: "#2a3441" } } },
+        plugins: { legend: { labels: { color: "#e6edf3" } } } },
+    });
+  }
+
+  // Per-domain blocks (lazy-load each domain's detail JSON on first expand).
+  wrap.innerHTML = "";
+  for (const d of domains) {
+    const s = index.domains[d];
+    const block = document.createElement("div"); block.className = "card";
+    const redirected = (s.redirected || 0) + (s.redirected_to_homepage || 0);
+    const banner = (s.domain_status && s.domain_status.startsWith("DOMAIN_REDIRECTED"))
+      ? `<div class="banner">⮕ Whole domain redirected: ${s.domain_status.replace("DOMAIN_REDIRECTED -> ", "→ ")}</div>` : "";
+    block.innerHTML = `${banner}
+      <div class="counts">
+        <span class="count">live <b>${s.live || 0}</b></span>
+        <span class="count">redirected <b>${redirected}</b></span>
+        <span class="count">→ homepage <b>${s.redirected_to_homepage || 0}</b></span>
+        <span class="count reins">reinstated <b>${s.reinstated || 0}</b></span>
+        <span class="count dead">dead <b>${s.dead || 0}</b></span>
+        <span class="count block">blocked <b>${s.blocked || 0}</b></span>
+        <span class="count">last checked ${s.last_checked || "—"}</span>
+      </div>
+      <details class="dom"><summary>${d} — ${s.total || 0} URL(s)</summary>
+        <div class="detail"><div class="note">Loading…</div></div></details>`;
+    wrap.appendChild(block);
+
+    const det = block.querySelector("details.dom");
+    det.addEventListener("toggle", async function onToggle() {
+      if (!det.open || det.dataset.loaded) return;
+      det.dataset.loaded = "1";
+      const target = det.querySelector(".detail");
+      const doc = await getJSON(`./redirects/${d}.json`);
+      if (!doc || !doc.urls) { target.innerHTML = '<div class="note">No detail available.</div>'; return; }
+      const rows = doc.urls.map(u => {
+        const hist = (u.history || []).slice().reverse().map(h => `<div>${h.date}: ${h.change}</div>`).join("");
+        const histBlock = hist ? `<details><summary class="muted" style="cursor:pointer; font-size:12px;">history (${u.history.length})</summary><div class="hist">${hist}</div></details>` : "";
+        return `<tr>
+          <td>${u.section || ""}</td><td>${u.label || ""}</td>
+          <td style="word-break:break-all;">${u.original || ""}</td>
+          <td style="word-break:break-all;">${u.current || "—"}</td>
+          <td class="${statusClass(u.status)}">${u.status || ""}</td>
+          <td class="${statusClass(u.redirected_vs_reinstated)}">${u.redirected_vs_reinstated || ""}${histBlock}</td>
+          <td>${u.last_checked || ""}</td></tr>`;
+      }).join("");
+      target.innerHTML = `<table><thead><tr><th>Section</th><th>Label</th><th>Original URL</th><th>Current URL</th><th>Status</th><th>Redirected vs reinstated</th><th>Checked</th></tr></thead><tbody>${rows}</tbody></table>`;
+    });
+  }
+  setupAddSite(index);
+}
+
+function setupAddSite(index) {
+  const wrap = document.getElementById("addSite");
+  const body = document.getElementById("addSiteBody");
+  wrap.style.display = "block";
+  const owner = location.hostname.split(".")[0] || "OWNER";
+  const repo = (location.pathname.split("/").filter(Boolean)[0]) || "REPO";
+  const editUrl = `https://github.com/${owner}/${repo}/edit/main/config.yaml`;
+  const sheetUrl = index && index.sheet_id ? `https://docs.google.com/spreadsheets/d/${index.sheet_id}/edit` : "#";
+  body.innerHTML = `
+    <p class="muted">This is a static dashboard — it can't store data server-side, so there's no live form. Adding a website is two manual steps:</p>
+    <ol style="line-height:1.8;">
+      <li>Add a new <b>tab</b> named after the domain in the <a href="${sheetUrl}" target="_blank" rel="noopener">tracking sheet</a> (column C = the Original URLs to probe).</li>
+      <li>Add that same tab name under <code>redirects.tabs</code> in <a href="${editUrl}" target="_blank" rel="noopener">config.yaml on GitHub</a>.</li>
+    </ol>
+    <div style="display:flex; gap:8px; align-items:center; margin-top:6px;">
+      <input type="text" id="newTab" placeholder="e.g. totalsportek.xyz" style="flex:1;" />
+      <button onclick="(function(){var v=document.getElementById('newTab').value.trim(); document.getElementById('addOut').textContent = v ? ('Add tab \"'+v+'\" to the sheet, then add the line:  - '+v+'   under redirects.tabs') : 'Enter a domain name.';})()">Show steps</button>
+    </div>
+    <div id="addOut" class="muted" style="margin-top:8px; font-family:var(--font-mono,monospace);"></div>`;
+}
+
 (async function () {
-  const [runs, latest] = await Promise.all([getJSON("./runs-index.json"), getJSON("./latest-summary.json")]);
+  const [runs, latest, redirIndex] = await Promise.all([getJSON("./runs-index.json"), getJSON("./latest-summary.json"), getJSON("./redirects-index.json")]);
   const summary = latest && latest.summary;
   const overall = latest && latest.overall;
   const runsArr = runs || [];
@@ -322,6 +444,7 @@ function renderFindings(latest) {
   renderTimeline(runsArr, domains);
   renderGsc(summary);
   renderCountry(summary);
+  renderRedirects(redirIndex);
   renderFindings(latest);
 })();
 </script>
