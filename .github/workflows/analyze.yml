@@ -1,0 +1,145 @@
+name: SEO Monitor
+
+# Scheduled + manual SEO/availability monitoring.
+#
+# Design: code lives on `main`; results are committed to a separate `data`
+# branch via a git worktree, so `main`'s history stays clean. The same run also
+# opens/closes a GitHub Issue (label: auto-alert) when critical findings appear
+# or clear.
+#
+# NOTE: GitHub Actions cron cannot be read from config.yaml at trigger time, so
+# the schedule below must be kept in sync with `schedule.cron` in config.yaml.
+
+on:
+  schedule:
+    - cron: "0 * * * *"   # hourly, on the hour (UTC) — matches config.yaml
+  workflow_dispatch: {}
+
+permissions:
+  contents: write   # push results to the data branch
+  issues: write     # open/close auto-alert issues
+
+# Never let two scheduled runs race on the data branch.
+concurrency:
+  group: seo-monitor
+  cancel-in-progress: false
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code (main)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # need history to set up the data-branch worktree
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Prepare data branch worktree
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git ls-remote --exit-code --heads origin data >/dev/null 2>&1; then
+            echo "data branch exists — checking it out into ./data_branch"
+            git fetch origin data --depth=1
+            git worktree add data_branch origin/data
+            git -C data_branch checkout -B data origin/data
+          else
+            echo "data branch does not exist — creating an orphan branch"
+            git worktree add --detach data_branch
+            git -C data_branch checkout --orphan data
+            git -C data_branch rm -rf . >/dev/null 2>&1 || true
+          fi
+
+      - name: Run SEO monitor
+        env:
+          SEO_MONITOR_DATA_DIR: ${{ github.workspace }}/data_branch
+        run: python scripts/run_all.py
+
+      - name: Commit results to data branch
+        id: commit
+        run: |
+          MSG=$(python - <<'PY'
+          import json, datetime
+          try:
+              s = json.load(open("data_branch/latest-summary.json"))
+              sites = s["summary"]["sites"]
+              bits = " | ".join(f"{d}: {v.get('worst_status') or 'down'}" for d, v in sites.items())
+          except Exception:
+              bits = "no summary"
+          ts = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+          print(f"Analysis {ts} — {bits}")
+          PY
+          )
+          echo "message=$MSG" >> "$GITHUB_OUTPUT"
+          cd data_branch
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No result changes to commit."
+          else
+            git commit -m "$MSG"
+            git push origin HEAD:data
+            echo "Pushed: $MSG"
+          fi
+
+      - name: Open/close auto-alert issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            let summary = { critical_findings: [] };
+            try {
+              summary = JSON.parse(fs.readFileSync('data_branch/latest-summary.json', 'utf8'));
+            } catch (e) {
+              core.info('No latest-summary.json found; skipping alerting.');
+            }
+            const crit = summary.critical_findings || [];
+            const label = 'auto-alert';
+            const title = 'Auto-alert: critical SEO findings detected';
+            const { owner, repo } = context.repo;
+
+            const open = await github.paginate(github.rest.issues.listForRepo, {
+              owner, repo, state: 'open', labels: label, per_page: 100,
+            });
+
+            if (crit.length > 0) {
+              const lines = crit.map(f =>
+                `- **${f.type}** — \`${f.site}\` ${f.path || ''}: ${f.message}`).join('\n');
+              const body = [
+                `Automated SEO monitor detected **${crit.length} critical finding(s)** ` +
+                `at ${new Date().toISOString()}.`,
+                '', lines, '',
+                'See the latest report on the `data` branch.',
+                '_This issue is managed automatically and will be closed when the condition clears._',
+              ].join('\n');
+
+              if (open.length === 0) {
+                const issue = await github.rest.issues.create({
+                  owner, repo, title, body, labels: [label],
+                });
+                core.info(`Opened auto-alert issue #${issue.data.number}`);
+              } else {
+                await github.rest.issues.createComment({
+                  owner, repo, issue_number: open[0].number,
+                  body: `Still failing as of ${new Date().toISOString()}:\n\n${lines}`,
+                });
+                core.info(`Updated existing auto-alert issue #${open[0].number}`);
+              }
+            } else {
+              for (const iss of open) {
+                await github.rest.issues.createComment({
+                  owner, repo, issue_number: iss.number,
+                  body: `Condition cleared as of ${new Date().toISOString()} — closing automatically.`,
+                });
+                await github.rest.issues.update({
+                  owner, repo, issue_number: iss.number, state: 'closed',
+                });
+                core.info(`Closed auto-alert issue #${iss.number}`);
+              }
+            }
