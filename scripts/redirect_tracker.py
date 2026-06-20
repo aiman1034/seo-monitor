@@ -27,20 +27,22 @@ from __future__ import annotations
 import argparse
 import csv
 import io
+import json
+import os
 import re
 import sys
 import threading
 import time
 from concurrent.futures import ThreadPoolExecutor
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Optional
 from urllib.parse import quote, urlparse
 
 import requests
 
 try:
-    from .common import load_config, setup_logging, utc_now_iso
+    from .common import DATA_DIR, load_config, setup_logging, utc_now_iso
 except ImportError:  # allow running as a plain script
-    from common import load_config, setup_logging, utc_now_iso  # type: ignore
+    from common import DATA_DIR, load_config, setup_logging, utc_now_iso  # type: ignore
 
 BROWSER_UA = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -361,6 +363,106 @@ def run(
     return result
 
 
+def _url_state(u: Dict[str, Any], last_checked: str) -> Dict[str, Any]:
+    """Project an internal probe result into the persisted URL state shape."""
+    return {
+        "section": u["section"],
+        "label": u["label"],
+        "original": u["original"],
+        "current": u["current"],
+        "status": u["status"],
+        "redirected_vs_reinstated": u["redirected_vs_reinstated"],
+        "clean_original": u["clean_original"],
+        "clean_resolves_to": u["clean_resolves_to"],
+        "blocked": u["blocked"],
+        "redirect_chain": u["redirect_chain"],
+        "last_checked": last_checked,
+        "history": [],
+    }
+
+
+def write_results(
+    result: Dict[str, Any], data_dir: str, history_cap: int, logger
+) -> Dict[str, Any]:
+    """Persist per-domain state + dated history and the redirects index.
+
+    For each domain, loads the previous ``redirects/<domain>.json``, carries each
+    URL's history forward, and appends a dated entry whenever its status or
+    redirected-vs-reinstated classification changed (column J). Writes the
+    per-domain files and ``redirects-index.json`` (per-domain summary counts +
+    domain_status + last-checked).
+
+    Args:
+        result: Output of :func:`run`.
+        data_dir: Target directory (the data-branch worktree in CI).
+        history_cap: Max history entries kept per URL.
+        logger: Logger.
+
+    Returns:
+        The index dict that was written.
+    """
+    out_dir = os.path.join(data_dir, "redirects")
+    os.makedirs(out_dir, exist_ok=True)
+    date = result["timestamp_utc"][:10]
+    index: Dict[str, Any] = {"checked_utc": result["timestamp_utc"], "domains": {}}
+
+    for domain, d in result["domains"].items():
+        path = os.path.join(out_dir, f"{domain}.json")
+        prev_urls: Dict[str, Any] = {}
+        prev_domain_status = None
+        try:
+            with open(path, "r", encoding="utf-8") as fh:
+                prev = json.load(fh)
+            prev_urls = {u["original"]: u for u in prev.get("urls", [])}
+            prev_domain_status = prev.get("domain_status")
+        except (FileNotFoundError, json.JSONDecodeError):
+            pass
+
+        url_states: List[Dict[str, Any]] = []
+        for u in d.get("urls", []):
+            state = _url_state(u, date)
+            prev_u = prev_urls.get(u["original"])
+            cur_key = f"{state['status']} / {state['redirected_vs_reinstated']}"
+            if prev_u is None:
+                history = [{"date": date, "change": f"Baseline: {cur_key}"}]
+            else:
+                history = list(prev_u.get("history", []))
+                prev_key = (
+                    f"{prev_u.get('status')} / {prev_u.get('redirected_vs_reinstated')}"
+                )
+                if prev_key != cur_key:
+                    history.append({"date": date, "change": f"{prev_key} -> {cur_key}"})
+            state["history"] = history[-history_cap:]
+            url_states.append(state)
+
+        domain_status = d.get("domain_status", "active")
+        domain_doc = {
+            "domain": domain,
+            "domain_status": domain_status,
+            "checked_utc": result["timestamp_utc"],
+            "urls": url_states,
+        }
+        if d.get("error"):
+            domain_doc["error"] = d["error"]
+        with open(path, "w", encoding="utf-8", newline="\n") as fh:
+            json.dump(domain_doc, fh, indent=2)
+
+        summary = d.get("summary", {})
+        index["domains"][domain] = {
+            **summary,
+            "domain_status": domain_status,
+            "domain_status_changed": (
+                prev_domain_status is not None and prev_domain_status != domain_status
+            ),
+            "last_checked": date,
+        }
+
+    with open(os.path.join(data_dir, "redirects-index.json"), "w", encoding="utf-8", newline="\n") as fh:
+        json.dump(index, fh, indent=2)
+    logger.info("Wrote redirects/*.json (%d domains) + redirects-index.json", len(index["domains"]))
+    return index
+
+
 def _print_report(result: Dict[str, Any]) -> None:
     """Print a human-readable dry-run report + overall BLOCKED rate."""
     total = blocked = 0
@@ -399,8 +501,8 @@ def main() -> int:
     if args.dry_run:
         _print_report(result)
     else:
-        import json
-        print(json.dumps(result, indent=2))
+        history_cap = int(config["redirects"].get("history_cap", 100))
+        write_results(result, DATA_DIR, history_cap, logger)
     return 0
 
 
