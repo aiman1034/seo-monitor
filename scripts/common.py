@@ -19,7 +19,13 @@ import yaml
 # Repo root is the parent of the directory containing this file (scripts/).
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DEFAULT_CONFIG_PATH = os.path.join(REPO_ROOT, "config.yaml")
-DATA_DIR = os.path.join(REPO_ROOT, "data")
+
+# Where run results (JSON/markdown) are read from and written to. Overridable via
+# SEO_MONITOR_DATA_DIR so GitHub Actions can point it at a `data`-branch worktree,
+# keeping results off `main`. Defaults to ``<repo>/data`` for local runs.
+DATA_DIR = os.environ.get(
+    "SEO_MONITOR_DATA_DIR", os.path.join(REPO_ROOT, "data")
+)
 
 
 def load_config(path: str = DEFAULT_CONFIG_PATH) -> Dict[str, Any]:
@@ -58,6 +64,13 @@ def setup_logging(verbose: bool = True) -> logging.Logger:
     Returns:
         A configured logger named ``seo-monitor``.
     """
+    # On Windows the console defaults to a legacy code page; force UTF-8 so
+    # report text (em-dashes, %, etc.) never triggers a UnicodeEncodeError.
+    try:
+        sys.stdout.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
+    except (AttributeError, ValueError):
+        pass
+
     level = logging.DEBUG if verbose else logging.INFO
     logging.basicConfig(
         level=level,

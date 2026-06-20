@@ -16,8 +16,9 @@ The current focus is two sites that keep bouncing on and off page 1 of Google:
    `DUPLICATE_CONTENT`.
 
 <!-- STATUS:BEGIN -->
-_No runs recorded yet. Run `python scripts/run_all.py --dry-run` to see a sample
-report, or wait for the first scheduled GitHub Actions run._
+_No runs recorded yet. Run `python scripts/run_all.py --dry-run` for a sample
+report, or see the live dashboard at [`STATUS.md` on the **`data`** branch](../../blob/data/STATUS.md)
+once the scheduled workflow has run._
 <!-- STATUS:END -->
 
 ## How it works
@@ -50,6 +51,20 @@ Committing results every hour would bloat the code history, so **results never
 land on `main`**. Code lives on `main`; the JSON/markdown results are committed
 to a separate **`data`** branch by the GitHub Actions workflow. Locally, the
 `data/` directory is git-ignored on `main`.
+
+Each run on the `data` branch writes:
+
+- `run-<stamp>.json` — full machine-readable run record (the time-series log);
+- `report-<stamp>.md` — human-readable report for that run;
+- `latest-summary.json` — small pointer the workflow reads to build the commit
+  message and decide on alert Issues;
+- `STATUS.md` — a live status dashboard (badges + per-site table).
+
+The data directory location is overridable with the `SEO_MONITOR_DATA_DIR`
+environment variable; the workflow sets it to a `data`-branch worktree so the
+same code reads previous runs and writes new ones without checking out `main`'s
+`data/`. A local `python scripts/run_all.py` (no env var) writes to `./data/`
+and updates the status block in this README for at-a-glance local visibility.
 
 ## Run locally
 
