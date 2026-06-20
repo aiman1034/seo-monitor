@@ -331,6 +331,11 @@ def write_report(
         return result
 
     data_dir = ensure_data_dir()
+    # Overall summary (deltas vs the previous run, read from the not-yet-appended
+    # runs-index.json). Stored on run_data so it lands in the run JSON too.
+    overall = _compute_overall(run_data, summary, data_dir)
+    run_data["overall"] = overall
+
     stamp = run_data.get("run_id") or utc_now_compact()
     json_path = os.path.join(data_dir, f"run-{stamp}.json")
     md_path = os.path.join(data_dir, f"report-{stamp}.md")
@@ -344,6 +349,7 @@ def write_report(
         json.dump(
             {
                 "summary": summary,
+                "overall": overall,
                 "json_file": os.path.basename(json_path),
                 "md_file": os.path.basename(md_path),
                 # Full findings (each with its 'fix') so the dashboard can render
@@ -372,6 +378,71 @@ def write_report(
 
     result.update(json_path=json_path, md_path=md_path, latest_path=latest_path)
     return result
+
+
+def _compute_overall(
+    run_data: Dict[str, Any], summary: Dict[str, Any], data_dir: str
+) -> Dict[str, Any]:
+    """Build the data-driven overall block (per-site deltas + combined headline).
+
+    Deltas are computed against the most recent record in ``runs-index.json``
+    (read before this run appends to it). Position delta is raw current-minus-
+    previous; the dashboard interprets direction (lower position = better rank).
+
+    Args:
+        run_data: The assembled run dict (uses its findings).
+        summary: The summary from :func:`summarize`.
+        data_dir: The data directory (to read the previous run record).
+
+    Returns:
+        ``{sites: {domain: {...}}, headline: {critical, warning, info}}``.
+    """
+    prev_rec = None
+    try:
+        with open(os.path.join(data_dir, "runs-index.json"), "r", encoding="utf-8") as fh:
+            idx = json.load(fh)
+        if isinstance(idx, list) and idx:
+            prev_rec = idx[-1]
+    except (FileNotFoundError, json.JSONDecodeError):
+        pass
+    prev_sites = (prev_rec or {}).get("sites", {})
+    findings = run_data.get("findings", [])
+
+    def delta(cur, prev):
+        if isinstance(cur, (int, float)) and isinstance(prev, (int, float)):
+            return round(cur - prev, 2)
+        return None
+
+    sites_out: Dict[str, Any] = {}
+    for domain, s in summary.get("sites", {}).items():
+        g = s.get("gsc") or {}
+        p = prev_sites.get(domain, {})
+        site_counts = {
+            sev: sum(
+                1
+                for f in findings
+                if f.get("site") == domain and f.get("severity") == sev
+            )
+            for sev in ("critical", "warning", "info")
+        }
+        sites_out[domain] = {
+            "verdict": s.get("verdict"),
+            "position": g.get("position"),
+            "position_delta": delta(g.get("position"), p.get("gsc_position")),
+            "impressions": g.get("impressions"),
+            "impressions_delta": delta(g.get("impressions"), p.get("gsc_impressions")),
+            "findings": site_counts,
+        }
+
+    counts = summary.get("findings_counts", {})
+    return {
+        "sites": sites_out,
+        "headline": {
+            "critical": counts.get("critical", 0),
+            "warning": counts.get("warning", 0),
+            "info": counts.get("info", 0),
+        },
+    }
 
 
 def _update_runs_index(
