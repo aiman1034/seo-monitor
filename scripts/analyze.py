@@ -97,15 +97,26 @@ def analyze(
     multiplier = float(config["thresholds"].get("latency_spike_multiplier", 2.0))
     has_previous = previous is not None
 
+    # (site, path) pairs where the whole runner IP was blocked (every UA refused).
+    # For these we DON'T emit per-request critical 403/FETCH_ERROR findings —
+    # monitor_response already raised a single RUNNER_IP_BLOCKED warning, and the
+    # criticals would just be a false-alarm flood reflecting our runner's IP.
+    runner_blocked = {
+        (f.get("site"), f.get("path"))
+        for f in current.get("monitor", {}).get("findings", [])
+        if f.get("type") == "RUNNER_IP_BLOCKED"
+    }
+
     for cur in cur_checks:
         site, path, ua = cur["site"], cur["path"], cur["user_agent_label"]
         key = (site, path, ua)
         prev = prev_idx.get(key)
         status = cur.get("status_code")
         label = f"{path} [{ua}]"
+        is_runner_blocked = (site, path) in runner_blocked
 
         # 2. New 403s and 5xx server errors (absolute, threshold-gated for 403).
-        if status == 403:
+        if status == 403 and not is_runner_blocked:
             was_403 = bool(prev) and prev.get("status_code") == 403
             findings.append(
                 {
@@ -136,7 +147,9 @@ def analyze(
             )
 
         # Connection-level failure (DNS/timeout/SSL) — site effectively down.
-        if cur.get("error") is not None:
+        # Suppressed when the whole runner IP is blocked (covered by the single
+        # RUNNER_IP_BLOCKED warning) so a blocked runner can't flood criticals.
+        if cur.get("error") is not None and not is_runner_blocked:
             findings.append(
                 {
                     "type": "FETCH_ERROR",

@@ -210,12 +210,60 @@ def _detect_findings(
     # Unique (site, path) pairs.
     site_paths = sorted({(c["site"], c["path"]) for c in checks})
 
+    ua_labels = list(config.get("user_agents", {}).keys())
+
     def is_ok(rec: Dict[str, Any] | None) -> bool:
         return bool(rec) and rec.get("error") is None and rec.get("status_code") == 200
+
+    def blocked_like(rec: Dict[str, Any] | None) -> bool:
+        """A 403 or a connection-level error — i.e. the request was refused."""
+        return bool(rec) and (
+            rec.get("error") is not None or rec.get("status_code") == 403
+        )
 
     for site, path in site_paths:
         browser_rec = indexed.get((site, path, browser_label))
         browser_ok = is_ok(browser_rec)
+
+        # RUNNER_IP_BLOCKED: every user-agent — INCLUDING the real browser — was
+        # refused (403 or errored). This means our runner's IP is blocked
+        # (datacenter/Cloudflare), NOT that the site is down for users or for
+        # Google (which crawls from allowlisted IPs). Report it once as a warning
+        # and skip the per-UA checks for this (site, path) — they'd be noise.
+        present_recs = [
+            indexed.get((site, path, ua))
+            for ua in ua_labels
+            if indexed.get((site, path, ua)) is not None
+        ]
+        if (
+            browser_rec is not None
+            and present_recs
+            and all(blocked_like(r) for r in present_recs)
+        ):
+            observed = sorted(
+                {
+                    "ERROR" if r.get("error") is not None else str(r.get("status_code"))
+                    for r in present_recs
+                }
+            )
+            findings.append(
+                {
+                    "type": "RUNNER_IP_BLOCKED",
+                    "severity": "warning",
+                    "site": site,
+                    "path": path,
+                    "message": (
+                        f"All user-agents were blocked on {path} from this runner "
+                        f"(observed: {', '.join(observed)}) — the runner's IP is "
+                        f"likely blocked (datacenter/Cloudflare). This is not a "
+                        f"reliable crawl signal; see Search Console URL Inspection "
+                        f"for Google's view."
+                    ),
+                    "details": {"observed": observed, "user_agents": ua_labels},
+                    "timestamp": now,
+                }
+            )
+            continue  # don't also emit per-UA findings for a blocked runner
 
         for crawler_label in crawler_labels:
             crawler_rec = indexed.get((site, path, crawler_label))
