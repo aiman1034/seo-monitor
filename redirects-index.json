@@ -1,0 +1,114 @@
+{
+  "checked_utc": "2026-06-20T23:16:00+00:00",
+  "sheet_id": "1rV87uX_3F1qpVjbCk-7jr6ryafUBLaNv6RZrGk1cCN0",
+  "domains": {
+    "totalsportekz.com": {
+      "live": 1,
+      "redirected": 57,
+      "redirected_to_homepage": 0,
+      "reinstated": 1,
+      "dead": 0,
+      "blocked": 0,
+      "total": 58,
+      "domain_status": "active",
+      "domain_status_changed": false,
+      "last_checked": "2026-06-20"
+    },
+    "footybitez.app": {
+      "live": 118,
+      "redirected": 0,
+      "redirected_to_homepage": 0,
+      "reinstated": 118,
+      "dead": 0,
+      "blocked": 0,
+      "total": 118,
+      "domain_status": "active",
+      "domain_status_changed": false,
+      "last_checked": "2026-06-20"
+    },
+    "totalsportek.li": {
+      "live": 0,
+      "redirected": 0,
+      "redirected_to_homepage": 0,
+      "reinstated": 0,
+      "dead": 1,
+      "blocked": 0,
+      "total": 1,
+      "domain_status": "active",
+      "domain_status_changed": false,
+      "last_checked": "2026-06-20"
+    },
+    "totalsportek.ch": {
+      "live": 0,
+      "redirected": 0,
+      "redirected_to_homepage": 0,
+      "reinstated": 0,
+      "dead": 1,
+      "blocked": 0,
+      "total": 1,
+      "domain_status": "active",
+      "domain_status_changed": false,
+      "last_checked": "2026-06-20"
+    },
+    "totalsportek.gd": {
+      "live": 0,
+      "redirected": 0,
+      "redirected_to_homepage": 1,
+      "reinstated": 0,
+      "dead": 0,
+      "blocked": 0,
+      "total": 1,
+      "domain_status": "DOMAIN_REDIRECTED -> totalsportekz.app",
+      "domain_status_changed": false,
+      "last_checked": "2026-06-20"
+    },
+    "totalsportek.cv": {
+      "live": 1,
+      "redirected": 0,
+      "redirected_to_homepage": 0,
+      "reinstated": 1,
+      "dead": 0,
+      "blocked": 0,
+      "total": 1,
+      "domain_status": "active",
+      "domain_status_changed": false,
+      "last_checked": "2026-06-20"
+    },
+    "footybite.to": {
+      "live": 0,
+      "redirected": 0,
+      "redirected_to_homepage": 1,
+      "reinstated": 0,
+      "dead": 0,
+      "blocked": 0,
+      "total": 1,
+      "domain_status": "DOMAIN_REDIRECTED -> footybitez.app",
+      "domain_status_changed": false,
+      "last_checked": "2026-06-20"
+    },
+    "totalsportekz.app": {
+      "live": 2,
+      "redirected": 59,
+      "redirected_to_homepage": 0,
+      "reinstated": 2,
+      "dead": 0,
+      "blocked": 0,
+      "total": 61,
+      "domain_status": "active",
+      "domain_status_changed": false,
+      "last_checked": "2026-06-20"
+    },
+    "footybite.app": {
+      "live": 15,
+      "redirected": 0,
+      "redirected_to_homepage": 0,
+      "reinstated": 15,
+      "dead": 1,
+      "blocked": 0,
+      "total": 16,
+      "domain_status": "active",
+      "domain_status_changed": false,
+      "last_checked": "2026-06-20"
+    }
+  }
+}

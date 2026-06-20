@@ -1,0 +1,2249 @@
+{
+  "domain": "footybitez.app",
+  "domain_status": "active",
+  "checked_utc": "2026-06-20T23:16:00+00:00",
+  "urls": [
+    {
+      "section": "Division/Category",
+      "label": "Boxing",
+      "original": "https://www.footybitez.app/boxing-streams",
+      "current": "https://www.footybitez.app/boxing-streams",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/boxing",
+      "clean_resolves_to": "https://www.footybitez.app",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Division/Category",
+      "label": "UFC",
+      "original": "https://www.footybitez.app/ufc-streams",
+      "current": "https://www.footybitez.app/ufc-streams",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/ufc",
+      "clean_resolves_to": "https://www.footybitez.app",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Division/Category",
+      "label": "F1",
+      "original": "https://www.footybitez.app/f1-streams",
+      "current": "https://www.footybitez.app/f1-streams",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/f1",
+      "clean_resolves_to": "https://www.footybitez.app",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Division/Category",
+      "label": "NBA",
+      "original": "https://www.footybitez.app/nba-streams",
+      "current": "https://www.footybitez.app/nba-streams",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/nba",
+      "clean_resolves_to": "https://www.footybitez.app",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Division/Category",
+      "label": "NFL",
+      "original": "https://www.footybitez.app/nfl-streams",
+      "current": "https://www.footybitez.app/nfl-streams",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/nfl",
+      "clean_resolves_to": "https://www.footybitez.app",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Division/Category",
+      "label": "Cricket",
+      "original": "https://www.footybitez.app/cricket-streams",
+      "current": "https://www.footybitez.app/cricket-streams",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/cricket",
+      "clean_resolves_to": "https://www.footybitez.app",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Division/Category",
+      "label": "Tennis",
+      "original": "https://www.footybitez.app/tennis-streams",
+      "current": "https://www.footybitez.app/tennis-streams",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/tennis",
+      "clean_resolves_to": "https://www.footybitez.app",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Division/Category",
+      "label": "MOTOGP",
+      "original": "https://www.footybitez.app/motogp-streams",
+      "current": "https://www.footybitez.app/motogp-streams",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/motogp",
+      "clean_resolves_to": "https://www.footybitez.app",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Division/Category",
+      "label": "Rugby",
+      "original": "https://www.footybitez.app/rugby-streams",
+      "current": "https://www.footybitez.app/rugby-streams",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/rugby",
+      "clean_resolves_to": "https://www.footybitez.app",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Top Leagues",
+      "label": "FIFA World Cup",
+      "original": "https://www.footybitez.app/fifa-world-cup-streams",
+      "current": "https://www.footybitez.app/fifa-world-cup-streams",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/fifa-world-cup",
+      "clean_resolves_to": "https://www.footybitez.app",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Top Leagues",
+      "label": "Premier League",
+      "original": "https://www.footybitez.app/premier-league-streams",
+      "current": "https://www.footybitez.app/premier-league-streams",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/premier-league",
+      "clean_resolves_to": "https://www.footybitez.app",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Top Leagues",
+      "label": "UEFA",
+      "original": "https://www.footybitez.app/uefa-streams",
+      "current": "https://www.footybitez.app/uefa-streams",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/uefa",
+      "clean_resolves_to": "https://www.footybitez.app",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Top Leagues",
+      "label": "Bundesliga",
+      "original": "https://www.footybitez.app/bundesliga-streams",
+      "current": "https://www.footybitez.app/bundesliga-streams",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/bundesliga",
+      "clean_resolves_to": "https://www.footybitez.app",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Top Leagues",
+      "label": "Laliga",
+      "original": "https://www.footybitez.app/laliga-streams",
+      "current": "https://www.footybitez.app/laliga-streams",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/laliga",
+      "clean_resolves_to": "https://www.footybitez.app",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Top Leagues",
+      "label": "Serie A",
+      "original": "https://www.footybitez.app/seriea-streams",
+      "current": "https://www.footybitez.app/seriea-streams",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/seriea",
+      "clean_resolves_to": "https://www.footybitez.app",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Top Leagues",
+      "label": "Ligue-1",
+      "original": "https://www.footybitez.app/ligue1-streams",
+      "current": "https://www.footybitez.app/ligue1-streams",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/ligue1",
+      "clean_resolves_to": "https://www.footybitez.app",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Top Teams",
+      "label": "Manchester United",
+      "original": "https://www.footybitez.app/teams/manchester-united-streams",
+      "current": "https://www.footybitez.app/teams/manchester-united-streams",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/teams/manchester-united",
+      "clean_resolves_to": "https://www.footybitez.app/teams/manchester-united",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Top Teams",
+      "label": "Liverpool",
+      "original": "https://www.footybitez.app/teams/liverpool-streams",
+      "current": "https://www.footybitez.app/teams/liverpool-streams",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/teams/liverpool",
+      "clean_resolves_to": "https://www.footybitez.app/teams/liverpool",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Top Teams",
+      "label": "Chelsea",
+      "original": "https://www.footybitez.app/teams/chelsea-streams",
+      "current": "https://www.footybitez.app/teams/chelsea-streams",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/teams/chelsea",
+      "clean_resolves_to": "https://www.footybitez.app/teams/chelsea",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Top Teams",
+      "label": "Arsenal",
+      "original": "https://www.footybitez.app/teams/arsenal-streams",
+      "current": "https://www.footybitez.app/teams/arsenal-streams",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/teams/arsenal",
+      "clean_resolves_to": "https://www.footybitez.app/teams/arsenal",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Top Teams",
+      "label": "Manchester City",
+      "original": "https://www.footybitez.app/teams/manchester-city-streams",
+      "current": "https://www.footybitez.app/teams/manchester-city-streams",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/teams/manchester-city",
+      "clean_resolves_to": "https://www.footybitez.app/teams/manchester-city",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Top Teams",
+      "label": "Psg",
+      "original": "https://www.footybitez.app/teams/psg-streams",
+      "current": "https://www.footybitez.app/teams/psg-streams",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/teams/psg",
+      "clean_resolves_to": "https://www.footybitez.app/teams/psg",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Top Teams",
+      "label": "Barcelona",
+      "original": "https://www.footybitez.app/teams/barcelona-streams",
+      "current": "https://www.footybitez.app/teams/barcelona-streams",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/teams/barcelona",
+      "clean_resolves_to": "https://www.footybitez.app/teams/barcelona",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Top Teams",
+      "label": "Real Madrid",
+      "original": "https://www.footybitez.app/teams/real-madrid-streams",
+      "current": "https://www.footybitez.app/teams/real-madrid-streams",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/teams/real-madrid",
+      "clean_resolves_to": "https://www.footybitez.app/teams/real-madrid",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Top Teams",
+      "label": "Atletico",
+      "original": "https://www.footybitez.app/teams/atletico-streams",
+      "current": "https://www.footybitez.app/teams/atletico-streams",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/teams/atletico",
+      "clean_resolves_to": "https://www.footybitez.app/teams/atletico",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Top Teams",
+      "label": "Juventus",
+      "original": "https://www.footybitez.app/teams/juventus-streams",
+      "current": "https://www.footybitez.app/teams/juventus-streams",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/teams/juventus",
+      "clean_resolves_to": "https://www.footybitez.app/teams/juventus",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Top Teams",
+      "label": "Leicester",
+      "original": "https://www.footybitez.app/teams/leicester-streams",
+      "current": "https://www.footybitez.app/teams/leicester-streams",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/teams/leicester",
+      "clean_resolves_to": "https://www.footybitez.app/teams/leicester",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Top Teams",
+      "label": "Spurs",
+      "original": "https://www.footybitez.app/teams/spurs-streams",
+      "current": "https://www.footybitez.app/teams/spurs-streams",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/teams/spurs",
+      "clean_resolves_to": "https://www.footybitez.app/teams/spurs",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Soccer Streams Trending as Portugal and DR Congo Share Points in Group K",
+      "original": "https://www.footybitez.app/news/soccer-streams-trending-portugal-dr-congo-group-k-draw/494",
+      "current": "https://www.footybitez.app/news/soccer-streams-trending-portugal-dr-congo-group-k-draw/494",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/soccer-streams-trending-portugal-dr-congo-group-k-draw",
+      "clean_resolves_to": "https://www.footybitez.app/news/soccer-streams-trending-portugal-dr-congo-group-k-draw",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Sports Streaming Platforms Adapt to Changing Viewer Expectations",
+      "original": "https://www.footybitez.app/news/sports-streaming-platforms-changing-viewer-expectations/493",
+      "current": "https://www.footybitez.app/news/sports-streaming-platforms-changing-viewer-expectations/493",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/sports-streaming-platforms-changing-viewer-expectations",
+      "clean_resolves_to": "https://www.footybitez.app/news/sports-streaming-platforms-changing-viewer-expectations",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Sports Streaming Platforms Adapt to Changing Viewer Expectations",
+      "original": "https://www.footybitez.app/news/sports-streaming-platforms-changing-viewer-expectations/492",
+      "current": "https://www.footybitez.app/news/sports-streaming-platforms-changing-viewer-expectations/492",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/sports-streaming-platforms-changing-viewer-expectations",
+      "clean_resolves_to": "https://www.footybitez.app/news/sports-streaming-platforms-changing-viewer-expectations",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Footybite Remains a Recognized Name in the Global Sports Streaming Conversation",
+      "original": "https://www.footybitez.app/news/footybite-remains-a-recognized-name-in-the-global-sports-streaming-conversation/491",
+      "current": "https://www.footybitez.app/news/footybite-remains-a-recognized-name-in-the-global-sports-streaming-conversation/491",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/footybite-remains-a-recognized-name-in-the-global-sports-streaming-conversation",
+      "clean_resolves_to": "https://www.footybitez.app/news/footybite-remains-a-recognized-name-in-the-global-sports-streaming-conversation",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Why Football Remains the Biggest Driver of Online Sports Viewership",
+      "original": "https://www.footybitez.app/news/why-football-remains-the-biggest-driver-of-online-sports-viewership/490",
+      "current": "https://www.footybitez.app/news/why-football-remains-the-biggest-driver-of-online-sports-viewership/490",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/why-football-remains-the-biggest-driver-of-online-sports-viewership",
+      "clean_resolves_to": "https://www.footybitez.app/news/why-football-remains-the-biggest-driver-of-online-sports-viewership",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Sports Fans Continue Searching for Footybite Amid Growing Demand for Live Sports Coverage",
+      "original": "https://www.footybitez.app/news/sports-fans-searching-footybite-demand-live-sports-coverage/488",
+      "current": "https://www.footybitez.app/news/sports-fans-searching-footybite-demand-live-sports-coverage/488",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/sports-fans-searching-footybite-demand-live-sports-coverage",
+      "clean_resolves_to": "https://www.footybitez.app/news/sports-fans-searching-footybite-demand-live-sports-coverage",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "How Sports Streaming Habits Are Changing During Major Football Tournaments",
+      "original": "https://www.footybitez.app/news/how-sports-streaming-habits-changing-major-football-tournaments/489",
+      "current": "https://www.footybitez.app/news/how-sports-streaming-habits-changing-major-football-tournaments/489",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/how-sports-streaming-habits-changing-major-football-tournaments",
+      "clean_resolves_to": "https://www.footybitez.app/news/how-sports-streaming-habits-changing-major-football-tournaments",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Can Hamilton Challenge Antonelli for the Formula 1 World Championship?",
+      "original": "https://www.footybitez.app/news/hamilton-challenge-antonelli-f1-world-championship-battle/487",
+      "current": "https://www.footybitez.app/news/hamilton-challenge-antonelli-f1-world-championship-battle/487",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/hamilton-challenge-antonelli-f1-world-championship-battle",
+      "clean_resolves_to": "https://www.footybitez.app/news/hamilton-challenge-antonelli-f1-world-championship-battle",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Football Streaming Demand Keeps Footybite Name Trending Worldwide",
+      "original": "https://www.footybitez.app/news/football-streaming-demand-keeps-footybite-name-trending-worldwide/486",
+      "current": "https://www.footybitez.app/news/football-streaming-demand-keeps-footybite-name-trending-worldwide/486",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/football-streaming-demand-keeps-footybite-name-trending-worldwide",
+      "clean_resolves_to": "https://www.footybitez.app/news/football-streaming-demand-keeps-footybite-name-trending-worldwide",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Kimi Antonelli Continues Championship Lead Ahead of Barcelona Race Weekend",
+      "original": "https://www.footybitez.app/news/kimi-antonelli-f1-championship-lead-barcelona-preview/485",
+      "current": "https://www.footybitez.app/news/kimi-antonelli-f1-championship-lead-barcelona-preview/485",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/kimi-antonelli-f1-championship-lead-barcelona-preview",
+      "clean_resolves_to": "https://www.footybitez.app/news/kimi-antonelli-f1-championship-lead-barcelona-preview",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Formula 1 Fans Anticipate Major Upgrades at the Spanish Grand Prix",
+      "original": "https://www.footybitez.app/news/formula-1-fans-anticipate-major-upgrades-at-the-spanish-grand-prix/484",
+      "current": "https://www.footybitez.app/news/formula-1-fans-anticipate-major-upgrades-at-the-spanish-grand-prix/484",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/formula-1-fans-anticipate-major-upgrades-at-the-spanish-grand-prix",
+      "clean_resolves_to": "https://www.footybitez.app/news/formula-1-fans-anticipate-major-upgrades-at-the-spanish-grand-prix",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Formula 1 Viewership Continues to Grow as Championship Drama Intensifies",
+      "original": "https://www.footybitez.app/news/formula-1-viewership-continues-to-grow-as-championship-drama-intensifies/483",
+      "current": "https://www.footybitez.app/news/formula-1-viewership-continues-to-grow-as-championship-drama-intensifies/483",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/formula-1-viewership-continues-to-grow-as-championship-drama-intensifies",
+      "clean_resolves_to": "https://www.footybitez.app/news/formula-1-viewership-continues-to-grow-as-championship-drama-intensifies",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Young Players Expected to Break Out During the FIFA World Cup",
+      "original": "https://www.footybitez.app/news/young-players-expected-to-break-out-during-the-fifa-world-cup/482",
+      "current": "https://www.footybitez.app/news/young-players-expected-to-break-out-during-the-fifa-world-cup/482",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/young-players-expected-to-break-out-during-the-fifa-world-cup",
+      "clean_resolves_to": "https://www.footybitez.app/news/young-players-expected-to-break-out-during-the-fifa-world-cup",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "FIFA World Cup 2026 Broadcasting Rights Drive Huge Streaming Competition",
+      "original": "https://www.footybitez.app/news/fifa-world-cup-2026-broadcasting-rights-drive-huge-streaming-competition/481",
+      "current": "https://www.footybitez.app/news/fifa-world-cup-2026-broadcasting-rights-drive-huge-streaming-competition/481",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/fifa-world-cup-2026-broadcasting-rights-drive-huge-streaming-competition",
+      "clean_resolves_to": "https://www.footybitez.app/news/fifa-world-cup-2026-broadcasting-rights-drive-huge-streaming-competition",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Why the 2026 FIFA World Cup Could Become the Most-Watched Sporting Event Ever",
+      "original": "https://www.footybitez.app/news/why-2026-fifa-world-cup-most-watched-sporting-event-ever/480",
+      "current": "https://www.footybitez.app/news/why-2026-fifa-world-cup-most-watched-sporting-event-ever/480",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/why-2026-fifa-world-cup-most-watched-sporting-event-ever",
+      "clean_resolves_to": "https://www.footybitez.app/news/why-2026-fifa-world-cup-most-watched-sporting-event-ever",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "FIFA World Cup 2026 Opening Match Set for Historic Atmosphere in Mexico City",
+      "original": "https://www.footybitez.app/news/fifa-world-cup-2026-opening-match-set-for-historic-atmosphere-in-mexico-city/479",
+      "current": "https://www.footybitez.app/news/fifa-world-cup-2026-opening-match-set-for-historic-atmosphere-in-mexico-city/479",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/fifa-world-cup-2026-opening-match-set-for-historic-atmosphere-in-mexico-city",
+      "clean_resolves_to": "https://www.footybitez.app/news/fifa-world-cup-2026-opening-match-set-for-historic-atmosphere-in-mexico-city",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "FIFA World Cup Qualifiers Produce Major Upsets Across Continents",
+      "original": "https://www.footybitez.app/news/fifa-world-cup-qualifiers-produce-major-upsets-across-continents/478",
+      "current": "https://www.footybitez.app/news/fifa-world-cup-qualifiers-produce-major-upsets-across-continents/478",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/fifa-world-cup-qualifiers-produce-major-upsets-across-continents",
+      "clean_resolves_to": "https://www.footybitez.app/news/fifa-world-cup-qualifiers-produce-major-upsets-across-continents",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Premier League Clubs Battle for Top Young Talents in Summer Market",
+      "original": "https://www.footybitez.app/news/premier-league-clubs-battle-for-top-young-talents-in-summer-market/477",
+      "current": "https://www.footybitez.app/news/premier-league-clubs-battle-for-top-young-talents-in-summer-market/477",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/premier-league-clubs-battle-for-top-young-talents-in-summer-market",
+      "clean_resolves_to": "https://www.footybitez.app/news/premier-league-clubs-battle-for-top-young-talents-in-summer-market",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Arsenal Prepare Major Summer Moves After Premier League Title Win",
+      "original": "https://www.footybitez.app/news/arsenal-premier-league-champions-2026-summer-transfer-targets-arteta/476",
+      "current": "https://www.footybitez.app/news/arsenal-premier-league-champions-2026-summer-transfer-targets-arteta/476",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/arsenal-premier-league-champions-2026-summer-transfer-targets-arteta",
+      "clean_resolves_to": "https://www.footybitez.app/news/arsenal-premier-league-champions-2026-summer-transfer-targets-arteta",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Tottenham Relegation Fears Grow Ahead of Final Premier League Matchday",
+      "original": "https://www.footybitez.app/news/tottenham-relegation-fears-grow-ahead-of-final-premier-league-matchday/475",
+      "current": "https://www.footybitez.app/news/tottenham-relegation-fears-grow-ahead-of-final-premier-league-matchday/475",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/tottenham-relegation-fears-grow-ahead-of-final-premier-league-matchday",
+      "clean_resolves_to": "https://www.footybitez.app/news/tottenham-relegation-fears-grow-ahead-of-final-premier-league-matchday",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Arsenal Fans Celebrate First Premier League Trophy in More Than Two Decades",
+      "original": "https://www.footybitez.app/news/arsenal-fans-celebrate-premier-league-trophy-drought-ends/474",
+      "current": "https://www.footybitez.app/news/arsenal-fans-celebrate-premier-league-trophy-drought-ends/474",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/arsenal-fans-celebrate-premier-league-trophy-drought-ends",
+      "clean_resolves_to": "https://www.footybitez.app/news/arsenal-fans-celebrate-premier-league-trophy-drought-ends",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "FIFA Expands Global Broadcast Deals Ahead of 2026 World Cup Kickoff",
+      "original": "https://www.footybitez.app/news/fifa-expands-broadcast-deals-2026-world-cup-kickoff/473",
+      "current": "https://www.footybitez.app/news/fifa-expands-broadcast-deals-2026-world-cup-kickoff/473",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/fifa-expands-broadcast-deals-2026-world-cup-kickoff",
+      "clean_resolves_to": "https://www.footybitez.app/news/fifa-expands-broadcast-deals-2026-world-cup-kickoff",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "FIFA World Cup on Footybite \u2013 Full Viewer Breakdown",
+      "original": "https://www.footybitez.app/news/fifa-world-cup-footybite-viewer-breakdown/472",
+      "current": "https://www.footybitez.app/news/fifa-world-cup-footybite-viewer-breakdown/472",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/fifa-world-cup-footybite-viewer-breakdown",
+      "clean_resolves_to": "https://www.footybitez.app/news/fifa-world-cup-footybite-viewer-breakdown",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "FIFA World Cup Streaming Changes Affecting Footybite",
+      "original": "https://www.footybitez.app/news/fifa-world-cup-2026-streaming-changes-footybite-impact/471",
+      "current": "https://www.footybitez.app/news/fifa-world-cup-2026-streaming-changes-footybite-impact/471",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/fifa-world-cup-2026-streaming-changes-footybite-impact",
+      "clean_resolves_to": "https://www.footybitez.app/news/fifa-world-cup-2026-streaming-changes-footybite-impact",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Footybite Coverage for FIFA World Cup Knockout Matches",
+      "original": "https://www.footybitez.app/news/footybite-fifa-world-cup-knockout-coverage-2026/470",
+      "current": "https://www.footybitez.app/news/footybite-fifa-world-cup-knockout-coverage-2026/470",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/footybite-fifa-world-cup-knockout-coverage-2026",
+      "clean_resolves_to": "https://www.footybitez.app/news/footybite-fifa-world-cup-knockout-coverage-2026",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Footybite Mirror Links for FIFA World Cup Coverage",
+      "original": "https://www.footybitez.app/news/footybite-mirror-links-fifa-world-cup-2026-streaming-guide/469",
+      "current": "https://www.footybitez.app/news/footybite-mirror-links-fifa-world-cup-2026-streaming-guide/469",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/footybite-mirror-links-fifa-world-cup-2026-streaming-guide",
+      "clean_resolves_to": "https://www.footybitez.app/news/footybite-mirror-links-fifa-world-cup-2026-streaming-guide",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Why Footybite Became Popular During FIFA World Cup",
+      "original": "https://www.footybitez.app/news/why-footybite-became-popular-during-fifa-world-cup/468",
+      "current": "https://www.footybitez.app/news/why-footybite-became-popular-during-fifa-world-cup/468",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/why-footybite-became-popular-during-fifa-world-cup",
+      "clean_resolves_to": "https://www.footybitez.app/news/why-footybite-became-popular-during-fifa-world-cup",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Boxing Streams Today: Hidden Ways Fans Are Watching Live Fights",
+      "original": "https://www.footybitez.app/news/boxing-streams-today-hidden-ways-fans-are-watching-live-fights/448",
+      "current": "https://www.footybitez.app/news/boxing-streams-today-hidden-ways-fans-are-watching-live-fights/448",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/boxing-streams-today-hidden-ways-fans-are-watching-live-fights",
+      "clean_resolves_to": "https://www.footybitez.app/news/boxing-streams-today-hidden-ways-fans-are-watching-live-fights",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Reddit Soccer Streams 2026 \u2013 Hidden Ways People Watch Live Matches",
+      "original": "https://www.footybitez.app/news/reddit-soccer-streams-2026-hidden-ways-people-watch-live-matches/449",
+      "current": "https://www.footybitez.app/news/reddit-soccer-streams-2026-hidden-ways-people-watch-live-matches/449",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/reddit-soccer-streams-2026-hidden-ways-people-watch-live-matches",
+      "clean_resolves_to": "https://www.footybitez.app/news/reddit-soccer-streams-2026-hidden-ways-people-watch-live-matches",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Footybite Latest Links Today \u2013 What Actually Works",
+      "original": "https://www.footybitez.app/news/footybite-latest-links-today-what-actually-works/450",
+      "current": "https://www.footybitez.app/news/footybite-latest-links-today-what-actually-works/450",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/footybite-latest-links-today-what-actually-works",
+      "clean_resolves_to": "https://www.footybitez.app/news/footybite-latest-links-today-what-actually-works",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "F1 Timer Explained \u2013 Why Fans Are Suddenly Obsessed With It",
+      "original": "https://www.footybitez.app/news/f1-timer-explained-why-fans-are-suddenly-obsessed-with-it/451",
+      "current": "https://www.footybitez.app/news/f1-timer-explained-why-fans-are-suddenly-obsessed-with-it/451",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/f1-timer-explained-why-fans-are-suddenly-obsessed-with-it",
+      "clean_resolves_to": "https://www.footybitez.app/news/f1-timer-explained-why-fans-are-suddenly-obsessed-with-it",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Soccer Live Streaming Links Today \u2013 What\u2019s Still Working Now",
+      "original": "https://www.footybitez.app/news/soccer-live-streaming-links-today-whats-still-working-now/452",
+      "current": "https://www.footybitez.app/news/soccer-live-streaming-links-today-whats-still-working-now/452",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/soccer-live-streaming-links-today-whats-still-working-now",
+      "clean_resolves_to": "https://www.footybitez.app/news/soccer-live-streaming-links-today-whats-still-working-now",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Best Free Totalsportek.army Alternative for Live Sports Streaming",
+      "original": "https://www.footybitez.app/news/best-free-totalsportek-army-alternative-live-sports-streaming/453",
+      "current": "https://www.footybitez.app/news/best-free-totalsportek-army-alternative-live-sports-streaming/453",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/best-free-totalsportek-army-alternative-live-sports-streaming",
+      "clean_resolves_to": "https://www.footybitez.app/news/best-free-totalsportek-army-alternative-live-sports-streaming",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Why Footybite Keeps Going Down \u2013 Full Truth Inside",
+      "original": "https://www.footybitez.app/news/why-footybite-keeps-going-down-full-truth-inside/454",
+      "current": "https://www.footybitez.app/news/why-footybite-keeps-going-down-full-truth-inside/454",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/why-footybite-keeps-going-down-full-truth-inside",
+      "clean_resolves_to": "https://www.footybitez.app/news/why-footybite-keeps-going-down-full-truth-inside",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "MotoGP Timer Not Working? Here\u2019s the Quick Fix Everyone Needs",
+      "original": "https://www.footybitez.app/news/motogp-timer-not-working-quick-fix-everyone-needs/455",
+      "current": "https://www.footybitez.app/news/motogp-timer-not-working-quick-fix-everyone-needs/455",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/motogp-timer-not-working-quick-fix-everyone-needs",
+      "clean_resolves_to": "https://www.footybitez.app/news/motogp-timer-not-working-quick-fix-everyone-needs",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Soccer Streams Secrets \u2013 What Most Fans Don\u2019t Know",
+      "original": "https://www.footybitez.app/news/soccer-streams-secrets-what-most-fans-dont-know/456",
+      "current": "https://www.footybitez.app/news/soccer-streams-secrets-what-most-fans-dont-know/456",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/soccer-streams-secrets-what-most-fans-dont-know",
+      "clean_resolves_to": "https://www.footybitez.app/news/soccer-streams-secrets-what-most-fans-dont-know",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "UFC Streams Not Working? Try These Secret Fixes That Actually Work",
+      "original": "https://www.footybitez.app/news/ufc-streams-not-working-try-these-secret-fixes-that-actually-work/457",
+      "current": "https://www.footybitez.app/news/ufc-streams-not-working-try-these-secret-fixes-that-actually-work/457",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/ufc-streams-not-working-try-these-secret-fixes-that-actually-work",
+      "clean_resolves_to": "https://www.footybitez.app/news/ufc-streams-not-working-try-these-secret-fixes-that-actually-work",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Reddit Soccer Streams Not Working? Try These Better Options",
+      "original": "https://www.footybitez.app/news/reddit-soccer-streams-not-working-try-these-better-options/458",
+      "current": "https://www.footybitez.app/news/reddit-soccer-streams-not-working-try-these-better-options/458",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/reddit-soccer-streams-not-working-try-these-better-options",
+      "clean_resolves_to": "https://www.footybitez.app/news/reddit-soccer-streams-not-working-try-these-better-options",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Footybite HD Streams \u2013 Watch Football Without Buffering Issues",
+      "original": "https://www.footybitez.app/news/footybite-hd-streams-watch-football-without-buffering-issues/459",
+      "current": "https://www.footybitez.app/news/footybite-hd-streams-watch-football-without-buffering-issues/459",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/footybite-hd-streams-watch-football-without-buffering-issues",
+      "clean_resolves_to": "https://www.footybitez.app/news/footybite-hd-streams-watch-football-without-buffering-issues",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Boxing Streams 2026: Watch Live Fights, PPV Events & Full Match Coverage Online",
+      "original": "https://www.footybitez.app/news/boxing-streams-2026-watch-live-fights-online/460",
+      "current": "https://www.footybitez.app/news/boxing-streams-2026-watch-live-fights-online/460",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/boxing-streams-2026-watch-live-fights-online",
+      "clean_resolves_to": "https://www.footybitez.app/news/boxing-streams-2026-watch-live-fights-online",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Footybite Live Football \u2013 Instant Access Guide 2026",
+      "original": "https://www.footybitez.app/news/footybite-live-football-instant-access-guide-2026/461",
+      "current": "https://www.footybitez.app/news/footybite-live-football-instant-access-guide-2026/461",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/footybite-live-football-instant-access-guide-2026",
+      "clean_resolves_to": "https://www.footybitez.app/news/footybite-live-football-instant-access-guide-2026",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Footybite Reddit Trends \u2013 Where Users Moved After Shutdown",
+      "original": "https://www.footybitez.app/news/footybite-reddit-trends-where-users-moved-after-shutdown/462",
+      "current": "https://www.footybitez.app/news/footybite-reddit-trends-where-users-moved-after-shutdown/462",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/footybite-reddit-trends-where-users-moved-after-shutdown",
+      "clean_resolves_to": "https://www.footybitez.app/news/footybite-reddit-trends-where-users-moved-after-shutdown",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Footybite in 2026: Current Status, Access & Safer Options",
+      "original": "https://www.footybitez.app/news/footybite-in-2026-current-status-access-and-safer-options/463",
+      "current": "https://www.footybitez.app/news/footybite-in-2026-current-status-access-and-safer-options/463",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/footybite-in-2026-current-status-access-and-safer-options",
+      "clean_resolves_to": "https://www.footybitez.app/news/footybite-in-2026-current-status-access-and-safer-options",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Footybite Is Changing Again? Here\u2019s What You Should Know",
+      "original": "https://www.footybitez.app/news/footybite-is-changing-again-heres-what-you-should-know/464",
+      "current": "https://www.footybitez.app/news/footybite-is-changing-again-heres-what-you-should-know/464",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/footybite-is-changing-again-heres-what-you-should-know",
+      "clean_resolves_to": "https://www.footybitez.app/news/footybite-is-changing-again-heres-what-you-should-know",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Footybite Users Are Switching \u2013 Here\u2019s What\u2019s Trending Now",
+      "original": "https://www.footybitez.app/news/footybite-users-are-switching-heres-whats-trending-now/465",
+      "current": "https://www.footybitez.app/news/footybite-users-are-switching-heres-whats-trending-now/465",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/footybite-users-are-switching-heres-whats-trending-now",
+      "clean_resolves_to": "https://www.footybitez.app/news/footybite-users-are-switching-heres-whats-trending-now",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Everything You Need to Know About Footybite in 2026",
+      "original": "https://www.footybitez.app/news/everything-you-need-to-know-about-footybite-2026-guide/466",
+      "current": "https://www.footybitez.app/news/everything-you-need-to-know-about-footybite-2026-guide/466",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/everything-you-need-to-know-about-footybite-2026-guide",
+      "clean_resolves_to": "https://www.footybitez.app/news/everything-you-need-to-know-about-footybite-2026-guide",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Footybite Champions League Hub: Working Links for the Budapest Final 2026",
+      "original": "https://www.footybitez.app/news/footybite-champions-league-hub-budapest-final-2026-links/467",
+      "current": "https://www.footybitez.app/news/footybite-champions-league-hub-budapest-final-2026-links/467",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/footybite-champions-league-hub-budapest-final-2026-links",
+      "clean_resolves_to": "https://www.footybitez.app/news/footybite-champions-league-hub-budapest-final-2026-links",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Totalsportek Football Streams: Watch Every Game Live Today",
+      "original": "https://www.footybitez.app/news/totalsportek-football-streams-watch-every-game-live-today/426",
+      "current": "https://www.footybitez.app/news/totalsportek-football-streams-watch-every-game-live-today/426",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/totalsportek-football-streams-watch-every-game-live-today",
+      "clean_resolves_to": "https://www.footybitez.app/news/totalsportek-football-streams-watch-every-game-live-today",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "TotalSportek: Your Go-To Platform for Free Live Sports Action",
+      "original": "https://www.footybitez.app/news/totalsportek-your-go-to-platform-for-free-live-sports-action/352",
+      "current": "https://www.footybitez.app/news/totalsportek-your-go-to-platform-for-free-live-sports-action/352",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/totalsportek-your-go-to-platform-for-free-live-sports-action",
+      "clean_resolves_to": "https://www.footybitez.app/news/totalsportek-your-go-to-platform-for-free-live-sports-action",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "TotalSportek Streams: Watch Every Major Sporting Event Live",
+      "original": "https://www.footybitez.app/news/totalsportek-streams-watch-every-major-sporting-event-live/356",
+      "current": "https://www.footybitez.app/news/totalsportek-streams-watch-every-major-sporting-event-live/356",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/totalsportek-streams-watch-every-major-sporting-event-live",
+      "clean_resolves_to": "https://www.footybitez.app/news/totalsportek-streams-watch-every-major-sporting-event-live",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Watch Every Game Live with TotalSportek Free Sports Streaming",
+      "original": "https://www.footybitez.app/news/watch-every-game-live-with-totalsportek-free-sports-streaming/360",
+      "current": "https://www.footybitez.app/news/watch-every-game-live-with-totalsportek-free-sports-streaming/360",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/watch-every-game-live-with-totalsportek-free-sports-streaming",
+      "clean_resolves_to": "https://www.footybitez.app/news/watch-every-game-live-with-totalsportek-free-sports-streaming",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Watch Every Game Live with TotalSportek Sports Streams",
+      "original": "https://www.footybitez.app/news/watch-every-game-live-with-totalsportek-sports-streams/364",
+      "current": "https://www.footybitez.app/news/watch-every-game-live-with-totalsportek-sports-streams/364",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/watch-every-game-live-with-totalsportek-sports",
+      "clean_resolves_to": "https://www.footybitez.app/news/watch-every-game-live-with-totalsportek-sports",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "TotalSportek Streams: Watch Live Football, UFC, and More for Free",
+      "original": "https://www.footybitez.app/news/totalsportek-streams-watch-live-football-ufc-and-more-for-free/368",
+      "current": "https://www.footybitez.app/news/totalsportek-streams-watch-live-football-ufc-and-more-for-free/368",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/totalsportek-streams-watch-live-football-ufc-and-more-for-free",
+      "clean_resolves_to": "https://www.footybitez.app/news/totalsportek-streams-watch-live-football-ufc-and-more-for-free",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Footybite Alternatives That Are Blowing Up in 2026",
+      "original": "https://www.footybitez.app/news/footybite-alternatives-that-are-blowing-up-in-2026/447",
+      "current": "https://www.footybitez.app/news/footybite-alternatives-that-are-blowing-up-in-2026/447",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/footybite-alternatives-that-are-blowing-up-in-2026",
+      "clean_resolves_to": "https://www.footybitez.app/news/footybite-alternatives-that-are-blowing-up-in-2026",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Soccer Streams Guide: Watch Premier League & UCL Live",
+      "original": "https://www.footybitez.app/news/soccer-streams-guide-watch-premier-league-ucl-live/446",
+      "current": "https://www.footybitez.app/news/soccer-streams-guide-watch-premier-league-ucl-live/446",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/soccer-streams-guide-watch-premier-league-ucl-live",
+      "clean_resolves_to": "https://www.footybitez.app/news/soccer-streams-guide-watch-premier-league-ucl-live",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Footybite Not Loading? Here\u2019s What\u2019s Happening Right Now",
+      "original": "https://www.footybitez.app/news/footybite-not-loading-heres-whats-happening-right-now/445",
+      "current": "https://www.footybitez.app/news/footybite-not-loading-heres-whats-happening-right-now/445",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/footybite-not-loading-heres-whats-happening-right-now",
+      "clean_resolves_to": "https://www.footybitez.app/news/footybite-not-loading-heres-whats-happening-right-now",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Where to Watch UFC Streams Live Without Cable \u2013 Full Guide",
+      "original": "https://www.footybitez.app/news/where-to-watch-ufc-streams-live-without-cable-full-guide/444",
+      "current": "https://www.footybitez.app/news/where-to-watch-ufc-streams-live-without-cable-full-guide/444",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/where-to-watch-ufc-streams-live-without-cable-full-guide",
+      "clean_resolves_to": "https://www.footybitez.app/news/where-to-watch-ufc-streams-live-without-cable-full-guide",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "MotoGP Schedule Not Confirmed? Here\u2019s the Latest Update",
+      "original": "https://www.footybitez.app/news/motogp-schedule-not-confirmed-latest-update-revealed/443",
+      "current": "https://www.footybitez.app/news/motogp-schedule-not-confirmed-latest-update-revealed/443",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/motogp-schedule-not-confirmed-latest-update-revealed",
+      "clean_resolves_to": "https://www.footybitez.app/news/motogp-schedule-not-confirmed-latest-update-revealed",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Footybite Still Working in 2026? Latest Update Revealed",
+      "original": "https://www.footybitez.app/news/footybite-still-working-in-2026-latest-update-revealed/442",
+      "current": "https://www.footybitez.app/news/footybite-still-working-in-2026-latest-update-revealed/442",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/footybite-still-working-in-2026-latest-update-revealed",
+      "clean_resolves_to": "https://www.footybitez.app/news/footybite-still-working-in-2026-latest-update-revealed",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Soccer Streams Reddit Still Works? Here\u2019s What Fans Are Using Now",
+      "original": "https://www.footybitez.app/news/soccer-streams-reddit-still-works-here%E2%80%99s-what-fans-are-using-now/441",
+      "current": "https://www.footybitez.app/news/soccer-streams-reddit-still-works-here%E2%80%99s-what-fans-are-using-now/441",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/soccer-streams-reddit-still-works-here%E2%80%99s-what-fans-are-using-now",
+      "clean_resolves_to": "https://www.footybitez.app/news/soccer-streams-reddit-still-works-here%E2%80%99s-what-fans-are-using-now",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Reddit Soccer Streams Live \u2013 Best Sites for Football Fans",
+      "original": "https://www.footybitez.app/news/reddit-soccer-streams-live-best-sites-for-football-fans/440",
+      "current": "https://www.footybitez.app/news/reddit-soccer-streams-live-best-sites-for-football-fans/440",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/reddit-soccer-streams-live-best-sites-for-football-fans",
+      "clean_resolves_to": "https://www.footybitez.app/news/reddit-soccer-streams-live-best-sites-for-football-fans",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Footybite Official Guide: How to Stream Football Safely",
+      "original": "https://www.footybitez.app/news/footybite-official-guide-how-to-stream-football-safely/439",
+      "current": "https://www.footybitez.app/news/footybite-official-guide-how-to-stream-football-safely/439",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/footybite-official-guide-how-to-stream-football-safely",
+      "clean_resolves_to": "https://www.footybitez.app/news/footybite-official-guide-how-to-stream-football-safely",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Complete F1 Schedule 2026 \u2013 Every Race, Track & Time Zone",
+      "original": "https://www.footybitez.app/news/complete-f1-schedule-2026-every-race-track-time-zone/438",
+      "current": "https://www.footybitez.app/news/complete-f1-schedule-2026-every-race-track-time-zone/438",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/complete-f1-schedule-2026-every-race-track-time-zone",
+      "clean_resolves_to": "https://www.footybitez.app/news/complete-f1-schedule-2026-every-race-track-time-zone",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Sites Like Footybite: Safer Ways to Watch Sports Online",
+      "original": "https://www.footybitez.app/news/sites-like-footybite-safer-ways-to-watch-sports-online/437",
+      "current": "https://www.footybitez.app/news/sites-like-footybite-safer-ways-to-watch-sports-online/437",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/sites-like-footybite-safer-ways-to-watch-sports-online",
+      "clean_resolves_to": "https://www.footybitez.app/news/sites-like-footybite-safer-ways-to-watch-sports-online",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Watch Soccer Streams Live Today Without Missing a Single Match",
+      "original": "https://www.footybitez.app/news/watch-soccer-streams-live-today-without-missing-match/435",
+      "current": "https://www.footybitez.app/news/watch-soccer-streams-live-today-without-missing-match/435",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/watch-soccer-streams-live-today-without-missing-match",
+      "clean_resolves_to": "https://www.footybitez.app/news/watch-soccer-streams-live-today-without-missing-match",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Boxing Streams vs Paid Apps: Which One Wins in 2026?",
+      "original": "https://www.footybitez.app/news/boxing-streams-vs-paid-apps-which-one-wins-2026/436",
+      "current": "https://www.footybitez.app/news/boxing-streams-vs-paid-apps-which-one-wins-2026/436",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/boxing-streams-vs-paid-apps-which-one-wins-2026",
+      "clean_resolves_to": "https://www.footybitez.app/news/boxing-streams-vs-paid-apps-which-one-wins-2026",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "UFC Streams Still Work in 2026? Here\u2019s the Real Truth",
+      "original": "https://www.footybitez.app/news/ufc-streams-still-work-2026-real-truth/434",
+      "current": "https://www.footybitez.app/news/ufc-streams-still-work-2026-real-truth/434",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/ufc-streams-still-work-2026-real-truth",
+      "clean_resolves_to": "https://www.footybitez.app/news/ufc-streams-still-work-2026-real-truth",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Ultimate Footybite Guide: Watch Any Match Anywhere",
+      "original": "https://www.footybitez.app/news/ultimate-footybite-guide-watch-any-match-anywhere/433",
+      "current": "https://www.footybitez.app/news/ultimate-footybite-guide-watch-any-match-anywhere/433",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/ultimate-footybite-guide-watch-any-match-anywhere",
+      "clean_resolves_to": "https://www.footybitez.app/news/ultimate-footybite-guide-watch-any-match-anywhere",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Soccer Streams Secrets: How Fans Watch Matches Free in 2026",
+      "original": "https://www.footybitez.app/news/soccer-streams-secrets-how-fans-watch-matches-free-in-2026/432",
+      "current": "https://www.footybitez.app/news/soccer-streams-secrets-how-fans-watch-matches-free-in-2026/432",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/soccer-streams-secrets-how-fans-watch-matches-free-in-2026",
+      "clean_resolves_to": "https://www.footybitez.app/news/soccer-streams-secrets-how-fans-watch-matches-free-in-2026",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Best NFL Streams Right Now \u2013 No Buffer, No Hassle (Updated 2026)",
+      "original": "https://www.footybitez.app/news/best-nfl-streams-right-now-no-buffer-no-hassle-2026/431",
+      "current": "https://www.footybitez.app/news/best-nfl-streams-right-now-no-buffer-no-hassle-2026/431",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/best-nfl-streams-right-now-no-buffer-no-hassle-2026",
+      "clean_resolves_to": "https://www.footybitez.app/news/best-nfl-streams-right-now-no-buffer-no-hassle-2026",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Reddit Soccer Streams Explained: The Truth Behind the Viral Searches",
+      "original": "https://www.footybitez.app/news/reddit-soccer-streams-explained-the-truth-behind-the-viral-searches/430",
+      "current": "https://www.footybitez.app/news/reddit-soccer-streams-explained-the-truth-behind-the-viral-searches/430",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/reddit-soccer-streams-explained-the-truth-behind-the-viral-searches",
+      "clean_resolves_to": "https://www.footybitez.app/news/reddit-soccer-streams-explained-the-truth-behind-the-viral-searches",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Totalsportek in 2026: Is It Still the #1 Sports Streaming Hub?",
+      "original": "https://www.footybitez.app/news/totalsportek-in-2026-is-it-still-the-number-one-sports-streaming-hub/429",
+      "current": "https://www.footybitez.app/news/totalsportek-in-2026-is-it-still-the-number-one-sports-streaming-hub/429",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/totalsportek-in-2026-is-it-still-the-number-one-sports-streaming-hub",
+      "clean_resolves_to": "https://www.footybitez.app/news/totalsportek-in-2026-is-it-still-the-number-one-sports-streaming-hub",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "F1 Schedule Today: What Time Is the Next Race? (Full Calendar Inside)",
+      "original": "https://www.footybitez.app/news/f1-schedule-today-next-race-time-full-calendar-inside/428",
+      "current": "https://www.footybitez.app/news/f1-schedule-today-next-race-time-full-calendar-inside/428",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/f1-schedule-today-next-race-time-full-calendar-inside",
+      "clean_resolves_to": "https://www.footybitez.app/news/f1-schedule-today-next-race-time-full-calendar-inside",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "The Secret Soccer Streams Fans Are Using to Catch Every Goal",
+      "original": "https://www.footybitez.app/news/secret-soccer-streams-fans-using-to-catch-every-goal-2026/427",
+      "current": "https://www.footybitez.app/news/secret-soccer-streams-fans-using-to-catch-every-goal-2026/427",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/secret-soccer-streams-fans-using-to-catch-every-goal-2026",
+      "clean_resolves_to": "https://www.footybitez.app/news/secret-soccer-streams-fans-using-to-catch-every-goal-2026",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Boxing Streams Revealed: Where Fans Are Watching Fights for Free",
+      "original": "https://www.footybitez.app/news/boxing-streams-revealed-where-fans-watch-fights-free-2026/425",
+      "current": "https://www.footybitez.app/news/boxing-streams-revealed-where-fans-watch-fights-free-2026/425",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/boxing-streams-revealed-where-fans-watch-fights-free-2026",
+      "clean_resolves_to": "https://www.footybitez.app/news/boxing-streams-revealed-where-fans-watch-fights-free-2026",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Why Soccer Fans Are Flocking to Reddit Streams This Season",
+      "original": "https://www.footybitez.app/news/why-soccer-fans-are-flocking-to-soccer-streams-reddit-this-season/424",
+      "current": "https://www.footybitez.app/news/why-soccer-fans-are-flocking-to-soccer-streams-reddit-this-season/424",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/why-soccer-fans-are-flocking-to-soccer-streams-reddit-this-season",
+      "clean_resolves_to": "https://www.footybitez.app/news/why-soccer-fans-are-flocking-to-soccer-streams-reddit-this-season",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Why Everyone Is Switching to Totalsportek Right Now (Full Guide)",
+      "original": "https://www.footybitez.app/news/why-everyone-is-switching-to-totalsportek-right-now-guide/423",
+      "current": "https://www.footybitez.app/news/why-everyone-is-switching-to-totalsportek-right-now-guide/423",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/why-everyone-is-switching-to-totalsportek-right-now-guide",
+      "clean_resolves_to": "https://www.footybitez.app/news/why-everyone-is-switching-to-totalsportek-right-now-guide",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Best UFC Streams Today \u2013 What\u2019s Actually Working Right Now",
+      "original": "https://www.footybitez.app/news/best-ufc-streams-today-whats-actually-working-right-now/422",
+      "current": "https://www.footybitez.app/news/best-ufc-streams-today-whats-actually-working-right-now/422",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/best-ufc-streams-today-whats-actually-working-right-now",
+      "clean_resolves_to": "https://www.footybitez.app/news/best-ufc-streams-today-whats-actually-working-right-now",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "How Reddit Soccer Streams Can Change Your Live Match Experience",
+      "original": "https://www.footybitez.app/news/how-reddit-soccer-streams-can-change-your-live-match-experience/421",
+      "current": "https://www.footybitez.app/news/how-reddit-soccer-streams-can-change-your-live-match-experience/421",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/how-reddit-soccer-streams-can-change-your-live-match-experience",
+      "clean_resolves_to": "https://www.footybitez.app/news/how-reddit-soccer-streams-can-change-your-live-match-experience",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Totalsportek in 2026: Everything Has Changed (Here\u2019s How)",
+      "original": "https://www.footybitez.app/news/totalsportek-in-2026-everything-has-changed-heres-how/420",
+      "current": "https://www.footybitez.app/news/totalsportek-in-2026-everything-has-changed-heres-how/420",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/totalsportek-in-2026-everything-has-changed-heres-how",
+      "clean_resolves_to": "https://www.footybitez.app/news/totalsportek-in-2026-everything-has-changed-heres-how",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "The Ultimate MotoGP Timer Setup Every Fan Needs Right Now",
+      "original": "https://www.footybitez.app/news/ultimate-motogp-timer-setup-every-fan-needs-right-now/419",
+      "current": "https://www.footybitez.app/news/ultimate-motogp-timer-setup-every-fan-needs-right-now/419",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/ultimate-motogp-timer-setup-every-fan-needs-right-now",
+      "clean_resolves_to": "https://www.footybitez.app/news/ultimate-motogp-timer-setup-every-fan-needs-right-now",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Is Totalsportek Safe? What Every Sports Fan Needs to Know",
+      "original": "https://www.footybitez.app/news/is-totalsportek-safe-what-every-sports-fan-needs-to-know/418",
+      "current": "https://www.footybitez.app/news/is-totalsportek-safe-what-every-sports-fan-needs-to-know/418",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/is-totalsportek-safe-what-every-sports-fan-needs-to-know",
+      "clean_resolves_to": "https://www.footybitez.app/news/is-totalsportek-safe-what-every-sports-fan-needs-to-know",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "The Truth About Soccer Streams: What Works and What Doesn\u2019t",
+      "original": "https://www.footybitez.app/news/the-truth-about-soccer-streams-what-works-and-what-doesnt/417",
+      "current": "https://www.footybitez.app/news/the-truth-about-soccer-streams-what-works-and-what-doesnt/417",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/the-truth-about-soccer-streams-what-works-and-what-doesnt",
+      "clean_resolves_to": "https://www.footybitez.app/news/the-truth-about-soccer-streams-what-works-and-what-doesnt",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Live F1 Timer: The Secret Tool Every Formula 1 Fan Should Use",
+      "original": "https://www.footybitez.app/news/live-f1-timer-the-secret-tool-every-formula-1-fan-should-use/416",
+      "current": "https://www.footybitez.app/news/live-f1-timer-the-secret-tool-every-formula-1-fan-should-use/416",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/live-f1-timer-the-secret-tool-every-formula-1-fan-should-use",
+      "clean_resolves_to": "https://www.footybitez.app/news/live-f1-timer-the-secret-tool-every-formula-1-fan-should-use",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Free Soccer Streams 2026: Working Links You Can Trust",
+      "original": "https://www.footybitez.app/news/free-soccer-streams-2026-working-links-you-can-trust/415",
+      "current": "https://www.footybitez.app/news/free-soccer-streams-2026-working-links-you-can-trust/415",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/free-soccer-streams-2026-working-links-you-can-trust",
+      "clean_resolves_to": "https://www.footybitez.app/news/free-soccer-streams-2026-working-links-you-can-trust",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Hidden Features of Totalsportek You Probably Didn\u2019t Know",
+      "original": "https://www.footybitez.app/news/hidden-features-of-totalsportek-you-probably-didnt-know/414",
+      "current": "https://www.footybitez.app/news/hidden-features-of-totalsportek-you-probably-didnt-know/414",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/hidden-features-of-totalsportek-you-probably-didnt-know",
+      "clean_resolves_to": "https://www.footybitez.app/news/hidden-features-of-totalsportek-you-probably-didnt-know",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Boxing Tonight: Full Fight Card, Start Time & Live Streaming Guide",
+      "original": "https://www.footybitez.app/news/boxing-tonight-full-fight-card-start-time-streaming-guide/413",
+      "current": "https://www.footybitez.app/news/boxing-tonight-full-fight-card-start-time-streaming-guide/413",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/boxing-tonight-full-fight-card-start-time-streaming-guide",
+      "clean_resolves_to": "https://www.footybitez.app/news/boxing-tonight-full-fight-card-start-time-streaming-guide",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "UFC Streams 2026: Hidden Platforms Fans Don\u2019t Know About",
+      "original": "https://www.footybitez.app/news/ufc-streams-2026-hidden-platforms/412",
+      "current": "https://www.footybitez.app/news/ufc-streams-2026-hidden-platforms/412",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/ufc-streams-2026-hidden-platforms",
+      "clean_resolves_to": "https://www.footybitez.app/news/ufc-streams-2026-hidden-platforms",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Reddit Football Streams Not Working? Here\u2019s What Fans Are Using Now",
+      "original": "https://www.footybitez.app/news/reddit-football-streams-not-working-alternatives-2026/411",
+      "current": "https://www.footybitez.app/news/reddit-football-streams-not-working-alternatives-2026/411",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/reddit-football-streams-not-working-alternatives-2026",
+      "clean_resolves_to": "https://www.footybitez.app/news/reddit-football-streams-not-working-alternatives-2026",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Totalsportek vs Other Streaming Sites \u2013 Which One Wins in 2026?",
+      "original": "https://www.footybitez.app/news/totalsportek-vs-other-streaming-sites-which-one-wins-2026/410",
+      "current": "https://www.footybitez.app/news/totalsportek-vs-other-streaming-sites-which-one-wins-2026/410",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://www.footybitez.app/news/totalsportek-vs-other-streaming-sites-which-one-wins-2026",
+      "clean_resolves_to": "https://www.footybitez.app/news/totalsportek-vs-other-streaming-sites-which-one-wins-2026",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    }
+  ]
+}

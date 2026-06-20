@@ -1,0 +1,311 @@
+{
+  "domain": "footybite.app",
+  "domain_status": "active",
+  "checked_utc": "2026-06-20T23:16:00+00:00",
+  "urls": [
+    {
+      "section": "Division/Category",
+      "label": "NFL",
+      "original": "https://footybite.app/nfl/streams",
+      "current": "https://footybite.app/nfl/streams",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://footybite.app/nfl/streams",
+      "clean_resolves_to": "https://footybite.app/nfl/streams",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Division/Category",
+      "label": "MMA",
+      "original": "https://footybite.app/mma/streams",
+      "current": "https://footybite.app/mma/streams",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://footybite.app/mma/streams",
+      "clean_resolves_to": "https://footybite.app/mma/streams",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Division/Category",
+      "label": "Boxing",
+      "original": "https://footybite.app/boxing/streams",
+      "current": "https://footybite.app/boxing/streams",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://footybite.app/boxing/streams",
+      "clean_resolves_to": "https://footybite.app/boxing/streams",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Division/Category",
+      "label": "Formula 1",
+      "original": "https://footybite.app/f1/streams",
+      "current": "https://footybite.app/f1/streams",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://footybite.app/f1/streams",
+      "clean_resolves_to": "https://footybite.app/f1/streams",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Division/Category",
+      "label": "NBA",
+      "original": "https://footybite.app/nba/streams",
+      "current": "https://footybite.app/nba/streams",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://footybite.app/nba/streams",
+      "clean_resolves_to": "https://footybite.app/nba/streams",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Division/Category",
+      "label": "NHL",
+      "original": "https://footybite.app/nhl/streams",
+      "current": "https://footybite.app/nhl/streams",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://footybite.app/nhl/streams",
+      "clean_resolves_to": "https://footybite.app/nhl/streams",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Division/Category",
+      "label": "MLB",
+      "original": "https://footybite.app/mlb/streams",
+      "current": "https://footybite.app/mlb/streams",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://footybite.app/mlb/streams",
+      "clean_resolves_to": "https://footybite.app/mlb/streams",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Division/Category",
+      "label": "CFB",
+      "original": "https://footybite.app/cfb/streams",
+      "current": "https://footybite.app/cfb/streams",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://footybite.app/cfb/streams",
+      "clean_resolves_to": "https://footybite.app/cfb/streams",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Division/Category",
+      "label": "NCAA",
+      "original": "https://footybite.app/ncaa/streams",
+      "current": "https://footybite.app/ncaa/streams",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://footybite.app/ncaa/streams",
+      "clean_resolves_to": "https://footybite.app/ncaa/streams",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Division/Category",
+      "label": "WWE",
+      "original": "https://footybite.app/wwe/streams",
+      "current": "https://footybite.app/wwe/streams",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://footybite.app/wwe/streams",
+      "clean_resolves_to": "https://footybite.app/wwe/streams",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Division/Category",
+      "label": "WNBA",
+      "original": "https://footybite.app/wnba/streams",
+      "current": "https://footybite.app/wnba/streams",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://footybite.app/wnba/streams",
+      "clean_resolves_to": "https://footybite.app/wnba/streams",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Beyond the Trophies: The Legacy of the Legendary Premier League Manager",
+      "original": "https://footybite.app/blog/beyond-the-trophies-the-legacy-of-the-legendary-premier-league-manager",
+      "current": "https://footybite.app/blog/beyond-the-trophies-the-legacy-of-the-legendary-premier-league-manager",
+      "status": "ERROR (500)",
+      "redirected_vs_reinstated": "Dead",
+      "clean_original": "https://footybite.app/blog/beyond-the-trophies-the-legacy-of-the-legendary-premier-league-manager",
+      "clean_resolves_to": "https://footybite.app/blog/beyond-the-trophies-the-legacy-of-the-legendary-premier-league-manager",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: ERROR (500) / Dead"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Derby Drama: Rivalries That Define La Liga's Intense Competition",
+      "original": "https://footybite.app/blog/derby-drama-rivalries-that-define-la-liga-s-intense-competition",
+      "current": "https://footybite.app/blog/derby-drama-rivalries-that-define-la-liga-s-intense-competition",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://footybite.app/blog/derby-drama-rivalries-that-define-la-liga-s-intense-competition",
+      "clean_resolves_to": "https://footybite.app/blog/derby-drama-rivalries-that-define-la-liga-s-intense-competition",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Top 10 Most Memorable Premier League Matches in the Last Decade",
+      "original": "https://footybite.app/blog/top-10-most-memorable-premier-league-matches-in-the-last-decade",
+      "current": "https://footybite.app/blog/top-10-most-memorable-premier-league-matches-in-the-last-decade",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://footybite.app/blog/top-10-most-memorable-premier-league-matches-in-the-last-decade",
+      "clean_resolves_to": "https://footybite.app/blog/top-10-most-memorable-premier-league-matches-in-the-last-decade",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "The Great Premier League Paradox: Big Spenders vs. Underdogs' Success",
+      "original": "https://footybite.app/blog/the-great-premier-league-paradox-big-spenders-vs-underdogs-success",
+      "current": "https://footybite.app/blog/the-great-premier-league-paradox-big-spenders-vs-underdogs-success",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://footybite.app/blog/the-great-premier-league-paradox-big-spenders-vs-underdogs-success",
+      "clean_resolves_to": "https://footybite.app/blog/the-great-premier-league-paradox-big-spenders-vs-underdogs-success",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    },
+    {
+      "section": "Blogs",
+      "label": "Fooybite.com: Your One-Stop Destination for Free Soccer Streams",
+      "original": "https://footybite.app/blog/fooybite-com-your-one-stop-destination-for-free-soccer-streams",
+      "current": "https://footybite.app/blog/fooybite-com-your-one-stop-destination-for-free-soccer-streams",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
+      "clean_original": "https://footybite.app/blog/fooybite-com-your-one-stop-destination-for-free-soccer",
+      "clean_resolves_to": "https://footybite.app",
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: Live (200) / Reinstated (200)"
+        }
+      ]
+    }
+  ]
+}

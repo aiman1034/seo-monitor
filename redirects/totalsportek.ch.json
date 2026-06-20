@@ -1,0 +1,26 @@
+{
+  "domain": "totalsportek.ch",
+  "domain_status": "active",
+  "checked_utc": "2026-06-20T23:16:00+00:00",
+  "urls": [
+    {
+      "section": "Site Status",
+      "label": "Homepage",
+      "original": "https://totalsportek.ch/",
+      "current": null,
+      "status": "ERROR",
+      "redirected_vs_reinstated": "Dead",
+      "clean_original": "https://totalsportek.ch/",
+      "clean_resolves_to": null,
+      "blocked": false,
+      "redirect_chain": [],
+      "last_checked": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-06-20",
+          "change": "Baseline: ERROR / Dead"
+        }
+      ]
+    }
+  ]
+}
