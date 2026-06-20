@@ -148,6 +148,7 @@ def run(config: Dict[str, Any], logger=None) -> Dict[str, Any]:
     # Use the real browser UA for content comparison (what a user/Google sees).
     ua = config["user_agents"].get(config.get("browser_user_agent", "browser"))
     threshold = float(config["thresholds"].get("duplicate_similarity", 0.8))
+    page_threshold = float(config["thresholds"].get("duplicate_page_similarity", 0.9))
 
     pairs_cfg = config.get("duplicate_compare", {}).get("pairs", [])
     now = utc_now_iso()
@@ -225,6 +226,39 @@ def run(config: Dict[str, Any], logger=None) -> Dict[str, Any]:
                         "overall_similarity": overall,
                         "threshold": threshold,
                         "pages_compared": len(scored),
+                    },
+                    "timestamp": now,
+                }
+            )
+
+        # Per-page near-duplicates: a single page that is ~identical across the
+        # pair is a cannibalisation signal even when the overall average is low
+        # (e.g. boilerplate /dmca pages). Warning, not critical — it's a
+        # persistent structural fact, so it belongs in the report/dashboard
+        # rather than opening a perpetually-open alert Issue.
+        dup_pages = [
+            p
+            for p in pages
+            if isinstance(p.get("combined"), (int, float))
+            and p["combined"] >= page_threshold
+        ]
+        for p in dup_pages:
+            findings.append(
+                {
+                    "type": "DUPLICATE_PAGE",
+                    "severity": "warning",
+                    "site": f"{domain_a} / {domain_b}",
+                    "path": p["path"],
+                    "message": (
+                        f"{p['path']} is {p['combined']:.0%} identical between "
+                        f"{domain_a} and {domain_b} (threshold {page_threshold:.0%}) "
+                        f"— likely duplicate content competing in search."
+                    ),
+                    "details": {
+                        "combined": p["combined"],
+                        "sequence_ratio": p.get("sequence_ratio"),
+                        "jaccard": p.get("jaccard"),
+                        "page_threshold": page_threshold,
                     },
                     "timestamp": now,
                 }

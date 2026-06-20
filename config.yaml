@@ -36,7 +36,10 @@ schedule:
 # Alerting / detection thresholds.
 thresholds:
   open_issue_on_403: true        # open a GitHub Issue when a 403 is seen
-  duplicate_similarity: 0.8      # flag DUPLICATE_CONTENT above this ratio (0-1)
+  duplicate_similarity: 0.8      # flag DUPLICATE_CONTENT (overall avg) above this
+  duplicate_page_similarity: 0.9 # flag DUPLICATE_PAGE when ANY single page is
+                                 # this similar across the pair (catches one
+                                 # near-identical page the average would hide)
   ssl_expiry_warning_days: 14    # warn when a cert expires within N days
   latency_spike_multiplier: 2.0  # flag when response time > N x previous run
 

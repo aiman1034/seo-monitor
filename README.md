@@ -38,7 +38,9 @@ config.yaml ──► run_all.py ──► monitor_response ─┐
 - **compare_duplicates** — fetches matching pages from both domains, strips
   nav/script/style to visible text, and computes similarity (difflib
   `SequenceMatcher` ratio + token-based Jaccard on word shingles). Flags
-  `DUPLICATE_CONTENT` over the configured threshold.
+  `DUPLICATE_CONTENT` (critical) when the overall average exceeds the threshold,
+  and `DUPLICATE_PAGE` (warning) when any single page is near-identical across
+  the pair — catching one duplicated page the average would otherwise hide.
 - **analyze** — diffs the current run against the previous run and emits
   `findings` (new 403s, status-code changes, latency spikes, content-hash
   changes on key pages, plus the flags above).
