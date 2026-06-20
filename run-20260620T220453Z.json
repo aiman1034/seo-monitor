@@ -1,0 +1,3260 @@
+{
+  "timestamp_utc": "2026-06-20T22:04:53+00:00",
+  "run_id": "20260620T220453Z",
+  "monitor": {
+    "timestamp_utc": "2026-06-20T22:04:14+00:00",
+    "checks": [
+      {
+        "url": "https://totalsportek.tech/",
+        "status_code": 200,
+        "response_time_ms": 196.3,
+        "ttfb_ms": 194.6,
+        "final_url": "https://totalsportek.tech/",
+        "redirect_chain": [],
+        "content_length": 578895,
+        "body_sha256": "c9a9628cb7ce9cbf753f0b18cabf68f09bf83acb1efacfe3e139d3e91e5133d6",
+        "error": null,
+        "site": "totalsportek.tech",
+        "path": "/",
+        "user_agent_label": "googlebot_desktop"
+      },
+      {
+        "url": "https://totalsportek.tech/",
+        "status_code": 200,
+        "response_time_ms": 51.7,
+        "ttfb_ms": 50.0,
+        "final_url": "https://totalsportek.tech/",
+        "redirect_chain": [],
+        "content_length": 578895,
+        "body_sha256": "c9a9628cb7ce9cbf753f0b18cabf68f09bf83acb1efacfe3e139d3e91e5133d6",
+        "error": null,
+        "site": "totalsportek.tech",
+        "path": "/",
+        "user_agent_label": "googlebot_mobile"
+      },
+      {
+        "url": "https://totalsportek.tech/",
+        "status_code": 200,
+        "response_time_ms": 46.5,
+        "ttfb_ms": 45.1,
+        "final_url": "https://totalsportek.tech/",
+        "redirect_chain": [],
+        "content_length": 578895,
+        "body_sha256": "c9a9628cb7ce9cbf753f0b18cabf68f09bf83acb1efacfe3e139d3e91e5133d6",
+        "error": null,
+        "site": "totalsportek.tech",
+        "path": "/",
+        "user_agent_label": "browser"
+      },
+      {
+        "url": "https://totalsportek.tech/dmca",
+        "status_code": 200,
+        "response_time_ms": 317.3,
+        "ttfb_ms": 316.9,
+        "final_url": "https://totalsportek.tech/dmca",
+        "redirect_chain": [],
+        "content_length": 38978,
+        "body_sha256": "8bf7ec993e8e8a9a39da5f6f1157bc47d19153826d3126db28ac303e843991c3",
+        "error": null,
+        "site": "totalsportek.tech",
+        "path": "/dmca",
+        "user_agent_label": "googlebot_desktop"
+      },
+      {
+        "url": "https://totalsportek.tech/dmca",
+        "status_code": 200,
+        "response_time_ms": 309.1,
+        "ttfb_ms": 308.8,
+        "final_url": "https://totalsportek.tech/dmca",
+        "redirect_chain": [],
+        "content_length": 38978,
+        "body_sha256": "6e6f0a41a6e16137993224d4fc8139691b942aa777b5766296a61f4f3f950411",
+        "error": null,
+        "site": "totalsportek.tech",
+        "path": "/dmca",
+        "user_agent_label": "googlebot_mobile"
+      },
+      {
+        "url": "https://totalsportek.tech/dmca",
+        "status_code": 200,
+        "response_time_ms": 303.5,
+        "ttfb_ms": 303.2,
+        "final_url": "https://totalsportek.tech/dmca",
+        "redirect_chain": [],
+        "content_length": 38978,
+        "body_sha256": "af94c85075a147b5dee546ea70940e67695a3236c2f3d9c2bc1dd0852c3c79ac",
+        "error": null,
+        "site": "totalsportek.tech",
+        "path": "/dmca",
+        "user_agent_label": "browser"
+      },
+      {
+        "url": "https://totalsportek.bio/",
+        "status_code": 200,
+        "response_time_ms": 507.8,
+        "ttfb_ms": 335.4,
+        "final_url": "https://totalsportek.bio/",
+        "redirect_chain": [],
+        "content_length": 578742,
+        "body_sha256": "bf41f3f415bdc83884af1d15c2169cef69b9977c27ac0e3d5327633f2574ee26",
+        "error": null,
+        "site": "totalsportek.bio",
+        "path": "/",
+        "user_agent_label": "googlebot_desktop"
+      },
+      {
+        "url": "https://totalsportek.bio/",
+        "status_code": 200,
+        "response_time_ms": 59.8,
+        "ttfb_ms": 58.4,
+        "final_url": "https://totalsportek.bio/",
+        "redirect_chain": [],
+        "content_length": 578742,
+        "body_sha256": "bf41f3f415bdc83884af1d15c2169cef69b9977c27ac0e3d5327633f2574ee26",
+        "error": null,
+        "site": "totalsportek.bio",
+        "path": "/",
+        "user_agent_label": "googlebot_mobile"
+      },
+      {
+        "url": "https://totalsportek.bio/",
+        "status_code": 200,
+        "response_time_ms": 45.9,
+        "ttfb_ms": 44.4,
+        "final_url": "https://totalsportek.bio/",
+        "redirect_chain": [],
+        "content_length": 578742,
+        "body_sha256": "bf41f3f415bdc83884af1d15c2169cef69b9977c27ac0e3d5327633f2574ee26",
+        "error": null,
+        "site": "totalsportek.bio",
+        "path": "/",
+        "user_agent_label": "browser"
+      },
+      {
+        "url": "https://totalsportek.bio/dmca",
+        "status_code": 200,
+        "response_time_ms": 319.9,
+        "ttfb_ms": 319.5,
+        "final_url": "https://totalsportek.bio/dmca",
+        "redirect_chain": [],
+        "content_length": 38864,
+        "body_sha256": "25f47dff0e9b4e72b9ac83541e58c1426344fc41fb3f81f8ceffad101cc7739b",
+        "error": null,
+        "site": "totalsportek.bio",
+        "path": "/dmca",
+        "user_agent_label": "googlebot_desktop"
+      },
+      {
+        "url": "https://totalsportek.bio/dmca",
+        "status_code": 200,
+        "response_time_ms": 306.4,
+        "ttfb_ms": 306.0,
+        "final_url": "https://totalsportek.bio/dmca",
+        "redirect_chain": [],
+        "content_length": 38864,
+        "body_sha256": "4b616e23d831f88fcf42673755b624ab069b77b8a0169747ec6d54d08f1b3380",
+        "error": null,
+        "site": "totalsportek.bio",
+        "path": "/dmca",
+        "user_agent_label": "googlebot_mobile"
+      },
+      {
+        "url": "https://totalsportek.bio/dmca",
+        "status_code": 200,
+        "response_time_ms": 313.6,
+        "ttfb_ms": 313.2,
+        "final_url": "https://totalsportek.bio/dmca",
+        "redirect_chain": [],
+        "content_length": 38864,
+        "body_sha256": "e750a4d1cc37d6ed3d194d99d32221ab8169d1aa18b2e930cf5306d469d5d639",
+        "error": null,
+        "site": "totalsportek.bio",
+        "path": "/dmca",
+        "user_agent_label": "browser"
+      }
+    ],
+    "findings": []
+  },
+  "duplicates": {
+    "timestamp_utc": "2026-06-20T22:04:14+00:00",
+    "pairs": [
+      {
+        "domain_a": "totalsportek.tech",
+        "domain_b": "totalsportek.bio",
+        "pages": [
+          {
+            "path": "/",
+            "status_a": 200,
+            "status_b": 200,
+            "error_a": null,
+            "error_b": null,
+            "sequence_ratio": 0.1426,
+            "jaccard": 0.1909,
+            "combined": 0.1668
+          },
+          {
+            "path": "/dmca",
+            "status_a": 200,
+            "status_b": 200,
+            "error_a": null,
+            "error_b": null,
+            "sequence_ratio": 0.9987,
+            "jaccard": 0.985,
+            "combined": 0.9919
+          }
+        ],
+        "overall_similarity": 0.5794,
+        "pages_compared": 2
+      }
+    ],
+    "findings": [
+      {
+        "type": "DUPLICATE_PAGE",
+        "severity": "warning",
+        "site": "totalsportek.tech / totalsportek.bio",
+        "path": "/dmca",
+        "message": "/dmca is 99% identical between totalsportek.tech and totalsportek.bio (threshold 90%) \u2014 likely duplicate content competing in search.",
+        "details": {
+          "combined": 0.9919,
+          "sequence_ratio": 0.9987,
+          "jaccard": 0.985,
+          "page_threshold": 0.9
+        },
+        "timestamp": "2026-06-20T22:04:14+00:00"
+      }
+    ]
+  },
+  "gsc": {
+    "enabled": true,
+    "timestamp_utc": "2026-06-20T22:04:21+00:00",
+    "sites": {
+      "totalsportek.tech": {
+        "property": "sc-domain:totalsportek.tech",
+        "search_analytics": {
+          "window": {
+            "start": "2026-05-23",
+            "end": "2026-06-20",
+            "days": 28
+          },
+          "totals": {
+            "clicks": 655010,
+            "impressions": 1641547,
+            "ctr": 0.399,
+            "position": 3.45
+          },
+          "daily": [
+            {
+              "date": "2026-05-23",
+              "clicks": 13518,
+              "impressions": 42354,
+              "ctr": 0.3191670208244794,
+              "position": 3.4465693913207724
+            },
+            {
+              "date": "2026-05-24",
+              "clicks": 22619,
+              "impressions": 72612,
+              "ctr": 0.31150498540186194,
+              "position": 3.842216162617749
+            },
+            {
+              "date": "2026-05-25",
+              "clicks": 1589,
+              "impressions": 6460,
+              "ctr": 0.2459752321981424,
+              "position": 4.0015479876160995
+            },
+            {
+              "date": "2026-05-26",
+              "clicks": 2078,
+              "impressions": 7302,
+              "ctr": 0.28457956724185157,
+              "position": 4.232812927964941
+            },
+            {
+              "date": "2026-05-27",
+              "clicks": 3556,
+              "impressions": 11154,
+              "ctr": 0.31880939573247263,
+              "position": 4.4282768513537745
+            },
+            {
+              "date": "2026-05-28",
+              "clicks": 2237,
+              "impressions": 9348,
+              "ctr": 0.2393025246041934,
+              "position": 4.726144629867351
+            },
+            {
+              "date": "2026-05-29",
+              "clicks": 1334,
+              "impressions": 6357,
+              "ctr": 0.20984741230140003,
+              "position": 4.441875098316816
+            },
+            {
+              "date": "2026-05-30",
+              "clicks": 20133,
+              "impressions": 134298,
+              "ctr": 0.14991288031095026,
+              "position": 4.527349625459799
+            },
+            {
+              "date": "2026-05-31",
+              "clicks": 2605,
+              "impressions": 14099,
+              "ctr": 0.18476487694162708,
+              "position": 4.806014610965317
+            },
+            {
+              "date": "2026-06-01",
+              "clicks": 909,
+              "impressions": 4973,
+              "ctr": 0.18278705007038004,
+              "position": 4.977277297405992
+            },
+            {
+              "date": "2026-06-02",
+              "clicks": 2639,
+              "impressions": 7082,
+              "ctr": 0.3726348489127365,
+              "position": 3.3973453826602653
+            },
+            {
+              "date": "2026-06-03",
+              "clicks": 4362,
+              "impressions": 11218,
+              "ctr": 0.3888393653057586,
+              "position": 3.312889998217151
+            },
+            {
+              "date": "2026-06-04",
+              "clicks": 4707,
+              "impressions": 10704,
+              "ctr": 0.4397421524663677,
+              "position": 3.2512144992526157
+            },
+            {
+              "date": "2026-06-05",
+              "clicks": 10770,
+              "impressions": 23974,
+              "ctr": 0.4492366730624844,
+              "position": 3.3659380996079085
+            },
+            {
+              "date": "2026-06-06",
+              "clicks": 26667,
+              "impressions": 60756,
+              "ctr": 0.43891961287774045,
+              "position": 3.375765356507999
+            },
+            {
+              "date": "2026-06-07",
+              "clicks": 23853,
+              "impressions": 63994,
+              "ctr": 0.37273806919398694,
+              "position": 3.879723099040535
+            },
+            {
+              "date": "2026-06-08",
+              "clicks": 7283,
+              "impressions": 21659,
+              "ctr": 0.3362574449420564,
+              "position": 3.9865644766609725
+            },
+            {
+              "date": "2026-06-09",
+              "clicks": 7466,
+              "impressions": 16620,
+              "ctr": 0.4492178098676294,
+              "position": 3.415222623345367
+            },
+            {
+              "date": "2026-06-10",
+              "clicks": 17118,
+              "impressions": 34358,
+              "ctr": 0.4982245765178416,
+              "position": 3.394318644857093
+            },
+            {
+              "date": "2026-06-11",
+              "clicks": 70633,
+              "impressions": 125452,
+              "ctr": 0.5630280904250231,
+              "position": 2.7692982176449954
+            },
+            {
+              "date": "2026-06-12",
+              "clicks": 30361,
+              "impressions": 64138,
+              "ctr": 0.4733699211076117,
+              "position": 2.943730705665908
+            },
+            {
+              "date": "2026-06-13",
+              "clicks": 72411,
+              "impressions": 197308,
+              "ctr": 0.36699474932592696,
+              "position": 3.77448456220731
+            },
+            {
+              "date": "2026-06-14",
+              "clicks": 64232,
+              "impressions": 181996,
+              "ctr": 0.35293083364469546,
+              "position": 3.895750456053979
+            },
+            {
+              "date": "2026-06-15",
+              "clicks": 40571,
+              "impressions": 103638,
+              "ctr": 0.3914683803238195,
+              "position": 3.2240973388139484
+            },
+            {
+              "date": "2026-06-16",
+              "clicks": 78443,
+              "impressions": 161046,
+              "ctr": 0.4870844355028998,
+              "position": 2.6957142679731256
+            },
+            {
+              "date": "2026-06-17",
+              "clicks": 103592,
+              "impressions": 200154,
+              "ctr": 0.5175614776622001,
+              "position": 2.6947350540084134
+            },
+            {
+              "date": "2026-06-18",
+              "clicks": 19324,
+              "impressions": 48493,
+              "ctr": 0.3984905037840513,
+              "position": 3.4315468211906874
+            }
+          ],
+          "queries": [
+            {
+              "query": "totalsportek",
+              "clicks": 266619,
+              "impressions": 760086,
+              "ctr": 0.3507747807484943,
+              "position": 3.8603605381496306
+            },
+            {
+              "query": "total sportek",
+              "clicks": 148786,
+              "impressions": 307732,
+              "ctr": 0.4834921295152925,
+              "position": 2.393618473216955
+            },
+            {
+              "query": "totalsporttek",
+              "clicks": 8545,
+              "impressions": 22692,
+              "ctr": 0.376564427992244,
+              "position": 3.7290675127798343
+            },
+            {
+              "query": "total sportok",
+              "clicks": 8105,
+              "impressions": 10591,
+              "ctr": 0.7652724010952696,
+              "position": 1.2349164384855065
+            },
+            {
+              "query": "totalsportek f1",
+              "clicks": 7847,
+              "impressions": 13128,
+              "ctr": 0.5977300426569165,
+              "position": 2.0971968312004874
+            },
+            {
+              "query": "totalsportstek",
+              "clicks": 6920,
+              "impressions": 15527,
+              "ctr": 0.44567527532685003,
+              "position": 2.8984993881625556
+            },
+            {
+              "query": "total sport tech",
+              "clicks": 6233,
+              "impressions": 9260,
+              "ctr": 0.673110151187905,
+              "position": 1.3795896328293735
+            },
+            {
+              "query": "totalsportsek",
+              "clicks": 6149,
+              "impressions": 13644,
+              "ctr": 0.4506742890647904,
+              "position": 3.298885957197303
+            },
+            {
+              "query": "total sportex",
+              "clicks": 5963,
+              "impressions": 8871,
+              "ctr": 0.6721902829444256,
+              "position": 1.6739939127494083
+            },
+            {
+              "query": "totalsports.ek",
+              "clicks": 4993,
+              "impressions": 7253,
+              "ctr": 0.6884047980146146,
+              "position": 1.3912863642630635
+            },
+            {
+              "query": "totalsports tech",
+              "clicks": 4870,
+              "impressions": 6319,
+              "ctr": 0.7706915651210634,
+              "position": 1.137521759772116
+            },
+            {
+              "query": "total sport tek",
+              "clicks": 4729,
+              "impressions": 11703,
+              "ctr": 0.4040844227975733,
+              "position": 2.639494146799966
+            },
+            {
+              "query": "totalsportek tech",
+              "clicks": 4433,
+              "impressions": 5448,
+              "ctr": 0.8136930983847284,
+              "position": 1.0115638766519823
+            },
+            {
+              "query": "total sports tech",
+              "clicks": 3816,
+              "impressions": 4747,
+              "ctr": 0.8038761322940805,
+              "position": 1.0545607752264587
+            },
+            {
+              "query": "totalsportex",
+              "clicks": 3377,
+              "impressions": 6805,
+              "ctr": 0.49625275532696544,
+              "position": 2.873475385745775
+            },
+            {
+              "query": "total sportek streams",
+              "clicks": 2887,
+              "impressions": 5493,
+              "ctr": 0.5255780083742946,
+              "position": 1.6646641179683233
+            },
+            {
+              "query": "totalsportstech",
+              "clicks": 2694,
+              "impressions": 3526,
+              "ctr": 0.7640385706182643,
+              "position": 1.4160521837776519
+            },
+            {
+              "query": "totalsportek live",
+              "clicks": 2444,
+              "impressions": 5029,
+              "ctr": 0.48598130841121495,
+              "position": 1.8528534499900577
+            },
+            {
+              "query": "total sports tek",
+              "clicks": 2254,
+              "impressions": 4314,
+              "ctr": 0.5224849327770051,
+              "position": 2.3166434863235974
+            },
+            {
+              "query": "total sportek f1",
+              "clicks": 2182,
+              "impressions": 3625,
+              "ctr": 0.6019310344827586,
+              "position": 2.078896551724138
+            },
+            {
+              "query": "total sportek live",
+              "clicks": 2149,
+              "impressions": 3615,
+              "ctr": 0.5944674965421853,
+              "position": 1.5986168741355464
+            },
+            {
+              "query": "total sporttek",
+              "clicks": 2123,
+              "impressions": 4434,
+              "ctr": 0.4788001804239964,
+              "position": 2.436851601262968
+            },
+            {
+              "query": "totalsportek.to",
+              "clicks": 2037,
+              "impressions": 4967,
+              "ctr": 0.410106704248037,
+              "position": 1.6394201731427422
+            },
+            {
+              "query": "totalspotek",
+              "clicks": 2009,
+              "impressions": 5568,
+              "ctr": 0.3608117816091954,
+              "position": 4.064655172413794
+            },
+            {
+              "query": "total spotek",
+              "clicks": 1739,
+              "impressions": 3398,
+              "ctr": 0.5117716303708063,
+              "position": 2.262507357268982
+            },
+            {
+              "query": "totalsportek ipl",
+              "clicks": 1734,
+              "impressions": 3220,
+              "ctr": 0.5385093167701863,
+              "position": 1.4422360248447206
+            },
+            {
+              "query": "totalsportek nba",
+              "clicks": 1730,
+              "impressions": 3043,
+              "ctr": 0.568517909957279,
+              "position": 1.2609267170555372
+            },
+            {
+              "query": "totalsportek football",
+              "clicks": 1636,
+              "impressions": 3398,
+              "ctr": 0.48145968216598,
+              "position": 1.7042377869334904
+            },
+            {
+              "query": "totalsportok",
+              "clicks": 1493,
+              "impressions": 2018,
+              "ctr": 0.7398414271555996,
+              "position": 1.4910802775024776
+            },
+            {
+              "query": "football sportok",
+              "clicks": 1454,
+              "impressions": 2605,
+              "ctr": 0.5581573896353167,
+              "position": 1.579654510556622
+            },
+            {
+              "query": "total sportstek",
+              "clicks": 1369,
+              "impressions": 2340,
+              "ctr": 0.5850427350427351,
+              "position": 1.9512820512820512
+            },
+            {
+              "query": "total sports ek",
+              "clicks": 1333,
+              "impressions": 2805,
+              "ctr": 0.475222816399287,
+              "position": 2.371836007130125
+            },
+            {
+              "query": "f1 totalsportek",
+              "clicks": 1239,
+              "impressions": 2272,
+              "ctr": 0.5453345070422535,
+              "position": 2.216549295774648
+            },
+            {
+              "query": "totalsportek.tech",
+              "clicks": 1125,
+              "impressions": 1409,
+              "ctr": 0.7984386089425124,
+              "position": 1.000709723207949
+            },
+            {
+              "query": "total sportec",
+              "clicks": 1008,
+              "impressions": 1809,
+              "ctr": 0.5572139303482587,
+              "position": 2.1055831951354342
+            },
+            {
+              "query": "totalsportrek",
+              "clicks": 999,
+              "impressions": 2551,
+              "ctr": 0.39161113288906313,
+              "position": 3.617012936103489
+            },
+            {
+              "query": "totalsportec",
+              "clicks": 982,
+              "impressions": 2380,
+              "ctr": 0.4126050420168067,
+              "position": 3.5907563025210085
+            },
+            {
+              "query": "totalsporttech",
+              "clicks": 976,
+              "impressions": 1754,
+              "ctr": 0.556442417331813,
+              "position": 2.6562143671607754
+            },
+            {
+              "query": "totalsportek live stream",
+              "clicks": 950,
+              "impressions": 2209,
+              "ctr": 0.43005885015844275,
+              "position": 2.003168854685378
+            },
+            {
+              "query": "total sportsek",
+              "clicks": 944,
+              "impressions": 1607,
+              "ctr": 0.5874299937772246,
+              "position": 1.8444306160547606
+            },
+            {
+              "query": "totalsportek.",
+              "clicks": 903,
+              "impressions": 2842,
+              "ctr": 0.31773399014778325,
+              "position": 4.146023926812104
+            },
+            {
+              "query": "totalsportek tv",
+              "clicks": 893,
+              "impressions": 1862,
+              "ctr": 0.47959183673469385,
+              "position": 1.5338345864661656
+            },
+            {
+              "query": "sportek football",
+              "clicks": 869,
+              "impressions": 2794,
+              "ctr": 0.3110236220472441,
+              "position": 2.348604151753758
+            },
+            {
+              "query": "total sportak",
+              "clicks": 829,
+              "impressions": 1259,
+              "ctr": 0.6584590945194599,
+              "position": 1.710881652104845
+            },
+            {
+              "query": "totalsportek boxing",
+              "clicks": 809,
+              "impressions": 1309,
+              "ctr": 0.6180290297937356,
+              "position": 1.6455309396485867
+            },
+            {
+              "query": "totalsportel",
+              "clicks": 793,
+              "impressions": 2326,
+              "ctr": 0.3409286328460877,
+              "position": 3.6723989681857265
+            },
+            {
+              "query": "total sportk",
+              "clicks": 773,
+              "impressions": 1400,
+              "ctr": 0.5521428571428572,
+              "position": 2.0557142857142856
+            },
+            {
+              "query": "totalsportx",
+              "clicks": 772,
+              "impressions": 1295,
+              "ctr": 0.5961389961389961,
+              "position": 2.0123552123552124
+            },
+            {
+              "query": "sportek live stream",
+              "clicks": 758,
+              "impressions": 1324,
+              "ctr": 0.5725075528700906,
+              "position": 1.5906344410876132
+            },
+            {
+              "query": "totalsporteck",
+              "clicks": 696,
+              "impressions": 1797,
+              "ctr": 0.38731218697829717,
+              "position": 4.1480244852532
+            },
+            {
+              "query": "totalsprtek",
+              "clicks": 672,
+              "impressions": 1996,
+              "ctr": 0.3366733466933868,
+              "position": 3.8907815631262523
+            },
+            {
+              "query": "live sportek",
+              "clicks": 643,
+              "impressions": 1033,
+              "ctr": 0.6224588576960309,
+              "position": 1.3872216844143272
+            },
+            {
+              "query": "total sportek nba",
+              "clicks": 626,
+              "impressions": 1042,
+              "ctr": 0.6007677543186181,
+              "position": 1.263915547024952
+            },
+            {
+              "query": "totalsport tek",
+              "clicks": 620,
+              "impressions": 1595,
+              "ctr": 0.3887147335423197,
+              "position": 3.665203761755486
+            },
+            {
+              "query": "totalsportak",
+              "clicks": 617,
+              "impressions": 1229,
+              "ctr": 0.5020341741253052,
+              "position": 3.1814483319772173
+            },
+            {
+              "query": "totalsportech",
+              "clicks": 596,
+              "impressions": 1214,
+              "ctr": 0.49093904448105435,
+              "position": 3.028830313014827
+            },
+            {
+              "query": "total sporteck",
+              "clicks": 571,
+              "impressions": 1091,
+              "ctr": 0.5233730522456462,
+              "position": 2.3950504124656278
+            },
+            {
+              "query": "totalsportek tennis",
+              "clicks": 571,
+              "impressions": 1650,
+              "ctr": 0.34606060606060607,
+              "position": 2.37030303030303
+            },
+            {
+              "query": "sport.ek",
+              "clicks": 568,
+              "impressions": 1142,
+              "ctr": 0.4973730297723292,
+              "position": 1.435201401050788
+            },
+            {
+              "query": "sportek f1",
+              "clicks": 558,
+              "impressions": 1080,
+              "ctr": 0.5166666666666667,
+              "position": 2.937037037037037
+            },
+            {
+              "query": "totalsportek cricket",
+              "clicks": 558,
+              "impressions": 1061,
+              "ctr": 0.525918944392083,
+              "position": 1.4835061262959472
+            },
+            {
+              "query": "total sport ek",
+              "clicks": 546,
+              "impressions": 2950,
+              "ctr": 0.18508474576271186,
+              "position": 5.512881355932203
+            },
+            {
+              "query": "totelsportek",
+              "clicks": 530,
+              "impressions": 1453,
+              "ctr": 0.364762560220234,
+              "position": 4.062629043358569
+            },
+            {
+              "query": "totalsportek motorsport",
+              "clicks": 520,
+              "impressions": 782,
+              "ctr": 0.6649616368286445,
+              "position": 1.0792838874680306
+            },
+            {
+              "query": "totalesportsek",
+              "clicks": 511,
+              "impressions": 954,
+              "ctr": 0.5356394129979035,
+              "position": 3.460167714884696
+            },
+            {
+              "query": "total-sportek",
+              "clicks": 501,
+              "impressions": 1449,
+              "ctr": 0.34575569358178054,
+              "position": 2.684610075914424
+            },
+            {
+              "query": "totalsport tech",
+              "clicks": 484,
+              "impressions": 719,
+              "ctr": 0.6731571627260083,
+              "position": 1.7496522948539637
+            },
+            {
+              "query": "totalsportekz",
+              "clicks": 484,
+              "impressions": 2627,
+              "ctr": 0.18424057860677578,
+              "position": 4.594975256947087
+            },
+            {
+              "query": "totalsport ek",
+              "clicks": 470,
+              "impressions": 1217,
+              "ctr": 0.3861955628594905,
+              "position": 3.658175842235004
+            },
+            {
+              "query": "totalsporttrek",
+              "clicks": 467,
+              "impressions": 1104,
+              "ctr": 0.4230072463768116,
+              "position": 3.425724637681159
+            },
+            {
+              "query": "totalsports tek",
+              "clicks": 459,
+              "impressions": 1187,
+              "ctr": 0.3866891322662174,
+              "position": 2.9907329401853415
+            },
+            {
+              "query": "totalsport",
+              "clicks": 452,
+              "impressions": 1385,
+              "ctr": 0.3263537906137184,
+              "position": 4.6007220216606495
+            },
+            {
+              "query": "sportek live sport",
+              "clicks": 436,
+              "impressions": 853,
+              "ctr": 0.511137162954279,
+              "position": 2.323563892145369
+            },
+            {
+              "query": "total.sportek",
+              "clicks": 436,
+              "impressions": 1216,
+              "ctr": 0.35855263157894735,
+              "position": 3.2590460526315788
+            },
+            {
+              "query": "total sportek boxing",
+              "clicks": 426,
+              "impressions": 607,
+              "ctr": 0.7018121911037891,
+              "position": 1.1746293245469523
+            },
+            {
+              "query": "total sport take",
+              "clicks": 422,
+              "impressions": 628,
+              "ctr": 0.6719745222929936,
+              "position": 1.3439490445859872
+            },
+            {
+              "query": "totalsports ek",
+              "clicks": 420,
+              "impressions": 1023,
+              "ctr": 0.41055718475073316,
+              "position": 3.5180840664711632
+            },
+            {
+              "query": "totel sportek",
+              "clicks": 417,
+              "impressions": 753,
+              "ctr": 0.5537848605577689,
+              "position": 2.229747675962815
+            },
+            {
+              "query": "total sportek tennis",
+              "clicks": 414,
+              "impressions": 673,
+              "ctr": 0.6151560178306092,
+              "position": 1.062407132243685
+            },
+            {
+              "query": "totalsportek motogp",
+              "clicks": 412,
+              "impressions": 743,
+              "ctr": 0.5545087483176312,
+              "position": 2.2328398384925974
+            },
+            {
+              "query": "total sportek football",
+              "clicks": 408,
+              "impressions": 1117,
+              "ctr": 0.36526410026857653,
+              "position": 2.1942703670546106
+            },
+            {
+              "query": "totalsporteks",
+              "clicks": 407,
+              "impressions": 1394,
+              "ctr": 0.2919655667144907,
+              "position": 4.251793400286944
+            },
+            {
+              "query": "totalsportstrek",
+              "clicks": 405,
+              "impressions": 847,
+              "ctr": 0.4781582054309327,
+              "position": 2.8795749704840614
+            },
+            {
+              "query": "total sportek live stream",
+              "clicks": 404,
+              "impressions": 1137,
+              "ctr": 0.35532102022867196,
+              "position": 2.335971855760774
+            },
+            {
+              "query": "total sportel",
+              "clicks": 403,
+              "impressions": 1259,
+              "ctr": 0.3200953137410643,
+              "position": 2.830023828435266
+            },
+            {
+              "query": "totalsportek formula 1",
+              "clicks": 402,
+              "impressions": 803,
+              "ctr": 0.5006226650062267,
+              "position": 3.410958904109589
+            },
+            {
+              "query": "total sportek army",
+              "clicks": 398,
+              "impressions": 869,
+              "ctr": 0.4579976985040276,
+              "position": 2.5822784810126582
+            },
+            {
+              "query": "totalsportrk",
+              "clicks": 398,
+              "impressions": 1194,
+              "ctr": 0.3333333333333333,
+              "position": 3.9514237855946397
+            },
+            {
+              "query": "totalsportek world cup",
+              "clicks": 393,
+              "impressions": 865,
+              "ctr": 0.45433526011560693,
+              "position": 2.1468208092485552
+            },
+            {
+              "query": "total sports live score",
+              "clicks": 372,
+              "impressions": 1257,
+              "ctr": 0.29594272076372313,
+              "position": 3.6499602227525854
+            },
+            {
+              "query": "totalsportek.tv",
+              "clicks": 370,
+              "impressions": 573,
+              "ctr": 0.6457242582897034,
+              "position": 1.331588132635253
+            },
+            {
+              "query": "totalspoetek",
+              "clicks": 369,
+              "impressions": 1001,
+              "ctr": 0.36863136863136864,
+              "position": 3.94005994005994
+            },
+            {
+              "query": "totalsportek.army",
+              "clicks": 364,
+              "impressions": 1718,
+              "ctr": 0.21187427240977882,
+              "position": 5.238649592549476
+            },
+            {
+              "query": "sportek streaming",
+              "clicks": 353,
+              "impressions": 567,
+              "ctr": 0.6225749559082893,
+              "position": 1.7777777777777777
+            },
+            {
+              "query": "football sportek",
+              "clicks": 349,
+              "impressions": 691,
+              "ctr": 0.5050651230101303,
+              "position": 1.7322720694645442
+            },
+            {
+              "query": "totalsportek to",
+              "clicks": 349,
+              "impressions": 958,
+              "ctr": 0.36430062630480164,
+              "position": 1.7776617954070981
+            },
+            {
+              "query": "total sportech",
+              "clicks": 347,
+              "impressions": 659,
+              "ctr": 0.5265553869499241,
+              "position": 2.156297420333839
+            },
+            {
+              "query": "f1 total sportek",
+              "clicks": 340,
+              "impressions": 708,
+              "ctr": 0.480225988700565,
+              "position": 3.0494350282485874
+            },
+            {
+              "query": "totalsportek live streams",
+              "clicks": 336,
+              "impressions": 1348,
+              "ctr": 0.24925816023738873,
+              "position": 2.8590504451038576
+            },
+            {
+              "query": "totalsportek.com",
+              "clicks": 328,
+              "impressions": 5209,
+              "ctr": 0.06296794010366673,
+              "position": 7.225955077750048
+            }
+          ],
+          "pages": [
+            {
+              "page": "https://totalsportek.tech/",
+              "clicks": 654974,
+              "impressions": 1641493,
+              "ctr": 0.3990111441230636,
+              "position": 3.446587953771353
+            },
+            {
+              "page": "https://totalsportek.tech/game/argentina-vs-algeria-2519973555",
+              "clicks": 10,
+              "impressions": 111,
+              "ctr": 0.09009009009009009,
+              "position": 6.531531531531532
+            },
+            {
+              "page": "https://totalsportek.tech/game/mexico-vs-south-africa-1898417213",
+              "clicks": 7,
+              "impressions": 24,
+              "ctr": 0.2916666666666667,
+              "position": 4.291666666666666
+            },
+            {
+              "page": "https://totalsportek.tech/game/portugal-vs-dr-congo-8771113729",
+              "clicks": 6,
+              "impressions": 132,
+              "ctr": 0.045454545454545456,
+              "position": 8.568181818181818
+            },
+            {
+              "page": "https://totalsportek.tech/game/netherlands-vs-japan-1070326929",
+              "clicks": 4,
+              "impressions": 92,
+              "ctr": 0.043478260869565216,
+              "position": 8.597826086956522
+            },
+            {
+              "page": "https://totalsportek.tech/game/saudi-arabia-vs-uruguay-3875541326",
+              "clicks": 4,
+              "impressions": 57,
+              "ctr": 0.07017543859649122,
+              "position": 7.491228070175438
+            },
+            {
+              "page": "https://totalsportek.tech/game/france-vs-senegal-6520567123",
+              "clicks": 3,
+              "impressions": 65,
+              "ctr": 0.046153846153846156,
+              "position": 8.476923076923077
+            },
+            {
+              "page": "https://fifa.totalsportek.tech/",
+              "clicks": 2,
+              "impressions": 7,
+              "ctr": 0.2857142857142857,
+              "position": 2
+            },
+            {
+              "page": "https://totalsportek.tech/game/brazil-vs-morocco-5696706679",
+              "clicks": 2,
+              "impressions": 39,
+              "ctr": 0.05128205128205128,
+              "position": 7.666666666666667
+            },
+            {
+              "page": "https://totalsportek.tech/game/iran-vs-new-zealand-5385238371",
+              "clicks": 2,
+              "impressions": 21,
+              "ctr": 0.09523809523809523,
+              "position": 6.238095238095238
+            },
+            {
+              "page": "https://totalsportek.tech/game/leinster-vs-union-bordeaux-bgles-5015989588",
+              "clicks": 2,
+              "impressions": 2,
+              "ctr": 1,
+              "position": 54
+            },
+            {
+              "page": "https://totalsportek.tech/game/ufc-freedom-250-topuria-vs-gaethje-5061841953",
+              "clicks": 2,
+              "impressions": 6,
+              "ctr": 0.3333333333333333,
+              "position": 6.666666666666667
+            },
+            {
+              "page": "https://f1.totalsportek.tech/media/undefined",
+              "clicks": 1,
+              "impressions": 2,
+              "ctr": 0.5,
+              "position": 1
+            },
+            {
+              "page": "https://mlb.totalsportek.tech/",
+              "clicks": 1,
+              "impressions": 5,
+              "ctr": 0.2,
+              "position": 2.2
+            },
+            {
+              "page": "https://nba.totalsportek.tech/media/blog",
+              "clicks": 1,
+              "impressions": 1,
+              "ctr": 1,
+              "position": 1
+            },
+            {
+              "page": "https://totalsportek.tech/game/australia-vs-turkey-2479181515",
+              "clicks": 1,
+              "impressions": 10,
+              "ctr": 0.1,
+              "position": 7.4
+            },
+            {
+              "page": "https://totalsportek.tech/game/barcelonacatalunya-grand-prix-qualifying-2935932801",
+              "clicks": 1,
+              "impressions": 49,
+              "ctr": 0.02040816326530612,
+              "position": 8.061224489795919
+            },
+            {
+              "page": "https://totalsportek.tech/game/belgium-vs-egypt-9469575104",
+              "clicks": 1,
+              "impressions": 62,
+              "ctr": 0.016129032258064516,
+              "position": 7.629032258064516
+            },
+            {
+              "page": "https://totalsportek.tech/game/crystal-palace-vs-rayo-vallecano-6573215556",
+              "clicks": 1,
+              "impressions": 1,
+              "ctr": 1,
+              "position": 12
+            },
+            {
+              "page": "https://totalsportek.tech/game/czech-republic-vs-south-africa-6285692606",
+              "clicks": 1,
+              "impressions": 10,
+              "ctr": 0.1,
+              "position": 7.3
+            },
+            {
+              "page": "https://totalsportek.tech/game/england-vs-croatia-9057528461",
+              "clicks": 1,
+              "impressions": 19,
+              "ctr": 0.05263157894736842,
+              "position": 7.578947368421052
+            },
+            {
+              "page": "https://totalsportek.tech/game/portugal-vs-nigeria-1834594816",
+              "clicks": 1,
+              "impressions": 6,
+              "ctr": 0.16666666666666666,
+              "position": 7.666666666666667
+            },
+            {
+              "page": "https://totalsportek.tech/game/south-korea-vs-trinidad-and-tobago-1520574565",
+              "clicks": 1,
+              "impressions": 3,
+              "ctr": 0.3333333333333333,
+              "position": 24.333333333333332
+            },
+            {
+              "page": "https://totalsportek.tech/game/usa-vs-netherlands-545191",
+              "clicks": 1,
+              "impressions": 27,
+              "ctr": 0.037037037037037035,
+              "position": 8.185185185185185
+            },
+            {
+              "page": "https://totalsportek.tech/game/uzbekistan-vs-colombia-6281084313",
+              "clicks": 1,
+              "impressions": 27,
+              "ctr": 0.037037037037037035,
+              "position": 8.25925925925926
+            },
+            {
+              "page": "http://totalsportek.tech/",
+              "clicks": 0,
+              "impressions": 2,
+              "ctr": 0,
+              "position": 1
+            },
+            {
+              "page": "https://cricket.totalsportek.tech/",
+              "clicks": 0,
+              "impressions": 60,
+              "ctr": 0,
+              "position": 1.45
+            },
+            {
+              "page": "https://cricketz.totalsportek.tech/",
+              "clicks": 0,
+              "impressions": 21,
+              "ctr": 0,
+              "position": 1
+            },
+            {
+              "page": "https://f1.totalsportek.tech/",
+              "clicks": 0,
+              "impressions": 21,
+              "ctr": 0,
+              "position": 1.2857142857142856
+            },
+            {
+              "page": "https://f1.totalsportek.tech/media/blog",
+              "clicks": 0,
+              "impressions": 15,
+              "ctr": 0,
+              "position": 6.2
+            },
+            {
+              "page": "https://f1z.totalsportek.tech/",
+              "clicks": 0,
+              "impressions": 21,
+              "ctr": 0,
+              "position": 1
+            },
+            {
+              "page": "https://mlbz.totalsportek.tech/",
+              "clicks": 0,
+              "impressions": 7,
+              "ctr": 0,
+              "position": 1
+            },
+            {
+              "page": "https://motogp.totalsportek.tech/",
+              "clicks": 0,
+              "impressions": 17,
+              "ctr": 0,
+              "position": 1
+            },
+            {
+              "page": "https://motogpz.totalsportek.tech/",
+              "clicks": 0,
+              "impressions": 21,
+              "ctr": 0,
+              "position": 1
+            },
+            {
+              "page": "https://nba.totalsportek.tech/",
+              "clicks": 0,
+              "impressions": 12,
+              "ctr": 0,
+              "position": 1
+            },
+            {
+              "page": "https://nbaz.totalsportek.tech/",
+              "clicks": 0,
+              "impressions": 7,
+              "ctr": 0,
+              "position": 1
+            },
+            {
+              "page": "https://news.totalsportek.tech/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 1
+            },
+            {
+              "page": "https://nfl.totalsportek.tech/",
+              "clicks": 0,
+              "impressions": 38,
+              "ctr": 0,
+              "position": 1
+            },
+            {
+              "page": "https://nflz.totalsportek.tech/",
+              "clicks": 0,
+              "impressions": 7,
+              "ctr": 0,
+              "position": 1
+            },
+            {
+              "page": "https://nhl.totalsportek.tech/",
+              "clicks": 0,
+              "impressions": 3,
+              "ctr": 0,
+              "position": 1
+            },
+            {
+              "page": "https://primeiraliga.totalsportek.tech/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 2
+            },
+            {
+              "page": "https://rugby.totalsportek.tech/",
+              "clicks": 0,
+              "impressions": 29,
+              "ctr": 0,
+              "position": 1.206896551724138
+            },
+            {
+              "page": "https://soccer.totalsportek.tech/",
+              "clicks": 0,
+              "impressions": 59,
+              "ctr": 0,
+              "position": 1.1864406779661016
+            },
+            {
+              "page": "https://soccerz.totalsportek.tech/",
+              "clicks": 0,
+              "impressions": 21,
+              "ctr": 0,
+              "position": 1
+            },
+            {
+              "page": "https://tennis.totalsportek.tech/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 1
+            },
+            {
+              "page": "https://totalsportek.tech/game/alfateh-vs-al-najma-unaizah-5340240584",
+              "clicks": 0,
+              "impressions": 4,
+              "ctr": 0,
+              "position": 9.25
+            },
+            {
+              "page": "https://totalsportek.tech/game/alshabab-vs-al-ittihad-9548676123",
+              "clicks": 0,
+              "impressions": 12,
+              "ctr": 0,
+              "position": 5.583333333333333
+            },
+            {
+              "page": "https://totalsportek.tech/game/austria-vs-norway-788570",
+              "clicks": 0,
+              "impressions": 13,
+              "ctr": 0,
+              "position": 7.538461538461538
+            },
+            {
+              "page": "https://totalsportek.tech/game/baltimore-orioles-vs-seattle-mariners-4738433826",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 9
+            },
+            {
+              "page": "https://totalsportek.tech/game/bangladesh-vs-australia-121387",
+              "clicks": 0,
+              "impressions": 5,
+              "ctr": 0,
+              "position": 6
+            },
+            {
+              "page": "https://totalsportek.tech/game/bangladesh-vs-pakistan-309288",
+              "clicks": 0,
+              "impressions": 2,
+              "ctr": 0,
+              "position": 6.5
+            },
+            {
+              "page": "https://totalsportek.tech/game/barcelonacatalunya-grand-prix-practice-3-5510472685",
+              "clicks": 0,
+              "impressions": 7,
+              "ctr": 0,
+              "position": 8.428571428571429
+            },
+            {
+              "page": "https://totalsportek.tech/game/brage-vs-sandviken-259603",
+              "clicks": 0,
+              "impressions": 7,
+              "ctr": 0,
+              "position": 9.571428571428571
+            },
+            {
+              "page": "https://totalsportek.tech/game/canada-vs-uzbekistan-6226412732",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 4
+            },
+            {
+              "page": "https://totalsportek.tech/game/canadian-grand-prix-sprint-1740679788",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 16
+            },
+            {
+              "page": "https://totalsportek.tech/game/england-vs-costa-rica-5232996079",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 9
+            },
+            {
+              "page": "https://totalsportek.tech/game/england-vs-new-zealand-289986",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 8
+            },
+            {
+              "page": "https://totalsportek.tech/game/finland-vs-austria-974915",
+              "clicks": 0,
+              "impressions": 19,
+              "ctr": 0,
+              "position": 8.473684210526315
+            },
+            {
+              "page": "https://totalsportek.tech/game/germany-vs-curaao-5270483429",
+              "clicks": 0,
+              "impressions": 3,
+              "ctr": 0,
+              "position": 9
+            },
+            {
+              "page": "https://totalsportek.tech/game/girona-vs-real-sociedad-1937915720",
+              "clicks": 0,
+              "impressions": 6,
+              "ctr": 0,
+              "position": 4.333333333333334
+            },
+            {
+              "page": "https://totalsportek.tech/game/haiti-vs-peru-6782862700",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 6
+            },
+            {
+              "page": "https://totalsportek.tech/game/hong-kong-vs-bahrain-340772",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 8
+            },
+            {
+              "page": "https://totalsportek.tech/game/hungary-gp-6709454160",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 10
+            },
+            {
+              "page": "https://totalsportek.tech/game/hungary-sprint-race-0119305060",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 5
+            },
+            {
+              "page": "https://totalsportek.tech/game/iceland-vs-argentina-1346534646",
+              "clicks": 0,
+              "impressions": 3,
+              "ctr": 0,
+              "position": 6.666666666666667
+            },
+            {
+              "page": "https://totalsportek.tech/game/india-vs-afghanistan-489378",
+              "clicks": 0,
+              "impressions": 2,
+              "ctr": 0,
+              "position": 6
+            },
+            {
+              "page": "https://totalsportek.tech/game/india-vs-afghanistan-646455",
+              "clicks": 0,
+              "impressions": 92,
+              "ctr": 0,
+              "position": 8.402173913043478
+            },
+            {
+              "page": "https://totalsportek.tech/game/indonesia-vs-mozambique-5458827870",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 5
+            },
+            {
+              "page": "https://totalsportek.tech/game/instituto-vs-lans-1588532925",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 5
+            },
+            {
+              "page": "https://totalsportek.tech/game/iraq-vs-norway-6752415318",
+              "clicks": 0,
+              "impressions": 6,
+              "ctr": 0,
+              "position": 9.333333333333334
+            },
+            {
+              "page": "https://totalsportek.tech/game/iraq-vs-venezuela-3863402459",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 3
+            },
+            {
+              "page": "https://totalsportek.tech/game/ireland-vs-grenada-1063923778",
+              "clicks": 0,
+              "impressions": 4,
+              "ctr": 0,
+              "position": 2.75
+            },
+            {
+              "page": "https://totalsportek.tech/game/ireland-vs-qatar-5043798236",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 4
+            },
+            {
+              "page": "https://totalsportek.tech/game/italy-gp-4630269969",
+              "clicks": 0,
+              "impressions": 2,
+              "ctr": 0,
+              "position": 8.5
+            },
+            {
+              "page": "https://totalsportek.tech/game/italy-sprint-race-4513707943",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 10
+            },
+            {
+              "page": "https://totalsportek.tech/game/ivory-coast-vs-ecuador-6831675740",
+              "clicks": 0,
+              "impressions": 27,
+              "ctr": 0,
+              "position": 8.074074074074074
+            },
+            {
+              "page": "https://totalsportek.tech/game/juventus-vs-fiorentina-1966746185",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 10
+            },
+            {
+              "page": "https://totalsportek.tech/game/karlsruhe-vs-bochum-2615771591",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 5
+            },
+            {
+              "page": "https://totalsportek.tech/game/kayserispor-vs-konyaspor-3080200528",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 6
+            },
+            {
+              "page": "https://totalsportek.tech/game/las-vegas-aces-vs-los-angeles-sparks-5338899656",
+              "clicks": 0,
+              "impressions": 8,
+              "ctr": 0,
+              "position": 7.875
+            },
+            {
+              "page": "https://totalsportek.tech/game/mali-vs-ivory-coast-682465",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 6
+            },
+            {
+              "page": "https://totalsportek.tech/game/monaco-grand-prix-9458203913",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 10
+            },
+            {
+              "page": "https://totalsportek.tech/game/monaco-grand-prix-practice-3-6547521734",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 1
+            },
+            {
+              "page": "https://totalsportek.tech/game/monaco-grand-prix-qualifying-4689716967",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 10
+            },
+            {
+              "page": "https://totalsportek.tech/game/myanmar-vs-guam-6113271137",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 7
+            },
+            {
+              "page": "https://totalsportek.tech/game/new-york-knicks-vs-cleveland-cavaliers-4685770268",
+              "clicks": 0,
+              "impressions": 9,
+              "ctr": 0,
+              "position": 2.7777777777777777
+            },
+            {
+              "page": "https://totalsportek.tech/game/nxt-8514892084",
+              "clicks": 0,
+              "impressions": 4,
+              "ctr": 0,
+              "position": 4
+            },
+            {
+              "page": "https://totalsportek.tech/game/paris-sg-vs-arsenal-0442879759",
+              "clicks": 0,
+              "impressions": 2,
+              "ctr": 0,
+              "position": 1
+            },
+            {
+              "page": "https://totalsportek.tech/game/philippines-vs-myanmar-6035625636",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 4
+            },
+            {
+              "page": "https://totalsportek.tech/game/qatar-vs-switzerland-0157416107",
+              "clicks": 0,
+              "impressions": 5,
+              "ctr": 0,
+              "position": 4.6
+            },
+            {
+              "page": "https://totalsportek.tech/game/raw-2749018445",
+              "clicks": 0,
+              "impressions": 3,
+              "ctr": 0,
+              "position": 7
+            },
+            {
+              "page": "https://totalsportek.tech/game/raw-4566142192",
+              "clicks": 0,
+              "impressions": 3,
+              "ctr": 0,
+              "position": 5
+            },
+            {
+              "page": "https://totalsportek.tech/game/russia-vs-trinidad-and-tobago-1066561184",
+              "clicks": 0,
+              "impressions": 2,
+              "ctr": 0,
+              "position": 10
+            },
+            {
+              "page": "https://totalsportek.tech/game/san-antonio-spurs-vs-new-york-knicks-9911007699",
+              "clicks": 0,
+              "impressions": 4,
+              "ctr": 0,
+              "position": 10
+            },
+            {
+              "page": "https://totalsportek.tech/game/saudi-arabia-vs-senegal-0684934854",
+              "clicks": 0,
+              "impressions": 5,
+              "ctr": 0,
+              "position": 8.4
+            },
+            {
+              "page": "https://totalsportek.tech/game/scotland-vs-usa-287432",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 7
+            },
+            {
+              "page": "https://totalsportek.tech/game/seattle-mariners-vs-arizona-diamondbacks-9061424959",
+              "clicks": 0,
+              "impressions": 4,
+              "ctr": 0,
+              "position": 4.75
+            },
+            {
+              "page": "https://totalsportek.tech/game/smackdown-0295699941",
+              "clicks": 0,
+              "impressions": 2,
+              "ctr": 0,
+              "position": 6
+            },
+            {
+              "page": "https://totalsportek.tech/game/smackdown-8229483234",
+              "clicks": 0,
+              "impressions": 3,
+              "ctr": 0,
+              "position": 8
+            },
+            {
+              "page": "https://totalsportek.tech/game/south-korea-vs-czech-republic-4072812966",
+              "clicks": 0,
+              "impressions": 20,
+              "ctr": 0,
+              "position": 9
+            }
+          ]
+        },
+        "url_inspection": [
+          {
+            "url": "https://totalsportek.tech/",
+            "error": null,
+            "verdict": "PASS",
+            "coverageState": "Submitted and indexed",
+            "robotsTxtState": "ALLOWED",
+            "indexingState": "INDEXING_ALLOWED",
+            "pageFetchState": "SUCCESSFUL",
+            "lastCrawlTime": "2026-06-20T20:10:19Z",
+            "googleCanonical": "https://totalsportek.tech/",
+            "userCanonical": "https://totalsportek.tech/",
+            "mobileUsability": "VERDICT_UNSPECIFIED",
+            "indexed": true
+          },
+          {
+            "url": "https://totalsportek.tech/dmca",
+            "error": null,
+            "verdict": "NEUTRAL",
+            "coverageState": "Excluded by \u2018noindex\u2019 tag",
+            "robotsTxtState": "ALLOWED",
+            "indexingState": "BLOCKED_BY_META_TAG",
+            "pageFetchState": "SUCCESSFUL",
+            "lastCrawlTime": "2026-06-18T17:04:19Z",
+            "googleCanonical": "https://totalsportek.bio/dmca",
+            "userCanonical": null,
+            "mobileUsability": "VERDICT_UNSPECIFIED",
+            "indexed": false
+          }
+        ],
+        "error": null
+      },
+      "totalsportek.bio": {
+        "property": "sc-domain:totalsportek.bio",
+        "search_analytics": {
+          "window": {
+            "start": "2026-05-23",
+            "end": "2026-06-20",
+            "days": 28
+          },
+          "totals": {
+            "clicks": 316,
+            "impressions": 7396,
+            "ctr": 0.0427,
+            "position": 9.5
+          },
+          "daily": [
+            {
+              "date": "2026-06-16",
+              "clicks": 0,
+              "impressions": 0,
+              "ctr": 0,
+              "position": 0
+            },
+            {
+              "date": "2026-06-17",
+              "clicks": 2,
+              "impressions": 89,
+              "ctr": 0.02247191011235955,
+              "position": 13.325842696629213
+            },
+            {
+              "date": "2026-06-18",
+              "clicks": 314,
+              "impressions": 7307,
+              "ctr": 0.04297249213083345,
+              "position": 9.453948268783359
+            }
+          ],
+          "queries": [
+            {
+              "query": "totalsportek",
+              "clicks": 63,
+              "impressions": 2463,
+              "ctr": 0.025578562728380026,
+              "position": 10.00690215184734
+            },
+            {
+              "query": "total sportek",
+              "clicks": 9,
+              "impressions": 338,
+              "ctr": 0.026627218934911243,
+              "position": 10.875739644970414
+            },
+            {
+              "query": "totalsportek.cfd",
+              "clicks": 7,
+              "impressions": 8,
+              "ctr": 0.875,
+              "position": 1.75
+            },
+            {
+              "query": "totalsportstek",
+              "clicks": 6,
+              "impressions": 27,
+              "ctr": 0.2222222222222222,
+              "position": 10
+            },
+            {
+              "query": "totalsportek.dev",
+              "clicks": 5,
+              "impressions": 78,
+              "ctr": 0.0641025641025641,
+              "position": 4.179487179487179
+            },
+            {
+              "query": "sportek",
+              "clicks": 4,
+              "impressions": 65,
+              "ctr": 0.06153846153846154,
+              "position": 8.984615384615385
+            },
+            {
+              "query": "total sportek official website",
+              "clicks": 4,
+              "impressions": 6,
+              "ctr": 0.6666666666666666,
+              "position": 8
+            },
+            {
+              "query": "totalsportek org",
+              "clicks": 3,
+              "impressions": 7,
+              "ctr": 0.42857142857142855,
+              "position": 7.857142857142857
+            },
+            {
+              "query": "totalsportek-live streams",
+              "clicks": 3,
+              "impressions": 7,
+              "ctr": 0.42857142857142855,
+              "position": 12.571428571428571
+            },
+            {
+              "query": "totalsportek.io",
+              "clicks": 3,
+              "impressions": 9,
+              "ctr": 0.3333333333333333,
+              "position": 3.2222222222222223
+            },
+            {
+              "query": "totalsportek.nexus",
+              "clicks": 3,
+              "impressions": 12,
+              "ctr": 0.25,
+              "position": 4.416666666666666
+            },
+            {
+              "query": "mexico vs south korea totalsportek",
+              "clicks": 2,
+              "impressions": 10,
+              "ctr": 0.2,
+              "position": 12
+            },
+            {
+              "query": "sportek 2",
+              "clicks": 2,
+              "impressions": 2,
+              "ctr": 1,
+              "position": 2.5
+            },
+            {
+              "query": "total sport tek",
+              "clicks": 2,
+              "impressions": 26,
+              "ctr": 0.07692307692307693,
+              "position": 8.346153846153847
+            },
+            {
+              "query": "total sportek com",
+              "clicks": 2,
+              "impressions": 6,
+              "ctr": 0.3333333333333333,
+              "position": 15.5
+            },
+            {
+              "query": "total sportek.com",
+              "clicks": 2,
+              "impressions": 46,
+              "ctr": 0.043478260869565216,
+              "position": 8.891304347826086
+            },
+            {
+              "query": "totalsport",
+              "clicks": 2,
+              "impressions": 25,
+              "ctr": 0.08,
+              "position": 11.08
+            },
+            {
+              "query": "totalsporteck",
+              "clicks": 2,
+              "impressions": 5,
+              "ctr": 0.4,
+              "position": 12
+            },
+            {
+              "query": "https://totalsportek.li/totalsportek",
+              "clicks": 1,
+              "impressions": 3,
+              "ctr": 0.3333333333333333,
+              "position": 1
+            },
+            {
+              "query": "https://totalsportek.tech/",
+              "clicks": 1,
+              "impressions": 12,
+              "ctr": 0.08333333333333333,
+              "position": 5.416666666666667
+            },
+            {
+              "query": "live total sportek",
+              "clicks": 1,
+              "impressions": 10,
+              "ctr": 0.1,
+              "position": 9.7
+            },
+            {
+              "query": "live.totalsportek",
+              "clicks": 1,
+              "impressions": 9,
+              "ctr": 0.1111111111111111,
+              "position": 9.222222222222221
+            },
+            {
+              "query": "livesportek2",
+              "clicks": 1,
+              "impressions": 2,
+              "ctr": 0.5,
+              "position": 4
+            },
+            {
+              "query": "man city vs tottenham live stream",
+              "clicks": 1,
+              "impressions": 2,
+              "ctr": 0.5,
+              "position": 9
+            },
+            {
+              "query": "soccer free live streaming",
+              "clicks": 1,
+              "impressions": 1,
+              "ctr": 1,
+              "position": 231
+            },
+            {
+              "query": "sportek sports live",
+              "clicks": 1,
+              "impressions": 2,
+              "ctr": 0.5,
+              "position": 7
+            },
+            {
+              "query": "sportek tv",
+              "clicks": 1,
+              "impressions": 8,
+              "ctr": 0.125,
+              "position": 6.625
+            },
+            {
+              "query": "sportelek",
+              "clicks": 1,
+              "impressions": 1,
+              "ctr": 1,
+              "position": 6
+            },
+            {
+              "query": "teksport live",
+              "clicks": 1,
+              "impressions": 3,
+              "ctr": 0.3333333333333333,
+              "position": 10.666666666666666
+            },
+            {
+              "query": "total football live",
+              "clicks": 1,
+              "impressions": 1,
+              "ctr": 1,
+              "position": 8
+            },
+            {
+              "query": "total sport live stream",
+              "clicks": 1,
+              "impressions": 1,
+              "ctr": 1,
+              "position": 15
+            },
+            {
+              "query": "total sportek cricket",
+              "clicks": 1,
+              "impressions": 3,
+              "ctr": 0.3333333333333333,
+              "position": 9.666666666666666
+            },
+            {
+              "query": "total sportek grand national",
+              "clicks": 1,
+              "impressions": 2,
+              "ctr": 0.5,
+              "position": 4
+            },
+            {
+              "query": "total sportek live football",
+              "clicks": 1,
+              "impressions": 1,
+              "ctr": 1,
+              "position": 10
+            },
+            {
+              "query": "total sportek live streams",
+              "clicks": 1,
+              "impressions": 7,
+              "ctr": 0.14285714285714285,
+              "position": 7.428571428571429
+            },
+            {
+              "query": "total sportek pga",
+              "clicks": 1,
+              "impressions": 1,
+              "ctr": 1,
+              "position": 1
+            },
+            {
+              "query": "total sportek streams",
+              "clicks": 1,
+              "impressions": 94,
+              "ctr": 0.010638297872340425,
+              "position": 9.074468085106384
+            },
+            {
+              "query": "total sportek.org",
+              "clicks": 1,
+              "impressions": 4,
+              "ctr": 0.25,
+              "position": 8.25
+            },
+            {
+              "query": "total sportek.to",
+              "clicks": 1,
+              "impressions": 7,
+              "ctr": 0.14285714285714285,
+              "position": 7.285714285714286
+            },
+            {
+              "query": "total sprtek",
+              "clicks": 1,
+              "impressions": 2,
+              "ctr": 0.5,
+              "position": 16
+            },
+            {
+              "query": "total-sportekx.top",
+              "clicks": 1,
+              "impressions": 3,
+              "ctr": 0.3333333333333333,
+              "position": 3.6666666666666665
+            },
+            {
+              "query": "totalsortek",
+              "clicks": 1,
+              "impressions": 3,
+              "ctr": 0.3333333333333333,
+              "position": 15.666666666666666
+            },
+            {
+              "query": "totalspore",
+              "clicks": 1,
+              "impressions": 1,
+              "ctr": 1,
+              "position": 9
+            },
+            {
+              "query": "totalsportek - live streams",
+              "clicks": 1,
+              "impressions": 8,
+              "ctr": 0.125,
+              "position": 10
+            },
+            {
+              "query": "totalsportek arabic",
+              "clicks": 1,
+              "impressions": 5,
+              "ctr": 0.2,
+              "position": 6
+            },
+            {
+              "query": "totalsportek golf",
+              "clicks": 1,
+              "impressions": 12,
+              "ctr": 0.08333333333333333,
+              "position": 13.25
+            },
+            {
+              "query": "totalsportek io",
+              "clicks": 1,
+              "impressions": 6,
+              "ctr": 0.16666666666666666,
+              "position": 6.333333333333333
+            },
+            {
+              "query": "totalsportek live",
+              "clicks": 1,
+              "impressions": 20,
+              "ctr": 0.05,
+              "position": 12.75
+            },
+            {
+              "query": "totalsportek soccer",
+              "clicks": 1,
+              "impressions": 13,
+              "ctr": 0.07692307692307693,
+              "position": 9.461538461538462
+            },
+            {
+              "query": "totalsportek stream live",
+              "clicks": 1,
+              "impressions": 7,
+              "ctr": 0.14285714285714285,
+              "position": 9
+            },
+            {
+              "query": "totalsportek upcoming",
+              "clicks": 1,
+              "impressions": 7,
+              "ctr": 0.14285714285714285,
+              "position": 5.142857142857143
+            },
+            {
+              "query": "totalsportek world cup",
+              "clicks": 1,
+              "impressions": 28,
+              "ctr": 0.03571428571428571,
+              "position": 10.428571428571429
+            },
+            {
+              "query": "totalsportek.cc",
+              "clicks": 1,
+              "impressions": 18,
+              "ctr": 0.05555555555555555,
+              "position": 7.166666666666667
+            },
+            {
+              "query": "totalsportek.in",
+              "clicks": 1,
+              "impressions": 2,
+              "ctr": 0.5,
+              "position": 8
+            },
+            {
+              "query": "totalsportek.org",
+              "clicks": 1,
+              "impressions": 2,
+              "ctr": 0.5,
+              "position": 4
+            },
+            {
+              "query": "totalsportek.pl",
+              "clicks": 1,
+              "impressions": 1,
+              "ctr": 1,
+              "position": 5
+            },
+            {
+              "query": "totalsportek.tech",
+              "clicks": 1,
+              "impressions": 26,
+              "ctr": 0.038461538461538464,
+              "position": 8.26923076923077
+            },
+            {
+              "query": "totalsportrk",
+              "clicks": 1,
+              "impressions": 6,
+              "ctr": 0.16666666666666666,
+              "position": 8.666666666666668
+            },
+            {
+              "query": "totalsporttek",
+              "clicks": 1,
+              "impressions": 54,
+              "ctr": 0.018518518518518517,
+              "position": 10.74074074074074
+            },
+            {
+              "query": "totalspotek",
+              "clicks": 1,
+              "impressions": 15,
+              "ctr": 0.06666666666666667,
+              "position": 9.466666666666667
+            },
+            {
+              "query": "totaltek sports",
+              "clicks": 1,
+              "impressions": 8,
+              "ctr": 0.125,
+              "position": 5.875
+            },
+            {
+              "query": "toto sportek",
+              "clicks": 1,
+              "impressions": 2,
+              "ctr": 0.5,
+              "position": 6.5
+            },
+            {
+              "query": "www.totalsportek",
+              "clicks": 1,
+              "impressions": 18,
+              "ctr": 0.05555555555555555,
+              "position": 8.833333333333332
+            },
+            {
+              "query": "www.totalsportek.com",
+              "clicks": 1,
+              "impressions": 9,
+              "ctr": 0.1111111111111111,
+              "position": 9.222222222222221
+            },
+            {
+              "query": "@\u0f3c\u0f04\ud835\udcdc\ud835\udcfb.\ud835\udcdd\ud835\udcf8\ud835\udcd1\ud835\udcf8\u0f0d\u0f0d\u0f3d: https://live.totalsportek.rodeo/",
+              "clicks": 0,
+              "impressions": 2,
+              "ctr": 0,
+              "position": 4.5
+            },
+            {
+              "query": "@\u0f3c\u0f04\ud835\udcdc\ud835\udcfb.\ud835\udcdd\ud835\udcf8\ud835\udcd1\ud835\udcf8\u0f0d\u0f0d\u0f3d:https://live.totalsportek.rodeo/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 5
+            },
+            {
+              "query": "@\ud83e\ude90: 1. hesgoal.tv 2. totalsportek.com 3 .ripple.stream 4. sport24.icu 5. soccerstream.net",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 9
+            },
+            {
+              "query": "argentina vs algeria total sportek",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 7
+            },
+            {
+              "query": "arsenal totalsportek",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 12
+            },
+            {
+              "query": "arsenal vs liverpool community shield live stream totalsportek",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 7
+            },
+            {
+              "query": "arsenal vs liverpool totalsportek",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 10
+            },
+            {
+              "query": "aston villa total sportek",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 11
+            },
+            {
+              "query": "barcelona total sportek",
+              "clicks": 0,
+              "impressions": 2,
+              "ctr": 0,
+              "position": 19
+            },
+            {
+              "query": "barcelona totalsportek",
+              "clicks": 0,
+              "impressions": 2,
+              "ctr": 0,
+              "position": 11.5
+            },
+            {
+              "query": "barcelona vs psg live stream total sportek free",
+              "clicks": 0,
+              "impressions": 302,
+              "ctr": 0,
+              "position": 8
+            },
+            {
+              "query": "canada vs bosnia and herzegovina totalsportek",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 12
+            },
+            {
+              "query": "chelsea vs liverpool total sportek",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 11
+            },
+            {
+              "query": "f1 sportek",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 8
+            },
+            {
+              "query": "f1 total sportek",
+              "clicks": 0,
+              "impressions": 2,
+              "ctr": 0,
+              "position": 10
+            },
+            {
+              "query": "fc barcelona totalsport",
+              "clicks": 0,
+              "impressions": 2,
+              "ctr": 0,
+              "position": 20
+            },
+            {
+              "query": "fc barcelona totalsportek",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 12
+            },
+            {
+              "query": "fifa totalsportek",
+              "clicks": 0,
+              "impressions": 2,
+              "ctr": 0,
+              "position": 8
+            },
+            {
+              "query": "fifa world cup totalsportek",
+              "clicks": 0,
+              "impressions": 4,
+              "ctr": 0,
+              "position": 10.5
+            },
+            {
+              "query": "football live stream sportek",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 10
+            },
+            {
+              "query": "football live totalsportek",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 12
+            },
+            {
+              "query": "football stream sportek",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 10
+            },
+            {
+              "query": "http://live.totalsportek website",
+              "clicks": 0,
+              "impressions": 2,
+              "ctr": 0,
+              "position": 10
+            },
+            {
+              "query": "http://totalsportek",
+              "clicks": 0,
+              "impressions": 4,
+              "ctr": 0,
+              "position": 5
+            },
+            {
+              "query": "https:// totalsportek. pro",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 8
+            },
+            {
+              "query": "https://live.totalsportek",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 10
+            },
+            {
+              "query": "https://soccer.totalsportek.army/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 8
+            },
+            {
+              "query": "https://total-sportek.best/",
+              "clicks": 0,
+              "impressions": 3,
+              "ctr": 0,
+              "position": 6.666666666666667
+            },
+            {
+              "query": "https://totalsportek",
+              "clicks": 0,
+              "impressions": 17,
+              "ctr": 0,
+              "position": 9.176470588235293
+            },
+            {
+              "query": "https://totalsportek.",
+              "clicks": 0,
+              "impressions": 5,
+              "ctr": 0,
+              "position": 9.4
+            },
+            {
+              "query": "https://totalsportek.com",
+              "clicks": 0,
+              "impressions": 2,
+              "ctr": 0,
+              "position": 4.5
+            },
+            {
+              "query": "https://totalsportek.events/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 3
+            },
+            {
+              "query": "https://totalsportek.li/date/today/",
+              "clicks": 0,
+              "impressions": 2,
+              "ctr": 0,
+              "position": 2.5
+            },
+            {
+              "query": "https://totalsportek.ms",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 6
+            },
+            {
+              "query": "https://totalsportek.ms/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 5
+            },
+            {
+              "query": "https://totalsportek.pro/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 11
+            }
+          ],
+          "pages": [
+            {
+              "page": "https://totalsportek.bio/",
+              "clicks": 316,
+              "impressions": 7011,
+              "ctr": 0.045072029667665096,
+              "position": 9.219797461132506
+            },
+            {
+              "page": "https://totalsportek.bio/media/blog",
+              "clicks": 1,
+              "impressions": 11,
+              "ctr": 0.09090909090909091,
+              "position": 10.727272727272727
+            },
+            {
+              "page": "https://boxing.totalsportek.bio/",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 12
+            },
+            {
+              "page": "https://cricket.totalsportek.bio/",
+              "clicks": 0,
+              "impressions": 11,
+              "ctr": 0,
+              "position": 8.363636363636363
+            },
+            {
+              "page": "https://everton.totalsportek.bio/",
+              "clicks": 0,
+              "impressions": 6,
+              "ctr": 0,
+              "position": 8.666666666666668
+            },
+            {
+              "page": "https://f1.totalsportek.bio/",
+              "clicks": 0,
+              "impressions": 11,
+              "ctr": 0,
+              "position": 8.363636363636363
+            },
+            {
+              "page": "https://leicestercity.totalsportek.bio/",
+              "clicks": 0,
+              "impressions": 6,
+              "ctr": 0,
+              "position": 8.833333333333332
+            },
+            {
+              "page": "https://mlb.totalsportek.bio/",
+              "clicks": 0,
+              "impressions": 12,
+              "ctr": 0,
+              "position": 5.666666666666667
+            },
+            {
+              "page": "https://motogp.totalsportek.bio/",
+              "clicks": 0,
+              "impressions": 10,
+              "ctr": 0,
+              "position": 8
+            },
+            {
+              "page": "https://nba.totalsportek.bio/",
+              "clicks": 0,
+              "impressions": 7,
+              "ctr": 0,
+              "position": 7.571428571428571
+            },
+            {
+              "page": "https://news.totalsportek.bio/",
+              "clicks": 0,
+              "impressions": 403,
+              "ctr": 0,
+              "position": 14.84863523573201
+            },
+            {
+              "page": "https://news.totalsportek.bio/barcelona-star-agrees-four-year-contract-with-paris-saint-germain-a-major-european-transfer-statement-942322",
+              "clicks": 0,
+              "impressions": 2,
+              "ctr": 0,
+              "position": 5
+            },
+            {
+              "page": "https://news.totalsportek.bio/dana-white-reveals-ufc-will-break-major-rule-for-trump-white-house-fight-night-011720",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 4
+            },
+            {
+              "page": "https://news.totalsportek.bio/fifa-world-cup-schedule-today:-june-14-matches-and-live-updates-on-totalsportek-040930",
+              "clicks": 0,
+              "impressions": 7,
+              "ctr": 0,
+              "position": 10.428571428571429
+            },
+            {
+              "page": "https://news.totalsportek.bio/nhl-all-star-game-returns-in-2027-with-dramatic-international-tournament-format-revealed-380403",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 18
+            },
+            {
+              "page": "https://news.totalsportek.bio/upcoming-fifa-world-cup-matches:-biggest-football-streams-to-watch-on-totalsportek-754074",
+              "clicks": 0,
+              "impressions": 181,
+              "ctr": 0,
+              "position": 10.988950276243093
+            },
+            {
+              "page": "https://news.totalsportek.bio/upcoming-rugby-matches-in-2026:-biggest-international-clashes-to-watch-on-totalsportek-160514",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 28
+            },
+            {
+              "page": "https://nfl.totalsportek.bio/",
+              "clicks": 0,
+              "impressions": 7,
+              "ctr": 0,
+              "position": 7.571428571428571
+            },
+            {
+              "page": "https://olympiquemarseille.totalsportek.bio/",
+              "clicks": 0,
+              "impressions": 5,
+              "ctr": 0,
+              "position": 7
+            },
+            {
+              "page": "https://soccer.totalsportek.bio/",
+              "clicks": 0,
+              "impressions": 46,
+              "ctr": 0,
+              "position": 15.717391304347826
+            },
+            {
+              "page": "https://totalsportek.bio/game/al-ahed-vs-sagesse-7862358057",
+              "clicks": 0,
+              "impressions": 2,
+              "ctr": 0,
+              "position": 51
+            },
+            {
+              "page": "https://totalsportek.bio/game/alpine-skiing-049682",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 1
+            },
+            {
+              "page": "https://totalsportek.bio/game/argentina-vs-algeria-2519973555",
+              "clicks": 0,
+              "impressions": 10,
+              "ctr": 0,
+              "position": 5.2
+            },
+            {
+              "page": "https://totalsportek.bio/game/austria-vs-jordan-5175451324",
+              "clicks": 0,
+              "impressions": 11,
+              "ctr": 0,
+              "position": 8.272727272727273
+            },
+            {
+              "page": "https://totalsportek.bio/game/bangladesh-vs-australia-862902",
+              "clicks": 0,
+              "impressions": 7,
+              "ctr": 0,
+              "position": 7.857142857142857
+            },
+            {
+              "page": "https://totalsportek.bio/game/boston-red-sox-vs-toronto-blue-jays-4559120318",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 10
+            },
+            {
+              "page": "https://totalsportek.bio/game/burnley-vs-bournemouth-7969997174",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 15
+            },
+            {
+              "page": "https://totalsportek.bio/game/czech-republic-vs-south-africa-6285692606",
+              "clicks": 0,
+              "impressions": 10,
+              "ctr": 0,
+              "position": 7.6
+            },
+            {
+              "page": "https://totalsportek.bio/game/england-vs-croatia-9057528461",
+              "clicks": 0,
+              "impressions": 5,
+              "ctr": 0,
+              "position": 10
+            },
+            {
+              "page": "https://totalsportek.bio/game/england-vs-new-zealand-205521",
+              "clicks": 0,
+              "impressions": 8,
+              "ctr": 0,
+              "position": 3.375
+            },
+            {
+              "page": "https://totalsportek.bio/game/france-vs-senegal-6520567123",
+              "clicks": 0,
+              "impressions": 9,
+              "ctr": 0,
+              "position": 8.444444444444445
+            },
+            {
+              "page": "https://totalsportek.bio/game/gambia-ports-authority-vs-team-rhino-6478888509",
+              "clicks": 0,
+              "impressions": 2,
+              "ctr": 0,
+              "position": 14
+            },
+            {
+              "page": "https://totalsportek.bio/game/golden-state-valkyries-vs-dallas-wings-8374437856",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 19
+            },
+            {
+              "page": "https://totalsportek.bio/game/halifax-tides-vs-vancouver-rise-6020670476",
+              "clicks": 0,
+              "impressions": 2,
+              "ctr": 0,
+              "position": 13
+            },
+            {
+              "page": "https://totalsportek.bio/game/iraq-vs-norway-6752415318",
+              "clicks": 0,
+              "impressions": 5,
+              "ctr": 0,
+              "position": 14
+            },
+            {
+              "page": "https://totalsportek.bio/game/namibia-vs-hong-kong-794624",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 7
+            },
+            {
+              "page": "https://totalsportek.bio/game/netherlands-vs-canada-807803",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 17
+            },
+            {
+              "page": "https://totalsportek.bio/game/phoenix-mercury-vs-las-vegas-aces-4592078147",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 18
+            },
+            {
+              "page": "https://totalsportek.bio/game/portugal-vs-dr-congo-8771113729",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 18
+            },
+            {
+              "page": "https://totalsportek.bio/game/samger-vs-bombada-8101824459",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 11
+            },
+            {
+              "page": "https://totalsportek.bio/game/samger-vs-bombada-9581030789",
+              "clicks": 0,
+              "impressions": 2,
+              "ctr": 0,
+              "position": 12.5
+            },
+            {
+              "page": "https://totalsportek.bio/game/smackdown-1800298987",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 3
+            },
+            {
+              "page": "https://totalsportek.bio/game/speed-skating-829456",
+              "clicks": 0,
+              "impressions": 2,
+              "ctr": 0,
+              "position": 5
+            },
+            {
+              "page": "https://totalsportek.bio/game/stabaek-vs-moss-099413",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 10
+            },
+            {
+              "page": "https://totalsportek.bio/game/steve-biko-vs-falcons-fc-5550397929",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 4
+            },
+            {
+              "page": "https://totalsportek.bio/game/switzerland-vs-bosniaherzegovina-7172236843",
+              "clicks": 0,
+              "impressions": 9,
+              "ctr": 0,
+              "position": 10.333333333333334
+            },
+            {
+              "page": "https://totalsportek.bio/game/texas-rangers-vs-minnesota-twins-9930083656",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 21
+            },
+            {
+              "page": "https://totalsportek.bio/game/us-open-round-1-9480273682",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 6
+            },
+            {
+              "page": "https://totalsportek.bio/game/uzbekistan-vs-colombia-6281084313",
+              "clicks": 0,
+              "impressions": 1,
+              "ctr": 0,
+              "position": 20
+            },
+            {
+              "page": "https://villarreal.totalsportek.bio/",
+              "clicks": 0,
+              "impressions": 5,
+              "ctr": 0,
+              "position": 8
+            },
+            {
+              "page": "https://westhamunited.totalsportek.bio/",
+              "clicks": 0,
+              "impressions": 11,
+              "ctr": 0,
+              "position": 13.181818181818182
+            }
+          ]
+        },
+        "url_inspection": [
+          {
+            "url": "https://totalsportek.bio/",
+            "error": null,
+            "verdict": "PASS",
+            "coverageState": "Submitted and indexed",
+            "robotsTxtState": "ALLOWED",
+            "indexingState": "INDEXING_ALLOWED",
+            "pageFetchState": "SUCCESSFUL",
+            "lastCrawlTime": "2026-06-20T19:44:01Z",
+            "googleCanonical": "https://totalsportek.bio/",
+            "userCanonical": "https://totalsportek.bio/",
+            "mobileUsability": "VERDICT_UNSPECIFIED",
+            "indexed": true
+          },
+          {
+            "url": "https://totalsportek.bio/dmca",
+            "error": null,
+            "verdict": "NEUTRAL",
+            "coverageState": "Excluded by \u2018noindex\u2019 tag",
+            "robotsTxtState": "ALLOWED",
+            "indexingState": "BLOCKED_BY_META_TAG",
+            "pageFetchState": "SUCCESSFUL",
+            "lastCrawlTime": "2026-06-17T23:19:38Z",
+            "googleCanonical": "https://totalsportek.bio/dmca",
+            "userCanonical": null,
+            "mobileUsability": "VERDICT_UNSPECIFIED",
+            "indexed": false
+          }
+        ],
+        "error": null
+      }
+    },
+    "findings": []
+  },
+  "findings": [
+    {
+      "type": "DUPLICATE_PAGE",
+      "severity": "warning",
+      "site": "totalsportek.tech / totalsportek.bio",
+      "path": "/dmca",
+      "message": "/dmca is 99% identical between totalsportek.tech and totalsportek.bio (threshold 90%) \u2014 likely duplicate content competing in search.",
+      "details": {
+        "combined": 0.9919,
+        "sequence_ratio": 0.9987,
+        "jaccard": 0.985,
+        "page_threshold": 0.9
+      },
+      "timestamp": "2026-06-20T22:04:14+00:00"
+    },
+    {
+      "type": "LATENCY_SPIKE",
+      "severity": "warning",
+      "site": "totalsportek.tech",
+      "path": "/",
+      "message": "Latency 65ms -> 196ms (>2x) for googlebot_desktop on / [googlebot_desktop].",
+      "details": {
+        "user_agent": "googlebot_desktop",
+        "previous_ms": 64.8,
+        "current_ms": 196.3
+      },
+      "timestamp": "2026-06-20T22:04:53+00:00"
+    },
+    {
+      "type": "LATENCY_SPIKE",
+      "severity": "warning",
+      "site": "totalsportek.tech",
+      "path": "/dmca",
+      "message": "Latency 125ms -> 304ms (>2x) for browser on /dmca [browser].",
+      "details": {
+        "user_agent": "browser",
+        "previous_ms": 125.2,
+        "current_ms": 303.5
+      },
+      "timestamp": "2026-06-20T22:04:53+00:00"
+    },
+    {
+      "type": "LATENCY_SPIKE",
+      "severity": "warning",
+      "site": "totalsportek.bio",
+      "path": "/dmca",
+      "message": "Latency 128ms -> 306ms (>2x) for googlebot_mobile on /dmca [googlebot_mobile].",
+      "details": {
+        "user_agent": "googlebot_mobile",
+        "previous_ms": 128.4,
+        "current_ms": 306.4
+      },
+      "timestamp": "2026-06-20T22:04:53+00:00"
+    },
+    {
+      "type": "CONTENT_CHANGE",
+      "severity": "info",
+      "site": "totalsportek.tech",
+      "path": "/",
+      "message": "Page body changed (SHA-256 differs) for googlebot_desktop on / [googlebot_desktop].",
+      "details": {
+        "user_agent": "googlebot_desktop",
+        "previous_sha256": "4c07bc8baa847f20137a3b65e0f941e2fc1547029e38184d27d3d2d7f36b347e",
+        "current_sha256": "c9a9628cb7ce9cbf753f0b18cabf68f09bf83acb1efacfe3e139d3e91e5133d6"
+      },
+      "timestamp": "2026-06-20T22:04:53+00:00"
+    },
+    {
+      "type": "CONTENT_CHANGE",
+      "severity": "info",
+      "site": "totalsportek.tech",
+      "path": "/",
+      "message": "Page body changed (SHA-256 differs) for googlebot_mobile on / [googlebot_mobile].",
+      "details": {
+        "user_agent": "googlebot_mobile",
+        "previous_sha256": "4c07bc8baa847f20137a3b65e0f941e2fc1547029e38184d27d3d2d7f36b347e",
+        "current_sha256": "c9a9628cb7ce9cbf753f0b18cabf68f09bf83acb1efacfe3e139d3e91e5133d6"
+      },
+      "timestamp": "2026-06-20T22:04:53+00:00"
+    },
+    {
+      "type": "CONTENT_CHANGE",
+      "severity": "info",
+      "site": "totalsportek.tech",
+      "path": "/",
+      "message": "Page body changed (SHA-256 differs) for browser on / [browser].",
+      "details": {
+        "user_agent": "browser",
+        "previous_sha256": "4c07bc8baa847f20137a3b65e0f941e2fc1547029e38184d27d3d2d7f36b347e",
+        "current_sha256": "c9a9628cb7ce9cbf753f0b18cabf68f09bf83acb1efacfe3e139d3e91e5133d6"
+      },
+      "timestamp": "2026-06-20T22:04:53+00:00"
+    },
+    {
+      "type": "CONTENT_CHANGE",
+      "severity": "info",
+      "site": "totalsportek.tech",
+      "path": "/dmca",
+      "message": "Page body changed (SHA-256 differs) for googlebot_desktop on /dmca [googlebot_desktop].",
+      "details": {
+        "user_agent": "googlebot_desktop",
+        "previous_sha256": "7dc847ce36ae9cb227ecb359cbc65a24d7ebcba3a9e483db58b0ed77377dac50",
+        "current_sha256": "8bf7ec993e8e8a9a39da5f6f1157bc47d19153826d3126db28ac303e843991c3"
+      },
+      "timestamp": "2026-06-20T22:04:53+00:00"
+    },
+    {
+      "type": "CONTENT_CHANGE",
+      "severity": "info",
+      "site": "totalsportek.tech",
+      "path": "/dmca",
+      "message": "Page body changed (SHA-256 differs) for googlebot_mobile on /dmca [googlebot_mobile].",
+      "details": {
+        "user_agent": "googlebot_mobile",
+        "previous_sha256": "9f8e0bdad8ad777f0e89f38bd380d16e36a96822d13b909650ec5f7b5cb71236",
+        "current_sha256": "6e6f0a41a6e16137993224d4fc8139691b942aa777b5766296a61f4f3f950411"
+      },
+      "timestamp": "2026-06-20T22:04:53+00:00"
+    },
+    {
+      "type": "CONTENT_CHANGE",
+      "severity": "info",
+      "site": "totalsportek.tech",
+      "path": "/dmca",
+      "message": "Page body changed (SHA-256 differs) for browser on /dmca [browser].",
+      "details": {
+        "user_agent": "browser",
+        "previous_sha256": "f9f715a433f9f397bf1cd6a669b8e9eed8e3278b94d238124338eca14096bd8d",
+        "current_sha256": "af94c85075a147b5dee546ea70940e67695a3236c2f3d9c2bc1dd0852c3c79ac"
+      },
+      "timestamp": "2026-06-20T22:04:53+00:00"
+    },
+    {
+      "type": "CONTENT_CHANGE",
+      "severity": "info",
+      "site": "totalsportek.bio",
+      "path": "/",
+      "message": "Page body changed (SHA-256 differs) for googlebot_desktop on / [googlebot_desktop].",
+      "details": {
+        "user_agent": "googlebot_desktop",
+        "previous_sha256": "f45decc23033811930daf633eb81e16eac01a669343875cff5796ea63285f440",
+        "current_sha256": "bf41f3f415bdc83884af1d15c2169cef69b9977c27ac0e3d5327633f2574ee26"
+      },
+      "timestamp": "2026-06-20T22:04:53+00:00"
+    },
+    {
+      "type": "CONTENT_CHANGE",
+      "severity": "info",
+      "site": "totalsportek.bio",
+      "path": "/",
+      "message": "Page body changed (SHA-256 differs) for googlebot_mobile on / [googlebot_mobile].",
+      "details": {
+        "user_agent": "googlebot_mobile",
+        "previous_sha256": "f45decc23033811930daf633eb81e16eac01a669343875cff5796ea63285f440",
+        "current_sha256": "bf41f3f415bdc83884af1d15c2169cef69b9977c27ac0e3d5327633f2574ee26"
+      },
+      "timestamp": "2026-06-20T22:04:53+00:00"
+    },
+    {
+      "type": "CONTENT_CHANGE",
+      "severity": "info",
+      "site": "totalsportek.bio",
+      "path": "/",
+      "message": "Page body changed (SHA-256 differs) for browser on / [browser].",
+      "details": {
+        "user_agent": "browser",
+        "previous_sha256": "f45decc23033811930daf633eb81e16eac01a669343875cff5796ea63285f440",
+        "current_sha256": "bf41f3f415bdc83884af1d15c2169cef69b9977c27ac0e3d5327633f2574ee26"
+      },
+      "timestamp": "2026-06-20T22:04:53+00:00"
+    },
+    {
+      "type": "CONTENT_CHANGE",
+      "severity": "info",
+      "site": "totalsportek.bio",
+      "path": "/dmca",
+      "message": "Page body changed (SHA-256 differs) for googlebot_desktop on /dmca [googlebot_desktop].",
+      "details": {
+        "user_agent": "googlebot_desktop",
+        "previous_sha256": "005005027e32119a93a72cb5b091927498a214252dce52631681ae33007924be",
+        "current_sha256": "25f47dff0e9b4e72b9ac83541e58c1426344fc41fb3f81f8ceffad101cc7739b"
+      },
+      "timestamp": "2026-06-20T22:04:53+00:00"
+    },
+    {
+      "type": "CONTENT_CHANGE",
+      "severity": "info",
+      "site": "totalsportek.bio",
+      "path": "/dmca",
+      "message": "Page body changed (SHA-256 differs) for googlebot_mobile on /dmca [googlebot_mobile].",
+      "details": {
+        "user_agent": "googlebot_mobile",
+        "previous_sha256": "570eb40192b02b7821a9ba9eefcb24db3e2617261bffb67d39f0fd2f37628f9d",
+        "current_sha256": "4b616e23d831f88fcf42673755b624ab069b77b8a0169747ec6d54d08f1b3380"
+      },
+      "timestamp": "2026-06-20T22:04:53+00:00"
+    },
+    {
+      "type": "CONTENT_CHANGE",
+      "severity": "info",
+      "site": "totalsportek.bio",
+      "path": "/dmca",
+      "message": "Page body changed (SHA-256 differs) for browser on /dmca [browser].",
+      "details": {
+        "user_agent": "browser",
+        "previous_sha256": "38e78996c6dcdbce632d55b68f7007d327ab7cd8b8a2d06093b18e9a5c15b7f4",
+        "current_sha256": "e750a4d1cc37d6ed3d194d99d32221ab8169d1aa18b2e930cf5306d469d5d639"
+      },
+      "timestamp": "2026-06-20T22:04:53+00:00"
+    }
+  ],
+  "summary": {
+    "sites": {
+      "totalsportek.tech": {
+        "homepage_status": {
+          "googlebot_desktop": 200,
+          "googlebot_mobile": 200,
+          "browser": 200
+        },
+        "worst_status": 200,
+        "any_error": false,
+        "verdict": "OK",
+        "gsc": {
+          "clicks": 655010,
+          "impressions": 1641547,
+          "position": 3.45
+        }
+      },
+      "totalsportek.bio": {
+        "homepage_status": {
+          "googlebot_desktop": 200,
+          "googlebot_mobile": 200,
+          "browser": 200
+        },
+        "worst_status": 200,
+        "any_error": false,
+        "verdict": "OK",
+        "gsc": {
+          "clicks": 316,
+          "impressions": 7396,
+          "position": 9.5
+        }
+      }
+    },
+    "findings_counts": {
+      "critical": 0,
+      "warning": 4,
+      "info": 12
+    },
+    "gsc_enabled": true,
+    "run_id": "20260620T220453Z",
+    "timestamp_utc": "2026-06-20T22:04:53+00:00"
+  }
+}
