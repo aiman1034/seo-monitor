@@ -93,3 +93,33 @@ gsc:
   lookback_days: 28              # Search Analytics window (data lags ~2-3 days)
   position_drop_threshold: 5     # POSITION_DROP when avg position worsens by > this
   impressions_drop_pct: 40       # IMPRESSIONS_DROP when window impressions fall > this %
+
+# Redirect & reinstatement tracker (Phase 5) — a SEPARATE, daily subsystem that
+# tracks mirror domains WITHOUT GSC. It reads the Original URLs (column C) from a
+# Google Sheet (the place you manage which domains/URLs to track — adding a site =
+# adding a tab here and in the sheet), probes them, and records redirected-vs-
+# reinstated state + dated history. Does NOT touch the hourly GSC monitor.
+redirects:
+  enabled: true
+  sheet_id: "1rV87uX_3F1qpVjbCk-7jr6ryafUBLaNv6RZrGk1cCN0"
+  read_method: gviz              # gviz (link-viewable CSV) | sheets_api (service acct)
+  tabs:                          # one per domain; add a tab name to track a new site
+    - totalsportekz.com
+    - footybitez.app
+    - totalsportek.li
+    - totalsportek.ch
+    - totalsportek.gd
+    - totalsportek.cv
+    - footybite.to
+    - totalsportekz.app
+    - footybite.app
+  request:
+    timeout_seconds: 15
+    delay_seconds: 0.5           # per-request politeness delay
+    max_redirects: 10
+    max_workers: 4               # bounded concurrency
+  domain_redirect_threshold: 0.6 # fraction of URLs redirecting off-domain to the
+                                 # SAME host => flag DOMAIN_REDIRECTED -> host
+  history_cap: 100               # max dated history entries kept per URL
+  schedule:
+    cron: "0 6 * * *"            # daily (separate from the hourly monitor)
