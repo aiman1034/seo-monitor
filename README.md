@@ -155,6 +155,24 @@ Branch: `data`, Folder: `/ (root)` → Save**. The dashboard is then live at
 (no extra automation needed — the workflow already commits to `data`). New
 finding types appear in the table automatically as later playbook checks land.
 
+## Redirect & reinstatement tracker (mirror domains)
+
+A separate, **daily** subsystem ([`scripts/redirect_tracker.py`](scripts/redirect_tracker.py),
+[`.github/workflows/redirect-tracker.yml`](.github/workflows/redirect-tracker.yml))
+tracks mirror domains that have no Search Console. It reads the Original URLs from
+a Google Sheet (the place you manage which domains/URLs to track — **adding a
+website = adding a tab** in the sheet and its name under `redirects.tabs` in
+[`config.yaml`](config.yaml)), probes each URL, and records whether it is
+**redirected** vs **reinstated** over time — including whole-domain redirects to a
+new host (`DOMAIN_REDIRECTED -> host`) — with dated per-URL history. Results are
+written to `redirects/<domain>.json` + `redirects-index.json` on the `data`
+branch and shown in the dashboard's "Redirects & reinstatements" section.
+
+`BLOCKED` (a 403 / bot-protection challenge) is recorded **distinctly** from any
+redirect class. These domains may challenge datacenter IPs (incl. Actions
+runners); if a large share come back `BLOCKED`, the fallback is to ingest the
+sheet's own computed columns (filled from Google IPs) instead of re-probing.
+
 ## Automation & alerting
 
 The workflow in [`.github/workflows/analyze.yml`](.github/workflows/analyze.yml):

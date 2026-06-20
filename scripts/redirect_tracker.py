@@ -321,7 +321,11 @@ def run(
     max_workers = int(req.get("max_workers", 4))
     threshold = float(rcfg.get("domain_redirect_threshold", 0.6))
 
-    result: Dict[str, Any] = {"timestamp_utc": utc_now_iso(), "domains": {}}
+    result: Dict[str, Any] = {
+        "timestamp_utc": utc_now_iso(),
+        "sheet_id": rcfg.get("sheet_id"),
+        "domains": {},
+    }
 
     for tab in rcfg.get("tabs", []):
         try:
@@ -404,7 +408,11 @@ def write_results(
     out_dir = os.path.join(data_dir, "redirects")
     os.makedirs(out_dir, exist_ok=True)
     date = result["timestamp_utc"][:10]
-    index: Dict[str, Any] = {"checked_utc": result["timestamp_utc"], "domains": {}}
+    index: Dict[str, Any] = {
+        "checked_utc": result["timestamp_utc"],
+        "sheet_id": result.get("sheet_id"),
+        "domains": {},
+    }
 
     for domain, d in result["domains"].items():
         path = os.path.join(out_dir, f"{domain}.json")
