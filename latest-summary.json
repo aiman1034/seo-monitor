@@ -14,7 +14,79 @@
           "clicks": 655010,
           "impressions": 1641547,
           "position": 3.45,
-          "ctr": 0.399
+          "ctr": 0.399,
+          "by_country": [
+            {
+              "country": "ind",
+              "clicks": 348339,
+              "impressions": 530508,
+              "ctr": 0.656614037865593,
+              "position": 1.6185825661441486
+            },
+            {
+              "country": "deu",
+              "clicks": 36945,
+              "impressions": 71847,
+              "ctr": 0.5142177126393587,
+              "position": 2.0121925758904338
+            },
+            {
+              "country": "tto",
+              "clicks": 23144,
+              "impressions": 47676,
+              "ctr": 0.4854434096820203,
+              "position": 2.0764535615403976
+            },
+            {
+              "country": "gbr",
+              "clicks": 19477,
+              "impressions": 84093,
+              "ctr": 0.23161261936189695,
+              "position": 6.341324485985754
+            },
+            {
+              "country": "npl",
+              "clicks": 16353,
+              "impressions": 61082,
+              "ctr": 0.2677220785174028,
+              "position": 4.891326413673422
+            },
+            {
+              "country": "irl",
+              "clicks": 15502,
+              "impressions": 37581,
+              "ctr": 0.4124956760064926,
+              "position": 2.270402597057023
+            },
+            {
+              "country": "nld",
+              "clicks": 14854,
+              "impressions": 47086,
+              "ctr": 0.31546531877840545,
+              "position": 2.5871171898228775
+            },
+            {
+              "country": "ita",
+              "clicks": 13350,
+              "impressions": 24479,
+              "ctr": 0.545365415253891,
+              "position": 2.1315413211323992
+            },
+            {
+              "country": "can",
+              "clicks": 13272,
+              "impressions": 44363,
+              "ctr": 0.29916822577373037,
+              "position": 3.5708360570745894
+            },
+            {
+              "country": "usa",
+              "clicks": 11887,
+              "impressions": 55882,
+              "ctr": 0.2127160803120862,
+              "position": 5.129719766651157
+            }
+          ]
         }
       },
       "totalsportek.bio": {
@@ -30,21 +102,126 @@
           "clicks": 316,
           "impressions": 7396,
           "position": 9.5,
-          "ctr": 0.0427
+          "ctr": 0.0427,
+          "by_country": [
+            {
+              "country": "usa",
+              "clicks": 36,
+              "impressions": 844,
+              "ctr": 0.04265402843601896,
+              "position": 10.541469194312796
+            },
+            {
+              "country": "can",
+              "clicks": 23,
+              "impressions": 419,
+              "ctr": 0.05489260143198091,
+              "position": 8.30310262529833
+            },
+            {
+              "country": "deu",
+              "clicks": 23,
+              "impressions": 325,
+              "ctr": 0.07076923076923076,
+              "position": 8.947692307692307
+            },
+            {
+              "country": "sgp",
+              "clicks": 21,
+              "impressions": 311,
+              "ctr": 0.06752411575562701,
+              "position": 9.453376205787782
+            },
+            {
+              "country": "gbr",
+              "clicks": 18,
+              "impressions": 305,
+              "ctr": 0.05901639344262295,
+              "position": 11.770491803278688
+            },
+            {
+              "country": "ind",
+              "clicks": 15,
+              "impressions": 289,
+              "ctr": 0.05190311418685121,
+              "position": 10.681660899653979
+            },
+            {
+              "country": "idn",
+              "clicks": 14,
+              "impressions": 129,
+              "ctr": 0.10852713178294573,
+              "position": 9.527131782945736
+            },
+            {
+              "country": "mys",
+              "clicks": 12,
+              "impressions": 130,
+              "ctr": 0.09230769230769231,
+              "position": 9.507692307692308
+            },
+            {
+              "country": "pak",
+              "clicks": 10,
+              "impressions": 56,
+              "ctr": 0.17857142857142858,
+              "position": 8.732142857142858
+            },
+            {
+              "country": "tto",
+              "clicks": 10,
+              "impressions": 141,
+              "ctr": 0.07092198581560284,
+              "position": 7.879432624113475
+            }
+          ]
         }
       }
     },
     "findings_counts": {
       "critical": 0,
-      "warning": 1,
-      "info": 14
+      "warning": 5,
+      "info": 2
     },
     "gsc_enabled": true,
-    "run_id": "20260620T221454Z",
-    "timestamp_utc": "2026-06-20T22:14:54+00:00"
+    "run_id": "20260620T225752Z",
+    "timestamp_utc": "2026-06-20T22:57:52+00:00"
   },
-  "json_file": "run-20260620T221454Z.json",
-  "md_file": "report-20260620T221454Z.md",
+  "overall": {
+    "sites": {
+      "totalsportek.tech": {
+        "verdict": "OK",
+        "position": 3.45,
+        "position_delta": 0.0,
+        "impressions": 1641547,
+        "impressions_delta": 0,
+        "findings": {
+          "critical": 0,
+          "warning": 2,
+          "info": 1
+        }
+      },
+      "totalsportek.bio": {
+        "verdict": "OK",
+        "position": 9.5,
+        "position_delta": 0.0,
+        "impressions": 7396,
+        "impressions_delta": 0,
+        "findings": {
+          "critical": 0,
+          "warning": 2,
+          "info": 1
+        }
+      }
+    },
+    "headline": {
+      "critical": 0,
+      "warning": 5,
+      "info": 2
+    }
+  },
+  "json_file": "run-20260620T225752Z.json",
+  "md_file": "report-20260620T225752Z.md",
   "findings": [
     {
       "type": "DUPLICATE_PAGE",
@@ -58,176 +235,64 @@
         "jaccard": 0.985,
         "page_threshold": 0.9
       },
-      "timestamp": "2026-06-20T22:14:15+00:00",
+      "timestamp": "2026-06-20T22:57:11+00:00",
       "fix": "Canonicalize the duplicate page to the preferred URL (rel=canonical) or 301-redirect it to the version you want to rank."
     },
     {
-      "type": "CONTENT_CHANGE",
-      "severity": "info",
+      "type": "LATENCY_SPIKE",
+      "severity": "warning",
       "site": "totalsportek.tech",
       "path": "/",
-      "message": "Page body changed (SHA-256 differs) for googlebot_desktop on / [googlebot_desktop].",
-      "details": {
-        "user_agent": "googlebot_desktop",
-        "previous_sha256": "c9a9628cb7ce9cbf753f0b18cabf68f09bf83acb1efacfe3e139d3e91e5133d6",
-        "current_sha256": "e509b281edd0d2bc8d3a15d585840d78e91c21ec61b9873d581d213e03d5e335"
-      },
-      "timestamp": "2026-06-20T22:14:54+00:00",
-      "fix": "Informational \u2014 the page body changed. Confirm the change was intended (content update vs. defacement, broken template, or a rotating token)."
-    },
-    {
-      "type": "CONTENT_CHANGE",
-      "severity": "info",
-      "site": "totalsportek.tech",
-      "path": "/",
-      "message": "Page body changed (SHA-256 differs) for googlebot_mobile on / [googlebot_mobile].",
+      "message": "Latency 41ms -> 88ms (>2x) for googlebot_mobile on / [googlebot_mobile].",
       "details": {
         "user_agent": "googlebot_mobile",
-        "previous_sha256": "c9a9628cb7ce9cbf753f0b18cabf68f09bf83acb1efacfe3e139d3e91e5133d6",
-        "current_sha256": "e509b281edd0d2bc8d3a15d585840d78e91c21ec61b9873d581d213e03d5e335"
+        "previous_ms": 41.4,
+        "current_ms": 87.6
       },
-      "timestamp": "2026-06-20T22:14:54+00:00",
-      "fix": "Informational \u2014 the page body changed. Confirm the change was intended (content update vs. defacement, broken template, or a rotating token)."
+      "timestamp": "2026-06-20T22:57:52+00:00",
+      "fix": "Add server/CDN caching, move to faster hosting and remove redirect hops; check for a load spike or slow backend at that time."
     },
     {
-      "type": "CONTENT_CHANGE",
-      "severity": "info",
+      "type": "LATENCY_SPIKE",
+      "severity": "warning",
       "site": "totalsportek.tech",
       "path": "/",
-      "message": "Page body changed (SHA-256 differs) for browser on / [browser].",
+      "message": "Latency 38ms -> 84ms (>2x) for browser on / [browser].",
       "details": {
         "user_agent": "browser",
-        "previous_sha256": "c9a9628cb7ce9cbf753f0b18cabf68f09bf83acb1efacfe3e139d3e91e5133d6",
-        "current_sha256": "e509b281edd0d2bc8d3a15d585840d78e91c21ec61b9873d581d213e03d5e335"
+        "previous_ms": 37.8,
+        "current_ms": 83.5
       },
-      "timestamp": "2026-06-20T22:14:54+00:00",
-      "fix": "Informational \u2014 the page body changed. Confirm the change was intended (content update vs. defacement, broken template, or a rotating token)."
+      "timestamp": "2026-06-20T22:57:52+00:00",
+      "fix": "Add server/CDN caching, move to faster hosting and remove redirect hops; check for a load spike or slow backend at that time."
     },
     {
-      "type": "CONTENT_CHANGE",
-      "severity": "info",
-      "site": "totalsportek.tech",
-      "path": "/dmca",
-      "message": "Page body changed (SHA-256 differs) for googlebot_desktop on /dmca [googlebot_desktop].",
-      "details": {
-        "user_agent": "googlebot_desktop",
-        "previous_sha256": "8bf7ec993e8e8a9a39da5f6f1157bc47d19153826d3126db28ac303e843991c3",
-        "current_sha256": "c3a304b9bf6e6b387d90416f33540584e76a86ad08924a731a63dc722dc87fa0"
-      },
-      "timestamp": "2026-06-20T22:14:54+00:00",
-      "fix": "Informational \u2014 the page body changed. Confirm the change was intended (content update vs. defacement, broken template, or a rotating token)."
-    },
-    {
-      "type": "CONTENT_CHANGE",
-      "severity": "info",
-      "site": "totalsportek.tech",
-      "path": "/dmca",
-      "message": "Page body changed (SHA-256 differs) for googlebot_mobile on /dmca [googlebot_mobile].",
+      "type": "LATENCY_SPIKE",
+      "severity": "warning",
+      "site": "totalsportek.bio",
+      "path": "/",
+      "message": "Latency 41ms -> 107ms (>2x) for googlebot_mobile on / [googlebot_mobile].",
       "details": {
         "user_agent": "googlebot_mobile",
-        "previous_sha256": "6e6f0a41a6e16137993224d4fc8139691b942aa777b5766296a61f4f3f950411",
-        "current_sha256": "69898684011fe3450ca243921ac0820e925f5c9a405e0f99a09978d5fe56c486"
+        "previous_ms": 41.2,
+        "current_ms": 106.7
       },
-      "timestamp": "2026-06-20T22:14:54+00:00",
-      "fix": "Informational \u2014 the page body changed. Confirm the change was intended (content update vs. defacement, broken template, or a rotating token)."
+      "timestamp": "2026-06-20T22:57:52+00:00",
+      "fix": "Add server/CDN caching, move to faster hosting and remove redirect hops; check for a load spike or slow backend at that time."
     },
     {
-      "type": "CONTENT_CHANGE",
-      "severity": "info",
-      "site": "totalsportek.tech",
-      "path": "/dmca",
-      "message": "Page body changed (SHA-256 differs) for browser on /dmca [browser].",
-      "details": {
-        "user_agent": "browser",
-        "previous_sha256": "af94c85075a147b5dee546ea70940e67695a3236c2f3d9c2bc1dd0852c3c79ac",
-        "current_sha256": "10452be99e791299f8df58f37a60ae39ca6040e1290b053462d1cabc5c5fbf74"
-      },
-      "timestamp": "2026-06-20T22:14:54+00:00",
-      "fix": "Informational \u2014 the page body changed. Confirm the change was intended (content update vs. defacement, broken template, or a rotating token)."
-    },
-    {
-      "type": "CONTENT_CHANGE",
-      "severity": "info",
+      "type": "LATENCY_SPIKE",
+      "severity": "warning",
       "site": "totalsportek.bio",
       "path": "/",
-      "message": "Page body changed (SHA-256 differs) for googlebot_desktop on / [googlebot_desktop].",
-      "details": {
-        "user_agent": "googlebot_desktop",
-        "previous_sha256": "bf41f3f415bdc83884af1d15c2169cef69b9977c27ac0e3d5327633f2574ee26",
-        "current_sha256": "e72469c5e99047143c05f6a342ad8431e7cfba034dd211429fc600d4fa869fb5"
-      },
-      "timestamp": "2026-06-20T22:14:54+00:00",
-      "fix": "Informational \u2014 the page body changed. Confirm the change was intended (content update vs. defacement, broken template, or a rotating token)."
-    },
-    {
-      "type": "CONTENT_CHANGE",
-      "severity": "info",
-      "site": "totalsportek.bio",
-      "path": "/",
-      "message": "Page body changed (SHA-256 differs) for googlebot_mobile on / [googlebot_mobile].",
-      "details": {
-        "user_agent": "googlebot_mobile",
-        "previous_sha256": "bf41f3f415bdc83884af1d15c2169cef69b9977c27ac0e3d5327633f2574ee26",
-        "current_sha256": "e72469c5e99047143c05f6a342ad8431e7cfba034dd211429fc600d4fa869fb5"
-      },
-      "timestamp": "2026-06-20T22:14:54+00:00",
-      "fix": "Informational \u2014 the page body changed. Confirm the change was intended (content update vs. defacement, broken template, or a rotating token)."
-    },
-    {
-      "type": "CONTENT_CHANGE",
-      "severity": "info",
-      "site": "totalsportek.bio",
-      "path": "/",
-      "message": "Page body changed (SHA-256 differs) for browser on / [browser].",
+      "message": "Latency 36ms -> 107ms (>2x) for browser on / [browser].",
       "details": {
         "user_agent": "browser",
-        "previous_sha256": "bf41f3f415bdc83884af1d15c2169cef69b9977c27ac0e3d5327633f2574ee26",
-        "current_sha256": "e72469c5e99047143c05f6a342ad8431e7cfba034dd211429fc600d4fa869fb5"
+        "previous_ms": 35.7,
+        "current_ms": 106.8
       },
-      "timestamp": "2026-06-20T22:14:54+00:00",
-      "fix": "Informational \u2014 the page body changed. Confirm the change was intended (content update vs. defacement, broken template, or a rotating token)."
-    },
-    {
-      "type": "CONTENT_CHANGE",
-      "severity": "info",
-      "site": "totalsportek.bio",
-      "path": "/dmca",
-      "message": "Page body changed (SHA-256 differs) for googlebot_desktop on /dmca [googlebot_desktop].",
-      "details": {
-        "user_agent": "googlebot_desktop",
-        "previous_sha256": "25f47dff0e9b4e72b9ac83541e58c1426344fc41fb3f81f8ceffad101cc7739b",
-        "current_sha256": "16867187c8e17a0ee4f57cbb503dbdaf97f3df2ad86683a36a84a8cbe5c0cee1"
-      },
-      "timestamp": "2026-06-20T22:14:54+00:00",
-      "fix": "Informational \u2014 the page body changed. Confirm the change was intended (content update vs. defacement, broken template, or a rotating token)."
-    },
-    {
-      "type": "CONTENT_CHANGE",
-      "severity": "info",
-      "site": "totalsportek.bio",
-      "path": "/dmca",
-      "message": "Page body changed (SHA-256 differs) for googlebot_mobile on /dmca [googlebot_mobile].",
-      "details": {
-        "user_agent": "googlebot_mobile",
-        "previous_sha256": "4b616e23d831f88fcf42673755b624ab069b77b8a0169747ec6d54d08f1b3380",
-        "current_sha256": "ce314dad8bd6db088eb3c7211f1d2394c34ae6fd4674d87b02f552f644d28195"
-      },
-      "timestamp": "2026-06-20T22:14:54+00:00",
-      "fix": "Informational \u2014 the page body changed. Confirm the change was intended (content update vs. defacement, broken template, or a rotating token)."
-    },
-    {
-      "type": "CONTENT_CHANGE",
-      "severity": "info",
-      "site": "totalsportek.bio",
-      "path": "/dmca",
-      "message": "Page body changed (SHA-256 differs) for browser on /dmca [browser].",
-      "details": {
-        "user_agent": "browser",
-        "previous_sha256": "e750a4d1cc37d6ed3d194d99d32221ab8169d1aa18b2e930cf5306d469d5d639",
-        "current_sha256": "75bc8f0ca57c78b0d92903c832b1007034a0d148debc34395b3fd6fd4e5f5778"
-      },
-      "timestamp": "2026-06-20T22:14:54+00:00",
-      "fix": "Informational \u2014 the page body changed. Confirm the change was intended (content update vs. defacement, broken template, or a rotating token)."
+      "timestamp": "2026-06-20T22:57:52+00:00",
+      "fix": "Add server/CDN caching, move to faster hosting and remove redirect hops; check for a load spike or slow backend at that time."
     },
     {
       "type": "NOINDEX_PAGE",
@@ -239,7 +304,7 @@
         "indexingState": "BLOCKED_BY_META_TAG",
         "coverageState": "Excluded by \u2018noindex\u2019 tag"
       },
-      "timestamp": "2026-06-20T22:14:54+00:00",
+      "timestamp": "2026-06-20T22:57:52+00:00",
       "fix": "Expected \u2014 the page is intentionally noindex (e.g. /dmca). No action needed unless this page should actually rank, in which case remove its noindex meta tag / X-Robots-Tag header."
     },
     {
@@ -252,7 +317,7 @@
         "indexingState": "BLOCKED_BY_META_TAG",
         "coverageState": "Excluded by \u2018noindex\u2019 tag"
       },
-      "timestamp": "2026-06-20T22:14:54+00:00",
+      "timestamp": "2026-06-20T22:57:52+00:00",
       "fix": "Expected \u2014 the page is intentionally noindex (e.g. /dmca). No action needed unless this page should actually rank, in which case remove its noindex meta tag / X-Robots-Tag header."
     }
   ],

@@ -18,21 +18,30 @@
   }
   .wrap { max-width: 1100px; margin: 0 auto; padding: 20px 16px 60px; }
   h1 { font-size: 22px; margin: 0 0 4px; }
-  h2 { font-size: 16px; margin: 28px 0 12px; color: var(--fg); }
+  h2 { font-size: 16px; margin: 28px 0 12px; }
   .muted { color: var(--muted); font-size: 13px; }
   .badges { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
   .badge { padding: 4px 10px; border-radius: 999px; font-size: 13px; font-weight: 600; color: #fff; }
   .badge.ok { background: var(--green); } .badge.issue { background: var(--red); }
+  .headline { font-size: 14px; margin: 8px 0 4px; }
+  .pill { display: inline-block; padding: 2px 9px; border-radius: 999px; font-weight: 600; font-size: 13px; }
+  .pill.crit { background: #2d1112; color: #ff938d; } .pill.warn { background: #2a2410; color: #f0c451; } .pill.ok { background: #11271a; color: #56d364; }
   .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 16px; margin-bottom: 16px; }
-  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
   .stat { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px; }
   .stat .dom { font-weight: 600; margin-bottom: 8px; color: var(--accent); word-break: break-all; }
   .stat .row { display: flex; justify-content: space-between; font-size: 14px; padding: 2px 0; }
   .stat .row span:last-child { font-variant-numeric: tabular-nums; }
+  .ov-metric { display: flex; align-items: baseline; gap: 8px; margin: 6px 0; }
+  .ov-metric .lbl { font-size: 13px; color: var(--muted); width: 90px; }
+  .ov-metric .val { font-size: 20px; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .trend { font-size: 13px; font-weight: 600; }
+  .trend.up { color: var(--green); } .trend.down { color: var(--red); } .trend.flat { color: var(--muted); }
   canvas { max-height: 320px; }
   table { width: 100%; border-collapse: collapse; font-size: 13px; }
   th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
   th { color: var(--muted); font-weight: 600; white-space: nowrap; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
   .sev { font-weight: 700; text-transform: uppercase; font-size: 11px; letter-spacing: .04em; }
   .sev.critical { color: var(--red); } .sev.warning { color: var(--amber); } .sev.info { color: var(--grey); }
   .tl { display: flex; flex-direction: column; gap: 8px; }
@@ -45,6 +54,9 @@
   .note { color: var(--muted); font-style: italic; padding: 8px 0; }
   code { background: #0d1117; padding: 1px 5px; border-radius: 4px; font-size: 12px; }
   a { color: var(--accent); }
+  .country-block { margin-bottom: 20px; }
+  .country-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: start; }
+  @media (max-width: 720px) { .country-grid { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
@@ -52,6 +64,12 @@
   <h1>SEO Monitor</h1>
   <div class="muted" id="updated">Loading…</div>
   <div class="badges" id="badges"></div>
+
+  <h2>Overall</h2>
+  <div class="card">
+    <div class="headline" id="headline"></div>
+    <div class="grid" id="overall"></div>
+  </div>
 
   <h2>Average position over time <span class="muted">(y-axis inverted — higher = better rank)</span></h2>
   <div class="card"><canvas id="posChart"></canvas><div class="note" id="posNote" hidden></div></div>
@@ -64,6 +82,9 @@
 
   <h2>Current Search Console stats</h2>
   <div class="grid" id="gscStats"></div>
+
+  <h2>By country</h2>
+  <div id="byCountry"></div>
 
   <h2>Current findings</h2>
   <div class="card" id="findingsCard">
@@ -98,13 +119,45 @@ function allDomains(runs, summary) {
   return [...set];
 }
 
+function trendSpan(delta, higherIsBetter) {
+  if (delta === null || delta === undefined || delta === 0) {
+    return '<span class="trend flat">' + (delta === 0 ? "no change" : "—") + "</span>";
+  }
+  const better = higherIsBetter ? delta > 0 : delta < 0;
+  const arrow = better ? "▲" : "▼";
+  const sign = delta > 0 ? "+" : "";
+  return `<span class="trend ${better ? "up" : "down"}">${arrow} ${sign}${round(delta, 1)}</span>`;
+}
+
+function renderOverall(overall) {
+  const head = document.getElementById("headline");
+  const wrap = document.getElementById("overall");
+  if (!overall) { head.innerHTML = '<span class="note">No overall data yet.</span>'; return; }
+  const h = overall.headline || {};
+  head.innerHTML =
+    `<span class="pill crit">${h.critical || 0} critical</span> ` +
+    `<span class="pill warn">${h.warning || 0} warning</span> ` +
+    `<span class="pill ok">${h.info || 0} info</span> ` +
+    `<span class="muted"> across all sites</span>`;
+  wrap.innerHTML = "";
+  Object.entries(overall.sites || {}).forEach(([d, s]) => {
+    const ok = s.verdict === "OK";
+    const card = document.createElement("div"); card.className = "stat";
+    card.innerHTML = `
+      <div class="dom">${d} <span class="badge ${ok ? "ok" : "issue"}" style="font-size:11px; padding:2px 8px;">${s.verdict || "?"}</span></div>
+      <div class="ov-metric"><span class="lbl">Avg position</span><span class="val">${s.position == null ? "—" : round(s.position, 1)}</span> ${trendSpan(s.position_delta, false)}</div>
+      <div class="ov-metric"><span class="lbl">Impressions</span><span class="val">${fmt(s.impressions)}</span> ${trendSpan(s.impressions_delta, true)}</div>
+      <div class="muted" style="font-size:12px; margin-top:6px;">${(s.findings && s.findings.critical) || 0} critical · ${(s.findings && s.findings.warning) || 0} warning here</div>`;
+    wrap.appendChild(card);
+  });
+}
+
 function lineChart(canvasId, noteId, runs, domains, field, invert) {
   const labels = runs.map(r => shortTs(r.timestamp_utc));
   const datasets = domains.map((d, i) => ({
     label: d,
     data: runs.map(r => { const v = r.sites && r.sites[d] ? r.sites[d][field] : null; return (v === null || v === undefined) ? null : round(v, 1); }),
-    borderColor: PALETTE[i % PALETTE.length],
-    backgroundColor: PALETTE[i % PALETTE.length],
+    borderColor: PALETTE[i % PALETTE.length], backgroundColor: PALETTE[i % PALETTE.length],
     spanGaps: true, tension: 0.25, pointRadius: 2,
   }));
   const hasData = datasets.some(ds => ds.data.some(v => v !== null));
@@ -115,8 +168,7 @@ function lineChart(canvasId, noteId, runs, domains, field, invert) {
     return;
   }
   new Chart(document.getElementById(canvasId), {
-    type: "line",
-    data: { labels, datasets },
+    type: "line", data: { labels, datasets },
     options: {
       responsive: true, interaction: { mode: "index", intersect: false },
       scales: {
@@ -174,6 +226,46 @@ function renderGsc(summary) {
   });
 }
 
+function renderCountry(summary) {
+  const wrap = document.getElementById("byCountry");
+  wrap.innerHTML = "";
+  const sites = (summary && summary.sites) || {};
+  const anyData = summary && summary.gsc_enabled &&
+    Object.values(sites).some(s => s.gsc && (s.gsc.by_country || []).length);
+  if (!anyData) {
+    wrap.innerHTML = '<div class="card"><div class="note">No country data yet — needs Search Console enabled (and a populated window).</div></div>';
+    return;
+  }
+  let ci = 0;
+  Object.entries(sites).forEach(([d, s]) => {
+    const rows = (s.gsc && s.gsc.by_country) || [];
+    if (!rows.length) return;
+    const cid = "cc" + (ci++);
+    const block = document.createElement("div"); block.className = "card country-block";
+    const tableRows = rows.map(r => `<tr>
+      <td>${r.country || "—"}</td>
+      <td class="num">${fmt(r.clicks)}</td>
+      <td class="num">${fmt(r.impressions)}</td>
+      <td class="num">${r.position == null ? "—" : round(r.position, 1)}</td></tr>`).join("");
+    block.innerHTML = `<div class="dom" style="color:var(--accent); font-weight:600; margin-bottom:10px;">${d}</div>
+      <div class="country-grid">
+        <table><thead><tr><th>Country</th><th class="num">Clicks</th><th class="num">Impr.</th><th class="num">Pos.</th></tr></thead>
+        <tbody>${tableRows}</tbody></table>
+        <div style="position:relative; height:${Math.max(120, rows.length * 30 + 30)}px;"><canvas id="${cid}"></canvas></div>
+      </div>`;
+    wrap.appendChild(block);
+    if (window.Chart) {
+      new Chart(document.getElementById(cid), {
+        type: "bar",
+        data: { labels: rows.map(r => r.country), datasets: [{ label: "Clicks", data: rows.map(r => r.clicks), backgroundColor: "#58a6ff" }] },
+        options: { indexAxis: "y", responsive: true, maintainAspectRatio: false,
+          plugins: { legend: { display: false } },
+          scales: { x: { ticks: { color: "#8b949e" }, grid: { color: "#2a3441" } }, y: { ticks: { color: "#e6edf3" }, grid: { display: false } } } },
+      });
+    }
+  });
+}
+
 function renderFindings(latest) {
   const tbody = document.querySelector("#findingsTable tbody");
   const note = document.getElementById("findingsNote");
@@ -184,7 +276,6 @@ function renderFindings(latest) {
     note.hidden = false; note.textContent = "No findings in the latest run.";
     return;
   }
-  // Generic: render whatever fields each finding has — future finding types appear automatically.
   findings.forEach(f => {
     const tr = document.createElement("tr");
     tr.innerHTML = `<td><span class="sev ${f.severity || ""}">${f.severity || ""}</span></td>
@@ -200,9 +291,9 @@ function renderFindings(latest) {
 (async function () {
   const [runs, latest] = await Promise.all([getJSON("./runs-index.json"), getJSON("./latest-summary.json")]);
   const summary = latest && latest.summary;
+  const overall = latest && latest.overall;
   const runsArr = runs || [];
 
-  // Header
   const ts = (summary && summary.timestamp_utc) || (runsArr.length && runsArr[runsArr.length - 1].timestamp_utc) || "unknown";
   document.getElementById("updated").textContent = "Last updated: " + ts + " · " + runsArr.length + " runs recorded";
   const badges = document.getElementById("badges");
@@ -218,6 +309,8 @@ function renderFindings(latest) {
     badges.innerHTML = '<span class="note">No data found. Run the monitor (or wait for the scheduled workflow) to populate the dashboard.</span>';
   }
 
+  renderOverall(overall);
+
   const domains = allDomains(runsArr, summary);
   if (window.Chart && runsArr.length) {
     lineChart("posChart", "posNote", runsArr, domains, "gsc_position", true);
@@ -228,6 +321,7 @@ function renderFindings(latest) {
   }
   renderTimeline(runsArr, domains);
   renderGsc(summary);
+  renderCountry(summary);
   renderFindings(latest);
 })();
 </script>
