@@ -11,6 +11,9 @@ data/*.json
 data/*.md
 !data/.gitkeep
 
+# Git worktree used to build/commit the data branch (see workflow + README)
+data_branch/
+
 # OS / editor
 .DS_Store
 Thumbs.db
