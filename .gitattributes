@@ -1,0 +1,5 @@
+# Normalise line endings: the code runs on Linux GitHub Actions runners.
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.ico binary

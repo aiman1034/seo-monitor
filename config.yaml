@@ -9,17 +9,18 @@
 
 # Sites to monitor. `paths` are appended to https://<domain> and each is checked
 # with every user-agent below.
+# NOTE: `/game/<slug>` pages are dynamic (they 404 once an event ends), so the
+# stable key paths monitored here are the homepage and /dmca, which exist on both
+# domains. Add/replace paths freely — everything is config-driven.
 sites:
   - domain: totalsportek.tech
     paths:
       - /
-      - /football
-      - /live
+      - /dmca
   - domain: totalsportek.bio
     paths:
       - /
-      - /football
-      - /live
+      - /dmca
 
 # Keywords we ultimately want to rank for. Phase 1 only records these for
 # context (Search Console integration that uses them lands in Phase 2).
