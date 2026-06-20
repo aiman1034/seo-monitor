@@ -91,12 +91,14 @@ def summarize(run_data: Dict[str, Any], config: Dict[str, Any]) -> Dict[str, Any
         # Attach a compact GSC summary when available (authoritative signal).
         gsite = gsc_sites.get(domain)
         if gsite:
-            totals = (gsite.get("search_analytics") or {}).get("totals") or {}
+            sa = gsite.get("search_analytics") or {}
+            totals = sa.get("totals") or {}
             entry["gsc"] = {
                 "clicks": totals.get("clicks"),
                 "impressions": totals.get("impressions"),
                 "position": totals.get("position"),
                 "ctr": totals.get("ctr"),
+                "by_country": sa.get("by_country", []),
             }
         sites[domain] = entry
 
