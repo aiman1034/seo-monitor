@@ -212,12 +212,12 @@ def render_markdown(run_data: Dict[str, Any], summary: Dict[str, Any]) -> str:
     lines.append(f"## Findings ({len(findings)})")
     lines.append("")
     if findings:
-        lines.append("| Severity | Type | Site | Path | Message |")
-        lines.append("| --- | --- | --- | --- | --- |")
+        lines.append("| Severity | Type | Site | Path | Message | Fix |")
+        lines.append("| --- | --- | --- | --- | --- | --- |")
         for f in findings:
             lines.append(
                 f"| {f.get('severity')} | {f.get('type')} | {f.get('site')} | "
-                f"{f.get('path', '')} | {f.get('message')} |"
+                f"{f.get('path', '')} | {f.get('message')} | {f.get('fix', '')} |"
             )
     else:
         lines.append("_No findings this run._")

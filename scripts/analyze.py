@@ -27,8 +27,10 @@ from typing import Any, Dict, List, Optional
 
 try:
     from .common import DATA_DIR, load_config, setup_logging, utc_now_iso
+    from .fixes import attach_fixes
 except ImportError:  # allow running as a plain script
     from common import DATA_DIR, load_config, setup_logging, utc_now_iso  # type: ignore
+    from fixes import attach_fixes  # type: ignore
 
 
 def load_previous_run(
@@ -253,6 +255,9 @@ def analyze(
 
     order = {"critical": 0, "warning": 1, "info": 2}
     findings.sort(key=lambda f: order.get(f.get("severity"), 3))
+
+    # Attach a recommended fix to every finding (flows into JSON/report/dashboard).
+    attach_fixes(findings)
 
     counts = {sev: sum(1 for f in findings if f["severity"] == sev) for sev in order}
     log.info(
