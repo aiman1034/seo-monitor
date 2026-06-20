@@ -316,6 +316,30 @@ def _gsc_delta_findings(
             if rec.get("indexed"):
                 continue  # currently indexed — fine
             url = rec.get("url")
+
+            # Intentional noindex (e.g. /dmca) is correct behaviour, not a drop —
+            # report it as info, never as a critical DEINDEXED regression.
+            if rec.get("noindex"):
+                findings.append(
+                    {
+                        "type": "NOINDEX_PAGE",
+                        "severity": "info",
+                        "site": domain,
+                        "path": url,
+                        "message": (
+                            f"{url} is intentionally excluded from Google's index "
+                            f"(indexingState={rec.get('indexingState')}, "
+                            f"coverageState={rec.get('coverageState')}). Expected."
+                        ),
+                        "details": {
+                            "indexingState": rec.get("indexingState"),
+                            "coverageState": rec.get("coverageState"),
+                        },
+                        "timestamp": now,
+                    }
+                )
+                continue
+
             prev_rec = prev_idx.get(url)
             was_indexed = bool(prev_rec) and prev_rec.get("indexed")
             first_sight = not prev_enabled or prev_rec is None
@@ -328,7 +352,7 @@ def _gsc_delta_findings(
                         "site": domain,
                         "path": url,
                         "message": (
-                            f"{url} is not indexed by Google ({reason}). "
+                            f"{url} should be indexed but isn't ({reason}). "
                             f"verdict={rec.get('verdict')}, "
                             f"coverageState={rec.get('coverageState')}."
                         ),

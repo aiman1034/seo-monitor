@@ -49,6 +49,30 @@ SCOPES = ["https://www.googleapis.com/auth/webmasters.readonly"]
 SUCCESS_FETCH_STATES = {"SUCCESSFUL"}
 
 
+def is_noindex(indexing_state: Optional[str], coverage_state: Optional[str]) -> bool:
+    """True when a URL is *intentionally* excluded from Google's index.
+
+    A ``noindex`` meta tag / ``X-Robots-Tag`` is a deliberate signal (e.g. on a
+    /dmca boilerplate page) — Google fetched the page fine and was told not to
+    index it. That is correct behaviour, not a problem, so it must not be treated
+    as a DEINDEXED regression.
+
+    Args:
+        indexing_state: GSC ``indexingState`` (e.g. INDEXING_ALLOWED,
+            BLOCKED_BY_META_TAG, BLOCKED_BY_HTTP_HEADER).
+        coverage_state: GSC ``coverageState`` (e.g. "Excluded by 'noindex' tag").
+
+    Returns:
+        True if the page is intentionally noindex.
+    """
+    state = (indexing_state or "").upper()
+    if state in ("BLOCKED_BY_META_TAG", "BLOCKED_BY_HTTP_HEADER"):
+        return True
+    if "noindex" in (coverage_state or "").lower():
+        return True
+    return False
+
+
 def _load_credentials(logger) -> Tuple[Optional[Any], Optional[str]]:
     """Load service-account credentials from env, or return a no-op reason.
 
@@ -183,6 +207,9 @@ def _url_inspection(
                 userCanonical=idx.get("userCanonical"),
                 mobileUsability=mobile.get("verdict"),
                 indexed=(verdict == "PASS"),
+                noindex=is_noindex(
+                    idx.get("indexingState"), idx.get("coverageState")
+                ),
             )
             logger.info(
                 "  inspect %s -> verdict=%s fetch=%s coverage=%s",
