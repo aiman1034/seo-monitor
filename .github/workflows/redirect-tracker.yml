@@ -1,0 +1,71 @@
+name: Redirect Tracker
+
+# Daily redirect & reinstatement tracker for the mirror domains (no GSC).
+# SEPARATE from the hourly SEO monitor, but it shares the same `concurrency`
+# group so the two never push to the `data` branch at the same time.
+#
+# Keep the cron in sync with `redirects.schedule.cron` in config.yaml.
+
+on:
+  schedule:
+    - cron: "0 6 * * *"   # daily at 06:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write   # push results to the data branch
+
+concurrency:
+  group: seo-monitor       # shared with the hourly monitor — serialise data pushes
+  cancel-in-progress: false
+
+jobs:
+  track:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code (main)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Prepare data branch worktree
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git ls-remote --exit-code --heads origin data >/dev/null 2>&1; then
+            git fetch origin data --depth=1
+            git worktree add data_branch origin/data
+            git -C data_branch checkout -B data origin/data
+          else
+            git worktree add --detach data_branch
+            git -C data_branch checkout --orphan data
+            git -C data_branch rm -rf . >/dev/null 2>&1 || true
+          fi
+
+      - name: Run redirect tracker
+        env:
+          SEO_MONITOR_DATA_DIR: ${{ github.workspace }}/data_branch
+        run: python scripts/redirect_tracker.py
+
+      - name: Commit results to data branch
+        run: |
+          cd data_branch
+          git add redirects redirects-index.json
+          if git diff --cached --quiet; then
+            echo "No redirect changes to commit."
+          else
+            git commit -m "Redirect check $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            # Serialised by the concurrency group, but rebase-retry just in case.
+            git push origin HEAD:data || {
+              git fetch origin data
+              git rebase origin/data
+              git push origin HEAD:data
+            }
+          fi
