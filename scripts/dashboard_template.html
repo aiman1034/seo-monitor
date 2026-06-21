@@ -99,6 +99,8 @@
   <h2>Redirects &amp; reinstatements <span class="muted">(mirror domains — daily)</span></h2>
   <div class="card"><canvas id="redirChart"></canvas><div class="note" id="redirChartNote" hidden></div></div>
   <div id="redirects"></div>
+  <h3 style="font-size:14px; margin:18px 0 8px;">Network redirect map <span class="muted" style="font-weight:400;">(your domains — where each homepage lands over time)</span></h3>
+  <div id="network"></div>
   <h3 style="font-size:14px; margin:18px 0 8px;">Competitor watchlist <span class="muted" style="font-weight:400;">(external domains — status only)</span></h3>
   <div id="watchlist"></div>
   <details class="card" id="addSite" style="display:none;">
@@ -341,6 +343,7 @@ async function renderRedirects(index) {
     document.getElementById("redirChart").style.display = "none";
     note.hidden = false; note.textContent = "No redirect data yet — the daily redirect-tracker workflow has not run.";
     wrap.innerHTML = "";
+    renderNetwork(index);
     renderWatchlist(index);
     setupAddSite(index);
     return;
@@ -411,8 +414,48 @@ async function renderRedirects(index) {
       target.innerHTML = `<table><thead><tr><th>Section</th><th>Label</th><th>Original URL</th><th>Current URL</th><th>Status</th><th>Redirected vs reinstated</th><th>Checked</th></tr></thead><tbody>${rows}</tbody></table>`;
     });
   }
+  renderNetwork(index);
   renderWatchlist(index);
   setupAddSite(index);
+}
+
+async function renderNetwork(index) {
+  const wrap = document.getElementById("network");
+  const list = (index && index.network) || [];
+  if (!list.length) {
+    wrap.innerHTML = '<div class="card"><div class="note">No network map yet — the daily tracker has not run.</div></div>';
+    return;
+  }
+  // Sort: redirecting/dead/blocked first (the interesting ones), then standalone.
+  const rank = (n) => n.lands_on === "self" ? 3 : (n.lands_on === "dead" ? 1 : (n.lands_on === "blocked" ? 0 : 2));
+  const rows = list.slice().sort((a, b) => rank(a) - rank(b) || a.domain.localeCompare(b.domain));
+  let detail = null;
+  const card = document.createElement("div"); card.className = "card";
+  card.innerHTML = `<table><thead><tr><th>Domain</th><th>Lands on</th><th>Status</th><th>Checked</th></tr></thead><tbody></tbody></table>`;
+  const tbody = card.querySelector("tbody");
+  for (const n of rows) {
+    const standalone = n.lands_on === "self";
+    const landsLabel = standalone ? "standalone" : (n.lands_on === "dead" ? "dead" : (n.lands_on === "blocked" ? "blocked" : "→ " + n.lands_on));
+    const cls = standalone ? "st-live" : (n.lands_on === "dead" ? "st-dead" : (n.lands_on === "blocked" ? "st-block" : "st-redir"));
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td style="word-break:break-all;">${n.domain}</td>
+      <td class="${cls}">${landsLabel}</td>
+      <td>${n.status || ""}</td>
+      <td>${n.last_checked || ""} <a href="#" data-d="${n.domain}" class="nhist muted" style="font-size:12px;">history</a></td>`;
+    tbody.appendChild(tr);
+  }
+  wrap.innerHTML = ""; wrap.appendChild(card);
+  card.querySelectorAll(".nhist").forEach(a => a.addEventListener("click", async (ev) => {
+    ev.preventDefault();
+    if (!detail) detail = await getJSON("./redirects/network.json");
+    const entry = detail && (detail.domains || []).find(e => e.domain === a.dataset.d);
+    const hist = entry && entry.history ? entry.history.slice().reverse().map(h => `${h.date}: ${h.change}`).join("\n") : "no history";
+    const box = a.closest("tr").querySelector(".histbox") || (() => {
+      const td = a.closest("td"); const d = document.createElement("div"); d.className = "histbox hist"; td.appendChild(d); return d;
+    })();
+    box.style.whiteSpace = "pre-line"; box.textContent = hist;
+  }));
 }
 
 async function renderWatchlist(index) {
