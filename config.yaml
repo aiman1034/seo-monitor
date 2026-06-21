@@ -32,10 +32,15 @@ sites:
         dynamic: true
       - /dmca
   # footybite.to — added Phase 7. Its homepage 301-redirects to footybitez.app, so
-  # only the (dynamic) homepage is monitored; /dmca redirects off-domain too. If
-  # the GSC property is URL-prefix rather than domain, switch to https://footybite.to/.
+  # only the (dynamic) homepage is monitored; /dmca redirects off-domain too.
+  # GSC ACCESS PENDING: as of 2026-06-21 the service account
+  # (seo-monitor-sa@seo-monitor-500021.iam.gserviceaccount.com) gets HTTP 403 on
+  # BOTH sc-domain:footybite.to AND https://footybite.to/ — it is not yet a verified
+  # user on this property. Re-grant it in Search Console (Settings -> Users), then
+  # data flows automatically on the next hourly run. Switch to https://footybite.to/
+  # if the property turns out to be URL-prefix rather than domain.
   - domain: footybite.to
-    gsc_property: "https://footybite.to/"
+    gsc_property: "sc-domain:footybite.to"
     paths:
       - path: /
         dynamic: true
