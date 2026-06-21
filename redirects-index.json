@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-06-21T00:08:52+00:00",
+  "checked_utc": "2026-06-21T02:06:25+00:00",
   "sheet_id": "1rV87uX_3F1qpVjbCk-7jr6ryafUBLaNv6RZrGk1cCN0",
   "domains": {
     "totalsportekz.com": {
@@ -35,7 +35,7 @@
       "blocked": 0,
       "total": 1,
       "domain_status": "insufficient_sample",
-      "domain_status_changed": true,
+      "domain_status_changed": false,
       "last_checked": "2026-06-21"
     },
     "totalsportek.ch": {
@@ -47,7 +47,7 @@
       "blocked": 0,
       "total": 1,
       "domain_status": "insufficient_sample",
-      "domain_status_changed": true,
+      "domain_status_changed": false,
       "last_checked": "2026-06-21"
     },
     "totalsportek.gd": {
@@ -59,7 +59,7 @@
       "blocked": 0,
       "total": 1,
       "domain_status": "insufficient_sample",
-      "domain_status_changed": true,
+      "domain_status_changed": false,
       "last_checked": "2026-06-21"
     },
     "totalsportek.cv": {
@@ -71,7 +71,7 @@
       "blocked": 0,
       "total": 1,
       "domain_status": "insufficient_sample",
-      "domain_status_changed": true,
+      "domain_status_changed": false,
       "last_checked": "2026-06-21"
     },
     "footybite.to": {
@@ -83,7 +83,7 @@
       "blocked": 0,
       "total": 1,
       "domain_status": "insufficient_sample",
-      "domain_status_changed": true,
+      "domain_status_changed": false,
       "last_checked": "2026-06-21"
     },
     "totalsportekz.app": {
@@ -131,6 +131,104 @@
       "status": "Live (200)",
       "current": "https://total-sporteks.pro/",
       "blocked": false,
+      "last_checked": "2026-06-21"
+    }
+  ],
+  "network": [
+    {
+      "domain": "totalsportek.tech",
+      "lands_on": "self",
+      "status": "Live (200)",
+      "last_checked": "2026-06-21"
+    },
+    {
+      "domain": "totalsportek.bio",
+      "lands_on": "self",
+      "status": "Live (200)",
+      "last_checked": "2026-06-21"
+    },
+    {
+      "domain": "totalsportek.cfd",
+      "lands_on": "totalsportek.bio",
+      "status": "Redirect (301) -> totalsportek.bio",
+      "last_checked": "2026-06-21"
+    },
+    {
+      "domain": "totalsportek.host",
+      "lands_on": "dead",
+      "status": "Dead",
+      "last_checked": "2026-06-21"
+    },
+    {
+      "domain": "totalsportek.it",
+      "lands_on": "totalsportek.bio",
+      "status": "Redirect (301) -> totalsportek.bio",
+      "last_checked": "2026-06-21"
+    },
+    {
+      "domain": "totalsportekz.com",
+      "lands_on": "self",
+      "status": "Live (200)",
+      "last_checked": "2026-06-21"
+    },
+    {
+      "domain": "totalsportekz.app",
+      "lands_on": "self",
+      "status": "Live (200)",
+      "last_checked": "2026-06-21"
+    },
+    {
+      "domain": "totalsportek.gd",
+      "lands_on": "totalsportekz.app",
+      "status": "Redirect (301) -> totalsportekz.app",
+      "last_checked": "2026-06-21"
+    },
+    {
+      "domain": "totalsportek.li",
+      "lands_on": "dead",
+      "status": "Dead",
+      "last_checked": "2026-06-21"
+    },
+    {
+      "domain": "totalsportek.ch",
+      "lands_on": "dead",
+      "status": "Dead",
+      "last_checked": "2026-06-21"
+    },
+    {
+      "domain": "totalsportek.cv",
+      "lands_on": "self",
+      "status": "Live (200)",
+      "last_checked": "2026-06-21"
+    },
+    {
+      "domain": "footybite.tech",
+      "lands_on": "self",
+      "status": "Live (200)",
+      "last_checked": "2026-06-21"
+    },
+    {
+      "domain": "footybitez.app",
+      "lands_on": "self",
+      "status": "Live (200)",
+      "last_checked": "2026-06-21"
+    },
+    {
+      "domain": "footybite.app",
+      "lands_on": "self",
+      "status": "Live (200)",
+      "last_checked": "2026-06-21"
+    },
+    {
+      "domain": "footybite.to",
+      "lands_on": "footybitez.app",
+      "status": "Redirect (301) -> footybitez.app",
+      "last_checked": "2026-06-21"
+    },
+    {
+      "domain": "freesportshd.sbs",
+      "lands_on": "self",
+      "status": "Live (200)",
       "last_checked": "2026-06-21"
     }
   ]
