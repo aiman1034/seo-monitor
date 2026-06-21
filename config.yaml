@@ -31,6 +31,14 @@ sites:
       - path: /
         dynamic: true
       - /dmca
+  # footybite.to — added Phase 7. Its homepage 301-redirects to footybitez.app, so
+  # only the (dynamic) homepage is monitored; /dmca redirects off-domain too. If
+  # the GSC property is URL-prefix rather than domain, switch to https://footybite.to/.
+  - domain: footybite.to
+    gsc_property: "sc-domain:footybite.to"
+    paths:
+      - path: /
+        dynamic: true
 
 # Keywords we ultimately want to rank for. Phase 1 only records these for
 # context (Search Console integration that uses them lands in Phase 2).
