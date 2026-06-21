@@ -92,6 +92,91 @@ FIX_RECOMMENDATIONS: Dict[str, str] = {
         "Check indexing and rankings, then seasonality and algorithm updates; "
         "confirm key pages are still indexed and served correctly."
     ),
+    # --- On-page & technical audit (Phase 8) ---
+    "TITLE_MISSING": (
+        "Add a unique, keyword-led <title> tag (about 30-60 characters) to the page."
+    ),
+    "TITLE_LENGTH": (
+        "Rewrite the <title> to ~30-60 characters so it isn't truncated in search "
+        "results and still leads with the target keyword."
+    ),
+    "TITLE_DUPLICATE": (
+        "Give each page a unique <title>; duplicate titles make pages compete and "
+        "look low-quality to Google."
+    ),
+    "META_DESC_MISSING": (
+        "Add a unique meta description (~120-160 chars) with a call to action to "
+        "improve click-through from search results."
+    ),
+    "META_DESC_LENGTH": (
+        "Trim or expand the meta description to ~120-160 characters so it displays "
+        "fully in the SERP snippet."
+    ),
+    "META_DESC_DUPLICATE": (
+        "Write a unique meta description per page; duplicates waste the snippet and "
+        "signal thin differentiation."
+    ),
+    "H1_MISSING": (
+        "Add exactly one clear <h1> describing the page's main topic."
+    ),
+    "H1_MULTIPLE": (
+        "Keep a single <h1> per page; demote the extra ones to <h2>/<h3> for a clear "
+        "heading hierarchy."
+    ),
+    "CANONICAL_MISSING": (
+        "Add a self-referencing <link rel=\"canonical\"> so Google consolidates "
+        "signals on the preferred URL."
+    ),
+    "CANONICAL_CROSS_DOMAIN": (
+        "This page's canonical points to a DIFFERENT domain — it hands ranking to "
+        "that domain. If unintended, point the canonical at this page's own URL; if "
+        "intentional consolidation, confirm that's the strategy."
+    ),
+    "ROBOTS_NOINDEX": (
+        "This page is marked noindex (meta robots or X-Robots-Tag) but is being "
+        "monitored as one that should rank — remove the noindex if it should be "
+        "indexed."
+    ),
+    "STRUCTURED_DATA_MISSING": (
+        "Add relevant JSON-LD schema (e.g. WebPage / SportsEvent / FAQ) to enable "
+        "rich results and clarify the page to Google."
+    ),
+    "IMAGE_ALT_MISSING": (
+        "Add descriptive alt text to images for accessibility and image-search "
+        "visibility."
+    ),
+    "MIXED_CONTENT": (
+        "Serve every resource over https — replace http:// asset URLs so the page "
+        "isn't downgraded or flagged as insecure."
+    ),
+    "ROBOTS_TXT_BLOCKS_PATH": (
+        "robots.txt Disallow covers a page that should rank — remove the Disallow "
+        "rule blocking that path so Google can crawl it."
+    ),
+    "SITEMAP_MISSING": (
+        "Publish a valid /sitemap.xml listing your important URLs and submit it in "
+        "Search Console."
+    ),
+    "SITEMAP_MISSING_PAGE": (
+        "Add this monitored URL to sitemap.xml so Google discovers and prioritises "
+        "it."
+    ),
+    "REDIRECT_CHAIN": (
+        "Replace the multi-hop redirect with a single direct 301 to the final URL "
+        "to stop leaking link equity and speed up crawling."
+    ),
+    "SSL_EXPIRING_SOON": (
+        "Renew the TLS certificate before it expires (enable auto-renewal) to avoid "
+        "an outage and browser security warnings."
+    ),
+    "SSL_EXPIRED": (
+        "The TLS certificate has EXPIRED — renew it immediately; the site is showing "
+        "security warnings and Google cannot crawl it safely."
+    ),
+    "CWV_POOR": (
+        "Improve the failing Core Web Vital (optimise images/LCP, reserve space to "
+        "cut CLS, defer JS to cut INP) — see PageSpeed Insights for specifics."
+    ),
 }
 
 # Shown when a finding type has no specific entry (e.g. a future check type).

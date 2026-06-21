@@ -23,13 +23,14 @@ import sys
 from typing import Any, Dict
 
 try:
-    from . import analyze, compare_duplicates, gsc, monitor_response, report
+    from . import analyze, compare_duplicates, gsc, monitor_response, onpage_audit, report
     from .common import load_config, setup_logging, utc_now_compact, utc_now_iso
 except ImportError:  # allow running as a plain script
     import analyze  # type: ignore
     import compare_duplicates  # type: ignore
     import gsc  # type: ignore
     import monitor_response  # type: ignore
+    import onpage_audit  # type: ignore
     import report  # type: ignore
     from common import (  # type: ignore
         load_config,
@@ -76,12 +77,21 @@ def run(dry_run: bool, config_path: str | None = None) -> Dict[str, Any]:
         logger.exception("gsc failed: %s", exc)
         gsc_result = {"enabled": False, "timestamp_utc": utc_now_iso(), "sites": {}, "findings": []}
 
+    # On-page & technical audit (page-level issue finding). Wrapped so a failure
+    # never aborts the run.
+    try:
+        onpage_result = onpage_audit.run(config, logger)
+    except Exception as exc:  # pragma: no cover - defensive
+        logger.exception("onpage_audit failed: %s", exc)
+        onpage_result = {"enabled": False, "timestamp_utc": utc_now_iso(), "findings": []}
+
     current: Dict[str, Any] = {
         "timestamp_utc": utc_now_iso(),
         "run_id": utc_now_compact(),
         "monitor": monitor_result,
         "duplicates": duplicates_result,
         "gsc": gsc_result,
+        "onpage": onpage_result,
     }
 
     # Step 3: analyse against the previous run.

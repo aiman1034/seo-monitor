@@ -125,6 +125,18 @@ gsc:
   position_drop_threshold: 5     # POSITION_DROP when avg position worsens by > this
   impressions_drop_pct: 40       # IMPRESSIONS_DROP when window impressions fall > this %
 
+# On-page & technical audit (Phase 8) — page-level issue finding. Runs per
+# monitored page + once per domain (robots/sitemap/SSL). All findings are
+# warning/info (never critical) except an already-expired SSL cert, so the audit
+# never triggers auto-alert Issues. PageSpeed/CrUX is optional (needs PSI_API_KEY).
+onpage:
+  enabled: true
+  title_min: 30
+  title_max: 60
+  meta_min: 120
+  meta_max: 160
+  ssl_warn_days: 30              # SSL_EXPIRING_SOON when cert expires within N days
+
 # Redirect & reinstatement tracker (Phase 5) — a SEPARATE, daily subsystem that
 # tracks mirror domains WITHOUT GSC. It reads the Original URLs (column C) from a
 # Google Sheet (the place you manage which domains/URLs to track — adding a site =

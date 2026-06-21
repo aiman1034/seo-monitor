@@ -106,6 +106,7 @@ def analyze(
     findings.extend(current.get("monitor", {}).get("findings", []))
     findings.extend(current.get("duplicates", {}).get("findings", []))
     findings.extend(current.get("gsc", {}).get("findings", []))
+    findings.extend(current.get("onpage", {}).get("findings", []))
 
     cur_checks = current.get("monitor", {}).get("checks", [])
     prev_idx = _index_checks(previous)
