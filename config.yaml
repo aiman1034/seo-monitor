@@ -31,16 +31,34 @@ sites:
       - path: /
         dynamic: true
       - /dmca
-  # footybite.to — added Phase 7. Its homepage 301-redirects to footybitez.app, so
-  # only the (dynamic) homepage is monitored; /dmca redirects off-domain too.
-  # GSC ACCESS PENDING: as of 2026-06-21 the service account
-  # (seo-monitor-sa@seo-monitor-500021.iam.gserviceaccount.com) gets HTTP 403 on
-  # BOTH sc-domain:footybite.to AND https://footybite.to/ — it is not yet a verified
-  # user on this property. Re-grant it in Search Console (Settings -> Users), then
-  # data flows automatically on the next hourly run. Switch to https://footybite.to/
-  # if the property turns out to be URL-prefix rather than domain.
-  - domain: footybite.to
-    gsc_property: "sc-domain:footybite.to"
+  # --- Additional GSC domain properties (all sc-domain). To onboard another
+  # domain the user sends, copy a block below and change domain + gsc_property.
+  # Access is granted progressively; a site whose SA grant is still pending simply
+  # records a 403 as data (no crash, no critical alert) until access lands. ---
+  # footybite.tech (the actual GSC property; footybite.to from Phase 7 was wrong —
+  # it just redirects to footybitez.app and is not a property).
+  - domain: footybite.tech
+    gsc_property: "sc-domain:footybite.tech"
+    paths:
+      - path: /
+        dynamic: true
+  - domain: freesportshd.sbs
+    gsc_property: "sc-domain:freesportshd.sbs"
+    paths:
+      - path: /
+        dynamic: true
+  - domain: totalsportek.cfd
+    gsc_property: "sc-domain:totalsportek.cfd"
+    paths:
+      - path: /
+        dynamic: true
+  - domain: totalsportek.host
+    gsc_property: "sc-domain:totalsportek.host"
+    paths:
+      - path: /
+        dynamic: true
+  - domain: totalsportek.it
+    gsc_property: "sc-domain:totalsportek.it"
     paths:
       - path: /
         dynamic: true
