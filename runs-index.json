@@ -155,5 +155,37 @@
       "warning": 1,
       "info": 2
     }
+  },
+  {
+    "timestamp_utc": "2026-06-21T00:31:22+00:00",
+    "run_id": "20260621T003122Z",
+    "sites": {
+      "totalsportek.tech": {
+        "verdict": "OK",
+        "worst_status": 200,
+        "gsc_position": 3.45,
+        "gsc_impressions": 1599193,
+        "gsc_clicks": 641492
+      },
+      "totalsportek.bio": {
+        "verdict": "OK",
+        "worst_status": 200,
+        "gsc_position": 9.5,
+        "gsc_impressions": 7396,
+        "gsc_clicks": 316
+      },
+      "footybite.to": {
+        "verdict": "OK",
+        "worst_status": 200,
+        "gsc_position": null,
+        "gsc_impressions": null,
+        "gsc_clicks": null
+      }
+    },
+    "findings_counts": {
+      "critical": 0,
+      "warning": 1,
+      "info": 2
+    }
   }
 ]
