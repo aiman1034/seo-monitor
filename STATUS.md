@@ -4,9 +4,9 @@
 
 ### Current status
 
-![last run](https://img.shields.io/badge/last_run-2026--06--21T00:04:34+00:00-blue) ![totalsportek.tech](https://img.shields.io/badge/totalsportek.tech-200-brightgreen) ![totalsportek.bio](https://img.shields.io/badge/totalsportek.bio-200-brightgreen)
+![last run](https://img.shields.io/badge/last_run-2026--06--21T00:15:10+00:00-blue) ![totalsportek.tech](https://img.shields.io/badge/totalsportek.tech-200-brightgreen) ![totalsportek.bio](https://img.shields.io/badge/totalsportek.bio-200-brightgreen)
 
-_Last run: **2026-06-21T00:04:34+00:00** · critical: 0 · warning: 2 · info: 2_
+_Last run: **2026-06-21T00:15:10+00:00** · critical: 0 · warning: 7 · info: 2_
 
 | Site | Verdict | Homepage status (by user-agent) | GSC (clicks / impr / pos) |
 | --- | --- | --- | --- |

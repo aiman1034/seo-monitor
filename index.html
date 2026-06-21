@@ -99,6 +99,8 @@
   <h2>Redirects &amp; reinstatements <span class="muted">(mirror domains — daily)</span></h2>
   <div class="card"><canvas id="redirChart"></canvas><div class="note" id="redirChartNote" hidden></div></div>
   <div id="redirects"></div>
+  <h3 style="font-size:14px; margin:18px 0 8px;">Competitor watchlist <span class="muted" style="font-weight:400;">(external domains — status only)</span></h3>
+  <div id="watchlist"></div>
   <details class="card" id="addSite" style="display:none;">
     <summary style="cursor:pointer; font-weight:600;">+ Add a website to track</summary>
     <div id="addSiteBody" style="margin-top:10px; font-size:14px;"></div>
@@ -321,6 +323,7 @@ async function renderRedirects(index) {
     document.getElementById("redirChart").style.display = "none";
     note.hidden = false; note.textContent = "No redirect data yet — the daily redirect-tracker workflow has not run.";
     wrap.innerHTML = "";
+    renderWatchlist(index);
     setupAddSite(index);
     return;
   }
@@ -349,8 +352,12 @@ async function renderRedirects(index) {
     const s = index.domains[d];
     const block = document.createElement("div"); block.className = "card";
     const redirected = (s.redirected || 0) + (s.redirected_to_homepage || 0);
-    const banner = (s.domain_status && s.domain_status.startsWith("DOMAIN_REDIRECTED"))
-      ? `<div class="banner">⮕ Whole domain redirected: ${s.domain_status.replace("DOMAIN_REDIRECTED -> ", "→ ")}</div>` : "";
+    let banner = "";
+    if (s.domain_status && s.domain_status.startsWith("DOMAIN_REDIRECTED")) {
+      banner = `<div class="banner">⮕ Whole domain redirected: ${s.domain_status.replace("DOMAIN_REDIRECTED -> ", "→ ")}</div>`;
+    } else if (s.domain_status === "insufficient_sample") {
+      banner = `<div class="note" style="margin:4px 0;">Insufficient sample — too few URLs in the sheet to judge the whole domain. Add more URLs to this tab to get a verdict.</div>`;
+    }
     block.innerHTML = `${banner}
       <div class="counts">
         <span class="count">live <b>${s.live || 0}</b></span>
@@ -386,7 +393,43 @@ async function renderRedirects(index) {
       target.innerHTML = `<table><thead><tr><th>Section</th><th>Label</th><th>Original URL</th><th>Current URL</th><th>Status</th><th>Redirected vs reinstated</th><th>Checked</th></tr></thead><tbody>${rows}</tbody></table>`;
     });
   }
+  renderWatchlist(index);
   setupAddSite(index);
+}
+
+async function renderWatchlist(index) {
+  const wrap = document.getElementById("watchlist");
+  const list = (index && index.watchlist) || [];
+  if (!list.length) {
+    wrap.innerHTML = '<div class="card"><div class="note">No watchlist data yet — the daily tracker has not run, or none configured.</div></div>';
+    return;
+  }
+  let detail = null;  // lazy-load full watchlist.json (with history) once
+  const card = document.createElement("div"); card.className = "card";
+  card.innerHTML = `<table><thead><tr><th>Competitor</th><th>Status</th><th>Lands on</th><th>Checked</th></tr></thead><tbody></tbody></table>`;
+  const tbody = card.querySelector("tbody");
+  for (const w of list) {
+    const tr = document.createElement("tr");
+    const sc = statusClass(w.blocked ? "BLOCKED" : w.status);
+    tr.innerHTML = `
+      <td style="word-break:break-all;">${w.url}</td>
+      <td class="${sc}">${w.blocked ? "BLOCKED" : (w.status || "")}</td>
+      <td style="word-break:break-all;">${w.current || "—"}</td>
+      <td>${w.last_checked || ""} <a href="#" data-u="${w.url}" class="histlink muted" style="font-size:12px;">history</a></td>`;
+    tbody.appendChild(tr);
+  }
+  wrap.innerHTML = "";
+  wrap.appendChild(card);
+  card.querySelectorAll(".histlink").forEach(a => a.addEventListener("click", async (ev) => {
+    ev.preventDefault();
+    if (!detail) detail = await getJSON("./redirects/watchlist.json");
+    const entry = detail && (detail.entries || []).find(e => e.url === a.dataset.u);
+    const hist = entry && entry.history ? entry.history.slice().reverse().map(h => `${h.date}: ${h.change}`).join("\n") : "no history";
+    const box = a.closest("tr").querySelector(".histbox") || (() => {
+      const td = a.closest("td"); const d = document.createElement("div"); d.className = "histbox hist"; td.appendChild(d); return d;
+    })();
+    box.style.whiteSpace = "pre-line"; box.textContent = hist;
+  }));
 }
 
 function setupAddSite(index) {
