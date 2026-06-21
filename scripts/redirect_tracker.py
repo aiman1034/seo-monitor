@@ -261,22 +261,39 @@ def _probe_row(
     }
 
 
+# Minimum distinct non-homepage URLs needed before we'll judge a whole domain.
+_MIN_NON_HOMEPAGE = 3
+
+
 def _domain_status(domain: str, urls: List[Dict[str, Any]], threshold: float) -> str:
-    """Detect a whole-domain redirect to a single off-domain host."""
+    """Classify a domain's overall status from a MEANINGFUL sample.
+
+    Returns ``DOMAIN_REDIRECTED -> host`` only when both hold:
+      * at least ``_MIN_NON_HOMEPAGE`` distinct non-homepage URLs were probed, and
+      * >= ``threshold`` (e.g. 60%) of probed URLs redirect off-domain to that host.
+
+    A lone homepage (or any single URL) redirecting must NOT trigger it — that URL
+    is classified individually and the domain stays ``active``. A domain too thin
+    to judge (e.g. only the homepage, or nothing reachable) is reported honestly as
+    ``insufficient_sample`` rather than over-concluding.
+    """
     base = domain.lower().lstrip("www.")
-    off_hosts = [
-        u["_final_host"]
-        for u in urls
-        if u["_final_host"] and u["_final_host"] != base and not u["blocked"]
-    ]
     probed = [u for u in urls if not u["blocked"] and u["current"]]
-    if not off_hosts or not probed:
+    non_homepage = [u for u in probed if not _is_homepage(u["original"])]
+
+    if not probed or len(non_homepage) < _MIN_NON_HOMEPAGE:
+        # Not enough to conclude a whole-domain redirect.
+        return "insufficient_sample" if len(probed) <= 1 else "active"
+
+    off_counts: Dict[str, int] = {}
+    for u in probed:
+        h = u["_final_host"]
+        if h and h != base:
+            off_counts[h] = off_counts.get(h, 0) + 1
+    if not off_counts:
         return "active"
-    # Most common off-domain host.
-    counts: Dict[str, int] = {}
-    for h in off_hosts:
-        counts[h] = counts.get(h, 0) + 1
-    host, n = max(counts.items(), key=lambda kv: kv[1])
+
+    host, n = max(off_counts.items(), key=lambda kv: kv[1])
     if n / len(probed) >= threshold:
         return f"DOMAIN_REDIRECTED -> {host}"
     return "active"

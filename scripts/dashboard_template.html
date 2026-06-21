@@ -349,8 +349,12 @@ async function renderRedirects(index) {
     const s = index.domains[d];
     const block = document.createElement("div"); block.className = "card";
     const redirected = (s.redirected || 0) + (s.redirected_to_homepage || 0);
-    const banner = (s.domain_status && s.domain_status.startsWith("DOMAIN_REDIRECTED"))
-      ? `<div class="banner">⮕ Whole domain redirected: ${s.domain_status.replace("DOMAIN_REDIRECTED -> ", "→ ")}</div>` : "";
+    let banner = "";
+    if (s.domain_status && s.domain_status.startsWith("DOMAIN_REDIRECTED")) {
+      banner = `<div class="banner">⮕ Whole domain redirected: ${s.domain_status.replace("DOMAIN_REDIRECTED -> ", "→ ")}</div>`;
+    } else if (s.domain_status === "insufficient_sample") {
+      banner = `<div class="note" style="margin:4px 0;">Insufficient sample — too few URLs in the sheet to judge the whole domain. Add more URLs to this tab to get a verdict.</div>`;
+    }
     block.innerHTML = `${banner}
       <div class="counts">
         <span class="count">live <b>${s.live || 0}</b></span>
