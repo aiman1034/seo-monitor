@@ -86,15 +86,20 @@ def read_tab_gviz(sheet_id: str, tab: str, timeout: float, logger) -> List[Dict[
     resp.raise_for_status()
     rows: List[Dict[str, str]] = []
     reader = csv.reader(io.StringIO(resp.text))
+    # Read EVERY data row to the end of the tab. Section-header / blank / label-only
+    # rows (where column C is not an http URL) are skipped WITHOUT stopping, so
+    # multi-section tabs ("Top Leagues", "Top Teams", ...) are read in full.
     for i, cols in enumerate(reader):
         if i == 0:
             continue  # header
         if len(cols) < 3:
             continue
-        section, label, original = cols[0].strip(), cols[1].strip(), cols[2].strip()
+        original = cols[2].strip().lstrip("﻿")  # tolerate stray BOM
         if not original.lower().startswith("http"):
-            continue  # section-only or empty row
-        rows.append({"section": section, "label": label, "original": original})
+            continue  # section-only or empty row — skip, don't stop
+        rows.append(
+            {"section": cols[0].strip(), "label": cols[1].strip(), "original": original}
+        )
     logger.info("  sheet[%s]: %d original URLs", tab, len(rows))
     return rows
 
