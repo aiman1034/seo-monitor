@@ -296,16 +296,34 @@ function renderFindings(latest) {
     note.hidden = false; note.textContent = "No findings in the latest run.";
     return;
   }
-  findings.forEach(f => {
-    const tr = document.createElement("tr");
-    tr.innerHTML = `<td><span class="sev ${f.severity || ""}">${f.severity || ""}</span></td>
-      <td><code>${f.type || ""}</code></td>
-      <td>${f.site || ""}</td>
-      <td>${f.path || ""}</td>
-      <td>${f.message || ""}</td>
-      <td>${f.fix || ""}</td>`;
-    tbody.appendChild(tr);
+  // Group by site; sites ordered by their worst severity, then by count.
+  const sevRank = { critical: 0, warning: 1, info: 2 };
+  const groups = {};
+  findings.forEach(f => { (groups[f.site || "—"] ||= []).push(f); });
+  const sites = Object.keys(groups).sort((a, b) => {
+    const wa = Math.min(...groups[a].map(f => sevRank[f.severity] ?? 3));
+    const wb = Math.min(...groups[b].map(f => sevRank[f.severity] ?? 3));
+    return wa - wb || groups[b].length - groups[a].length || a.localeCompare(b);
   });
+  for (const site of sites) {
+    const items = groups[site].sort((a, b) => (sevRank[a.severity] ?? 3) - (sevRank[b.severity] ?? 3));
+    const c = items.filter(f => f.severity === "critical").length;
+    const w = items.filter(f => f.severity === "warning").length;
+    const hdr = document.createElement("tr");
+    hdr.innerHTML = `<td colspan="6" style="background:#0d1117; font-weight:600; color:var(--accent);">
+      ${site} <span class="muted" style="font-weight:400;">— ${items.length} finding(s)${c ? " · " + c + " critical" : ""}${w ? " · " + w + " warning" : ""}</span></td>`;
+    tbody.appendChild(hdr);
+    items.forEach(f => {
+      const tr = document.createElement("tr");
+      tr.innerHTML = `<td><span class="sev ${f.severity || ""}">${f.severity || ""}</span></td>
+        <td><code>${f.type || ""}</code></td>
+        <td>${f.site || ""}</td>
+        <td>${f.path || ""}</td>
+        <td>${f.message || ""}</td>
+        <td>${f.fix || ""}</td>`;
+      tbody.appendChild(tr);
+    });
+  }
 }
 
 function statusClass(s) {
