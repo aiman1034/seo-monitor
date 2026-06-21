@@ -173,3 +173,25 @@ redirects:
     - https://totalsports.cfd/
     - https://total-sporteks.best/
     - https://total-sporteks.pro/
+  # Network redirect map — the user's OWN domains. We probe each homepage daily and
+  # record where it lands over time, building a dated consolidation map (which
+  # domain redirected into which, and when). Add more domains here as the network
+  # grows. Domains also covered by a sheet tab reuse that homepage probe (no
+  # double-fetch in the same run).
+  network:
+    - totalsportek.tech
+    - totalsportek.bio
+    - totalsportek.cfd
+    - totalsportek.host
+    - totalsportek.it
+    - totalsportekz.com
+    - totalsportekz.app
+    - totalsportek.gd
+    - totalsportek.li
+    - totalsportek.ch
+    - totalsportek.cv
+    - footybite.tech
+    - footybitez.app
+    - footybite.app
+    - footybite.to
+    - freesportshd.sbs

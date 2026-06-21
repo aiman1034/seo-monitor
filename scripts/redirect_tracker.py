@@ -64,6 +64,7 @@ _CHALLENGE_MARKERS = (
 _GVIZ_URL = "https://docs.google.com/spreadsheets/d/{sid}/gviz/tq?tqx=out:csv&sheet={tab}"
 
 _throttle = threading.Lock()
+_cache_lock = threading.Lock()
 
 
 # --------------------------------------------------------------------------- #
@@ -144,12 +145,20 @@ def clean_original(url: str) -> str:
 
 
 def probe_url(
-    url: str, timeout: float, max_redirects: int, delay: float
+    url: str, timeout: float, max_redirects: int, delay: float,
+    cache: Optional[Dict[str, Any]] = None,
 ) -> Dict[str, Any]:
     """Fetch a URL following redirects; classify reachability. Errors-as-data.
 
     Returns a dict with final_url, status_code, redirect_chain, blocked, error.
+    If ``cache`` is given, a previously-probed URL is returned from it (so the
+    network-map pass reuses homepages already fetched by the sheet-tabs pass
+    instead of double-probing the same URL in one run).
     """
+    if cache is not None:
+        with _cache_lock:
+            if url in cache:
+                return cache[url]
     out: Dict[str, Any] = {
         "url": url,
         "final_url": None,
@@ -185,6 +194,9 @@ def probe_url(
         resp.close()
     except requests.exceptions.RequestException as exc:
         out["error"] = f"{type(exc).__name__}: {exc}"
+    if cache is not None:
+        with _cache_lock:
+            cache[url] = out
     return out
 
 
@@ -238,13 +250,17 @@ def classify_reinstated(
 
 
 def _probe_row(
-    row: Dict[str, str], domain: str, timeout: float, max_redirects: int, delay: float
+    row: Dict[str, str], domain: str, timeout: float, max_redirects: int, delay: float,
+    cache: Optional[Dict[str, Any]] = None,
 ) -> Dict[str, Any]:
     """Probe one row's original + clean-original URLs and classify everything."""
     original = row["original"]
     clean = clean_original(original)
-    orig_probe = probe_url(original, timeout, max_redirects, delay)
-    clean_probe = probe_url(clean, timeout, max_redirects, delay) if clean != original else orig_probe
+    orig_probe = probe_url(original, timeout, max_redirects, delay, cache=cache)
+    clean_probe = (
+        probe_url(clean, timeout, max_redirects, delay, cache=cache)
+        if clean != original else orig_probe
+    )
 
     return {
         "section": row["section"],
@@ -348,6 +364,9 @@ def run(
         "sheet_id": rcfg.get("sheet_id"),
         "domains": {},
     }
+    # Run-scoped probe cache so the network-map pass reuses homepages already
+    # fetched by the sheet-tabs pass (no double-probing in one run).
+    probe_cache: Dict[str, Any] = {}
 
     for tab in rcfg.get("tabs", []):
         try:
@@ -364,7 +383,7 @@ def run(
         urls: List[Dict[str, Any]] = []
         with ThreadPoolExecutor(max_workers=max_workers) as pool:
             futures = [
-                pool.submit(_probe_row, r, tab, timeout, max_redirects, delay)
+                pool.submit(_probe_row, r, tab, timeout, max_redirects, delay, probe_cache)
                 for r in rows
             ]
             for fut in futures:
@@ -406,7 +425,48 @@ def run(
             log.info("  watch %s -> %s", url, watchlist[-1]["status"])
         result["watchlist"] = watchlist
 
+    # Network redirect map — our own domains' homepages: where does each land now?
+    # Reuses cached homepage probes (e.g. thin sheet tabs already fetched these).
+    net_domains = rcfg.get("network", [])
+    if net_domains:
+        log.info("probing network map (%d domains)...", len(net_domains))
+        network: List[Dict[str, Any]] = []
+        for domain in net_domains:
+            hp = f"https://{domain}/"
+            p = probe_url(hp, timeout, max_redirects, delay, cache=probe_cache)
+            cls = _network_classify(domain, p)
+            network.append({
+                "domain": domain,
+                "lands_on": cls["lands_on"],
+                "status": cls["status"],
+                "final_url": p.get("final_url"),
+            })
+            log.info("  net %s -> %s", domain, cls["lands_on"])
+        result["network"] = network
+
     return result
+
+
+def _network_classify(domain: str, probe: Dict[str, Any]) -> Dict[str, Any]:
+    """From a homepage probe, return where the domain lands + a status string.
+
+    ``lands_on`` is ``self`` (standalone/live), a host (redirected off-domain),
+    ``blocked``, or ``dead``.
+    """
+    base = domain.lower().lstrip("www.")
+    if probe.get("blocked"):
+        return {"lands_on": "blocked", "status": "Blocked"}
+    if probe.get("error"):
+        return {"lands_on": "dead", "status": "Dead"}
+    sc = probe.get("status_code")
+    final_host = _host(probe.get("final_url"))
+    if sc and sc >= 400:
+        return {"lands_on": "dead", "status": f"Dead ({sc})"}
+    if final_host and final_host != base:
+        chain = probe.get("redirect_chain") or []
+        code = chain[0]["status_code"] if chain else (sc or "3xx")
+        return {"lands_on": final_host, "status": f"Redirect ({code}) -> {final_host}"}
+    return {"lands_on": "self", "status": "Live (200)" if sc == 200 else f"HTTP {sc}"}
 
 
 def _watchlist_urls(entries: List[Any]) -> List[str]:
@@ -553,11 +613,39 @@ def write_results(
             for e in wl_entries
         ]
 
+    # Network redirect map — dated history keyed on WHERE each domain lands.
+    if result.get("network") is not None:
+        net_path = os.path.join(out_dir, "network.json")
+        prev_net: Dict[str, Any] = {}
+        try:
+            with open(net_path, "r", encoding="utf-8") as fh:
+                prev_net = {e["domain"]: e for e in json.load(fh).get("domains", [])}
+        except (FileNotFoundError, json.JSONDecodeError):
+            pass
+        net_entries: List[Dict[str, Any]] = []
+        for n in result["network"]:
+            prev_n = prev_net.get(n["domain"])
+            if prev_n is None:
+                history = [{"date": date, "change": f"Baseline: lands on {n['lands_on']}"}]
+            else:
+                history = list(prev_n.get("history", []))
+                if prev_n.get("lands_on") != n["lands_on"]:
+                    history.append({"date": date,
+                                    "change": f"{prev_n.get('lands_on')} -> {n['lands_on']}"})
+            net_entries.append({**n, "last_checked": date, "history": history[-history_cap:]})
+        with open(net_path, "w", encoding="utf-8", newline="\n") as fh:
+            json.dump({"checked_utc": result["timestamp_utc"], "domains": net_entries}, fh, indent=2)
+        index["network"] = [
+            {"domain": e["domain"], "lands_on": e["lands_on"], "status": e["status"],
+             "last_checked": e["last_checked"]}
+            for e in net_entries
+        ]
+
     with open(os.path.join(data_dir, "redirects-index.json"), "w", encoding="utf-8", newline="\n") as fh:
         json.dump(index, fh, indent=2)
     logger.info(
-        "Wrote redirects/*.json (%d domains, %d watchlist) + redirects-index.json",
-        len(index["domains"]), len(index.get("watchlist", [])),
+        "Wrote redirects/*.json (%d domains, %d watchlist, %d network) + redirects-index.json",
+        len(index["domains"]), len(index.get("watchlist", [])), len(index.get("network", [])),
     )
     return index
 
