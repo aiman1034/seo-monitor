@@ -386,7 +386,46 @@ def run(
             summary["redirected_to_homepage"], summary["reinstated"],
             summary["dead"], summary["blocked"],
         )
+
+    # Competitor watchlist — external homepages, same prober, status-only framing.
+    wl_urls = _watchlist_urls(rcfg.get("watchlist", []))
+    if wl_urls:
+        log.info("probing watchlist (%d URLs)...", len(wl_urls))
+        watchlist: List[Dict[str, Any]] = []
+        for url in wl_urls:
+            p = probe_url(url, timeout, max_redirects, delay)
+            watchlist.append(
+                {
+                    "url": url,
+                    "current": p["final_url"],
+                    "status": classify_status(p, url),
+                    "blocked": p["blocked"],
+                    "redirect_chain": p["redirect_chain"],
+                }
+            )
+            log.info("  watch %s -> %s", url, watchlist[-1]["status"])
+        result["watchlist"] = watchlist
+
     return result
+
+
+def _watchlist_urls(entries: List[Any]) -> List[str]:
+    """Expand watchlist config entries (string URL or {url, paths}) into URLs."""
+    out: List[str] = []
+    for e in entries:
+        if isinstance(e, str):
+            url = e if e.startswith("http") else f"https://{e}"
+            out.append(url)
+        elif isinstance(e, dict):
+            base = e.get("url") or e.get("domain") or ""
+            if base and not base.startswith("http"):
+                base = f"https://{base}"
+            if base:
+                out.append(base)
+                origin = f"{urlparse(base).scheme}://{urlparse(base).netloc}"
+                for p in e.get("paths", []):
+                    out.append(origin + (p if p.startswith("/") else f"/{p}"))
+    return out
 
 
 def _url_state(u: Dict[str, Any], last_checked: str) -> Dict[str, Any]:
@@ -487,9 +526,39 @@ def write_results(
             "last_checked": date,
         }
 
+    # Competitor watchlist — status-only, with the same dated-history mechanism.
+    if result.get("watchlist") is not None:
+        wl_path = os.path.join(out_dir, "watchlist.json")
+        prev_wl: Dict[str, Any] = {}
+        try:
+            with open(wl_path, "r", encoding="utf-8") as fh:
+                prev_wl = {e["url"]: e for e in json.load(fh).get("entries", [])}
+        except (FileNotFoundError, json.JSONDecodeError):
+            pass
+        wl_entries: List[Dict[str, Any]] = []
+        for w in result["watchlist"]:
+            prev_w = prev_wl.get(w["url"])
+            if prev_w is None:
+                history = [{"date": date, "change": f"Baseline: {w['status']}"}]
+            else:
+                history = list(prev_w.get("history", []))
+                if prev_w.get("status") != w["status"]:
+                    history.append({"date": date, "change": f"{prev_w.get('status')} -> {w['status']}"})
+            wl_entries.append({**w, "last_checked": date, "history": history[-history_cap:]})
+        with open(wl_path, "w", encoding="utf-8", newline="\n") as fh:
+            json.dump({"checked_utc": result["timestamp_utc"], "entries": wl_entries}, fh, indent=2)
+        index["watchlist"] = [
+            {"url": e["url"], "status": e["status"], "current": e["current"],
+             "blocked": e["blocked"], "last_checked": e["last_checked"]}
+            for e in wl_entries
+        ]
+
     with open(os.path.join(data_dir, "redirects-index.json"), "w", encoding="utf-8", newline="\n") as fh:
         json.dump(index, fh, indent=2)
-    logger.info("Wrote redirects/*.json (%d domains) + redirects-index.json", len(index["domains"]))
+    logger.info(
+        "Wrote redirects/*.json (%d domains, %d watchlist) + redirects-index.json",
+        len(index["domains"]), len(index.get("watchlist", [])),
+    )
     return index
 
 

@@ -123,3 +123,10 @@ redirects:
   history_cap: 100               # max dated history entries kept per URL
   schedule:
     cron: "0 6 * * *"            # daily (separate from the hourly monitor)
+  # Competitor watchlist — EXTERNAL domains (not ours, no URL lists). We just
+  # track each homepage's status / where it lands over time as competitive intel.
+  # An entry is a URL string, or a mapping {url, paths: [...]} to probe extra paths.
+  watchlist:
+    - https://totalsports.cfd/
+    - https://total-sporteks.best/
+    - https://total-sporteks.pro/
