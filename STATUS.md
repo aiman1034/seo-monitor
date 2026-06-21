@@ -4,9 +4,9 @@
 
 ### Current status
 
-![last run](https://img.shields.io/badge/last_run-2026--06--21T06:01:14+00:00-blue) ![totalsportek.tech](https://img.shields.io/badge/totalsportek.tech-200-brightgreen) ![totalsportek.bio](https://img.shields.io/badge/totalsportek.bio-200-brightgreen) ![footybite.tech](https://img.shields.io/badge/footybite.tech-200-brightgreen) ![freesportshd.sbs](https://img.shields.io/badge/freesportshd.sbs-200-brightgreen) ![totalsportek.cfd](https://img.shields.io/badge/totalsportek.cfd-200-brightgreen) ![totalsportek.host](https://img.shields.io/badge/totalsportek.host-down-red) ![totalsportek.it](https://img.shields.io/badge/totalsportek.it-200-brightgreen)
+![last run](https://img.shields.io/badge/last_run-2026--06--21T10:01:29+00:00-blue) ![totalsportek.tech](https://img.shields.io/badge/totalsportek.tech-200-brightgreen) ![totalsportek.bio](https://img.shields.io/badge/totalsportek.bio-200-brightgreen) ![footybite.tech](https://img.shields.io/badge/footybite.tech-200-brightgreen) ![freesportshd.sbs](https://img.shields.io/badge/freesportshd.sbs-200-brightgreen) ![totalsportek.cfd](https://img.shields.io/badge/totalsportek.cfd-200-brightgreen) ![totalsportek.host](https://img.shields.io/badge/totalsportek.host-down-red) ![totalsportek.it](https://img.shields.io/badge/totalsportek.it-200-brightgreen)
 
-_Last run: **2026-06-21T06:01:14+00:00** · critical: 0 · warning: 11 · info: 16_
+_Last run: **2026-06-21T10:01:29+00:00** · critical: 0 · warning: 8 · info: 16_
 
 | Site | Verdict | Homepage status (by user-agent) | GSC (clicks / impr / pos) |
 | --- | --- | --- | --- |
