@@ -35,7 +35,7 @@ sites:
   # only the (dynamic) homepage is monitored; /dmca redirects off-domain too. If
   # the GSC property is URL-prefix rather than domain, switch to https://footybite.to/.
   - domain: footybite.to
-    gsc_property: "sc-domain:footybite.to"
+    gsc_property: "https://footybite.to/"
     paths:
       - path: /
         dynamic: true
