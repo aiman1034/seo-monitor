@@ -1,7 +1,7 @@
 {
   "domain": "totalsportek.ch",
-  "domain_status": "active",
-  "checked_utc": "2026-06-20T23:16:00+00:00",
+  "domain_status": "insufficient_sample",
+  "checked_utc": "2026-06-21T00:08:52+00:00",
   "urls": [
     {
       "section": "Site Status",
@@ -14,7 +14,7 @@
       "clean_resolves_to": null,
       "blocked": false,
       "redirect_chain": [],
-      "last_checked": "2026-06-20",
+      "last_checked": "2026-06-21",
       "history": [
         {
           "date": "2026-06-20",
