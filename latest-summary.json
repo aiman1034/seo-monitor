@@ -11,80 +11,80 @@
         "any_error": false,
         "verdict": "OK",
         "gsc": {
-          "clicks": 660485,
-          "impressions": 1649622,
-          "position": 3.44,
-          "ctr": 0.4004,
+          "clicks": 660439,
+          "impressions": 1641237,
+          "position": 3.42,
+          "ctr": 0.4024,
           "by_country": [
             {
               "country": "ind",
-              "clicks": 352743,
-              "impressions": 536510,
-              "ctr": 0.6574770274552199,
-              "position": 1.6157182531546477
+              "clicks": 359090,
+              "impressions": 544969,
+              "ctr": 0.6589182136965589,
+              "position": 1.6108329097618397
             },
             {
               "country": "deu",
-              "clicks": 37307,
-              "impressions": 71044,
-              "ctr": 0.5251252744777885,
-              "position": 1.9789426271043298
+              "clicks": 36860,
+              "impressions": 68747,
+              "ctr": 0.5361688510044075,
+              "position": 1.9481868299707623
             },
             {
               "country": "tto",
-              "clicks": 24463,
-              "impressions": 49798,
-              "ctr": 0.4912446282983252,
-              "position": 2.03335475320294
-            },
-            {
-              "country": "gbr",
-              "clicks": 18453,
-              "impressions": 82443,
-              "ctr": 0.22382737163858665,
-              "position": 6.4594083184745825
+              "clicks": 24871,
+              "impressions": 50552,
+              "ctr": 0.4919884475391676,
+              "position": 2.0098116790631426
             },
             {
               "country": "npl",
-              "clicks": 17748,
-              "impressions": 63828,
-              "ctr": 0.27805978567399886,
-              "position": 4.769411543523219
+              "clicks": 18893,
+              "impressions": 66252,
+              "ctr": 0.28516874962265293,
+              "position": 4.677594638652418
             },
             {
-              "country": "irl",
-              "clicks": 14560,
-              "impressions": 35263,
-              "ctr": 0.412897371182259,
-              "position": 2.250347389615177
+              "country": "gbr",
+              "clicks": 16723,
+              "impressions": 78362,
+              "ctr": 0.2134070084990174,
+              "position": 6.557757586585335
             },
             {
               "country": "can",
-              "clicks": 13643,
-              "impressions": 45952,
-              "ctr": 0.2968967618384401,
-              "position": 3.5387360724233985
+              "clicks": 13763,
+              "impressions": 46946,
+              "ctr": 0.2931666169641716,
+              "position": 3.511246964597623
+            },
+            {
+              "country": "irl",
+              "clicks": 12440,
+              "impressions": 30014,
+              "ctr": 0.414473245818618,
+              "position": 2.2512827347237954
             },
             {
               "country": "ita",
-              "clicks": 13377,
-              "impressions": 24215,
-              "ctr": 0.5524261821185216,
-              "position": 2.09527152591369
+              "clicks": 12327,
+              "impressions": 21952,
+              "ctr": 0.5615433673469388,
+              "position": 1.9869260204081631
             },
             {
               "country": "nld",
-              "clicks": 13289,
-              "impressions": 42431,
-              "ctr": 0.3131908274610544,
-              "position": 2.572765195258184
+              "clicks": 12018,
+              "impressions": 38881,
+              "ctr": 0.3090969882461871,
+              "position": 2.5333710552712123
             },
             {
               "country": "usa",
-              "clicks": 11985,
-              "impressions": 56105,
-              "ctr": 0.21361732465912128,
-              "position": 5.126209785224133
+              "clicks": 11786,
+              "impressions": 55494,
+              "ctr": 0.21238332071935706,
+              "position": 5.127257000756838
             }
           ]
         }
@@ -99,80 +99,80 @@
         "any_error": false,
         "verdict": "OK",
         "gsc": {
-          "clicks": 906,
-          "impressions": 25491,
-          "position": 9.37,
-          "ctr": 0.0355,
+          "clicks": 1955,
+          "impressions": 54669,
+          "position": 8.88,
+          "ctr": 0.0358,
           "by_country": [
             {
-              "country": "usa",
-              "clicks": 77,
-              "impressions": 2132,
-              "ctr": 0.036116322701688554,
-              "position": 10.421200750469044
+              "country": "ind",
+              "clicks": 146,
+              "impressions": 2044,
+              "ctr": 0.07142857142857142,
+              "position": 9.53962818003914
             },
             {
-              "country": "ind",
-              "clicks": 65,
-              "impressions": 871,
-              "ctr": 0.07462686567164178,
-              "position": 9.89207807118255
+              "country": "usa",
+              "clicks": 129,
+              "impressions": 3437,
+              "ctr": 0.03753273203375036,
+              "position": 10.22781495490253
             },
             {
               "country": "gbr",
-              "clicks": 53,
-              "impressions": 2114,
-              "ctr": 0.025070955534531692,
-              "position": 13.482024597918638
+              "clicks": 121,
+              "impressions": 3885,
+              "ctr": 0.031145431145431144,
+              "position": 11.933590733590734
             },
             {
               "country": "npl",
-              "clicks": 52,
-              "impressions": 1308,
-              "ctr": 0.039755351681957186,
-              "position": 8.631498470948012
+              "clicks": 93,
+              "impressions": 3685,
+              "ctr": 0.025237449118046134,
+              "position": 8.697964721845318
             },
             {
               "country": "deu",
-              "clicks": 51,
-              "impressions": 795,
-              "ctr": 0.06415094339622641,
-              "position": 8.677987421383648
+              "clicks": 79,
+              "impressions": 1278,
+              "ctr": 0.061815336463223784,
+              "position": 8.722222222222221
+            },
+            {
+              "country": "esp",
+              "clicks": 75,
+              "impressions": 1099,
+              "ctr": 0.06824385805277525,
+              "position": 9.716105550500455
             },
             {
               "country": "can",
-              "clicks": 44,
-              "impressions": 913,
-              "ctr": 0.04819277108433735,
-              "position": 8.789704271631983
+              "clicks": 67,
+              "impressions": 1433,
+              "ctr": 0.04675505931612003,
+              "position": 8.79553384508025
             },
             {
-              "country": "jam",
-              "clicks": 36,
-              "impressions": 495,
-              "ctr": 0.07272727272727272,
-              "position": 8.088888888888889
-            },
-            {
-              "country": "sgp",
-              "clicks": 33,
-              "impressions": 506,
-              "ctr": 0.06521739130434782,
-              "position": 9.349802371541502
+              "country": "swe",
+              "clicks": 62,
+              "impressions": 2250,
+              "ctr": 0.027555555555555555,
+              "position": 8.404444444444444
             },
             {
               "country": "idn",
-              "clicks": 29,
-              "impressions": 341,
-              "ctr": 0.08504398826979472,
-              "position": 9.304985337243401
+              "clicks": 59,
+              "impressions": 764,
+              "ctr": 0.07722513089005235,
+              "position": 9.212041884816754
             },
             {
-              "country": "mys",
-              "clicks": 20,
-              "impressions": 340,
-              "ctr": 0.058823529411764705,
-              "position": 9.994117647058824
+              "country": "sgp",
+              "clicks": 57,
+              "impressions": 819,
+              "ctr": 0.0695970695970696,
+              "position": 9.205128205128204
             }
           ]
         }
@@ -187,80 +187,80 @@
         "any_error": false,
         "verdict": "OK",
         "gsc": {
-          "clicks": 177,
-          "impressions": 9426,
-          "position": 10.58,
-          "ctr": 0.0188,
+          "clicks": 218,
+          "impressions": 11532,
+          "position": 12.19,
+          "ctr": 0.0189,
           "by_country": [
             {
               "country": "deu",
               "clicks": 39,
-              "impressions": 2470,
-              "ctr": 0.015789473684210527,
-              "position": 6.645344129554656
+              "impressions": 2563,
+              "ctr": 0.015216543113538821,
+              "position": 6.754974639094811
             },
             {
               "country": "gbr",
-              "clicks": 27,
-              "impressions": 1151,
-              "ctr": 0.023457862728062554,
-              "position": 25.681146828844483
+              "clicks": 34,
+              "impressions": 1593,
+              "ctr": 0.021343377275580666,
+              "position": 30.055241682360325
+            },
+            {
+              "country": "ind",
+              "clicks": 14,
+              "impressions": 610,
+              "ctr": 0.022950819672131147,
+              "position": 10.20327868852459
             },
             {
               "country": "irl",
               "clicks": 13,
-              "impressions": 473,
-              "ctr": 0.02748414376321353,
-              "position": 6.221987315010571
+              "impressions": 484,
+              "ctr": 0.026859504132231406,
+              "position": 6.233471074380165
             },
             {
               "country": "ita",
               "clicks": 12,
-              "impressions": 779,
-              "ctr": 0.01540436456996149,
-              "position": 9.467265725288831
+              "impressions": 862,
+              "ctr": 0.013921113689095127,
+              "position": 9.444315545243619
             },
             {
               "country": "fra",
               "clicks": 10,
-              "impressions": 178,
-              "ctr": 0.056179775280898875,
-              "position": 6.258426966292135
-            },
-            {
-              "country": "ind",
-              "clicks": 10,
-              "impressions": 367,
-              "ctr": 0.027247956403269755,
-              "position": 10.378746594005449
+              "impressions": 186,
+              "ctr": 0.053763440860215055,
+              "position": 6.43010752688172
             },
             {
               "country": "esp",
-              "clicks": 8,
-              "impressions": 485,
-              "ctr": 0.016494845360824743,
-              "position": 7.981443298969072
+              "clicks": 9,
+              "impressions": 516,
+              "ctr": 0.01744186046511628,
+              "position": 9.825581395348838
+            },
+            {
+              "country": "zaf",
+              "clicks": 9,
+              "impressions": 211,
+              "ctr": 0.04265402843601896,
+              "position": 6.312796208530806
             },
             {
               "country": "npl",
               "clicks": 8,
-              "impressions": 368,
-              "ctr": 0.021739130434782608,
-              "position": 6.7228260869565215
+              "impressions": 568,
+              "ctr": 0.014084507042253521,
+              "position": 6.943661971830986
             },
             {
               "country": "usa",
-              "clicks": 7,
-              "impressions": 539,
-              "ctr": 0.012987012987012988,
-              "position": 14.307977736549166
-            },
-            {
-              "country": "arg",
-              "clicks": 5,
-              "impressions": 40,
-              "ctr": 0.125,
-              "position": 9.55
+              "clicks": 8,
+              "impressions": 663,
+              "ctr": 0.012066365007541479,
+              "position": 17.822021116138764
             }
           ]
         }
@@ -336,48 +336,48 @@
     },
     "findings_counts": {
       "critical": 0,
-      "warning": 14,
+      "warning": 7,
       "info": 16
     },
     "gsc_enabled": true,
-    "run_id": "20260621T231150Z",
-    "timestamp_utc": "2026-06-21T23:11:50+00:00"
+    "run_id": "20260622T035648Z",
+    "timestamp_utc": "2026-06-22T03:56:48+00:00"
   },
   "overall": {
     "sites": {
       "totalsportek.tech": {
         "verdict": "OK",
-        "position": 3.44,
-        "position_delta": 0.0,
-        "impressions": 1649622,
-        "impressions_delta": 0,
+        "position": 3.42,
+        "position_delta": -0.02,
+        "impressions": 1641237,
+        "impressions_delta": -8385,
         "findings": {
           "critical": 0,
-          "warning": 2,
+          "warning": 1,
           "info": 5
         }
       },
       "totalsportek.bio": {
         "verdict": "OK",
-        "position": 9.37,
-        "position_delta": 0.0,
-        "impressions": 25491,
-        "impressions_delta": 0,
+        "position": 8.88,
+        "position_delta": -0.49,
+        "impressions": 54669,
+        "impressions_delta": 29178,
         "findings": {
           "critical": 0,
-          "warning": 3,
+          "warning": 1,
           "info": 5
         }
       },
       "footybite.tech": {
         "verdict": "OK",
-        "position": 10.58,
-        "position_delta": 0.0,
-        "impressions": 9426,
-        "impressions_delta": 0,
+        "position": 12.19,
+        "position_delta": 1.61,
+        "impressions": 11532,
+        "impressions_delta": 2106,
         "findings": {
           "critical": 0,
-          "warning": 2,
+          "warning": 0,
           "info": 1
         }
       },
@@ -389,7 +389,7 @@
         "impressions_delta": null,
         "findings": {
           "critical": 0,
-          "warning": 4,
+          "warning": 2,
           "info": 3
         }
       },
@@ -432,12 +432,12 @@
     },
     "headline": {
       "critical": 0,
-      "warning": 14,
+      "warning": 7,
       "info": 16
     }
   },
-  "json_file": "run-20260621T231150Z.json",
-  "md_file": "report-20260621T231150Z.md",
+  "json_file": "run-20260622T035648Z.json",
+  "md_file": "report-20260622T035648Z.md",
   "findings": [
     {
       "type": "RUNNER_IP_BLOCKED",
@@ -455,7 +455,7 @@
           "browser"
         ]
       },
-      "timestamp": "2026-06-21T23:10:17+00:00",
+      "timestamp": "2026-06-22T03:55:16+00:00",
       "fix": "Not a real outage \u2014 it's bot protection rejecting this datacenter IP. Ignore for uptime and rely on Search Console (URL Inspection) for Google's authoritative crawl view."
     },
     {
@@ -470,7 +470,7 @@
         "jaccard": 0.985,
         "page_threshold": 0.9
       },
-      "timestamp": "2026-06-21T23:10:17+00:00",
+      "timestamp": "2026-06-22T03:55:16+00:00",
       "fix": "Canonicalize the duplicate page to the preferred URL (rel=canonical) or 301-redirect it to the version you want to rank."
     },
     {
@@ -480,7 +480,7 @@
       "path": "/dmca",
       "message": "Page has no rel=canonical link.",
       "details": {},
-      "timestamp": "2026-06-21T23:11:15+00:00",
+      "timestamp": "2026-06-22T03:56:16+00:00",
       "fix": "Add a self-referencing <link rel=\"canonical\"> so Google consolidates signals on the preferred URL."
     },
     {
@@ -490,7 +490,7 @@
       "path": "/dmca",
       "message": "Page has no rel=canonical link.",
       "details": {},
-      "timestamp": "2026-06-21T23:11:22+00:00",
+      "timestamp": "2026-06-22T03:56:22+00:00",
       "fix": "Add a self-referencing <link rel=\"canonical\"> so Google consolidates signals on the preferred URL."
     },
     {
@@ -500,7 +500,7 @@
       "path": "/",
       "message": "Page has no rel=canonical link.",
       "details": {},
-      "timestamp": "2026-06-21T23:11:31+00:00",
+      "timestamp": "2026-06-22T03:56:31+00:00",
       "fix": "Add a self-referencing <link rel=\"canonical\"> so Google consolidates signals on the preferred URL."
     },
     {
@@ -510,7 +510,7 @@
       "path": "/sitemap.xml",
       "message": "No reachable sitemap.xml (status 404).",
       "details": {},
-      "timestamp": "2026-06-21T23:11:32+00:00",
+      "timestamp": "2026-06-22T03:56:31+00:00",
       "fix": "Publish a valid /sitemap.xml listing your important URLs and submit it in Search Console."
     },
     {
@@ -520,106 +520,8 @@
       "path": "/sitemap.xml",
       "message": "No reachable sitemap.xml (status SSLError: HTTPSConnectionPool(host='totalsportek.host', port=443): Max retries exceeded with url: /sitemap.xml (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'totalsportek.host'. (_ssl.c:1016)\")))).",
       "details": {},
-      "timestamp": "2026-06-21T23:11:42+00:00",
+      "timestamp": "2026-06-22T03:56:40+00:00",
       "fix": "Publish a valid /sitemap.xml listing your important URLs and submit it in Search Console."
-    },
-    {
-      "type": "LATENCY_SPIKE",
-      "severity": "warning",
-      "site": "totalsportek.tech",
-      "path": "/",
-      "message": "Latency 31ms -> 86ms (>2x) for googlebot_mobile on / [googlebot_mobile].",
-      "details": {
-        "user_agent": "googlebot_mobile",
-        "previous_ms": 30.7,
-        "current_ms": 85.7
-      },
-      "timestamp": "2026-06-21T23:11:50+00:00",
-      "fix": "Add server/CDN caching, move to faster hosting and remove redirect hops; check for a load spike or slow backend at that time."
-    },
-    {
-      "type": "LATENCY_SPIKE",
-      "severity": "warning",
-      "site": "totalsportek.bio",
-      "path": "/",
-      "message": "Latency 40ms -> 85ms (>2x) for googlebot_mobile on / [googlebot_mobile].",
-      "details": {
-        "user_agent": "googlebot_mobile",
-        "previous_ms": 39.8,
-        "current_ms": 85.0
-      },
-      "timestamp": "2026-06-21T23:11:50+00:00",
-      "fix": "Add server/CDN caching, move to faster hosting and remove redirect hops; check for a load spike or slow backend at that time."
-    },
-    {
-      "type": "LATENCY_SPIKE",
-      "severity": "warning",
-      "site": "totalsportek.bio",
-      "path": "/",
-      "message": "Latency 32ms -> 81ms (>2x) for browser on / [browser].",
-      "details": {
-        "user_agent": "browser",
-        "previous_ms": 32.4,
-        "current_ms": 81.3
-      },
-      "timestamp": "2026-06-21T23:11:50+00:00",
-      "fix": "Add server/CDN caching, move to faster hosting and remove redirect hops; check for a load spike or slow backend at that time."
-    },
-    {
-      "type": "LATENCY_SPIKE",
-      "severity": "warning",
-      "site": "footybite.tech",
-      "path": "/",
-      "message": "Latency 32ms -> 82ms (>2x) for googlebot_mobile on / [googlebot_mobile].",
-      "details": {
-        "user_agent": "googlebot_mobile",
-        "previous_ms": 32.3,
-        "current_ms": 81.5
-      },
-      "timestamp": "2026-06-21T23:11:50+00:00",
-      "fix": "Add server/CDN caching, move to faster hosting and remove redirect hops; check for a load spike or slow backend at that time."
-    },
-    {
-      "type": "LATENCY_SPIKE",
-      "severity": "warning",
-      "site": "footybite.tech",
-      "path": "/",
-      "message": "Latency 31ms -> 94ms (>2x) for browser on / [browser].",
-      "details": {
-        "user_agent": "browser",
-        "previous_ms": 30.9,
-        "current_ms": 94.5
-      },
-      "timestamp": "2026-06-21T23:11:50+00:00",
-      "fix": "Add server/CDN caching, move to faster hosting and remove redirect hops; check for a load spike or slow backend at that time."
-    },
-    {
-      "type": "LATENCY_SPIKE",
-      "severity": "warning",
-      "site": "freesportshd.sbs",
-      "path": "/",
-      "message": "Latency 243ms -> 514ms (>2x) for googlebot_desktop on / [googlebot_desktop].",
-      "details": {
-        "user_agent": "googlebot_desktop",
-        "previous_ms": 243.2,
-        "current_ms": 513.9
-      },
-      "timestamp": "2026-06-21T23:11:50+00:00",
-      "fix": "Add server/CDN caching, move to faster hosting and remove redirect hops; check for a load spike or slow backend at that time."
-    },
-    {
-      "type": "LATENCY_SPIKE",
-      "severity": "warning",
-      "site": "freesportshd.sbs",
-      "path": "/",
-      "message": "Latency 89ms -> 248ms (>2x) for browser on / [browser].",
-      "details": {
-        "user_agent": "browser",
-        "previous_ms": 88.7,
-        "current_ms": 248.3
-      },
-      "timestamp": "2026-06-21T23:11:50+00:00",
-      "fix": "Add server/CDN caching, move to faster hosting and remove redirect hops; check for a load spike or slow backend at that time."
     },
     {
       "type": "H1_MULTIPLE",
@@ -628,7 +530,7 @@
       "path": "/",
       "message": "Page has 2 <h1> tags (expected 1).",
       "details": {},
-      "timestamp": "2026-06-21T23:11:14+00:00",
+      "timestamp": "2026-06-22T03:56:15+00:00",
       "fix": "Keep a single <h1> per page; demote the extra ones to <h2>/<h3> for a clear heading hierarchy."
     },
     {
@@ -638,7 +540,7 @@
       "path": "/dmca",
       "message": "Title is 19 chars (target 30-60): 'DMCA | TotalSportek'.",
       "details": {},
-      "timestamp": "2026-06-21T23:11:15+00:00",
+      "timestamp": "2026-06-22T03:56:16+00:00",
       "fix": "Rewrite the <title> to ~30-60 characters so it isn't truncated in search results and still leads with the target keyword."
     },
     {
@@ -648,7 +550,7 @@
       "path": "/dmca",
       "message": "Meta description is 64 chars (target 120-160).",
       "details": {},
-      "timestamp": "2026-06-21T23:11:15+00:00",
+      "timestamp": "2026-06-22T03:56:16+00:00",
       "fix": "Trim or expand the meta description to ~120-160 characters so it displays fully in the SERP snippet."
     },
     {
@@ -658,7 +560,7 @@
       "path": "/dmca",
       "message": "Monitored URL https://totalsportek.tech/dmca is not listed in sitemap.xml.",
       "details": {},
-      "timestamp": "2026-06-21T23:11:17+00:00",
+      "timestamp": "2026-06-22T03:56:17+00:00",
       "fix": "Add this monitored URL to sitemap.xml so Google discovers and prioritises it."
     },
     {
@@ -668,7 +570,7 @@
       "path": "/",
       "message": "Page has 2 <h1> tags (expected 1).",
       "details": {},
-      "timestamp": "2026-06-21T23:11:20+00:00",
+      "timestamp": "2026-06-22T03:56:20+00:00",
       "fix": "Keep a single <h1> per page; demote the extra ones to <h2>/<h3> for a clear heading hierarchy."
     },
     {
@@ -678,7 +580,7 @@
       "path": "/dmca",
       "message": "Title is 19 chars (target 30-60): 'DMCA | TotalSportek'.",
       "details": {},
-      "timestamp": "2026-06-21T23:11:22+00:00",
+      "timestamp": "2026-06-22T03:56:22+00:00",
       "fix": "Rewrite the <title> to ~30-60 characters so it isn't truncated in search results and still leads with the target keyword."
     },
     {
@@ -688,7 +590,7 @@
       "path": "/dmca",
       "message": "Meta description is 64 chars (target 120-160).",
       "details": {},
-      "timestamp": "2026-06-21T23:11:22+00:00",
+      "timestamp": "2026-06-22T03:56:22+00:00",
       "fix": "Trim or expand the meta description to ~120-160 characters so it displays fully in the SERP snippet."
     },
     {
@@ -698,7 +600,7 @@
       "path": "/dmca",
       "message": "Monitored URL https://totalsportek.bio/dmca is not listed in sitemap.xml.",
       "details": {},
-      "timestamp": "2026-06-21T23:11:23+00:00",
+      "timestamp": "2026-06-22T03:56:23+00:00",
       "fix": "Add this monitored URL to sitemap.xml so Google discovers and prioritises it."
     },
     {
@@ -708,7 +610,7 @@
       "path": "/",
       "message": "No structured data (JSON-LD / schema.org) found on the page.",
       "details": {},
-      "timestamp": "2026-06-21T23:11:27+00:00",
+      "timestamp": "2026-06-22T03:56:26+00:00",
       "fix": "Add relevant JSON-LD schema (e.g. WebPage / SportsEvent / FAQ) to enable rich results and clarify the page to Google."
     },
     {
@@ -718,7 +620,7 @@
       "path": "/",
       "message": "Title is 15 chars (target 30-60): 'Sports Schedule'.",
       "details": {},
-      "timestamp": "2026-06-21T23:11:31+00:00",
+      "timestamp": "2026-06-22T03:56:31+00:00",
       "fix": "Rewrite the <title> to ~30-60 characters so it isn't truncated in search results and still leads with the target keyword."
     },
     {
@@ -728,7 +630,7 @@
       "path": "/",
       "message": "Meta description is 48 chars (target 120-160).",
       "details": {},
-      "timestamp": "2026-06-21T23:11:31+00:00",
+      "timestamp": "2026-06-22T03:56:31+00:00",
       "fix": "Trim or expand the meta description to ~120-160 characters so it displays fully in the SERP snippet."
     },
     {
@@ -738,7 +640,7 @@
       "path": "/",
       "message": "No structured data (JSON-LD / schema.org) found on the page.",
       "details": {},
-      "timestamp": "2026-06-21T23:11:31+00:00",
+      "timestamp": "2026-06-22T03:56:31+00:00",
       "fix": "Add relevant JSON-LD schema (e.g. WebPage / SportsEvent / FAQ) to enable rich results and clarify the page to Google."
     },
     {
@@ -748,7 +650,7 @@
       "path": "/",
       "message": "Monitored URL https://totalsportek.cfd/ is not listed in sitemap.xml.",
       "details": {},
-      "timestamp": "2026-06-21T23:11:38+00:00",
+      "timestamp": "2026-06-22T03:56:36+00:00",
       "fix": "Add this monitored URL to sitemap.xml so Google discovers and prioritises it."
     },
     {
@@ -758,7 +660,7 @@
       "path": "/",
       "message": "Monitored URL https://totalsportek.it/ is not listed in sitemap.xml.",
       "details": {},
-      "timestamp": "2026-06-21T23:11:48+00:00",
+      "timestamp": "2026-06-22T03:56:46+00:00",
       "fix": "Add this monitored URL to sitemap.xml so Google discovers and prioritises it."
     },
     {
@@ -771,7 +673,7 @@
         "indexingState": "BLOCKED_BY_META_TAG",
         "coverageState": "Excluded by \u2018noindex\u2019 tag"
       },
-      "timestamp": "2026-06-21T23:11:50+00:00",
+      "timestamp": "2026-06-22T03:56:48+00:00",
       "fix": "Expected \u2014 the page is intentionally noindex (e.g. /dmca). No action needed unless this page should actually rank, in which case remove its noindex meta tag / X-Robots-Tag header."
     },
     {
@@ -784,7 +686,7 @@
         "indexingState": "BLOCKED_BY_META_TAG",
         "coverageState": "Excluded by \u2018noindex\u2019 tag"
       },
-      "timestamp": "2026-06-21T23:11:50+00:00",
+      "timestamp": "2026-06-22T03:56:48+00:00",
       "fix": "Expected \u2014 the page is intentionally noindex (e.g. /dmca). No action needed unless this page should actually rank, in which case remove its noindex meta tag / X-Robots-Tag header."
     }
   ],
