@@ -1,17 +1,17 @@
 {
   "domain": "totalsportekz.com",
-  "domain_status": "active",
-  "checked_utc": "2026-06-22T11:48:49+00:00",
+  "domain_status": "DOMAIN_REDIRECTED -> totalsportek24.is",
+  "checked_utc": "2026-06-23T09:34:22+00:00",
   "urls": [
     {
       "section": "Division/Category",
       "label": "Soccer Streams",
       "original": "https://totalsportekz.com/soccer-streams",
-      "current": "https://totalsportekz.com/soccer-stream/",
-      "status": "Redirect (301) -> https://totalsportekz.com/soccer-stream/",
+      "current": "https://totalsportek24.is/soccer-stream/",
+      "status": "Redirect (301) -> https://totalsportek24.is/soccer-stream/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/soccer",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
@@ -19,15 +19,23 @@
           "status_code": 301
         },
         {
-          "url": "https://totalsportekz.com/soccer-stream",
+          "url": "https://totalsportek24.is/soccer-streams",
+          "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/soccer-stream",
           "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/soccer-stream/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/soccer-stream/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/soccer-stream/ / Redirected (3xx)"
         }
       ]
     },
@@ -35,11 +43,11 @@
       "section": "Division/Category",
       "label": "cricket",
       "original": "https://totalsportekz.com/cricket-streams",
-      "current": "https://totalsportekz.com/cricket-stream/",
-      "status": "Redirect (301) -> https://totalsportekz.com/cricket-stream/",
+      "current": "https://totalsportek24.is/cricket-stream/",
+      "status": "Redirect (301) -> https://totalsportek24.is/cricket-stream/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/cricket",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
@@ -47,15 +55,23 @@
           "status_code": 301
         },
         {
-          "url": "https://totalsportekz.com/cricket-stream",
+          "url": "https://totalsportek24.is/cricket-streams",
+          "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/cricket-stream",
           "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/cricket-stream/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/cricket-stream/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/cricket-stream/ / Redirected (3xx)"
         }
       ]
     },
@@ -63,11 +79,11 @@
       "section": "Division/Category",
       "label": "F1",
       "original": "https://totalsportekz.com/f1-streams",
-      "current": "https://totalsportekz.com/f1-stream/",
-      "status": "Redirect (301) -> https://totalsportekz.com/f1-stream/",
+      "current": "https://totalsportek24.is/f1-stream/",
+      "status": "Redirect (301) -> https://totalsportek24.is/f1-stream/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/f1",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
@@ -75,15 +91,23 @@
           "status_code": 301
         },
         {
-          "url": "https://totalsportekz.com/f1-stream",
+          "url": "https://totalsportek24.is/f1-streams",
+          "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/f1-stream",
           "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/f1-stream/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/f1-stream/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/f1-stream/ / Redirected (3xx)"
         }
       ]
     },
@@ -91,11 +115,11 @@
       "section": "Division/Category",
       "label": "motogp",
       "original": "https://totalsportekz.com/motogp-streams",
-      "current": "https://totalsportekz.com/motogp-stream/",
-      "status": "Redirect (301) -> https://totalsportekz.com/motogp-stream/",
+      "current": "https://totalsportek24.is/motogp-stream/",
+      "status": "Redirect (301) -> https://totalsportek24.is/motogp-stream/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/motogp",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
@@ -103,15 +127,23 @@
           "status_code": 301
         },
         {
-          "url": "https://totalsportekz.com/motogp-stream",
+          "url": "https://totalsportek24.is/motogp-streams",
+          "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/motogp-stream",
           "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/motogp-stream/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/motogp-stream/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/motogp-stream/ / Redirected (3xx)"
         }
       ]
     },
@@ -119,11 +151,11 @@
       "section": "Division/Category",
       "label": "UFC",
       "original": "https://totalsportekz.com/ufc-streams",
-      "current": "https://totalsportekz.com/ufc-stream/",
-      "status": "Redirect (301) -> https://totalsportekz.com/ufc-stream/",
+      "current": "https://totalsportek24.is/ufc-stream/",
+      "status": "Redirect (301) -> https://totalsportek24.is/ufc-stream/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/ufc",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
@@ -131,15 +163,23 @@
           "status_code": 301
         },
         {
-          "url": "https://totalsportekz.com/ufc-stream",
+          "url": "https://totalsportek24.is/ufc-streams",
+          "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/ufc-stream",
           "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/ufc-stream/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/ufc-stream/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/ufc-stream/ / Redirected (3xx)"
         }
       ]
     },
@@ -147,11 +187,11 @@
       "section": "Division/Category",
       "label": "Boxing",
       "original": "https://totalsportekz.com/boxing-streams",
-      "current": "https://totalsportekz.com/boxing-stream/",
-      "status": "Redirect (301) -> https://totalsportekz.com/boxing-stream/",
+      "current": "https://totalsportek24.is/boxing-stream/",
+      "status": "Redirect (301) -> https://totalsportek24.is/boxing-stream/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/boxing",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
@@ -159,15 +199,23 @@
           "status_code": 301
         },
         {
-          "url": "https://totalsportekz.com/boxing-stream",
+          "url": "https://totalsportek24.is/boxing-streams",
+          "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/boxing-stream",
           "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/boxing-stream/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/boxing-stream/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/boxing-stream/ / Redirected (3xx)"
         }
       ]
     },
@@ -175,11 +223,11 @@
       "section": "Division/Category",
       "label": "tennis",
       "original": "https://totalsportekz.com/tennis-streams",
-      "current": "https://totalsportekz.com/tennis-stream/",
-      "status": "Redirect (301) -> https://totalsportekz.com/tennis-stream/",
+      "current": "https://totalsportek24.is/tennis-stream/",
+      "status": "Redirect (301) -> https://totalsportek24.is/tennis-stream/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/tennis",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
@@ -187,15 +235,23 @@
           "status_code": 301
         },
         {
-          "url": "https://totalsportekz.com/tennis-stream",
+          "url": "https://totalsportek24.is/tennis-streams",
+          "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/tennis-stream",
           "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/tennis-stream/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/tennis-stream/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/tennis-stream/ / Redirected (3xx)"
         }
       ]
     },
@@ -203,11 +259,11 @@
       "section": "Division/Category",
       "label": "NBA",
       "original": "https://totalsportekz.com/nba-streams",
-      "current": "https://totalsportekz.com/nba-stream/",
-      "status": "Redirect (301) -> https://totalsportekz.com/nba-stream/",
+      "current": "https://totalsportek24.is/nba-stream/",
+      "status": "Redirect (301) -> https://totalsportek24.is/nba-stream/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/nba",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
@@ -215,15 +271,23 @@
           "status_code": 301
         },
         {
-          "url": "https://totalsportekz.com/nba-stream",
+          "url": "https://totalsportek24.is/nba-streams",
+          "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/nba-stream",
           "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/nba-stream/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/nba-stream/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/nba-stream/ / Redirected (3xx)"
         }
       ]
     },
@@ -231,11 +295,11 @@
       "section": "Division/Category",
       "label": "NFL",
       "original": "https://totalsportekz.com/nfl-streams",
-      "current": "https://totalsportekz.com/nfl-stream/",
-      "status": "Redirect (301) -> https://totalsportekz.com/nfl-stream/",
+      "current": "https://totalsportek24.is/nfl-stream/",
+      "status": "Redirect (301) -> https://totalsportek24.is/nfl-stream/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/nfl",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
@@ -243,15 +307,23 @@
           "status_code": 301
         },
         {
-          "url": "https://totalsportekz.com/nfl-stream",
+          "url": "https://totalsportek24.is/nfl-streams",
+          "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/nfl-stream",
           "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/nfl-stream/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/nfl-stream/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/nfl-stream/ / Redirected (3xx)"
         }
       ]
     },
@@ -259,11 +331,11 @@
       "section": "Division/Category",
       "label": "Rugby",
       "original": "https://totalsportekz.com/rugby-streams",
-      "current": "https://totalsportekz.com/rugby-stream/",
-      "status": "Redirect (301) -> https://totalsportekz.com/rugby-stream/",
+      "current": "https://totalsportek24.is/rugby-stream/",
+      "status": "Redirect (301) -> https://totalsportek24.is/rugby-stream/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/rugby",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
@@ -271,15 +343,23 @@
           "status_code": 301
         },
         {
-          "url": "https://totalsportekz.com/rugby-stream",
+          "url": "https://totalsportek24.is/rugby-streams",
+          "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/rugby-stream",
           "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/rugby-stream/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/rugby-stream/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/rugby-stream/ / Redirected (3xx)"
         }
       ]
     },
@@ -287,11 +367,11 @@
       "section": "Division/Category",
       "label": "NEWS",
       "original": "https://totalsportekz.com/news/",
-      "current": "https://totalsportekz.com/latest-news/",
-      "status": "Redirect (301) -> https://totalsportekz.com/latest-news/",
+      "current": "https://totalsportek24.is/latest-news/",
+      "status": "Redirect (301) -> https://totalsportek24.is/latest-news/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/news",
-      "clean_resolves_to": "https://totalsportekz.com/latest-news/",
+      "clean_resolves_to": "https://totalsportek24.is/latest-news/",
       "blocked": false,
       "redirect_chain": [
         {
@@ -299,15 +379,23 @@
           "status_code": 301
         },
         {
-          "url": "https://totalsportekz.com/latest-news",
+          "url": "https://totalsportek24.is/news/",
+          "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/latest-news",
           "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/latest-news/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/latest-news/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/latest-news/ / Redirected (3xx)"
         }
       ]
     },
@@ -315,23 +403,31 @@
       "section": "Top Leagues",
       "label": "Premier League",
       "original": "https://totalsportekz.com/league/premier-league/5/",
-      "current": "https://totalsportekz.com/leagues/premier-league/5/",
-      "status": "Redirect (301) -> https://totalsportekz.com/leagues/premier-league/5/",
+      "current": "https://totalsportek24.is/leagues/premier-league/5/",
+      "status": "Redirect (301) -> https://totalsportek24.is/leagues/premier-league/5/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/league/premier-league",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
           "url": "https://totalsportekz.com/league/premier-league/5/",
           "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/league/premier-league/5/",
+          "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/leagues/premier-league/5/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/leagues/premier-league/5/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/leagues/premier-league/5/ / Redirected (3xx)"
         }
       ]
     },
@@ -339,23 +435,31 @@
       "section": "Top Leagues",
       "label": "UEFA Champions League",
       "original": "https://totalsportekz.com/league/uefa-champions-league/7/",
-      "current": "https://totalsportekz.com/leagues/uefa-champions-league/7/",
-      "status": "Redirect (301) -> https://totalsportekz.com/leagues/uefa-champions-league/7/",
+      "current": "https://totalsportek24.is/leagues/uefa-champions-league/7/",
+      "status": "Redirect (301) -> https://totalsportek24.is/leagues/uefa-champions-league/7/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/league/uefa-champions-league",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
           "url": "https://totalsportekz.com/league/uefa-champions-league/7/",
           "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/league/uefa-champions-league/7/",
+          "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/leagues/uefa-champions-league/7/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/leagues/uefa-champions-league/7/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/leagues/uefa-champions-league/7/ / Redirected (3xx)"
         }
       ]
     },
@@ -363,23 +467,31 @@
       "section": "Top Leagues",
       "label": "Bundesliga",
       "original": "https://totalsportekz.com/league/bundesliga/8/",
-      "current": "https://totalsportekz.com/leagues/bundesliga/8/",
-      "status": "Redirect (301) -> https://totalsportekz.com/leagues/bundesliga/8/",
+      "current": "https://totalsportek24.is/leagues/bundesliga/8/",
+      "status": "Redirect (301) -> https://totalsportek24.is/leagues/bundesliga/8/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/league/bundesliga",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
           "url": "https://totalsportekz.com/league/bundesliga/8/",
           "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/league/bundesliga/8/",
+          "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/leagues/bundesliga/8/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/leagues/bundesliga/8/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/leagues/bundesliga/8/ / Redirected (3xx)"
         }
       ]
     },
@@ -387,23 +499,31 @@
       "section": "Top Leagues",
       "label": "UEFA Europa League",
       "original": "https://totalsportekz.com/league/uefa-europa-league/9/",
-      "current": "https://totalsportekz.com/leagues/uefa-europa-league/9/",
-      "status": "Redirect (301) -> https://totalsportekz.com/leagues/uefa-europa-league/9/",
+      "current": "https://totalsportek24.is/leagues/uefa-europa-league/9/",
+      "status": "Redirect (301) -> https://totalsportek24.is/leagues/uefa-europa-league/9/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/league/uefa-europa-league",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
           "url": "https://totalsportekz.com/league/uefa-europa-league/9/",
           "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/league/uefa-europa-league/9/",
+          "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/leagues/uefa-europa-league/9/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/leagues/uefa-europa-league/9/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/leagues/uefa-europa-league/9/ / Redirected (3xx)"
         }
       ]
     },
@@ -411,23 +531,31 @@
       "section": "Top Leagues",
       "label": "Serie A",
       "original": "https://totalsportekz.com/league/serie-a/10/",
-      "current": "https://totalsportekz.com/leagues/serie-a/10/",
-      "status": "Redirect (301) -> https://totalsportekz.com/leagues/serie-a/10/",
+      "current": "https://totalsportek24.is/leagues/serie-a/10/",
+      "status": "Redirect (301) -> https://totalsportek24.is/leagues/serie-a/10/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/league/serie-a",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
           "url": "https://totalsportekz.com/league/serie-a/10/",
           "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/league/serie-a/10/",
+          "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/leagues/serie-a/10/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/leagues/serie-a/10/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/leagues/serie-a/10/ / Redirected (3xx)"
         }
       ]
     },
@@ -435,23 +563,31 @@
       "section": "Top Leagues",
       "label": "Ligue 1",
       "original": "https://totalsportekz.com/league/ligue-1/11/",
-      "current": "https://totalsportekz.com/leagues/ligue-1/11/",
-      "status": "Redirect (301) -> https://totalsportekz.com/leagues/ligue-1/11/",
+      "current": "https://totalsportek24.is/leagues/ligue-1/11/",
+      "status": "Redirect (301) -> https://totalsportek24.is/leagues/ligue-1/11/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/league/ligue-1",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
           "url": "https://totalsportekz.com/league/ligue-1/11/",
           "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/league/ligue-1/11/",
+          "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/leagues/ligue-1/11/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/leagues/ligue-1/11/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/leagues/ligue-1/11/ / Redirected (3xx)"
         }
       ]
     },
@@ -459,23 +595,31 @@
       "section": "Top Leagues",
       "label": "La Liga",
       "original": "https://totalsportekz.com/league/la-liga/12/",
-      "current": "https://totalsportekz.com/leagues/la-liga/12/",
-      "status": "Redirect (301) -> https://totalsportekz.com/leagues/la-liga/12/",
+      "current": "https://totalsportek24.is/leagues/la-liga/12/",
+      "status": "Redirect (301) -> https://totalsportek24.is/leagues/la-liga/12/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/league/la-liga",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
           "url": "https://totalsportekz.com/league/la-liga/12/",
           "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/league/la-liga/12/",
+          "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/leagues/la-liga/12/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/leagues/la-liga/12/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/leagues/la-liga/12/ / Redirected (3xx)"
         }
       ]
     },
@@ -483,23 +627,31 @@
       "section": "Top Leagues",
       "label": "FIFA World Cup",
       "original": "https://totalsportekz.com/league/fifa-world-cup/13/",
-      "current": "https://totalsportekz.com/leagues/fifa-world-cup/13/",
-      "status": "Redirect (301) -> https://totalsportekz.com/leagues/fifa-world-cup/13/",
+      "current": "https://totalsportek24.is/leagues/fifa-world-cup/13/",
+      "status": "Redirect (301) -> https://totalsportek24.is/leagues/fifa-world-cup/13/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/league/fifa-world-cup",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
           "url": "https://totalsportekz.com/league/fifa-world-cup/13/",
           "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/league/fifa-world-cup/13/",
+          "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/leagues/fifa-world-cup/13/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/leagues/fifa-world-cup/13/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/leagues/fifa-world-cup/13/ / Redirected (3xx)"
         }
       ]
     },
@@ -507,23 +659,31 @@
       "section": "Top Leagues",
       "label": "Dutch Eredivisie",
       "original": "https://totalsportekz.com/league/dutch-eredivisie/34/",
-      "current": "https://totalsportekz.com/leagues/dutch-eredivisie/34/",
-      "status": "Redirect (301) -> https://totalsportekz.com/leagues/dutch-eredivisie/34/",
+      "current": "https://totalsportek24.is/leagues/dutch-eredivisie/34/",
+      "status": "Redirect (301) -> https://totalsportek24.is/leagues/dutch-eredivisie/34/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/league/dutch-eredivisie",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
           "url": "https://totalsportekz.com/league/dutch-eredivisie/34/",
           "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/league/dutch-eredivisie/34/",
+          "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/leagues/dutch-eredivisie/34/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/leagues/dutch-eredivisie/34/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/leagues/dutch-eredivisie/34/ / Redirected (3xx)"
         }
       ]
     },
@@ -531,23 +691,31 @@
       "section": "Top Leagues",
       "label": "PRIMEIRA LIGA",
       "original": "https://totalsportekz.com/league/primeira-liga/35/",
-      "current": "https://totalsportekz.com/leagues/primeira-liga/35/",
-      "status": "Redirect (301) -> https://totalsportekz.com/leagues/primeira-liga/35/",
+      "current": "https://totalsportek24.is/leagues/primeira-liga/35/",
+      "status": "Redirect (301) -> https://totalsportek24.is/leagues/primeira-liga/35/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/league/primeira-liga",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
           "url": "https://totalsportekz.com/league/primeira-liga/35/",
           "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/league/primeira-liga/35/",
+          "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/leagues/primeira-liga/35/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/leagues/primeira-liga/35/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/leagues/primeira-liga/35/ / Redirected (3xx)"
         }
       ]
     },
@@ -555,23 +723,31 @@
       "section": "Top Leagues",
       "label": "UEFA Europa Conference League",
       "original": "https://totalsportekz.com/league/uefa-europa-conference-league/36/",
-      "current": "https://totalsportekz.com/leagues/uefa-europa-conference-league/36/",
-      "status": "Redirect (301) -> https://totalsportekz.com/leagues/uefa-europa-conference-league/36/",
+      "current": "https://totalsportek24.is/leagues/uefa-europa-conference-league/36/",
+      "status": "Redirect (301) -> https://totalsportek24.is/leagues/uefa-europa-conference-league/36/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/league/uefa-europa-conference-league",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
           "url": "https://totalsportekz.com/league/uefa-europa-conference-league/36/",
           "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/league/uefa-europa-conference-league/36/",
+          "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/leagues/uefa-europa-conference-league/36/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/leagues/uefa-europa-conference-league/36/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/leagues/uefa-europa-conference-league/36/ / Redirected (3xx)"
         }
       ]
     },
@@ -579,23 +755,31 @@
       "section": "Top Leagues",
       "label": "Copa Libertadores",
       "original": "https://totalsportekz.com/league/copa-libertadores/37/",
-      "current": "https://totalsportekz.com/leagues/copa-libertadores/37/",
-      "status": "Redirect (301) -> https://totalsportekz.com/leagues/copa-libertadores/37/",
+      "current": "https://totalsportek24.is/leagues/copa-libertadores/37/",
+      "status": "Redirect (301) -> https://totalsportek24.is/leagues/copa-libertadores/37/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/league/copa-libertadores",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
           "url": "https://totalsportekz.com/league/copa-libertadores/37/",
           "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/league/copa-libertadores/37/",
+          "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/leagues/copa-libertadores/37/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/leagues/copa-libertadores/37/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/leagues/copa-libertadores/37/ / Redirected (3xx)"
         }
       ]
     },
@@ -603,23 +787,31 @@
       "section": "Top Leagues",
       "label": "FA CUP",
       "original": "https://totalsportekz.com/league/fa-cup/38/",
-      "current": "https://totalsportekz.com/leagues/fa-cup/38/",
-      "status": "Redirect (301) -> https://totalsportekz.com/leagues/fa-cup/38/",
+      "current": "https://totalsportek24.is/leagues/fa-cup/38/",
+      "status": "Redirect (301) -> https://totalsportek24.is/leagues/fa-cup/38/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/league/fa-cup",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
           "url": "https://totalsportekz.com/league/fa-cup/38/",
           "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/league/fa-cup/38/",
+          "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/leagues/fa-cup/38/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/leagues/fa-cup/38/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/leagues/fa-cup/38/ / Redirected (3xx)"
         }
       ]
     },
@@ -627,23 +819,31 @@
       "section": "Top Leagues",
       "label": "EFL Cup",
       "original": "https://totalsportekz.com/league/efl-cup/39/",
-      "current": "https://totalsportekz.com/leagues/efl-cup/39/",
-      "status": "Redirect (301) -> https://totalsportekz.com/leagues/efl-cup/39/",
+      "current": "https://totalsportek24.is/leagues/efl-cup/39/",
+      "status": "Redirect (301) -> https://totalsportek24.is/leagues/efl-cup/39/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/league/efl-cup",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
           "url": "https://totalsportekz.com/league/efl-cup/39/",
           "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/league/efl-cup/39/",
+          "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/leagues/efl-cup/39/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/leagues/efl-cup/39/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/leagues/efl-cup/39/ / Redirected (3xx)"
         }
       ]
     },
@@ -651,23 +851,31 @@
       "section": "Top Leagues",
       "label": "UEFA Nations League",
       "original": "https://totalsportekz.com/league/uefa-nations-league/44/",
-      "current": "https://totalsportekz.com/leagues/uefa-nations-league/44/",
-      "status": "Redirect (301) -> https://totalsportekz.com/leagues/uefa-nations-league/44/",
+      "current": "https://totalsportek24.is/leagues/uefa-nations-league/44/",
+      "status": "Redirect (301) -> https://totalsportek24.is/leagues/uefa-nations-league/44/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/league/uefa-nations-league",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
           "url": "https://totalsportekz.com/league/uefa-nations-league/44/",
           "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/league/uefa-nations-league/44/",
+          "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/leagues/uefa-nations-league/44/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/leagues/uefa-nations-league/44/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/leagues/uefa-nations-league/44/ / Redirected (3xx)"
         }
       ]
     },
@@ -675,23 +883,31 @@
       "section": "Top Leagues",
       "label": "MLS",
       "original": "https://totalsportekz.com/league/mls/45/",
-      "current": "https://totalsportekz.com/leagues/mls/45/",
-      "status": "Redirect (301) -> https://totalsportekz.com/leagues/mls/45/",
+      "current": "https://totalsportek24.is/leagues/mls/45/",
+      "status": "Redirect (301) -> https://totalsportek24.is/leagues/mls/45/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/league/mls",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
           "url": "https://totalsportekz.com/league/mls/45/",
           "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/league/mls/45/",
+          "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/leagues/mls/45/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/leagues/mls/45/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/leagues/mls/45/ / Redirected (3xx)"
         }
       ]
     },
@@ -699,23 +915,31 @@
       "section": "Top Leagues",
       "label": "Copa Del Rey (Spain)",
       "original": "https://totalsportekz.com/league/copa-del-rey-(spain)/46/",
-      "current": "https://totalsportekz.com/leagues/copa-del-rey-(spain)/46/",
-      "status": "Redirect (301) -> https://totalsportekz.com/leagues/copa-del-rey-(spain)/46/",
+      "current": "https://totalsportek24.is/leagues/copa-del-rey-(spain)/46/",
+      "status": "Redirect (301) -> https://totalsportek24.is/leagues/copa-del-rey-(spain)/46/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/league/copa-del-rey-(spain)",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
           "url": "https://totalsportekz.com/league/copa-del-rey-(spain)/46/",
           "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/league/copa-del-rey-(spain)/46/",
+          "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/leagues/copa-del-rey-(spain)/46/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/leagues/copa-del-rey-(spain)/46/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/leagues/copa-del-rey-(spain)/46/ / Redirected (3xx)"
         }
       ]
     },
@@ -723,23 +947,31 @@
       "section": "Top Leagues",
       "label": "Scottish Premiership",
       "original": "https://totalsportekz.com/league/scottish-premiership/50/",
-      "current": "https://totalsportekz.com/leagues/scottish-premiership/50/",
-      "status": "Redirect (301) -> https://totalsportekz.com/leagues/scottish-premiership/50/",
+      "current": "https://totalsportek24.is/leagues/scottish-premiership/50/",
+      "status": "Redirect (301) -> https://totalsportek24.is/leagues/scottish-premiership/50/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/league/scottish-premiership",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
           "url": "https://totalsportekz.com/league/scottish-premiership/50/",
           "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/league/scottish-premiership/50/",
+          "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/leagues/scottish-premiership/50/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/leagues/scottish-premiership/50/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/leagues/scottish-premiership/50/ / Redirected (3xx)"
         }
       ]
     },
@@ -747,18 +979,27 @@
       "section": "Top Leagues",
       "label": "TOTALSPORTEK",
       "original": "https://totalsportekz.com/",
-      "current": "https://totalsportekz.com/",
-      "status": "Live (200)",
-      "redirected_vs_reinstated": "Reinstated (200)",
+      "current": "https://totalsportek24.is/",
+      "status": "Redirect (301) -> HOMEPAGE",
+      "redirected_vs_reinstated": "Redirected -> homepage",
       "clean_original": "https://totalsportekz.com/",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
-      "redirect_chain": [],
-      "last_checked": "2026-06-22",
+      "redirect_chain": [
+        {
+          "url": "https://totalsportekz.com/",
+          "status_code": 301
+        }
+      ],
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Live (200) / Reinstated (200)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Live (200) / Reinstated (200) -> Redirect (301) -> HOMEPAGE / Redirected -> homepage"
         }
       ]
     },
@@ -766,23 +1007,31 @@
       "section": "Top Leagues",
       "label": "Liverpool Live Stream",
       "original": "https://totalsportekz.com/team/liverpool/17/",
-      "current": "https://totalsportekz.com/teams/liverpool/17/",
-      "status": "Redirect (301) -> https://totalsportekz.com/teams/liverpool/17/",
+      "current": "https://totalsportek24.is/teams/liverpool/17/",
+      "status": "Redirect (301) -> https://totalsportek24.is/teams/liverpool/17/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/team/liverpool",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
           "url": "https://totalsportekz.com/team/liverpool/17/",
           "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/team/liverpool/17/",
+          "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/teams/liverpool/17/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/teams/liverpool/17/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/teams/liverpool/17/ / Redirected (3xx)"
         }
       ]
     },
@@ -790,23 +1039,31 @@
       "section": "Top Leagues",
       "label": "Manchester United Stream",
       "original": "https://totalsportekz.com/team/manchester-united/14/",
-      "current": "https://totalsportekz.com/teams/manchester-united/14/",
-      "status": "Redirect (301) -> https://totalsportekz.com/teams/manchester-united/14/",
+      "current": "https://totalsportek24.is/teams/manchester-united/14/",
+      "status": "Redirect (301) -> https://totalsportek24.is/teams/manchester-united/14/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/team/manchester-united",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
           "url": "https://totalsportekz.com/team/manchester-united/14/",
           "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/team/manchester-united/14/",
+          "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/teams/manchester-united/14/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/teams/manchester-united/14/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/teams/manchester-united/14/ / Redirected (3xx)"
         }
       ]
     },
@@ -814,11 +1071,11 @@
       "section": "Top Leagues",
       "label": "Formula 1 Live Stream",
       "original": "https://totalsportekz.com/f1-streams/",
-      "current": "https://totalsportekz.com/f1-stream/",
-      "status": "Redirect (301) -> https://totalsportekz.com/f1-stream/",
+      "current": "https://totalsportek24.is/f1-stream/",
+      "status": "Redirect (301) -> https://totalsportek24.is/f1-stream/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/f1",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
@@ -826,15 +1083,23 @@
           "status_code": 301
         },
         {
-          "url": "https://totalsportekz.com/f1-stream",
+          "url": "https://totalsportek24.is/f1-streams/",
+          "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/f1-stream",
           "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/f1-stream/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/f1-stream/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/f1-stream/ / Redirected (3xx)"
         }
       ]
     },
@@ -842,23 +1107,31 @@
       "section": "Top Teams",
       "label": "Manchester United",
       "original": "https://totalsportekz.com/team/manchester-united/14/",
-      "current": "https://totalsportekz.com/teams/manchester-united/14/",
-      "status": "Redirect (301) -> https://totalsportekz.com/teams/manchester-united/14/",
+      "current": "https://totalsportek24.is/teams/manchester-united/14/",
+      "status": "Redirect (301) -> https://totalsportek24.is/teams/manchester-united/14/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/team/manchester-united",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
           "url": "https://totalsportekz.com/team/manchester-united/14/",
           "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/team/manchester-united/14/",
+          "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/teams/manchester-united/14/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/teams/manchester-united/14/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/teams/manchester-united/14/ / Redirected (3xx)"
         }
       ]
     },
@@ -866,23 +1139,31 @@
       "section": "Top Teams",
       "label": "Arsenal",
       "original": "https://totalsportekz.com/team/arsenal/15/",
-      "current": "https://totalsportekz.com/teams/arsenal/15/",
-      "status": "Redirect (301) -> https://totalsportekz.com/teams/arsenal/15/",
+      "current": "https://totalsportek24.is/teams/arsenal/15/",
+      "status": "Redirect (301) -> https://totalsportek24.is/teams/arsenal/15/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/team/arsenal",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
           "url": "https://totalsportekz.com/team/arsenal/15/",
           "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/team/arsenal/15/",
+          "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/teams/arsenal/15/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/teams/arsenal/15/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/teams/arsenal/15/ / Redirected (3xx)"
         }
       ]
     },
@@ -890,23 +1171,31 @@
       "section": "Top Teams",
       "label": "Chelsea",
       "original": "https://totalsportekz.com/team/chelsea/16/",
-      "current": "https://totalsportekz.com/teams/chelsea/16/",
-      "status": "Redirect (301) -> https://totalsportekz.com/teams/chelsea/16/",
+      "current": "https://totalsportek24.is/teams/chelsea/16/",
+      "status": "Redirect (301) -> https://totalsportek24.is/teams/chelsea/16/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/team/chelsea",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
           "url": "https://totalsportekz.com/team/chelsea/16/",
           "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/team/chelsea/16/",
+          "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/teams/chelsea/16/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/teams/chelsea/16/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/teams/chelsea/16/ / Redirected (3xx)"
         }
       ]
     },
@@ -914,23 +1203,31 @@
       "section": "Top Teams",
       "label": "Liverpool",
       "original": "https://totalsportekz.com/team/liverpool/17/",
-      "current": "https://totalsportekz.com/teams/liverpool/17/",
-      "status": "Redirect (301) -> https://totalsportekz.com/teams/liverpool/17/",
+      "current": "https://totalsportek24.is/teams/liverpool/17/",
+      "status": "Redirect (301) -> https://totalsportek24.is/teams/liverpool/17/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/team/liverpool",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
           "url": "https://totalsportekz.com/team/liverpool/17/",
           "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/team/liverpool/17/",
+          "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/teams/liverpool/17/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/teams/liverpool/17/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/teams/liverpool/17/ / Redirected (3xx)"
         }
       ]
     },
@@ -938,23 +1235,31 @@
       "section": "Top Teams",
       "label": "Manchester City",
       "original": "https://totalsportekz.com/team/manchester-city/18/",
-      "current": "https://totalsportekz.com/teams/manchester-city/18/",
-      "status": "Redirect (301) -> https://totalsportekz.com/teams/manchester-city/18/",
+      "current": "https://totalsportek24.is/teams/manchester-city/18/",
+      "status": "Redirect (301) -> https://totalsportek24.is/teams/manchester-city/18/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/team/manchester-city",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
           "url": "https://totalsportekz.com/team/manchester-city/18/",
           "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/team/manchester-city/18/",
+          "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/teams/manchester-city/18/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/teams/manchester-city/18/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/teams/manchester-city/18/ / Redirected (3xx)"
         }
       ]
     },
@@ -962,23 +1267,31 @@
       "section": "Top Teams",
       "label": "Tottenham Hotspur",
       "original": "https://totalsportekz.com/team/tottenham-hotspur/19/",
-      "current": "https://totalsportekz.com/teams/tottenham-hotspur/19/",
-      "status": "Redirect (301) -> https://totalsportekz.com/teams/tottenham-hotspur/19/",
+      "current": "https://totalsportek24.is/teams/tottenham-hotspur/19/",
+      "status": "Redirect (301) -> https://totalsportek24.is/teams/tottenham-hotspur/19/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/team/tottenham-hotspur",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
           "url": "https://totalsportekz.com/team/tottenham-hotspur/19/",
           "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/team/tottenham-hotspur/19/",
+          "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/teams/tottenham-hotspur/19/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/teams/tottenham-hotspur/19/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/teams/tottenham-hotspur/19/ / Redirected (3xx)"
         }
       ]
     },
@@ -986,23 +1299,31 @@
       "section": "Top Teams",
       "label": "Everton",
       "original": "https://totalsportekz.com/team/everton/20/",
-      "current": "https://totalsportekz.com/teams/everton/20/",
-      "status": "Redirect (301) -> https://totalsportekz.com/teams/everton/20/",
+      "current": "https://totalsportek24.is/teams/everton/20/",
+      "status": "Redirect (301) -> https://totalsportek24.is/teams/everton/20/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/team/everton",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
           "url": "https://totalsportekz.com/team/everton/20/",
           "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/team/everton/20/",
+          "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/teams/everton/20/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/teams/everton/20/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/teams/everton/20/ / Redirected (3xx)"
         }
       ]
     },
@@ -1010,23 +1331,31 @@
       "section": "Top Teams",
       "label": "Newcastle United",
       "original": "https://totalsportekz.com/team/newcastle-united/21/",
-      "current": "https://totalsportekz.com/teams/newcastle-united/21/",
-      "status": "Redirect (301) -> https://totalsportekz.com/teams/newcastle-united/21/",
+      "current": "https://totalsportek24.is/teams/newcastle-united/21/",
+      "status": "Redirect (301) -> https://totalsportek24.is/teams/newcastle-united/21/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/team/newcastle-united",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
           "url": "https://totalsportekz.com/team/newcastle-united/21/",
           "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/team/newcastle-united/21/",
+          "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/teams/newcastle-united/21/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/teams/newcastle-united/21/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/teams/newcastle-united/21/ / Redirected (3xx)"
         }
       ]
     },
@@ -1034,23 +1363,31 @@
       "section": "Top Teams",
       "label": "Real Madrid",
       "original": "https://totalsportekz.com/team/real-madrid/22/",
-      "current": "https://totalsportekz.com/teams/real-madrid/22/",
-      "status": "Redirect (301) -> https://totalsportekz.com/teams/real-madrid/22/",
+      "current": "https://totalsportek24.is/teams/real-madrid/22/",
+      "status": "Redirect (301) -> https://totalsportek24.is/teams/real-madrid/22/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/team/real-madrid",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
           "url": "https://totalsportekz.com/team/real-madrid/22/",
           "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/team/real-madrid/22/",
+          "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/teams/real-madrid/22/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/teams/real-madrid/22/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/teams/real-madrid/22/ / Redirected (3xx)"
         }
       ]
     },
@@ -1058,23 +1395,31 @@
       "section": "Top Teams",
       "label": "Barcelona",
       "original": "https://totalsportekz.com/team/barcelona/23/",
-      "current": "https://totalsportekz.com/teams/barcelona/23/",
-      "status": "Redirect (301) -> https://totalsportekz.com/teams/barcelona/23/",
+      "current": "https://totalsportek24.is/teams/barcelona/23/",
+      "status": "Redirect (301) -> https://totalsportek24.is/teams/barcelona/23/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/team/barcelona",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
           "url": "https://totalsportekz.com/team/barcelona/23/",
           "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/team/barcelona/23/",
+          "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/teams/barcelona/23/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/teams/barcelona/23/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/teams/barcelona/23/ / Redirected (3xx)"
         }
       ]
     },
@@ -1082,23 +1427,31 @@
       "section": "Top Teams",
       "label": "Atlatico Madrid",
       "original": "https://totalsportekz.com/team/atlatico-madrid/24/",
-      "current": "https://totalsportekz.com/teams/atlatico-madrid/24/",
-      "status": "Redirect (301) -> https://totalsportekz.com/teams/atlatico-madrid/24/",
+      "current": "https://totalsportek24.is/teams/atlatico-madrid/24/",
+      "status": "Redirect (301) -> https://totalsportek24.is/teams/atlatico-madrid/24/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/team/atlatico-madrid",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
           "url": "https://totalsportekz.com/team/atlatico-madrid/24/",
           "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/team/atlatico-madrid/24/",
+          "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/teams/atlatico-madrid/24/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/teams/atlatico-madrid/24/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/teams/atlatico-madrid/24/ / Redirected (3xx)"
         }
       ]
     },
@@ -1106,23 +1459,31 @@
       "section": "Top Teams",
       "label": "Juventus",
       "original": "https://totalsportekz.com/team/juventus/25/",
-      "current": "https://totalsportekz.com/teams/juventus/25/",
-      "status": "Redirect (301) -> https://totalsportekz.com/teams/juventus/25/",
+      "current": "https://totalsportek24.is/teams/juventus/25/",
+      "status": "Redirect (301) -> https://totalsportek24.is/teams/juventus/25/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/team/juventus",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
           "url": "https://totalsportekz.com/team/juventus/25/",
           "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/team/juventus/25/",
+          "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/teams/juventus/25/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/teams/juventus/25/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/teams/juventus/25/ / Redirected (3xx)"
         }
       ]
     },
@@ -1130,23 +1491,31 @@
       "section": "Top Teams",
       "label": "Milan",
       "original": "https://totalsportekz.com/team/milan/26/",
-      "current": "https://totalsportekz.com/teams/milan/26/",
-      "status": "Redirect (301) -> https://totalsportekz.com/teams/milan/26/",
+      "current": "https://totalsportek24.is/teams/milan/26/",
+      "status": "Redirect (301) -> https://totalsportek24.is/teams/milan/26/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/team/milan",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
           "url": "https://totalsportekz.com/team/milan/26/",
           "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/team/milan/26/",
+          "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/teams/milan/26/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/teams/milan/26/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/teams/milan/26/ / Redirected (3xx)"
         }
       ]
     },
@@ -1154,23 +1523,31 @@
       "section": "Top Teams",
       "label": "Internazionale",
       "original": "https://totalsportekz.com/team/internazionale/27/",
-      "current": "https://totalsportekz.com/teams/internazionale/27/",
-      "status": "Redirect (301) -> https://totalsportekz.com/teams/internazionale/27/",
+      "current": "https://totalsportek24.is/teams/internazionale/27/",
+      "status": "Redirect (301) -> https://totalsportek24.is/teams/internazionale/27/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/team/internazionale",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
           "url": "https://totalsportekz.com/team/internazionale/27/",
           "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/team/internazionale/27/",
+          "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/teams/internazionale/27/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/teams/internazionale/27/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/teams/internazionale/27/ / Redirected (3xx)"
         }
       ]
     },
@@ -1178,23 +1555,31 @@
       "section": "Top Teams",
       "label": "PSG",
       "original": "https://totalsportekz.com/team/psg/28/",
-      "current": "https://totalsportekz.com/teams/psg/28/",
-      "status": "Redirect (301) -> https://totalsportekz.com/teams/psg/28/",
+      "current": "https://totalsportek24.is/teams/psg/28/",
+      "status": "Redirect (301) -> https://totalsportek24.is/teams/psg/28/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/team/psg",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
           "url": "https://totalsportekz.com/team/psg/28/",
           "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/team/psg/28/",
+          "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/teams/psg/28/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/teams/psg/28/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/teams/psg/28/ / Redirected (3xx)"
         }
       ]
     },
@@ -1202,23 +1587,31 @@
       "section": "Top Teams",
       "label": "Bayern Munich",
       "original": "https://totalsportekz.com/team/bayern-munich/31/",
-      "current": "https://totalsportekz.com/teams/bayern-munich/31/",
-      "status": "Redirect (301) -> https://totalsportekz.com/teams/bayern-munich/31/",
+      "current": "https://totalsportek24.is/teams/bayern-munich/31/",
+      "status": "Redirect (301) -> https://totalsportek24.is/teams/bayern-munich/31/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/team/bayern-munich",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
           "url": "https://totalsportekz.com/team/bayern-munich/31/",
           "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/team/bayern-munich/31/",
+          "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/teams/bayern-munich/31/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/teams/bayern-munich/31/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/teams/bayern-munich/31/ / Redirected (3xx)"
         }
       ]
     },
@@ -1226,23 +1619,31 @@
       "section": "Top Teams",
       "label": "Leicester City",
       "original": "https://totalsportekz.com/team/leicester-city/32/",
-      "current": "https://totalsportekz.com/teams/leicester-city/32/",
-      "status": "Redirect (301) -> https://totalsportekz.com/teams/leicester-city/32/",
+      "current": "https://totalsportek24.is/teams/leicester-city/32/",
+      "status": "Redirect (301) -> https://totalsportek24.is/teams/leicester-city/32/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/team/leicester-city",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
           "url": "https://totalsportekz.com/team/leicester-city/32/",
           "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/team/leicester-city/32/",
+          "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/teams/leicester-city/32/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/teams/leicester-city/32/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/teams/leicester-city/32/ / Redirected (3xx)"
         }
       ]
     },
@@ -1250,23 +1651,31 @@
       "section": "Top Teams",
       "label": "Napoli",
       "original": "https://totalsportekz.com/team/napoli/33/",
-      "current": "https://totalsportekz.com/teams/napoli/33/",
-      "status": "Redirect (301) -> https://totalsportekz.com/teams/napoli/33/",
+      "current": "https://totalsportek24.is/teams/napoli/33/",
+      "status": "Redirect (301) -> https://totalsportek24.is/teams/napoli/33/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/team/napoli",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
           "url": "https://totalsportekz.com/team/napoli/33/",
           "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/team/napoli/33/",
+          "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/teams/napoli/33/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/teams/napoli/33/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/teams/napoli/33/ / Redirected (3xx)"
         }
       ]
     },
@@ -1274,23 +1683,31 @@
       "section": "Top Teams",
       "label": "Roma",
       "original": "https://totalsportekz.com/team/roma/40/",
-      "current": "https://totalsportekz.com/teams/roma/40/",
-      "status": "Redirect (301) -> https://totalsportekz.com/teams/roma/40/",
+      "current": "https://totalsportek24.is/teams/roma/40/",
+      "status": "Redirect (301) -> https://totalsportek24.is/teams/roma/40/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/team/roma",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
           "url": "https://totalsportekz.com/team/roma/40/",
           "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/team/roma/40/",
+          "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/teams/roma/40/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/teams/roma/40/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/teams/roma/40/ / Redirected (3xx)"
         }
       ]
     },
@@ -1298,23 +1715,31 @@
       "section": "Top Teams",
       "label": "Borussia Dortmund",
       "original": "https://totalsportekz.com/team/borussia-dortmund/41/",
-      "current": "https://totalsportekz.com/teams/borussia-dortmund/41/",
-      "status": "Redirect (301) -> https://totalsportekz.com/teams/borussia-dortmund/41/",
+      "current": "https://totalsportek24.is/teams/borussia-dortmund/41/",
+      "status": "Redirect (301) -> https://totalsportek24.is/teams/borussia-dortmund/41/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/team/borussia-dortmund",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
           "url": "https://totalsportekz.com/team/borussia-dortmund/41/",
           "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/team/borussia-dortmund/41/",
+          "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/teams/borussia-dortmund/41/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/teams/borussia-dortmund/41/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/teams/borussia-dortmund/41/ / Redirected (3xx)"
         }
       ]
     },
@@ -1322,23 +1747,31 @@
       "section": "Top Teams",
       "label": "West Ham United",
       "original": "https://totalsportekz.com/team/west-ham-united/42/",
-      "current": "https://totalsportekz.com/teams/west-ham-united/42/",
-      "status": "Redirect (301) -> https://totalsportekz.com/teams/west-ham-united/42/",
+      "current": "https://totalsportek24.is/teams/west-ham-united/42/",
+      "status": "Redirect (301) -> https://totalsportek24.is/teams/west-ham-united/42/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/team/west-ham-united",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
           "url": "https://totalsportekz.com/team/west-ham-united/42/",
           "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/team/west-ham-united/42/",
+          "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/teams/west-ham-united/42/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/teams/west-ham-united/42/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/teams/west-ham-united/42/ / Redirected (3xx)"
         }
       ]
     },
@@ -1346,23 +1779,31 @@
       "section": "Top Teams",
       "label": "Olympique Marseille",
       "original": "https://totalsportekz.com/team/olympique-marseille/43/",
-      "current": "https://totalsportekz.com/teams/olympique-marseille/43/",
-      "status": "Redirect (301) -> https://totalsportekz.com/teams/olympique-marseille/43/",
+      "current": "https://totalsportek24.is/teams/olympique-marseille/43/",
+      "status": "Redirect (301) -> https://totalsportek24.is/teams/olympique-marseille/43/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/team/olympique-marseille",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
           "url": "https://totalsportekz.com/team/olympique-marseille/43/",
           "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/team/olympique-marseille/43/",
+          "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/teams/olympique-marseille/43/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/teams/olympique-marseille/43/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/teams/olympique-marseille/43/ / Redirected (3xx)"
         }
       ]
     },
@@ -1370,23 +1811,31 @@
       "section": "Top Teams",
       "label": "Bayer Leverkusen",
       "original": "https://totalsportekz.com/team/bayer-leverkusen/47/",
-      "current": "https://totalsportekz.com/teams/bayer-leverkusen/47/",
-      "status": "Redirect (301) -> https://totalsportekz.com/teams/bayer-leverkusen/47/",
+      "current": "https://totalsportek24.is/teams/bayer-leverkusen/47/",
+      "status": "Redirect (301) -> https://totalsportek24.is/teams/bayer-leverkusen/47/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/team/bayer-leverkusen",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
           "url": "https://totalsportekz.com/team/bayer-leverkusen/47/",
           "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/team/bayer-leverkusen/47/",
+          "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/teams/bayer-leverkusen/47/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/teams/bayer-leverkusen/47/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/teams/bayer-leverkusen/47/ / Redirected (3xx)"
         }
       ]
     },
@@ -1394,23 +1843,31 @@
       "section": "Top Teams",
       "label": "Sevilla",
       "original": "https://totalsportekz.com/team/sevilla/48/",
-      "current": "https://totalsportekz.com/teams/sevilla/48/",
-      "status": "Redirect (301) -> https://totalsportekz.com/teams/sevilla/48/",
+      "current": "https://totalsportek24.is/teams/sevilla/48/",
+      "status": "Redirect (301) -> https://totalsportek24.is/teams/sevilla/48/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/team/sevilla",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
           "url": "https://totalsportekz.com/team/sevilla/48/",
           "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/team/sevilla/48/",
+          "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/teams/sevilla/48/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/teams/sevilla/48/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/teams/sevilla/48/ / Redirected (3xx)"
         }
       ]
     },
@@ -1418,23 +1875,31 @@
       "section": "Top Teams",
       "label": "Villarreal",
       "original": "https://totalsportekz.com/team/villarreal/49/",
-      "current": "https://totalsportekz.com/teams/villarreal/49/",
-      "status": "Redirect (301) -> https://totalsportekz.com/teams/villarreal/49/",
+      "current": "https://totalsportek24.is/teams/villarreal/49/",
+      "status": "Redirect (301) -> https://totalsportek24.is/teams/villarreal/49/",
       "redirected_vs_reinstated": "Redirected (3xx)",
       "clean_original": "https://totalsportekz.com/team/villarreal",
-      "clean_resolves_to": "https://totalsportekz.com/",
+      "clean_resolves_to": "https://totalsportek24.is/",
       "blocked": false,
       "redirect_chain": [
         {
           "url": "https://totalsportekz.com/team/villarreal/49/",
           "status_code": 301
+        },
+        {
+          "url": "https://totalsportek24.is/team/villarreal/49/",
+          "status_code": 301
         }
       ],
-      "last_checked": "2026-06-22",
+      "last_checked": "2026-06-23",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> https://totalsportekz.com/teams/villarreal/49/ / Redirected (3xx)"
+        },
+        {
+          "date": "2026-06-23",
+          "change": "Redirect (301) -> https://totalsportekz.com/teams/villarreal/49/ / Redirected (3xx) -> Redirect (301) -> https://totalsportek24.is/teams/villarreal/49/ / Redirected (3xx)"
         }
       ]
     }
