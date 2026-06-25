@@ -1,7 +1,7 @@
 {
   "domain": "totalsportek.li",
   "domain_status": "insufficient_sample",
-  "checked_utc": "2026-06-24T09:23:39+00:00",
+  "checked_utc": "2026-06-25T08:59:21+00:00",
   "urls": [
     {
       "section": "Site Status",
@@ -14,7 +14,7 @@
       "clean_resolves_to": null,
       "blocked": false,
       "redirect_chain": [],
-      "last_checked": "2026-06-24",
+      "last_checked": "2026-06-25",
       "history": [
         {
           "date": "2026-06-20",

@@ -1,5 +1,5 @@
 {
-  "checked_utc": "2026-06-24T09:23:39+00:00",
+  "checked_utc": "2026-06-25T08:59:21+00:00",
   "entries": [
     {
       "url": "https://totalsports.cfd/",
@@ -7,7 +7,7 @@
       "status": "Live (200)",
       "blocked": false,
       "redirect_chain": [],
-      "last_checked": "2026-06-24",
+      "last_checked": "2026-06-25",
       "history": [
         {
           "date": "2026-06-21",
@@ -21,7 +21,7 @@
       "status": "Live (200)",
       "blocked": false,
       "redirect_chain": [],
-      "last_checked": "2026-06-24",
+      "last_checked": "2026-06-25",
       "history": [
         {
           "date": "2026-06-21",
@@ -31,15 +31,19 @@
     },
     {
       "url": "https://total-sporteks.pro/",
-      "current": "https://total-sporteks.pro/",
-      "status": "Live (200)",
+      "current": null,
+      "status": "ERROR",
       "blocked": false,
       "redirect_chain": [],
-      "last_checked": "2026-06-24",
+      "last_checked": "2026-06-25",
       "history": [
         {
           "date": "2026-06-21",
           "change": "Baseline: Live (200)"
+        },
+        {
+          "date": "2026-06-25",
+          "change": "Live (200) -> ERROR"
         }
       ]
     }
