@@ -336,12 +336,12 @@
     },
     "findings_counts": {
       "critical": 0,
-      "warning": 20,
+      "warning": 18,
       "info": 9
     },
     "gsc_enabled": true,
-    "run_id": "20260627T194509Z",
-    "timestamp_utc": "2026-06-27T19:45:09+00:00"
+    "run_id": "20260627T210347Z",
+    "timestamp_utc": "2026-06-27T21:03:47+00:00"
   },
   "overall": {
     "sites": {
@@ -353,7 +353,7 @@
         "impressions_delta": 0,
         "findings": {
           "critical": 0,
-          "warning": 3,
+          "warning": 5,
           "info": 1
         }
       },
@@ -365,7 +365,7 @@
         "impressions_delta": 0,
         "findings": {
           "critical": 0,
-          "warning": 9,
+          "warning": 6,
           "info": 1
         }
       },
@@ -377,7 +377,7 @@
         "impressions_delta": 0,
         "findings": {
           "critical": 0,
-          "warning": 0,
+          "warning": 1,
           "info": 1
         }
       },
@@ -389,7 +389,7 @@
         "impressions_delta": null,
         "findings": {
           "critical": 0,
-          "warning": 3,
+          "warning": 2,
           "info": 3
         }
       },
@@ -425,19 +425,19 @@
         "impressions_delta": null,
         "findings": {
           "critical": 0,
-          "warning": 1,
+          "warning": 0,
           "info": 1
         }
       }
     },
     "headline": {
       "critical": 0,
-      "warning": 20,
+      "warning": 18,
       "info": 9
     }
   },
-  "json_file": "run-20260627T194509Z.json",
-  "md_file": "report-20260627T194509Z.md",
+  "json_file": "run-20260627T210347Z.json",
+  "md_file": "report-20260627T210347Z.md",
   "findings": [
     {
       "type": "RUNNER_IP_BLOCKED",
@@ -455,7 +455,7 @@
           "browser"
         ]
       },
-      "timestamp": "2026-06-27T19:42:24+00:00",
+      "timestamp": "2026-06-27T21:01:03+00:00",
       "fix": "Not a real outage \u2014 it's bot protection rejecting this datacenter IP. Ignore for uptime and rely on Search Console (URL Inspection) for Google's authoritative crawl view."
     },
     {
@@ -474,7 +474,7 @@
           "browser"
         ]
       },
-      "timestamp": "2026-06-27T19:42:24+00:00",
+      "timestamp": "2026-06-27T21:01:03+00:00",
       "fix": "Not a real outage \u2014 it's bot protection rejecting this datacenter IP. Ignore for uptime and rely on Search Console (URL Inspection) for Google's authoritative crawl view."
     },
     {
@@ -493,7 +493,7 @@
           "browser"
         ]
       },
-      "timestamp": "2026-06-27T19:42:24+00:00",
+      "timestamp": "2026-06-27T21:01:03+00:00",
       "fix": "Not a real outage \u2014 it's bot protection rejecting this datacenter IP. Ignore for uptime and rely on Search Console (URL Inspection) for Google's authoritative crawl view."
     },
     {
@@ -512,7 +512,7 @@
           "browser"
         ]
       },
-      "timestamp": "2026-06-27T19:42:24+00:00",
+      "timestamp": "2026-06-27T21:01:03+00:00",
       "fix": "Not a real outage \u2014 it's bot protection rejecting this datacenter IP. Ignore for uptime and rely on Search Console (URL Inspection) for Google's authoritative crawl view."
     },
     {
@@ -531,7 +531,7 @@
           "browser"
         ]
       },
-      "timestamp": "2026-06-27T19:42:24+00:00",
+      "timestamp": "2026-06-27T21:01:03+00:00",
       "fix": "Not a real outage \u2014 it's bot protection rejecting this datacenter IP. Ignore for uptime and rely on Search Console (URL Inspection) for Google's authoritative crawl view."
     },
     {
@@ -550,7 +550,7 @@
           "browser"
         ]
       },
-      "timestamp": "2026-06-27T19:42:24+00:00",
+      "timestamp": "2026-06-27T21:01:03+00:00",
       "fix": "Not a real outage \u2014 it's bot protection rejecting this datacenter IP. Ignore for uptime and rely on Search Console (URL Inspection) for Google's authoritative crawl view."
     },
     {
@@ -560,7 +560,7 @@
       "path": "/sitemap.xml",
       "message": "No reachable sitemap.xml (status ConnectionError: HTTPSConnectionPool(host='totalsportek.tech', port=443): Max retries exceeded with url: /sitemap.xml (Caused by NameResolutionError(\"HTTPSConnection(host='totalsportek.tech', port=443): Failed to resolve 'totalsportek.tech' ([Errno -2] Name or service not known)\"))).",
       "details": {},
-      "timestamp": "2026-06-27T19:43:23+00:00",
+      "timestamp": "2026-06-27T21:02:00+00:00",
       "fix": "Publish a valid /sitemap.xml listing your important URLs and submit it in Search Console."
     },
     {
@@ -570,7 +570,7 @@
       "path": "/sitemap.xml",
       "message": "No reachable sitemap.xml (status ConnectionError: HTTPSConnectionPool(host='totalsportek.bio', port=443): Max retries exceeded with url: /sitemap.xml (Caused by NameResolutionError(\"HTTPSConnection(host='totalsportek.bio', port=443): Failed to resolve 'totalsportek.bio' ([Errno -2] Name or service not known)\"))).",
       "details": {},
-      "timestamp": "2026-06-27T19:43:27+00:00",
+      "timestamp": "2026-06-27T21:02:04+00:00",
       "fix": "Publish a valid /sitemap.xml listing your important URLs and submit it in Search Console."
     },
     {
@@ -580,7 +580,7 @@
       "path": "/",
       "message": "Page has no rel=canonical link.",
       "details": {},
-      "timestamp": "2026-06-27T19:43:35+00:00",
+      "timestamp": "2026-06-27T21:02:12+00:00",
       "fix": "Add a self-referencing <link rel=\"canonical\"> so Google consolidates signals on the preferred URL."
     },
     {
@@ -590,7 +590,7 @@
       "path": "/sitemap.xml",
       "message": "No reachable sitemap.xml (status 404).",
       "details": {},
-      "timestamp": "2026-06-27T19:43:36+00:00",
+      "timestamp": "2026-06-27T21:02:13+00:00",
       "fix": "Publish a valid /sitemap.xml listing your important URLs and submit it in Search Console."
     },
     {
@@ -600,7 +600,7 @@
       "path": "/sitemap.xml",
       "message": "No reachable sitemap.xml (status ConnectionError: HTTPSConnectionPool(host='totalsportek.cfd', port=443): Max retries exceeded with url: /sitemap.xml (Caused by NameResolutionError(\"HTTPSConnection(host='totalsportek.cfd', port=443): Failed to resolve 'totalsportek.cfd' ([Errno -3] Temporary failure in name resolution)\"))).",
       "details": {},
-      "timestamp": "2026-06-27T19:44:09+00:00",
+      "timestamp": "2026-06-27T21:02:46+00:00",
       "fix": "Publish a valid /sitemap.xml listing your important URLs and submit it in Search Console."
     },
     {
@@ -610,119 +610,91 @@
       "path": "/sitemap.xml",
       "message": "No reachable sitemap.xml (status ConnectionError: HTTPSConnectionPool(host='totalsportek.host', port=443): Max retries exceeded with url: /sitemap.xml (Caused by NameResolutionError(\"HTTPSConnection(host='totalsportek.host', port=443): Failed to resolve 'totalsportek.host' ([Errno -3] Temporary failure in name resolution)\"))).",
       "details": {},
-      "timestamp": "2026-06-27T19:44:52+00:00",
+      "timestamp": "2026-06-27T21:03:29+00:00",
       "fix": "Publish a valid /sitemap.xml listing your important URLs and submit it in Search Console."
-    },
-    {
-      "type": "STATUS_CHANGE",
-      "severity": "warning",
-      "site": "totalsportek.bio",
-      "path": "/",
-      "message": "Status changed 200 -> None for googlebot_desktop on / [googlebot_desktop].",
-      "details": {
-        "user_agent": "googlebot_desktop",
-        "previous": 200,
-        "current": null
-      },
-      "timestamp": "2026-06-27T19:45:09+00:00",
-      "fix": "Investigate why the HTTP status changed since the last run \u2014 correlate with deploys, CDN/WAF rule changes or outages around that timestamp."
-    },
-    {
-      "type": "STATUS_CHANGE",
-      "severity": "warning",
-      "site": "totalsportek.bio",
-      "path": "/",
-      "message": "Status changed 200 -> None for googlebot_mobile on / [googlebot_mobile].",
-      "details": {
-        "user_agent": "googlebot_mobile",
-        "previous": 200,
-        "current": null
-      },
-      "timestamp": "2026-06-27T19:45:09+00:00",
-      "fix": "Investigate why the HTTP status changed since the last run \u2014 correlate with deploys, CDN/WAF rule changes or outages around that timestamp."
-    },
-    {
-      "type": "STATUS_CHANGE",
-      "severity": "warning",
-      "site": "totalsportek.bio",
-      "path": "/",
-      "message": "Status changed 200 -> None for browser on / [browser].",
-      "details": {
-        "user_agent": "browser",
-        "previous": 200,
-        "current": null
-      },
-      "timestamp": "2026-06-27T19:45:09+00:00",
-      "fix": "Investigate why the HTTP status changed since the last run \u2014 correlate with deploys, CDN/WAF rule changes or outages around that timestamp."
-    },
-    {
-      "type": "STATUS_CHANGE",
-      "severity": "warning",
-      "site": "totalsportek.bio",
-      "path": "/dmca",
-      "message": "Status changed 200 -> None for googlebot_desktop on /dmca [googlebot_desktop].",
-      "details": {
-        "user_agent": "googlebot_desktop",
-        "previous": 200,
-        "current": null
-      },
-      "timestamp": "2026-06-27T19:45:09+00:00",
-      "fix": "Investigate why the HTTP status changed since the last run \u2014 correlate with deploys, CDN/WAF rule changes or outages around that timestamp."
-    },
-    {
-      "type": "STATUS_CHANGE",
-      "severity": "warning",
-      "site": "totalsportek.bio",
-      "path": "/dmca",
-      "message": "Status changed 200 -> None for googlebot_mobile on /dmca [googlebot_mobile].",
-      "details": {
-        "user_agent": "googlebot_mobile",
-        "previous": 200,
-        "current": null
-      },
-      "timestamp": "2026-06-27T19:45:09+00:00",
-      "fix": "Investigate why the HTTP status changed since the last run \u2014 correlate with deploys, CDN/WAF rule changes or outages around that timestamp."
-    },
-    {
-      "type": "STATUS_CHANGE",
-      "severity": "warning",
-      "site": "totalsportek.bio",
-      "path": "/dmca",
-      "message": "Status changed 200 -> None for browser on /dmca [browser].",
-      "details": {
-        "user_agent": "browser",
-        "previous": 200,
-        "current": null
-      },
-      "timestamp": "2026-06-27T19:45:09+00:00",
-      "fix": "Investigate why the HTTP status changed since the last run \u2014 correlate with deploys, CDN/WAF rule changes or outages around that timestamp."
     },
     {
       "type": "LATENCY_SPIKE",
       "severity": "warning",
-      "site": "freesportshd.sbs",
+      "site": "totalsportek.tech",
       "path": "/",
-      "message": "Latency 326ms -> 660ms (>2x) for googlebot_desktop on / [googlebot_desktop].",
+      "message": "Latency 24ms -> 49ms (>2x) for googlebot_desktop on / [googlebot_desktop].",
       "details": {
         "user_agent": "googlebot_desktop",
-        "previous_ms": 325.9,
-        "current_ms": 660.3
+        "previous_ms": 24.3,
+        "current_ms": 49.2
       },
-      "timestamp": "2026-06-27T19:45:09+00:00",
+      "timestamp": "2026-06-27T21:03:47+00:00",
       "fix": "Add server/CDN caching, move to faster hosting and remove redirect hops; check for a load spike or slow backend at that time."
     },
     {
       "type": "LATENCY_SPIKE",
       "severity": "warning",
-      "site": "totalsportek.it",
-      "path": "/",
-      "message": "Latency 491ms -> 1120ms (>2x) for googlebot_mobile on / [googlebot_mobile].",
+      "site": "totalsportek.tech",
+      "path": "/dmca",
+      "message": "Latency 7ms -> 26ms (>2x) for googlebot_mobile on /dmca [googlebot_mobile].",
       "details": {
         "user_agent": "googlebot_mobile",
-        "previous_ms": 491.3,
-        "current_ms": 1119.6
+        "previous_ms": 7.2,
+        "current_ms": 26.5
       },
-      "timestamp": "2026-06-27T19:45:09+00:00",
+      "timestamp": "2026-06-27T21:03:47+00:00",
+      "fix": "Add server/CDN caching, move to faster hosting and remove redirect hops; check for a load spike or slow backend at that time."
+    },
+    {
+      "type": "LATENCY_SPIKE",
+      "severity": "warning",
+      "site": "totalsportek.bio",
+      "path": "/",
+      "message": "Latency 11ms -> 242ms (>2x) for googlebot_mobile on / [googlebot_mobile].",
+      "details": {
+        "user_agent": "googlebot_mobile",
+        "previous_ms": 10.7,
+        "current_ms": 241.7
+      },
+      "timestamp": "2026-06-27T21:03:47+00:00",
+      "fix": "Add server/CDN caching, move to faster hosting and remove redirect hops; check for a load spike or slow backend at that time."
+    },
+    {
+      "type": "LATENCY_SPIKE",
+      "severity": "warning",
+      "site": "totalsportek.bio",
+      "path": "/",
+      "message": "Latency 26ms -> 161ms (>2x) for browser on / [browser].",
+      "details": {
+        "user_agent": "browser",
+        "previous_ms": 25.6,
+        "current_ms": 160.6
+      },
+      "timestamp": "2026-06-27T21:03:47+00:00",
+      "fix": "Add server/CDN caching, move to faster hosting and remove redirect hops; check for a load spike or slow backend at that time."
+    },
+    {
+      "type": "LATENCY_SPIKE",
+      "severity": "warning",
+      "site": "totalsportek.bio",
+      "path": "/dmca",
+      "message": "Latency 6ms -> 208ms (>2x) for browser on /dmca [browser].",
+      "details": {
+        "user_agent": "browser",
+        "previous_ms": 6.5,
+        "current_ms": 208.0
+      },
+      "timestamp": "2026-06-27T21:03:47+00:00",
+      "fix": "Add server/CDN caching, move to faster hosting and remove redirect hops; check for a load spike or slow backend at that time."
+    },
+    {
+      "type": "LATENCY_SPIKE",
+      "severity": "warning",
+      "site": "footybite.tech",
+      "path": "/",
+      "message": "Latency 40ms -> 82ms (>2x) for googlebot_mobile on / [googlebot_mobile].",
+      "details": {
+        "user_agent": "googlebot_mobile",
+        "previous_ms": 39.8,
+        "current_ms": 82.0
+      },
+      "timestamp": "2026-06-27T21:03:47+00:00",
       "fix": "Add server/CDN caching, move to faster hosting and remove redirect hops; check for a load spike or slow backend at that time."
     },
     {
@@ -737,7 +709,7 @@
         "error_a": "ConnectionError: HTTPSConnectionPool(host='totalsportek.tech', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='totalsportek.tech', port=443): Failed to resolve 'totalsportek.tech' ([Errno -2] Name or service not known)\"))",
         "error_b": "ConnectionError: HTTPSConnectionPool(host='totalsportek.bio', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='totalsportek.bio', port=443): Failed to resolve 'totalsportek.bio' ([Errno -2] Name or service not known)\"))"
       },
-      "timestamp": "2026-06-27T19:42:24+00:00",
+      "timestamp": "2026-06-27T21:01:03+00:00",
       "fix": "Informational \u2014 pages couldn't be compared because one/both weren't 200. Resolve the non-200 status first, then duplication can be assessed."
     },
     {
@@ -752,7 +724,7 @@
         "error_a": "ConnectionError: HTTPSConnectionPool(host='totalsportek.tech', port=443): Max retries exceeded with url: /dmca (Caused by NameResolutionError(\"HTTPSConnection(host='totalsportek.tech', port=443): Failed to resolve 'totalsportek.tech' ([Errno -2] Name or service not known)\"))",
         "error_b": "ConnectionError: HTTPSConnectionPool(host='totalsportek.bio', port=443): Max retries exceeded with url: /dmca (Caused by NameResolutionError(\"HTTPSConnection(host='totalsportek.bio', port=443): Failed to resolve 'totalsportek.bio' ([Errno -2] Name or service not known)\"))"
       },
-      "timestamp": "2026-06-27T19:42:24+00:00",
+      "timestamp": "2026-06-27T21:01:03+00:00",
       "fix": "Informational \u2014 pages couldn't be compared because one/both weren't 200. Resolve the non-200 status first, then duplication can be assessed."
     },
     {
@@ -762,7 +734,7 @@
       "path": "/",
       "message": "No structured data (JSON-LD / schema.org) found on the page.",
       "details": {},
-      "timestamp": "2026-06-27T19:43:31+00:00",
+      "timestamp": "2026-06-27T21:02:08+00:00",
       "fix": "Add relevant JSON-LD schema (e.g. WebPage / SportsEvent / FAQ) to enable rich results and clarify the page to Google."
     },
     {
@@ -772,7 +744,7 @@
       "path": "/",
       "message": "Title is 15 chars (target 30-60): 'Sports Schedule'.",
       "details": {},
-      "timestamp": "2026-06-27T19:43:35+00:00",
+      "timestamp": "2026-06-27T21:02:12+00:00",
       "fix": "Rewrite the <title> to ~30-60 characters so it isn't truncated in search results and still leads with the target keyword."
     },
     {
@@ -782,7 +754,7 @@
       "path": "/",
       "message": "Meta description is 48 chars (target 120-160).",
       "details": {},
-      "timestamp": "2026-06-27T19:43:35+00:00",
+      "timestamp": "2026-06-27T21:02:12+00:00",
       "fix": "Trim or expand the meta description to ~120-160 characters so it displays fully in the SERP snippet."
     },
     {
@@ -792,7 +764,7 @@
       "path": "/",
       "message": "No structured data (JSON-LD / schema.org) found on the page.",
       "details": {},
-      "timestamp": "2026-06-27T19:43:35+00:00",
+      "timestamp": "2026-06-27T21:02:12+00:00",
       "fix": "Add relevant JSON-LD schema (e.g. WebPage / SportsEvent / FAQ) to enable rich results and clarify the page to Google."
     },
     {
@@ -802,7 +774,7 @@
       "path": "/",
       "message": "Monitored URL https://totalsportek.it/ is not listed in sitemap.xml.",
       "details": {},
-      "timestamp": "2026-06-27T19:45:07+00:00",
+      "timestamp": "2026-06-27T21:03:46+00:00",
       "fix": "Add this monitored URL to sitemap.xml so Google discovers and prioritises it."
     },
     {
@@ -815,7 +787,7 @@
         "indexingState": "BLOCKED_BY_META_TAG",
         "coverageState": "Excluded by \u2018noindex\u2019 tag"
       },
-      "timestamp": "2026-06-27T19:45:09+00:00",
+      "timestamp": "2026-06-27T21:03:47+00:00",
       "fix": "Expected \u2014 the page is intentionally noindex (e.g. /dmca). No action needed unless this page should actually rank, in which case remove its noindex meta tag / X-Robots-Tag header."
     },
     {
@@ -828,7 +800,7 @@
         "indexingState": "BLOCKED_BY_META_TAG",
         "coverageState": "Excluded by \u2018noindex\u2019 tag"
       },
-      "timestamp": "2026-06-27T19:45:09+00:00",
+      "timestamp": "2026-06-27T21:03:47+00:00",
       "fix": "Expected \u2014 the page is intentionally noindex (e.g. /dmca). No action needed unless this page should actually rank, in which case remove its noindex meta tag / X-Robots-Tag header."
     }
   ],
