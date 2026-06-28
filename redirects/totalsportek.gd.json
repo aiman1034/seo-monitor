@@ -1,17 +1,17 @@
 {
   "domain": "totalsportek.gd",
   "domain_status": "insufficient_sample",
-  "checked_utc": "2026-06-27T08:32:47+00:00",
+  "checked_utc": "2026-06-28T08:47:57+00:00",
   "urls": [
     {
       "section": "Site Status",
       "label": "Homepage",
       "original": "https://totalsportek.gd/",
-      "current": "https://totalsportekz.app/",
+      "current": "https://totalsportekx.is/",
       "status": "Redirect (301) -> HOMEPAGE",
       "redirected_vs_reinstated": "Redirected -> homepage",
       "clean_original": "https://totalsportek.gd/",
-      "clean_resolves_to": "https://totalsportekz.app/",
+      "clean_resolves_to": "https://totalsportekx.is/",
       "blocked": false,
       "redirect_chain": [
         {
@@ -19,7 +19,7 @@
           "status_code": 301
         }
       ],
-      "last_checked": "2026-06-27",
+      "last_checked": "2026-06-28",
       "history": [
         {
           "date": "2026-06-20",
