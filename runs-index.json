@@ -4239,5 +4239,65 @@
       "warning": 20,
       "info": 10
     }
+  },
+  {
+    "timestamp_utc": "2026-06-28T21:00:20+00:00",
+    "run_id": "20260628T210020Z",
+    "sites": {
+      "totalsportek.tech": {
+        "verdict": "ISSUE",
+        "worst_status": null,
+        "gsc_position": 3.29,
+        "gsc_impressions": 1804707,
+        "gsc_clicks": 730194
+      },
+      "totalsportek.bio": {
+        "verdict": "ISSUE",
+        "worst_status": null,
+        "gsc_position": 9.67,
+        "gsc_impressions": 61568,
+        "gsc_clicks": 2510
+      },
+      "footybite.tech": {
+        "verdict": "OK",
+        "worst_status": 200,
+        "gsc_position": 9.54,
+        "gsc_impressions": 52815,
+        "gsc_clicks": 1080
+      },
+      "freesportshd.sbs": {
+        "verdict": "OK",
+        "worst_status": 200,
+        "gsc_position": null,
+        "gsc_impressions": null,
+        "gsc_clicks": null
+      },
+      "totalsportek.cfd": {
+        "verdict": "OK",
+        "worst_status": 200,
+        "gsc_position": null,
+        "gsc_impressions": null,
+        "gsc_clicks": null
+      },
+      "totalsportek.host": {
+        "verdict": "ISSUE",
+        "worst_status": null,
+        "gsc_position": null,
+        "gsc_impressions": null,
+        "gsc_clicks": null
+      },
+      "totalsportek.it": {
+        "verdict": "OK",
+        "worst_status": 200,
+        "gsc_position": null,
+        "gsc_impressions": null,
+        "gsc_clicks": null
+      }
+    },
+    "findings_counts": {
+      "critical": 0,
+      "warning": 14,
+      "info": 10
+    }
   }
 ]
