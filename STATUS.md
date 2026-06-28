@@ -4,13 +4,13 @@
 
 ### Current status
 
-![last run](https://img.shields.io/badge/last_run-2026--06--27T22:14:58+00:00-blue) ![totalsportek.tech](https://img.shields.io/badge/totalsportek.tech-down-red) ![totalsportek.bio](https://img.shields.io/badge/totalsportek.bio-down-red) ![footybite.tech](https://img.shields.io/badge/footybite.tech-200-brightgreen) ![freesportshd.sbs](https://img.shields.io/badge/freesportshd.sbs-200-brightgreen) ![totalsportek.cfd](https://img.shields.io/badge/totalsportek.cfd-down-red) ![totalsportek.host](https://img.shields.io/badge/totalsportek.host-down-red) ![totalsportek.it](https://img.shields.io/badge/totalsportek.it-200-brightgreen)
+![last run](https://img.shields.io/badge/last_run-2026--06--28T00:03:31+00:00-blue) ![totalsportek.tech](https://img.shields.io/badge/totalsportek.tech-down-red) ![totalsportek.bio](https://img.shields.io/badge/totalsportek.bio-down-red) ![footybite.tech](https://img.shields.io/badge/footybite.tech-200-brightgreen) ![freesportshd.sbs](https://img.shields.io/badge/freesportshd.sbs-200-brightgreen) ![totalsportek.cfd](https://img.shields.io/badge/totalsportek.cfd-down-red) ![totalsportek.host](https://img.shields.io/badge/totalsportek.host-down-red) ![totalsportek.it](https://img.shields.io/badge/totalsportek.it-200-brightgreen)
 
-_Last run: **2026-06-27T22:14:58+00:00** · critical: 0 · warning: 12 · info: 9_
+_Last run: **2026-06-28T00:03:31+00:00** · critical: 0 · warning: 19 · info: 9_
 
 | Site | Verdict | Homepage status (by user-agent) | GSC (clicks / impr / pos) |
 | --- | --- | --- | --- |
-| `totalsportek.tech` | ISSUE | googlebot_desktop: None, googlebot_mobile: None, browser: None | 750022 / 1937823 / 3.37 |
+| `totalsportek.tech` | ISSUE | googlebot_desktop: None, googlebot_mobile: None, browser: None | 729889 / 1803525 / 3.29 |
 | `totalsportek.bio` | ISSUE | googlebot_desktop: None, googlebot_mobile: None, browser: None | 2338 / 60623 / 9.49 |
 | `footybite.tech` | OK | googlebot_desktop: 200, googlebot_mobile: 200, browser: 200 | 683 / 38395 / 10.11 |
 | `freesportshd.sbs` | OK | googlebot_desktop: 200, googlebot_mobile: 200, browser: 200 | None / None / None |
