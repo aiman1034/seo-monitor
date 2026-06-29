@@ -1,7 +1,7 @@
 {
   "domain": "totalsportek.gd",
   "domain_status": "insufficient_sample",
-  "checked_utc": "2026-06-28T08:47:57+00:00",
+  "checked_utc": "2026-06-29T10:53:51+00:00",
   "urls": [
     {
       "section": "Site Status",
@@ -19,7 +19,7 @@
           "status_code": 301
         }
       ],
-      "last_checked": "2026-06-28",
+      "last_checked": "2026-06-29",
       "history": [
         {
           "date": "2026-06-20",
