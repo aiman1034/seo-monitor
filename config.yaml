@@ -65,11 +65,24 @@ sites:
   # Game-dashboard public render sites (served from dashgenius.online). Added
   # 2026-06-30. SA grant pending on these two GSC properties until then they 403
   # as data (no crash), per the progressive-access design above.
+  # totalsportek.cat — the NEW primary domain (2026-06-30: totalsportek.dog was
+  # 301-redirected here; SA granted on the .cat GSC property + sitemap submitted).
+  # This is now the live site to watch.
+  - domain: totalsportek.cat
+    gsc_property: "sc-domain:totalsportek.cat"
+    paths:
+      - path: /
+        dynamic: true
+      - /dmca
+  # totalsportek.dog — now 301 -> totalsportek.cat (kept to watch the migration
+  # bleed-off in GSC; data should transfer to .cat over the coming weeks).
   - domain: totalsportek.dog
     gsc_property: "sc-domain:totalsportek.dog"
     paths:
       - path: /
         dynamic: true
+  # totalsporteke.com — still live; soon to be redirected to totalsporteks.tech
+  # (NOT to .cat). Until then it is an active duplicate of the .cat content.
   - domain: totalsporteke.com
     gsc_property: "sc-domain:totalsporteke.com"
     paths:
