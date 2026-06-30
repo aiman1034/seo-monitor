@@ -1,33 +1,28 @@
 {
   "domain": "footybite.to",
   "domain_status": "insufficient_sample",
-  "checked_utc": "2026-06-29T10:53:51+00:00",
+  "checked_utc": "2026-06-30T09:31:18+00:00",
   "urls": [
     {
       "section": "Site Status",
       "label": "Homepage",
       "original": "https://footybite.to/",
-      "current": "https://www.footybitez.app/",
-      "status": "Redirect (301) -> HOMEPAGE",
-      "redirected_vs_reinstated": "Redirected -> homepage",
+      "current": null,
+      "status": "ERROR",
+      "redirected_vs_reinstated": "Dead",
       "clean_original": "https://footybite.to/",
-      "clean_resolves_to": "https://www.footybitez.app/",
+      "clean_resolves_to": null,
       "blocked": false,
-      "redirect_chain": [
-        {
-          "url": "https://footybite.to/",
-          "status_code": 301
-        },
-        {
-          "url": "https://footybitez.app/",
-          "status_code": 301
-        }
-      ],
-      "last_checked": "2026-06-29",
+      "redirect_chain": [],
+      "last_checked": "2026-06-30",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Redirect (301) -> HOMEPAGE / Redirected -> homepage"
+        },
+        {
+          "date": "2026-06-30",
+          "change": "Redirect (301) -> HOMEPAGE / Redirected -> homepage -> ERROR / Dead"
         }
       ]
     }
