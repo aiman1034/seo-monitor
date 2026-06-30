@@ -62,6 +62,19 @@ sites:
     paths:
       - path: /
         dynamic: true
+  # Game-dashboard public render sites (served from dashgenius.online). Added
+  # 2026-06-30. SA grant pending on these two GSC properties until then they 403
+  # as data (no crash), per the progressive-access design above.
+  - domain: totalsportek.dog
+    gsc_property: "sc-domain:totalsportek.dog"
+    paths:
+      - path: /
+        dynamic: true
+  - domain: totalsporteke.com
+    gsc_property: "sc-domain:totalsporteke.com"
+    paths:
+      - path: /
+        dynamic: true
 
 # Keywords we ultimately want to rank for. Phase 1 only records these for
 # context (Search Console integration that uses them lands in Phase 2).
