@@ -4,9 +4,9 @@
 
 ### Current status
 
-![last run](https://img.shields.io/badge/last_run-2026--06--30T09:30:59+00:00-blue) ![totalsportek.tech](https://img.shields.io/badge/totalsportek.tech-down-red) ![totalsportek.bio](https://img.shields.io/badge/totalsportek.bio-down-red) ![footybite.tech](https://img.shields.io/badge/footybite.tech-200-brightgreen) ![freesportshd.sbs](https://img.shields.io/badge/freesportshd.sbs-200-brightgreen) ![totalsportek.cfd](https://img.shields.io/badge/totalsportek.cfd-200-brightgreen) ![totalsportek.host](https://img.shields.io/badge/totalsportek.host-down-red) ![totalsportek.it](https://img.shields.io/badge/totalsportek.it-200-brightgreen)
+![last run](https://img.shields.io/badge/last_run-2026--06--30T09:42:36+00:00-blue) ![totalsportek.tech](https://img.shields.io/badge/totalsportek.tech-down-red) ![totalsportek.bio](https://img.shields.io/badge/totalsportek.bio-down-red) ![footybite.tech](https://img.shields.io/badge/footybite.tech-200-brightgreen) ![freesportshd.sbs](https://img.shields.io/badge/freesportshd.sbs-200-brightgreen) ![totalsportek.cfd](https://img.shields.io/badge/totalsportek.cfd-200-brightgreen) ![totalsportek.host](https://img.shields.io/badge/totalsportek.host-down-red) ![totalsportek.it](https://img.shields.io/badge/totalsportek.it-200-brightgreen) ![totalsportek.dog](https://img.shields.io/badge/totalsportek.dog-200-brightgreen) ![totalsporteke.com](https://img.shields.io/badge/totalsporteke.com-200-brightgreen)
 
-_Last run: **2026-06-30T09:30:59+00:00** · critical: 0 · warning: 10 · info: 10_
+_Last run: **2026-06-30T09:42:36+00:00** · critical: 0 · warning: 11 · info: 12_
 
 | Site | Verdict | Homepage status (by user-agent) | GSC (clicks / impr / pos) |
 | --- | --- | --- | --- |
@@ -17,5 +17,7 @@ _Last run: **2026-06-30T09:30:59+00:00** · critical: 0 · warning: 10 · info: 
 | `totalsportek.cfd` | OK | googlebot_desktop: 200, googlebot_mobile: 200, browser: 200 | None / None / None |
 | `totalsportek.host` | ISSUE | googlebot_desktop: None, googlebot_mobile: None, browser: None | None / None / None |
 | `totalsportek.it` | OK | googlebot_desktop: 200, googlebot_mobile: 200, browser: 200 | None / None / None |
+| `totalsportek.dog` | OK | googlebot_desktop: 200, googlebot_mobile: 200, browser: 200 | 67296 / 257179 / 4.19 |
+| `totalsporteke.com` | OK | googlebot_desktop: 200, googlebot_mobile: 200, browser: 200 | 141 / 1640 / 13.03 |
 
 <!-- STATUS:END -->
