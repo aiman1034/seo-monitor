@@ -5470,5 +5470,86 @@
       "warning": 22,
       "info": 17
     }
+  },
+  {
+    "timestamp_utc": "2026-06-30T23:12:08+00:00",
+    "run_id": "20260630T231208Z",
+    "sites": {
+      "totalsportek.tech": {
+        "verdict": "ISSUE",
+        "worst_status": null,
+        "gsc_position": 3.27,
+        "gsc_impressions": 1785695,
+        "gsc_clicks": 726695
+      },
+      "totalsportek.bio": {
+        "verdict": "ISSUE",
+        "worst_status": null,
+        "gsc_position": 10.01,
+        "gsc_impressions": 62981,
+        "gsc_clicks": 2789
+      },
+      "footybite.tech": {
+        "verdict": "ISSUE",
+        "worst_status": null,
+        "gsc_position": 8.96,
+        "gsc_impressions": 80160,
+        "gsc_clicks": 1710
+      },
+      "freesportshd.sbs": {
+        "verdict": "OK",
+        "worst_status": 200,
+        "gsc_position": null,
+        "gsc_impressions": null,
+        "gsc_clicks": null
+      },
+      "totalsportek.cfd": {
+        "verdict": "OK",
+        "worst_status": 200,
+        "gsc_position": null,
+        "gsc_impressions": null,
+        "gsc_clicks": null
+      },
+      "totalsportek.host": {
+        "verdict": "OK",
+        "worst_status": 200,
+        "gsc_position": null,
+        "gsc_impressions": null,
+        "gsc_clicks": null
+      },
+      "totalsportek.it": {
+        "verdict": "OK",
+        "worst_status": 200,
+        "gsc_position": null,
+        "gsc_impressions": null,
+        "gsc_clicks": null
+      },
+      "totalsportek.cat": {
+        "verdict": "OK",
+        "worst_status": 200,
+        "gsc_position": null,
+        "gsc_impressions": 0,
+        "gsc_clicks": 0
+      },
+      "totalsportek.dog": {
+        "verdict": "OK",
+        "worst_status": 200,
+        "gsc_position": 4.19,
+        "gsc_impressions": 257179,
+        "gsc_clicks": 67296
+      },
+      "totalsporteke.com": {
+        "verdict": "OK",
+        "worst_status": 200,
+        "gsc_position": 13.03,
+        "gsc_impressions": 1640,
+        "gsc_clicks": 141
+      }
+    },
+    "findings_counts": {
+      "critical": 0,
+      "warning": 13,
+      "info": 17
+    }
   }
 ]
