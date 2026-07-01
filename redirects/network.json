@@ -1,12 +1,12 @@
 {
-  "checked_utc": "2026-06-30T09:31:18+00:00",
+  "checked_utc": "2026-07-01T09:40:37+00:00",
   "domains": [
     {
       "domain": "totalsportek.tech",
       "lands_on": "dead",
       "status": "Dead",
       "final_url": null,
-      "last_checked": "2026-06-30",
+      "last_checked": "2026-07-01",
       "history": [
         {
           "date": "2026-06-21",
@@ -27,7 +27,7 @@
       "lands_on": "dead",
       "status": "Dead",
       "final_url": null,
-      "last_checked": "2026-06-30",
+      "last_checked": "2026-07-01",
       "history": [
         {
           "date": "2026-06-21",
@@ -41,10 +41,10 @@
     },
     {
       "domain": "totalsportek.cfd",
-      "lands_on": "totalsportek.dog",
-      "status": "Redirect (301) -> totalsportek.dog",
-      "final_url": "https://totalsportek.dog/",
-      "last_checked": "2026-06-30",
+      "lands_on": "totalsportek.cat",
+      "status": "Redirect (301) -> totalsportek.cat",
+      "final_url": "https://totalsportek.cat/",
+      "last_checked": "2026-07-01",
       "history": [
         {
           "date": "2026-06-21",
@@ -57,28 +57,36 @@
         {
           "date": "2026-06-29",
           "change": "dead -> totalsportek.dog"
+        },
+        {
+          "date": "2026-07-01",
+          "change": "totalsportek.dog -> totalsportek.cat"
         }
       ]
     },
     {
       "domain": "totalsportek.host",
-      "lands_on": "dead",
-      "status": "Dead",
-      "final_url": null,
-      "last_checked": "2026-06-30",
+      "lands_on": "totalsportek.cat",
+      "status": "Redirect (301) -> totalsportek.cat",
+      "final_url": "https://totalsportek.cat/",
+      "last_checked": "2026-07-01",
       "history": [
         {
           "date": "2026-06-21",
           "change": "Baseline: lands on dead"
+        },
+        {
+          "date": "2026-07-01",
+          "change": "dead -> totalsportek.cat"
         }
       ]
     },
     {
       "domain": "totalsportek.it",
-      "lands_on": "totalsportek.dog",
-      "status": "Redirect (301) -> totalsportek.dog",
-      "final_url": "https://totalsportek.dog/",
-      "last_checked": "2026-06-30",
+      "lands_on": "totalsportek.cat",
+      "status": "Redirect (301) -> totalsportek.cat",
+      "final_url": "https://totalsportek.cat/",
+      "last_checked": "2026-07-01",
       "history": [
         {
           "date": "2026-06-21",
@@ -87,6 +95,10 @@
         {
           "date": "2026-06-28",
           "change": "totalsportek.bio -> totalsportek.dog"
+        },
+        {
+          "date": "2026-07-01",
+          "change": "totalsportek.dog -> totalsportek.cat"
         }
       ]
     },
@@ -95,7 +107,7 @@
       "lands_on": "totalsportek24.is",
       "status": "Redirect (301) -> totalsportek24.is",
       "final_url": "https://totalsportek24.is/",
-      "last_checked": "2026-06-30",
+      "last_checked": "2026-07-01",
       "history": [
         {
           "date": "2026-06-21",
@@ -112,7 +124,7 @@
       "lands_on": "self",
       "status": "Live (200)",
       "final_url": "https://totalsportekz.app/",
-      "last_checked": "2026-06-30",
+      "last_checked": "2026-07-01",
       "history": [
         {
           "date": "2026-06-21",
@@ -125,7 +137,7 @@
       "lands_on": "totalsportekx.is",
       "status": "Redirect (301) -> totalsportekx.is",
       "final_url": "https://totalsportekx.is/",
-      "last_checked": "2026-06-30",
+      "last_checked": "2026-07-01",
       "history": [
         {
           "date": "2026-06-21",
@@ -142,7 +154,7 @@
       "lands_on": "dead",
       "status": "Dead",
       "final_url": null,
-      "last_checked": "2026-06-30",
+      "last_checked": "2026-07-01",
       "history": [
         {
           "date": "2026-06-21",
@@ -155,7 +167,7 @@
       "lands_on": "dead",
       "status": "Dead",
       "final_url": null,
-      "last_checked": "2026-06-30",
+      "last_checked": "2026-07-01",
       "history": [
         {
           "date": "2026-06-21",
@@ -168,7 +180,7 @@
       "lands_on": "self",
       "status": "Live (200)",
       "final_url": "https://totalsportek.cv/",
-      "last_checked": "2026-06-30",
+      "last_checked": "2026-07-01",
       "history": [
         {
           "date": "2026-06-21",
@@ -178,14 +190,18 @@
     },
     {
       "domain": "footybite.tech",
-      "lands_on": "self",
-      "status": "Live (200)",
-      "final_url": "https://footybite.tech/",
-      "last_checked": "2026-06-30",
+      "lands_on": "dead",
+      "status": "Dead",
+      "final_url": null,
+      "last_checked": "2026-07-01",
       "history": [
         {
           "date": "2026-06-21",
           "change": "Baseline: lands on self"
+        },
+        {
+          "date": "2026-07-01",
+          "change": "self -> dead"
         }
       ]
     },
@@ -194,7 +210,7 @@
       "lands_on": "self",
       "status": "Live (200)",
       "final_url": "https://www.footybitez.app/",
-      "last_checked": "2026-06-30",
+      "last_checked": "2026-07-01",
       "history": [
         {
           "date": "2026-06-21",
@@ -207,7 +223,7 @@
       "lands_on": "self",
       "status": "Live (200)",
       "final_url": "https://footybite.app/",
-      "last_checked": "2026-06-30",
+      "last_checked": "2026-07-01",
       "history": [
         {
           "date": "2026-06-21",
@@ -220,7 +236,7 @@
       "lands_on": "dead",
       "status": "Dead",
       "final_url": null,
-      "last_checked": "2026-06-30",
+      "last_checked": "2026-07-01",
       "history": [
         {
           "date": "2026-06-21",
@@ -237,7 +253,7 @@
       "lands_on": "self",
       "status": "Live (200)",
       "final_url": "https://www.freesportshd.sbs/",
-      "last_checked": "2026-06-30",
+      "last_checked": "2026-07-01",
       "history": [
         {
           "date": "2026-06-21",

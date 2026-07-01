@@ -1,7 +1,7 @@
 {
   "domain": "footybite.app",
   "domain_status": "active",
-  "checked_utc": "2026-06-30T09:31:18+00:00",
+  "checked_utc": "2026-07-01T09:40:37+00:00",
   "urls": [
     {
       "section": "Division/Category",
@@ -14,7 +14,7 @@
       "clean_resolves_to": "https://footybite.app/nfl/streams",
       "blocked": false,
       "redirect_chain": [],
-      "last_checked": "2026-06-30",
+      "last_checked": "2026-07-01",
       "history": [
         {
           "date": "2026-06-20",
@@ -33,7 +33,7 @@
       "clean_resolves_to": "https://footybite.app/mma/streams",
       "blocked": false,
       "redirect_chain": [],
-      "last_checked": "2026-06-30",
+      "last_checked": "2026-07-01",
       "history": [
         {
           "date": "2026-06-20",
@@ -52,7 +52,7 @@
       "clean_resolves_to": "https://footybite.app/boxing/streams",
       "blocked": false,
       "redirect_chain": [],
-      "last_checked": "2026-06-30",
+      "last_checked": "2026-07-01",
       "history": [
         {
           "date": "2026-06-20",
@@ -71,7 +71,7 @@
       "clean_resolves_to": "https://footybite.app/f1/streams",
       "blocked": false,
       "redirect_chain": [],
-      "last_checked": "2026-06-30",
+      "last_checked": "2026-07-01",
       "history": [
         {
           "date": "2026-06-20",
@@ -90,7 +90,7 @@
       "clean_resolves_to": "https://footybite.app/nba/streams",
       "blocked": false,
       "redirect_chain": [],
-      "last_checked": "2026-06-30",
+      "last_checked": "2026-07-01",
       "history": [
         {
           "date": "2026-06-20",
@@ -109,7 +109,7 @@
       "clean_resolves_to": "https://footybite.app/nhl/streams",
       "blocked": false,
       "redirect_chain": [],
-      "last_checked": "2026-06-30",
+      "last_checked": "2026-07-01",
       "history": [
         {
           "date": "2026-06-20",
@@ -128,7 +128,7 @@
       "clean_resolves_to": "https://footybite.app/mlb/streams",
       "blocked": false,
       "redirect_chain": [],
-      "last_checked": "2026-06-30",
+      "last_checked": "2026-07-01",
       "history": [
         {
           "date": "2026-06-20",
@@ -147,7 +147,7 @@
       "clean_resolves_to": "https://footybite.app/cfb/streams",
       "blocked": false,
       "redirect_chain": [],
-      "last_checked": "2026-06-30",
+      "last_checked": "2026-07-01",
       "history": [
         {
           "date": "2026-06-20",
@@ -166,7 +166,7 @@
       "clean_resolves_to": "https://footybite.app/ncaa/streams",
       "blocked": false,
       "redirect_chain": [],
-      "last_checked": "2026-06-30",
+      "last_checked": "2026-07-01",
       "history": [
         {
           "date": "2026-06-20",
@@ -185,7 +185,7 @@
       "clean_resolves_to": "https://footybite.app/wwe/streams",
       "blocked": false,
       "redirect_chain": [],
-      "last_checked": "2026-06-30",
+      "last_checked": "2026-07-01",
       "history": [
         {
           "date": "2026-06-20",
@@ -204,7 +204,7 @@
       "clean_resolves_to": "https://footybite.app/wnba/streams",
       "blocked": false,
       "redirect_chain": [],
-      "last_checked": "2026-06-30",
+      "last_checked": "2026-07-01",
       "history": [
         {
           "date": "2026-06-20",
@@ -223,7 +223,7 @@
       "clean_resolves_to": "https://footybite.app/blog/beyond-the-trophies-the-legacy-of-the-legendary-premier-league-manager",
       "blocked": false,
       "redirect_chain": [],
-      "last_checked": "2026-06-30",
+      "last_checked": "2026-07-01",
       "history": [
         {
           "date": "2026-06-20",
@@ -242,7 +242,7 @@
       "clean_resolves_to": "https://footybite.app/blog/derby-drama-rivalries-that-define-la-liga-s-intense-competition",
       "blocked": false,
       "redirect_chain": [],
-      "last_checked": "2026-06-30",
+      "last_checked": "2026-07-01",
       "history": [
         {
           "date": "2026-06-20",
@@ -261,7 +261,7 @@
       "clean_resolves_to": "https://footybite.app/blog/top-10-most-memorable-premier-league-matches-in-the-last-decade",
       "blocked": false,
       "redirect_chain": [],
-      "last_checked": "2026-06-30",
+      "last_checked": "2026-07-01",
       "history": [
         {
           "date": "2026-06-20",
@@ -280,7 +280,7 @@
       "clean_resolves_to": "https://footybite.app/blog/the-great-premier-league-paradox-big-spenders-vs-underdogs-success",
       "blocked": false,
       "redirect_chain": [],
-      "last_checked": "2026-06-30",
+      "last_checked": "2026-07-01",
       "history": [
         {
           "date": "2026-06-20",
@@ -299,7 +299,7 @@
       "clean_resolves_to": "https://footybite.app",
       "blocked": false,
       "redirect_chain": [],
-      "last_checked": "2026-06-30",
+      "last_checked": "2026-07-01",
       "history": [
         {
           "date": "2026-06-20",
