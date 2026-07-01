@@ -81,10 +81,17 @@ sites:
     paths:
       - path: /
         dynamic: true
-  # totalsporteke.com — still live; soon to be redirected to totalsporteks.tech
-  # (NOT to .cat). Until then it is an active duplicate of the .cat content.
+  # totalsporteke.com — now 301 -> totalsporteks.tech (2026-07-01). Kept to watch
+  # the migration bleed-off in GSC.
   - domain: totalsporteke.com
     gsc_property: "sc-domain:totalsporteke.com"
+    paths:
+      - path: /
+        dynamic: true
+  # totalsporteks.tech — the NEW mirror (totalsporteke.com 301-redirected here,
+  # 2026-07-01). SA granted on this GSC property. Live site to watch alongside .cat.
+  - domain: totalsporteks.tech
+    gsc_property: "sc-domain:totalsporteks.tech"
     paths:
       - path: /
         dynamic: true
