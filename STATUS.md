@@ -4,9 +4,9 @@
 
 ### Current status
 
-![last run](https://img.shields.io/badge/last_run-2026--07--01T21:29:58+00:00-blue) ![totalsportek.tech](https://img.shields.io/badge/totalsportek.tech-down-red) ![totalsportek.bio](https://img.shields.io/badge/totalsportek.bio-down-red) ![footybite.tech](https://img.shields.io/badge/footybite.tech-down-red) ![freesportshd.sbs](https://img.shields.io/badge/freesportshd.sbs-200-brightgreen) ![totalsportek.cfd](https://img.shields.io/badge/totalsportek.cfd-200-red) ![totalsportek.host](https://img.shields.io/badge/totalsportek.host-200-brightgreen) ![totalsportek.it](https://img.shields.io/badge/totalsportek.it-200-brightgreen) ![totalsportek.cat](https://img.shields.io/badge/totalsportek.cat-200-brightgreen) ![totalsportek.dog](https://img.shields.io/badge/totalsportek.dog-200-brightgreen) ![totalsporteke.com](https://img.shields.io/badge/totalsporteke.com-200-brightgreen) ![totalsporteks.tech](https://img.shields.io/badge/totalsporteks.tech-200-brightgreen)
+![last run](https://img.shields.io/badge/last_run-2026--07--01T23:16:25+00:00-blue) ![totalsportek.tech](https://img.shields.io/badge/totalsportek.tech-down-red) ![totalsportek.bio](https://img.shields.io/badge/totalsportek.bio-down-red) ![footybite.tech](https://img.shields.io/badge/footybite.tech-down-red) ![freesportshd.sbs](https://img.shields.io/badge/freesportshd.sbs-200-brightgreen) ![totalsportek.cfd](https://img.shields.io/badge/totalsportek.cfd-200-red) ![totalsportek.host](https://img.shields.io/badge/totalsportek.host-200-brightgreen) ![totalsportek.it](https://img.shields.io/badge/totalsportek.it-200-brightgreen) ![totalsportek.cat](https://img.shields.io/badge/totalsportek.cat-200-brightgreen) ![totalsportek.dog](https://img.shields.io/badge/totalsportek.dog-200-brightgreen) ![totalsporteke.com](https://img.shields.io/badge/totalsporteke.com-200-brightgreen) ![totalsporteks.tech](https://img.shields.io/badge/totalsporteks.tech-200-brightgreen)
 
-_Last run: **2026-07-01T21:29:58+00:00** · critical: 2 · warning: 33 · info: 19_
+_Last run: **2026-07-01T23:16:25+00:00** · critical: 2 · warning: 14 · info: 20_
 
 | Site | Verdict | Homepage status (by user-agent) | GSC (clicks / impr / pos) |
 | --- | --- | --- | --- |
