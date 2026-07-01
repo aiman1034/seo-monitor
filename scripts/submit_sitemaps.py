@@ -20,8 +20,9 @@ from googleapiclient.discovery import build
 SCOPES = ["https://www.googleapis.com/auth/webmasters"]  # WRITE (not readonly)
 
 # The currently-live public front-ends (the ones whose sitemaps we submit).
-# .dog/.com are redirected away, so we don't submit their sitemaps.
-LIVE_DOMAINS = ["totalsportek.cat", "totalsporteks.tech"]
+# .dog is redirected to .cat. .com was going to redirect to .tech but that was
+# CANCELLED (2026-07-01) — .com stays live, so all THREE are live mirrors.
+LIVE_DOMAINS = ["totalsportek.cat", "totalsporteke.com", "totalsporteks.tech"]
 
 
 def make_client():

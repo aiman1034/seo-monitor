@@ -81,8 +81,8 @@ sites:
     paths:
       - path: /
         dynamic: true
-  # totalsporteke.com — now 301 -> totalsporteks.tech (2026-07-01). Kept to watch
-  # the migration bleed-off in GSC.
+  # totalsporteke.com — STAYS LIVE. (The planned .com -> .tech redirect was
+  # CANCELLED 2026-07-01, so .com + .tech + .cat are all live mirrors.)
   - domain: totalsporteke.com
     gsc_property: "sc-domain:totalsporteke.com"
     paths:
