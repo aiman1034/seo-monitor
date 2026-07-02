@@ -6329,5 +6329,93 @@
       "warning": 14,
       "info": 20
     }
+  },
+  {
+    "timestamp_utc": "2026-07-02T02:59:12+00:00",
+    "run_id": "20260702T025912Z",
+    "sites": {
+      "totalsportek.tech": {
+        "verdict": "ISSUE",
+        "worst_status": null,
+        "gsc_position": 3.27,
+        "gsc_impressions": 1767420,
+        "gsc_clicks": 719701
+      },
+      "totalsportek.bio": {
+        "verdict": "ISSUE",
+        "worst_status": null,
+        "gsc_position": 10.15,
+        "gsc_impressions": 63761,
+        "gsc_clicks": 2990
+      },
+      "footybite.tech": {
+        "verdict": "ISSUE",
+        "worst_status": null,
+        "gsc_position": 8.96,
+        "gsc_impressions": 83959,
+        "gsc_clicks": 1834
+      },
+      "freesportshd.sbs": {
+        "verdict": "OK",
+        "worst_status": 200,
+        "gsc_position": null,
+        "gsc_impressions": null,
+        "gsc_clicks": null
+      },
+      "totalsportek.cfd": {
+        "verdict": "OK",
+        "worst_status": 200,
+        "gsc_position": null,
+        "gsc_impressions": null,
+        "gsc_clicks": null
+      },
+      "totalsportek.host": {
+        "verdict": "OK",
+        "worst_status": 200,
+        "gsc_position": null,
+        "gsc_impressions": null,
+        "gsc_clicks": null
+      },
+      "totalsportek.it": {
+        "verdict": "OK",
+        "worst_status": 200,
+        "gsc_position": null,
+        "gsc_impressions": null,
+        "gsc_clicks": null
+      },
+      "totalsportek.cat": {
+        "verdict": "OK",
+        "worst_status": 200,
+        "gsc_position": null,
+        "gsc_impressions": 0,
+        "gsc_clicks": 0
+      },
+      "totalsportek.dog": {
+        "verdict": "OK",
+        "worst_status": 200,
+        "gsc_position": 4.63,
+        "gsc_impressions": 449263,
+        "gsc_clicks": 98545
+      },
+      "totalsporteke.com": {
+        "verdict": "OK",
+        "worst_status": 200,
+        "gsc_position": 10.61,
+        "gsc_impressions": 9158,
+        "gsc_clicks": 834
+      },
+      "totalsporteks.tech": {
+        "verdict": "OK",
+        "worst_status": 200,
+        "gsc_position": null,
+        "gsc_impressions": 0,
+        "gsc_clicks": 0
+      }
+    },
+    "findings_counts": {
+      "critical": 0,
+      "warning": 24,
+      "info": 18
+    }
   }
 ]
