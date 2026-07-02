@@ -1,20 +1,20 @@
 {
   "domain": "footybite.to",
   "domain_status": "insufficient_sample",
-  "checked_utc": "2026-07-01T09:40:37+00:00",
+  "checked_utc": "2026-07-02T08:52:10+00:00",
   "urls": [
     {
       "section": "Site Status",
       "label": "Homepage",
       "original": "https://footybite.to/",
-      "current": null,
-      "status": "ERROR",
-      "redirected_vs_reinstated": "Dead",
+      "current": "https://footybite.to/",
+      "status": "Live (200)",
+      "redirected_vs_reinstated": "Reinstated (200)",
       "clean_original": "https://footybite.to/",
-      "clean_resolves_to": null,
+      "clean_resolves_to": "https://footybite.to/",
       "blocked": false,
       "redirect_chain": [],
-      "last_checked": "2026-07-01",
+      "last_checked": "2026-07-02",
       "history": [
         {
           "date": "2026-06-20",
@@ -23,6 +23,10 @@
         {
           "date": "2026-06-30",
           "change": "Redirect (301) -> HOMEPAGE / Redirected -> homepage -> ERROR / Dead"
+        },
+        {
+          "date": "2026-07-02",
+          "change": "ERROR / Dead -> Live (200) / Reinstated (200)"
         }
       ]
     }

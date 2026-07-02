@@ -1,24 +1,28 @@
 {
   "domain": "totalsportek.cv",
   "domain_status": "insufficient_sample",
-  "checked_utc": "2026-07-01T09:40:37+00:00",
+  "checked_utc": "2026-07-02T08:52:10+00:00",
   "urls": [
     {
       "section": "Site Status",
       "label": "Homepage",
       "original": "https://totalsportek.cv/",
-      "current": "https://totalsportek.cv/",
-      "status": "Live (200)",
-      "redirected_vs_reinstated": "Reinstated (200)",
+      "current": null,
+      "status": "ERROR",
+      "redirected_vs_reinstated": "Dead",
       "clean_original": "https://totalsportek.cv/",
-      "clean_resolves_to": "https://totalsportek.cv/",
+      "clean_resolves_to": null,
       "blocked": false,
       "redirect_chain": [],
-      "last_checked": "2026-07-01",
+      "last_checked": "2026-07-02",
       "history": [
         {
           "date": "2026-06-20",
           "change": "Baseline: Live (200) / Reinstated (200)"
+        },
+        {
+          "date": "2026-07-02",
+          "change": "Live (200) / Reinstated (200) -> ERROR / Dead"
         }
       ]
     }
